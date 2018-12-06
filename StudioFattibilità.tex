@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage [colorlinks=true,urlcolor=blue]{hyperref}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\LARGE#1\end{center}
+    \vskip0.5em}%
+}
+
+\title{\textbf{STUDIO DI FATTIBILITÀ}
+\\{\Large Versione 1.0.0 in data }}
+\author{(Dreamcorp - Progetto DevOps)}
+
+\begin{document}
+
+\maketitle
+
+\begin{table} [h!]
+    \begin{center}
+        \caption*{\textbf{Informazioni sul documento}}
+        
+        \begin{tabular}{l|r}
+            \hline
+            \textbf{Responsabile} & Ciao\\
+            \multirow{2}{*}{\textbf{Redazione}} & miozio & miazia\\
+        \end{tabular}    
+    \end{center}
+\end{table}
+\newpage
+
+\section{Introduzione}
+	\subsection{Obiettivo del documento}
+		Lo scopo del documento è di motivare la scelta del capitolato C3 \textit{"G\&B"} e di presentare le considerazioni che ci hanno portato a scartare gli altri.
+	\subsection{Glossario}
+		Al fine di evitare ambiguità è stato redatto un documento chiamato Glossario contente tutti i termini che a seconda del contesto possono necessitare di 			un ulteriore spiegazione per chiarificarne il significato. ((((((  *****   DA CONCORDARE METODO DI SEGNALAZIONE AL GLOSSARIO ******   ))))) 
+	\subsection{Riferimenti}
+		\subsubsection{Normativi}
+			\begin{enumerate}
+				\item \textit{Norme di progetto}
+			\end{enumerate}
+		\subsubsection{Informativi}
+			\begin{enumerate}
+				\item \textbf{Capitolato 1 : Butterfly} - monitor per processi CI/CD \newline 	\url{ https://www.math.unipd.it/~tullio/IS-1/2018/						Progetto/C1.pdf}
+				\item \textbf{Capitolato 2 : Colletta} - piattaforma raccolta dati di analisi di test \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C2.pdf}
+				\item \textbf{Capitolato 3 : G\&B} - monitoraggio intelligente di processi DevOps. \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
+				\item \textbf{Capitolato 4 : MegAlexa} - Arrichitore di skill di Amazon Alexa. \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C4.pdf}
+				\item \textbf{Capitolato 5 : P2PCS} - Piattaforma di peer-to-peer car sharing \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C5.pdf}
+			    \item \textbf{Capitolato 6 : Soldino} - Piattaforma Ethereum per pagamenti IVA \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C6.pdf}
+			\end{enumerate}
+			
+\newpage
+    \section{Capitolato scelto: C3}
+        \subsection{Descrizione}
+        Il progetto G\&B consiste nel sviluppare un plug-in di Grafana, un software per il monitoraggio di sistemi, al fine di non solo monitorare i livelli di risorse utilizzate dai sudetti sistemi, ma anche di dare direttive sugli interventi da eseguire.
+        \subsection{Finalità}
+        Gli obiettivi principali del progetto sono: Implementare un plug-in di Grafana che legge una rete Bayesiana e che a intervalli regolari o in continuità che applica il ricalcolo delle probabilità della rete e fornisce i nuovi dati alla dashboard attraverso grafi.
+        \subsection{Tecnologie utilizzate}
+            \begin{itemize}
+                \item Javascript
+                \item Reti Bayesiane (consigliato jsbayes : \url{https://github.com/vangj/jsbayes})
+                \item Grafana
+            \end{itemize}
+			
+			
+
+\end{document}

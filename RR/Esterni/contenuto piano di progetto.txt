@@ -1,0 +1,42 @@
+-> cose da inserire, non paragrafi
+
+
+composizione domcumento:
+informazioni sul documento (comune in tutti i file)
+registro modifiche (comune in tutti i file)
+indice (comune)
+elenco figure (comune)
+elenco tabelle (c)
+
+Introduzione
+	obietttivo/scopo del documento
+	scopo del prodotto
+	note esplicative/glossario
+	riferimenti
+		normativi
+		informativi
+	scadenze (353)
+
+analisi dei rischi
+	interni
+	esterni
+	
+ambiente di sviluppo (BB)
+
+modello di sviluppo
+	->scelta del modello che useremo
+
+pianificazione
+	scopo (BB)
+	analisi (avvio e analisi)
+		-> elenco attività in ordine cronologico
+		->divisione dei ruoli
+	consolidamento dei requisiti (353)
+	-> dettaglio delle varie fasi
+
+preventivo
+	Dettaglio fasi
+		prospetto orario
+		conteggio ore
+
+consuntivo e preventivo a finire

@@ -96,19 +96,19 @@ Davide g
 Compiti:
 
     Comune:
-	    glossario
+	    Glossario
 	    gestione di github
 	    verbali
-	    studio di fattibilitá
  
-    gruppo1:
-    	    template latex
-	    norme di progetto
-	    piano di progetto
-	    
     gruppo2:
-    	    analisi dei requisiti
+	    norme di progetto
+	    studio di fattibilitá
+	    template latex
 	    piano di qualifica
+
+    gruppo1:
+	    Analisi dei requisiti
+	    piano di progetto
 
 
 Log 2-12-18 gruppo 1
@@ -121,16 +121,3 @@ Log 2-12-18 gruppo 1
 
 NOTA: per quando usiamo git per caricare i file, sarebbe meglio creare un nuovo branch, calirace li i file e poi unire i due branch, così si possono fare i controlli sulle modifiche e mantenere traccia di cosa è strato cambiato. 
 
-Log 4-12-18
-	modifica dei compiti assegnati ai gruppi: l'analisi dei requisiti passa al gruppo 2 e le norme di progetto passano al gruppo 1
-	divisione dei ruoli all'interno del gruppo fino al 20/12/18
-		Pietro 			Responsabile
-		Michele			Amministratore
-		Davide			Analista
-		Matteo			Analista
-		Davide			Analista
-								Progettista
-								Programmatore
-		Marco				Verificatore
-		Gianluca		Verificatore
-								Gestore delal qualità
