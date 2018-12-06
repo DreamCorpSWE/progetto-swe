@@ -1,0 +1,18 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del progetto}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Note esplicative}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{5}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Riferimenti Normativi}{5}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Riferimenti Informativi}{5}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Scadenze}{5}{subsection.1.5}
+\contentsline {section}{\numberline {2}Analisi dei rischi}{6}{section.2}
+\contentsline {section}{\numberline {3}modello di sviluppo}{7}{section.3}
+\contentsline {section}{\numberline {4}pianificazione}{7}{section.4}
+\contentsline {section}{\numberline {5}preventivo}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Dettaglio fasi}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}prospetto orario}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}conteggio ore}{8}{subsection.5.3}
+\contentsline {section}{\numberline {6}consuntivo e preventivo a finire}{8}{section.6}
