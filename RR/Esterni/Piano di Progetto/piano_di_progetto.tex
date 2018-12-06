@@ -1,0 +1,185 @@
+\documentclass[12pt]{article}
+
+%\input{stile.tex}
+\input{../../stile/stile.tex}
+\title{\myfont{Piano di Progetto}}
+\author{ }
+\date{ \myfont 05-12-2018}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+	\huge Versione 0.0.3 
+	\\G\&B
+	\end{center}
+	\newpage
+		\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+				\hline
+						\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+				\hline
+						0.0.3 & 5/12/2018 & Scrittura introduzione e modello di sviluppo & Pietro Casotto & Responsabile \\
+				\hline
+						0.0.2 & 5/12/2018 & Analisi dei Rischi & Davide Ghiotto & Analista \\
+				\hline
+						0.0.1 & 4/12/2018 & Creazione struttura del documento & Davide Ghiotto & Analista  \\
+				\hline
+		\end{tabularx}
+	\newpage
+	\tableofcontents
+	\newpage
+
+
+	\section{Introduzione}
+		\subsection{Scopo del documento}
+
+			Questo documento ha come scopo quello di presentare la pianificazione del gruppo "Dream Corp." per lo sviluppo del progetto \textit{G\&B}.
+			Il documento conterrà anche un preventivo dei costi e un'analisi dei rischi previsti per lo svolgimento e realizzazione del progetto.\newline
+			In dettaglio il documento coprirà:
+			\begin{itemize}
+				\item Breve analisi del modello di sviluppo per il progetto; 
+				\item Analisi dei rischi relativi al progetto;
+				\item Dettagliata pianificazione dei tempi e delle attività;
+				\item Stima preventiva dell'utilizzo delle risorse disponibili.
+			\end{itemize}
+
+		\subsection{Scopo del progetto}
+
+			Lo scopo del progetto è quello di realizzare un Plugin per Grafana\ped d per integrare metodi di intelligenza artificiale al flusso dei dati raccolti con lo scopo di monitorare lo stato del sistema e migliorare il software utilizzato.
+
+		\subsection{Note esplicative}
+
+			Allo scopo di evitare ambiguità a lettori esterni al gruppo, si specifica che all'interno del documento verranno inseriti dei termini con un carattere g come pedice, questo significa che il significato inteso in quella situazione è stato inserito nel Glossario;
+
+		\newpage
+		\subsection{Riferimenti}
+
+			\subsubsection{Riferimenti Normativi}
+				\begin{itemize}
+					\item Regole organigramma e specifica tecnica-economica:
+
+					\url{https://www.math.unipd.it/~tullio/IS-1/2018//Progetto/RO.html}
+						\begin{itemize}
+							\item[-] Offerta tecnico-economica;
+							\item[-]Struttura organigramma.
+						\end{itemize}
+					\item Norme di progetto
+					\item Capitolato d'appalto C3 - G\&B: monitoraggio intelligente di processi DevOps
+					
+					\url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
+				\end{itemize}
+				
+			\subsubsection{Riferimenti Informativi}
+				\begin{itemize}
+					\item Slide del corso "Ingegneria del Software" - Gestione di progetto:
+					
+					\url{http://www.math.unipd.it/~tullio/IS-1/2018/Dispense/L06.pdf}
+					\item Slide del corso \"Ingegneria del Software" - Regole del Progetto Didattico:
+
+					\url{http://www.math.unipd.it/~tullio/IS-1/2018/Dispense/P01.pdf}
+
+					\item Software Engineering - Ian Sommerville (10th Edition)
+				\end{itemize}
+
+		\subsection{Scadenze}
+			Il gruppo Dream Corp. ha deciso di rispettare le seguenti scadenze su cui si baserà la pianificazione di tutto il progetto
+			\begin{itemize}
+				\item \textbf{Revisione dei Requisiti:} 
+				\item \textbf{Revisione dei Progettazione:} 
+				\item \textbf{Revisione dei Qualifica:} 
+				\item \textbf{Revisione dei Accettazione:} 
+			\end{itemize}
+
+
+
+	\newpage
+
+	\section{Analisi dei rischi}
+
+		Di seguito verranno definiti i rischi individuati dal gruppo Dream Corp. associando ad ognuno di essi un impatto sul progetto e una probabilità che si verifichi. Viene associato inoltre una risposta contenitiva del rischio. 
+		\newline \newline
+		\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+			\hline
+			\textbf{Identificativo} & \textbf{Descrizione rischio} & \textbf{Probabilità} & \textbf{Impatto} & \textbf{Risposta Contenitiva}\\
+			\hline
+			R1 & Errata stima della durata delle attività da programmare & Alta & Alto & Considerare sempre un certo slack temporale e pianificazione all’indietro\\
+			\hline
+			R2 & Conflitti interni al gruppo di progetto & Bassa & Basso & Team building sociale e confronti diretti\\
+			\hline
+			R3 & Sottostima del tempo richiesto per l’apprendimento di nuove tecnologie (GitHub, Grafana,...) & Media & Medio & Confronto con esperti per dubbi e chiarimenti al fine di prevenire ritardi\\
+			\hline
+			R4 & Problemi Software di terze parti (perdita di dati su GitHub) & Molto  Bassa & Basso &  Backup due volte la settimana\\
+			\hline
+			R5 & Ridefinizione dei requisiti & Bassa & Molto Alto & ?\\
+			\hline
+		\end{tabularx}
+		\newline \newline
+		Per analizzare il fattore di rischio del progetto adottiamo una scala numerica per l’impatto così definita:
+		\begin{itemize}
+			\item Molto Basso: 1
+			\item Basso: 2
+			\item Medio: 3
+			\item Alto: 4
+			\item Molto Alto: 5
+		\end{itemize}
+		Ed inoltre creiamo una scala di probabilità discreta così definita:
+		\begin{itemize}
+			\item Molto Bassa: 10%
+			\item Bassa: 25%
+			\item Media: 50%
+			\item Alta: 75%
+			\item Molto Alta: 90%
+		\end{itemize}
+		L’utilizzo di una scala numerica ci permette di analizzare più efficacemente l’impatto probabile all’interno del nostro progetto e quindi anche di pianificare all’indietro tenendo conto di queste analisi.
+		Elaborazione dei nostri rischi:
+		\newline \newline
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			r1 & 75\% & 4 & 3 \\
+			\hline
+			r2 &  25\%  & 2  & 0.5 \\
+			\hline
+			r3  & 50\%  & 3  & 1.5 \\
+			\hline
+			r4  & 10\% &  2 &  0.2 \\
+			\hline
+			r5  & 25\%  & 5  & 1.25 \\
+			\hline
+			\textbf{Media}  & 37\% &  3.2 &  28.66666667\\
+			\hline
+		\end{tabularx}
+		\newline \newline
+		Dalla nostra distribuzione di rischi e probabilità otteniamo un profilo di rischio:
+		Probabilità media di un rischio = 37\% (Bassa-Media)
+		Impatto medio di un rischio = 3.2 (Medio)
+		Somma impatto*probabilità = 6.45
+		Massima somma impatto*probabilità = 0.9(Molto Alta) * numero\_rischi *5 (Molto Alto) = 22.5
+		Profilo di rischio= 6.45/22.5 = 28,7\% (Basso)
+		Concludendo possiamo ritenere il nostro profilo di rischio abbastanza basso
+
+
+	\section{modello di sviluppo}
+	->scelta del modello che useremo
+
+
+	\section{pianificazione}
+	scopo (BB)
+	analisi (avvio e analisi)
+		-> elenco attività in ordine cronologico
+		->divisione dei ruoli
+	consolidamento dei requisiti (353)
+	-> dettaglio delle varie fasi
+
+
+	\section{preventivo}
+	    \subsection{Dettaglio fasi}
+		\subsection{prospetto orario}
+		\subsection{conteggio ore}
+
+
+	\section{consuntivo e preventivo a finire}
+
+
+
+
+
+\end{document}
