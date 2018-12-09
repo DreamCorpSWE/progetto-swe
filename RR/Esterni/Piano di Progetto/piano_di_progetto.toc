@@ -11,8 +11,14 @@
 \contentsline {section}{\numberline {2}Analisi dei rischi}{6}{section.2}
 \contentsline {section}{\numberline {3}modello di sviluppo}{7}{section.3}
 \contentsline {section}{\numberline {4}Pianificazione}{7}{section.4}
-\contentsline {section}{\numberline {5}preventivo}{8}{section.5}
-\contentsline {subsection}{\numberline {5.1}Dettaglio fasi}{8}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}prospetto orario}{8}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}conteggio ore}{8}{subsection.5.3}
-\contentsline {section}{\numberline {6}consuntivo e preventivo a finire}{8}{section.6}
+\contentsline {subsection}{\numberline {4.1}Attivit\IeC {\`a} preliminari di analisi}{8}{subsection.4.1}
+\contentsline {paragraph}{Diagramma di Gantt}{8}{section*.2}
+\contentsline {subsection}{\numberline {4.2}Consolidamento dei requisiti}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Progettazione architetturale}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Progettazione di dettaglio e codifica}{9}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Validazione e collaudo}{9}{subsection.4.5}
+\contentsline {section}{\numberline {5}preventivo}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Dettaglio fasi}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}prospetto orario}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}conteggio ore}{9}{subsection.5.3}
+\contentsline {section}{\numberline {6}consuntivo e preventivo a finire}{9}{section.6}
