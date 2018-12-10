@@ -1,23 +1,37 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fancyhdr}
 \usepackage{titling}
 \usepackage{caption}
 \usepackage{multirow}
+\usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage{tabularx}
-\usepackage [colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{lastpage}
+\usepackage{nopageno}
+\usepackage [colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
 \newcommand{\subtitle}[1]{%
-  \posttitle{%
-    \par\end{center}
-    \begin{center}\LARGE#1\end{center}
+    \posttitle{%
+        \par\end{center}
+        \begin{center}\LARGE#1\end{center}
     \vskip0.5em}%
 }
+
+
 
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
 \setlength{\topmargin}{0in}
-\setlength{\headsep}{-.25in}
+\iffalse \setlength{\headsep}{-.25in}\fi
 \setlength{\textwidth}{6.5in}
 \setlength{\textheight}{8.5in}
 
 \font\myfont=cmr12 at 40pt
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\leftmark}
+\lhead{Logo azienda}
+\rfoot{Pagina \thepage \space di \pageref{LastPage}}
+\lfoot{Norme di Progetto}
+\renewcommand{\footrulewidth}{0.4pt}

@@ -1,10 +1,6 @@
 % !TeX spellcheck = en_US
-\documentclass[a4paper,12pt]{article}
+\input{../../stile/stile.tex}
 
-
-\usepackage[italian]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 
 \title{\myfont Norme di Progetto}
 \font\myfont=cmr12 at 40pt
@@ -25,12 +21,26 @@
 
 \section{Introduzione}
 \subsection{Scopo del documento}
-Questo documento si prefigge lo scopo di garantire a tutti i membri del gruppo un modo comune di lavorare al ifne di aumentare l'efficenza. Verranno descritte le scelte architetturali e i vari software scelti
+Questo documento si prefigge lo scopo di garantire a tutti i membri del gruppo un modo comune di lavorare al fine di aumentare l'efficenza. Verranno descritte le scelte architetturali e i vari software scelti.
 \subsection{Il prodotto}
 Il prodotto ha lo scopo di fornire un sistema "smart" di monitoraggio dei sistemi in modo da garantire e migliorare i servizi erogati dall'azienda ai terzi. L'applicativo sarà un estensione scritta in Javascript per il software Grafana, verranno inoltre utilizzate le reti bayesiane.
 \subsection{Glossario}
 Data la presenza di diversi elementi con significato ambiguo è stato necessario l'utilizzo di un glossario volto a disambiguare tali elementi col loro preciso significato.
 \subsection{Riferimenti}
+\subsubsection{Normativi}
+\begin{itemize}
+\item Standard ISO/IEC 12207:1995 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}
+\item Capitolato C3 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
+\end{itemize}
+\subsubsection{Informativi}
+\begin{itemize}
+\item Piano di Progetto v. 1.0
+\item Piano di Qualifica v. 1.0
+\item GitHub
+\item Javascript
+\item 
+\end{itemize}
+
 
 \newpage
 
@@ -41,7 +51,8 @@ In questo paragrafo vengono documentate le norme che i membri devono seguire aff
 Dopo la presentazione dei capitolati il gruppo si è riunito per discutere qual'era la più consona. Dopo aver risolto i dubbi interni si è optato per la scelta del capitolato \textit{numero 3} ed infine parte del gruppo ha steso lo studio di fattibilità, documento, \textit{in versione 1.0.0},  atto a valutare i pro e i contro di ogni progetto permettendo così una più attenta valutazione. \newline
 I punti chiave dell'analisi sonon i seguenti:
 \begin{itemize}
-	\item \textbf{Introduzione:} Viene fatta una breve introduzione del contesto in cui applicare la soluzione; 
+	\item \textbf{Introduzione:} Viene fatta una breve introduzione del contesto in cui applicare la soluzione;
+	\item \textbf{Finalità: } Viene descritto in modo sintetico lo scopo finale da raggiungere a lavoro completato;
 	\item \textbf{Tecnologie in uso:} Si descrivono genericamente i software che la proponente intende usare;
 	\item \textbf{Conclusioni:} Rappresenta il motivo per cui un capitolato è stato scelto oppure scartato.
 \end{itemize}
@@ -69,4 +80,6 @@ L'attività di Progettazione consiste nel descrivere una soluzione al problema c
 \end{itemize}	
 \subsubsection{Uso di diagrammi}
 Al fine di essere il piu comprensibili possibile sara necessario far uso su larga scala di diagrammi uml 2.0
+
+\input{processi_supporto.tex}
 \end{document}
