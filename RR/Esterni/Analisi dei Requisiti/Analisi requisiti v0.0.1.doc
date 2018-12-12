@@ -48,12 +48,23 @@ la loro visualizzazione.
 
 2.3) Tipologia di utenti
 Il prodotto √® rivolto a tutti coloro che gestiscono sistemi di raccolta e
-collezione di dati in modo da poterli monitorare ed intervenire qualora sistema
+collezione di dati in modo da poterli monitorare ed intervenire qualora sia
 necessario grazie agli allarmi forniti dal plug-in.
 
 2.4) Vincoli di progettazione
 
 2.4.1) Requisiti obbligatori
+1. Leggere la definizione della rete Bayesiana da un file in formato json.
+2. Associare dei nodi della rete, letta dal file json, ad un flusso di dati
+presente in Grafana.
+3. Applicare il ricalcolo delle probabilit√† della rete secondo regole temporali
+prestabilite.
+4. Fornire nuovi dati al sistema di Grafana derivati dai nodi della rete non
+collegati al flusso di
+monitoraggio.
+5. Rendere disponibili i dati al sistema di creazione di grafici e dashboard per
+la loro visualizzazione.
+
 
 2.4.2) Requisiti opzionali
 1. Possibilit√† di definire ‚Äúalert‚Äù in base a livelli di soglia raggiunti dai
@@ -69,3 +80,64 @@ collaborazione degli esperti del settore.
 Bayesiana che siano applicabili all‚Äôanalisi del flusso di dati di monitoraggio
 al fine di aiutare la linea di produzione del software a scoprire i punti
 migliorabili dalla propria procedura.
+
+3) Grafana e reti Bayesiane
+
+3.1) Grafana
+Grafana Ë uno strumento di monitoraggio dati open-source, tramite delle dashboard Ë possibile visualizzare e tenere sottocontrollo i risultati delle query loro associate e lanciare un allarme in caso di superamento di valori soglia prestabiliti dall'utente. E' molto utilizzato dalle aziende per via delle sue molteplici funzionalit‡ espandibili tramite vari plugin sviluppati dagli utenti.
+
+3.2) Rete Bayesiana
+Una Rete Bayesiana √® un grafo, ossia un'insieme di nodi e frecce. I nodi
+indicano le variabili di un problema in gioco, mentre le frecce indicano i
+rapporti di causalit√† tra di esse e costituiscono un potente mezzo per
+modellizzare un problema ed esprimere i rapporti tra le grandezze in gioco.
+Ad una rete bayesiana possono essere fornite delle "evidenze", ossia valori noti
+di variabili del problema. La rete calcola come la conoscenza di queste
+variabili modifica la probabilit√† delle altre variabili.
+Anche se non si ha idea di quali siano i rapporti di mutua dipendenza tra
+variabili, algoritmi di "structure learning" riescono a ricostruire la corretta
+struttura della rete, sempre che si abbia a disposizione un adeguata base dati.
+Sostanzialmente le Reti Bayesiane possono essere utilizzate come potenti mezzi
+di "machine learning". Esse riescono ad individuare i fattori decisivi che
+determinano i valori di una variabile, individuare la categoria cui appartengono
+determinate osservazioni e prevedere comportamenti futuri in base all'esperienza
+di quelli passati.
+
+4) Casi d'uso
+
+5) Requisiti
+
+Ad ogni requisito verranno assegnati dei codici per poterli identificare in modo univoco seguendo la procedura riportata nel documento Norme di Progetto v1.0.0. Questa sezione viene qui ripetuta in modo da permettere a chi non avesse la possibilit‡ di visualizzare questo documento di poterne prenderne visione.
+Ad ogni requisito individuato dallíanalisi verr‡ associato un identificatore nel seguente formato: 
+R-[Priorit‡][Tipo][Codice]
+In seguito viene descritto il significato dei vari campi:
+
+Priorit‡:  Obbligatorio, Opzionale 
+ñC: (Compulsory o obbligatorio in italiano), indica un  requisito che Ë indispensabile richiesto dal committente.
+ñD: Indica un requisito desiderabile ma non indispensabile perciÚ non Ë strettamente necessario implementarlo
+ñO: Indica un requisito opzionale che puÚ essere utile ma verr‡ valutato in un secondo momento se implementarlo o meno.
+
+Tipo:  Una lettera maiuscola indica il tipo del requisito sia che esso sia funzionale che non funzionale:
+ñF:  Requisito funzionale. Descrivono le funzionalit‡ e i servizi che il software deve offrire ovvero il comportamento generale dell'applicazione.
+ñQ: Requisito di  qualit‡. Requisiti per garantire la soddisfazione del cliente nei confronti del prodotto come l'efficacia e l'efficienza.
+ñV:  Requisito di  vincolo. E' un vincolo dettato dal proponente dell'appalto e deve essere rispettato
+-P: Requisito prestazionale. Vincolo relativo alle prestazioni del sistema.
+
+Codice: Si riferisce alla posizione del requisito all'interno del documento, Ë formato uno o pi˘ numeri naturali separati da punti.
+
+Requisiti funzionali
+-UC1: Inserire definizione rete bayesiana
+-UC1.1: Inserire la definizione della rete bayesiana sottoforma di file.json
+-UC1.2: Inserire definizione rete bayesiana sottoforma di codice json
+-UC2: Associare un nodo della rete ad un flusso dati di Grafana
+-UC3: Rimuovere un nodo della rete associato ad un flusso dati di
+Grafana
+-UC4: Lancio di un alert
+-UC5: Ricezione di dati risultato della BNI (Bayesian Network
+Inference) per costruire panels
+
+Requisiti di qualit‡
+
+Requisiti di vincolo
+
+Requisiti prestazionali
