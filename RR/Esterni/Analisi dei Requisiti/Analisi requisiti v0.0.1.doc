@@ -9,12 +9,12 @@ requisiti per la progettazione e lo sviluppo del capitolato(G) "G&B: monitoraggi
 intelligente di processi DevOps" (Capitolato C3) proposto dall'azienda Zucchetti.
 
 1.2) Obiettivo del prodotto
-Il sistema che richiediamo sarà un plug-in di Grafana(G), scritto in linguaggio
-JavaScript(G), che leggerà da un file json(G) la definizione della rete
-Bayesiana(G) e quindi permetterà di associare ad alcuni nodi della rete dati
+Il sistema che richiediamo sarÃ  un plug-in di Grafana(G), scritto in linguaggio
+JavaScript(G), che leggerÃ  da un file json(G) la definizione della rete
+Bayesiana(G) e quindi permetterÃ  di associare ad alcuni nodi della rete dati
 prelevati dal flusso del monitoraggio.
 Ad intervalli predefiniti, verranno eseguiti i calcoli previsti dalla rete
-Bayesiana, modificando le probabilità dei nodi derivati in base ai dati rilevati
+Bayesiana, modificando le probabilitÃ  dei nodi derivati in base ai dati rilevati
 dal campo.
 
 1.3) Riferimenti (da aggiungere altre fonti)
@@ -25,25 +25,25 @@ Libreria Open Source per reti bayesiane: https://github.com/vangj/jsbayes
 Slide lezioni utilizzate durante il corso di Ingegneria del Software: https://www.math.unipd.it/~tullio/IS-1/2018/
 
 1.4) Glossario
-I termini al cui termine � riportato il simbolo (G) sono riportati nel documento "Glossario v1.0.0", Si tratta di termini tecnici il cui significato deve essere spiegato.
+I termini al cui termine è riportato il simbolo (G) sono riportati nel documento "Glossario v1.0.0", Si tratta di termini tecnici il cui significato deve essere spiegato.
 
 2) Descrizione prodotto
 
 2.1) Scopo del prodotto
 Si devono realizzare dei sistemi che possano applicare metodi di intelligenza
 artificiale al flusso dei dati raccolti, al fine non solo di monitorare la
-“liveliness” del sistema ma anche per consigliare gli interventi o quanto meno
+â€œlivelinessâ€ del sistema ma anche per consigliare gli interventi o quanto meno
 le zone di intervento alla linea di produzione del software.
-Il presente capitolato ha per oggetto l’affidamento della fornitura per la
+Il presente capitolato ha per oggetto lâ€™affidamento della fornitura per la
 realizzazione di un plug-in(G) per lo strumento di monitoraggio Grafana che
 applichi reti Bayesiane al flusso dei dati ricevuti per allarmi o segnalazioni
 tra gli operatori del servizio Cloud e la linea di produzione del software.
 
-2.2) Funzionalit� del prodotto
+2.2) Funzionalità del prodotto
 1. Leggere la definizione della rete Bayesiana da un file in formato json.
 2. Associare dei nodi della rete, letta dal file json, ad un flusso di dati
 presente in Grafana.
-3. Applicare il ricalcolo delle probabilità della rete secondo regole temporali
+3. Applicare il ricalcolo delle probabilitÃ  della rete secondo regole temporali
 prestabilite.
 4. Fornire nuovi dati al sistema di Grafana derivati dai nodi della rete non
 collegati al flusso di
@@ -52,10 +52,10 @@ monitoraggio.
 la loro visualizzazione.
 
 2.3) Tipologia di utenti
-Il prodotto è rivolto a tutti coloro che gestiscono sistemi di raccolta e
+Il prodotto Ã¨ rivolto a tutti coloro che gestiscono sistemi di raccolta e
 collezione di dati in modo da poterli monitorare ed intervenire qualora sia
 necessario grazie agli allarmi forniti dal plug-in.
-Gli utenti devono avere familiarit� con il tool di monitoraggio Grafana.
+Gli utenti devono avere familiarità con il tool di monitoraggio Grafana.
 
 2.4) Vincoli di progettazione
 
@@ -63,7 +63,7 @@ Gli utenti devono avere familiarit� con il tool di monitoraggio Grafana.
 1. Leggere la definizione della rete Bayesiana da un file in formato json.
 2. Associare dei nodi della rete, letta dal file json, ad un flusso di dati
 presente in Grafana.
-3. Applicare il ricalcolo delle probabilità della rete secondo regole temporali
+3. Applicare il ricalcolo delle probabilitÃ  della rete secondo regole temporali
 prestabilite.
 4. Fornire nuovi dati al sistema di Grafana derivati dai nodi della rete non
 collegati al flusso di
@@ -73,24 +73,24 @@ la loro visualizzazione.
 
 
 2.4.2) Requisiti opzionali
-1. Possibilità di definire “alert” in base a livelli di soglia raggiunti dai
+1. PossibilitÃ  di definire â€œalertâ€ in base a livelli di soglia raggiunti dai
 nodi non collegati al flusso dei dati.
-2. Possibilità di disegnare la rete Bayesiana con un piccolo editor grafico
+2. PossibilitÃ  di disegnare la rete Bayesiana con un piccolo editor grafico
 specializzato.
-3. Possibilità di applicare più reti Bayesiane in oggetti di monitoraggio
+3. PossibilitÃ  di applicare piÃ¹ reti Bayesiane in oggetti di monitoraggio
 diversi.
-4. Possibilità di creare una rete Bayesiana a partire dai dati raccolti sul
-campo anziché svilupparla con la
+4. PossibilitÃ  di creare una rete Bayesiana a partire dai dati raccolti sul
+campo anzichÃ© svilupparla con la
 collaborazione degli esperti del settore.
 5. Identificare altri metodi di Intelligenza Artificiale oltre alla rete
-Bayesiana che siano applicabili all’analisi del flusso di dati di monitoraggio
+Bayesiana che siano applicabili allâ€™analisi del flusso di dati di monitoraggio
 al fine di aiutare la linea di produzione del software a scoprire i punti
 migliorabili dalla propria procedura.
 
 2.4.3) Requisiti opzionali che sono stati scelti da implementare
-1. Possibilità di definire “alert” in base a livelli di soglia raggiunti dai
+1. PossibilitÃ  di definire â€œalertâ€ in base a livelli di soglia raggiunti dai
 nodi non collegati al flusso dei dati.
-2. Possibilità di applicare più reti Bayesiane in oggetti di monitoraggio
+2. PossibilitÃ  di applicare piÃ¹ reti Bayesiane in oggetti di monitoraggio
 diversi.
 
 
@@ -101,16 +101,16 @@ Essendo il prodotto un plugin per Grafana, occorre aver scaricato e configurato 
 3) Grafana e reti Bayesiane
 
 3.1) Grafana
-Grafana � uno strumento di monitoraggio dati open-source, tramite delle dashboard � possibile visualizzare e tenere sottocontrollo i risultati delle query loro associate e lanciare un allarme in caso di superamento di valori soglia prestabiliti dall'utente. E' molto utilizzato dalle aziende per via delle sue molteplici funzionalit� espandibili tramite vari plugin sviluppati dagli utenti.
+Grafana è uno strumento di monitoraggio dati open-source, tramite delle dashboard è possibile visualizzare e tenere sottocontrollo i risultati delle query loro associate e lanciare un allarme in caso di superamento di valori soglia prestabiliti dall'utente. E' molto utilizzato dalle aziende per via delle sue molteplici funzionalità espandibili tramite vari plugin sviluppati dagli utenti.
 
 3.2) Rete Bayesiana
-Una Rete Bayesiana è un grafo, ossia un'insieme di nodi e frecce. I nodi
+Una Rete Bayesiana Ã¨ un grafo, ossia un'insieme di nodi e frecce. I nodi
 indicano le variabili di un problema in gioco, mentre le frecce indicano i
-rapporti di causalità tra di esse e costituiscono un potente mezzo per
+rapporti di causalitÃ  tra di esse e costituiscono un potente mezzo per
 modellizzare un problema ed esprimere i rapporti tra le grandezze in gioco.
 Ad una rete bayesiana possono essere fornite delle "evidenze", ossia valori noti
 di variabili del problema. La rete calcola come la conoscenza di queste
-variabili modifica la probabilità delle altre variabili.
+variabili modifica la probabilitÃ  delle altre variabili.
 Anche se non si ha idea di quali siano i rapporti di mutua dipendenza tra
 variabili, algoritmi di "structure learning" riescono a ricostruire la corretta
 struttura della rete, sempre che si abbia a disposizione un adeguata base dati.
@@ -124,23 +124,23 @@ di quelli passati.
 
 5) Requisiti
 
-Ad ogni requisito verranno assegnati dei codici per poterli identificare in modo univoco seguendo la procedura riportata nel documento Norme di Progetto v1.0.0. Questa sezione viene qui ripetuta in modo da permettere a chi non avesse la possibilit� di visualizzare questo documento di poterne prenderne visione.
-Ad ogni requisito individuato dall�analisi verr� associato un identificatore nel seguente formato: 
-R-[Priorit�][Tipo][Codice]
+Ad ogni requisito verranno assegnati dei codici per poterli identificare in modo univoco seguendo la procedura riportata nel documento Norme di Progetto v1.0.0. Questa sezione viene qui ripetuta in modo da permettere a chi non avesse la possibilità di visualizzare questo documento di poterne prenderne visione.
+Ad ogni requisito individuato dall’analisi verrà associato un identificatore nel seguente formato: 
+R-[Priorità][Tipo][Codice]
 In seguito viene descritto il significato dei vari campi:
 
-Priorit�:  Obbligatorio, Opzionale 
-�C: (Compulsory o obbligatorio in italiano), indica un  requisito che � indispensabile richiesto dal committente.
-�D: Indica un requisito desiderabile ma non indispensabile perci� non � strettamente necessario implementarlo
-�O: Indica un requisito opzionale che pu� essere utile ma verr� valutato in un secondo momento se implementarlo o meno.
+Priorità:  Obbligatorio, Opzionale 
+–C: (Compulsory o obbligatorio in italiano), indica un  requisito che è indispensabile richiesto dal committente.
+–D: Indica un requisito desiderabile ma non indispensabile perciò non è strettamente necessario implementarlo
+–O: Indica un requisito opzionale che può essere utile ma verrà valutato in un secondo momento se implementarlo o meno.
 
 Tipo:  Una lettera maiuscola indica il tipo del requisito sia che esso sia funzionale che non funzionale:
-�F:  Requisito funzionale. Descrivono le funzionalit� e i servizi che il software deve offrire ovvero il comportamento generale dell'applicazione.
-�Q: Requisito di  qualit�. Requisiti per garantire la soddisfazione del cliente nei confronti del prodotto come l'efficacia e l'efficienza.
-�V:  Requisito di  vincolo. E' un vincolo dettato dal proponente dell'appalto e deve essere rispettato
+–F:  Requisito funzionale. Descrivono le funzionalità e i servizi che il software deve offrire ovvero il comportamento generale dell'applicazione.
+–Q: Requisito di  qualità. Requisiti per garantire la soddisfazione del cliente nei confronti del prodotto come l'efficacia e l'efficienza.
+–V:  Requisito di  vincolo. E' un vincolo dettato dal proponente dell'appalto e deve essere rispettato
 -P: Requisito prestazionale. Vincolo relativo alle prestazioni del sistema.
 
-Codice: Si riferisce alla posizione del requisito all'interno del documento, � formato uno o pi� numeri naturali separati da punti.
+Codice: Si riferisce alla posizione del requisito all'interno del documento, è formato uno o più numeri naturali separati da punti.
 
 Requisiti funzionali
 -UC1: Inserire definizione rete bayesiana
@@ -156,23 +156,26 @@ Grafana
 -UC6: VIsualizzazione errore
 -UC6.1: Visualizzazione errore interpretazione rete bayesiana
 -UC6.2: Visualizzazione errore invio del messaggio di alert
--UC7: Visualizzazione grafici dei dati provenienti dal ricalcolo delle probabilit� della libreria jsbayes dopo la ricezione di un alert di Grafana
+-UC7: Visualizzazione grafici dei dati provenienti dal ricalcolo delle probabilità della libreria jsbayes dopo la ricezione di un alert di Grafana
 -UC8: modifica grafici di visualizzazione nodi non monitorati
 -UC9: Ricezione di dati risultato della BNI (Bayesian Network Inference) (G) per costruire panels
 
-Requisiti di qualit�
+Requisiti di qualità
 -La  progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato "Piano di qualifica v 1.0.0"
 -Devono essere rispettate le norme definite nel documento "Norme di progetto v1.0.0"
 -Il codice JavaScript(G) deve attenersi allo stile Javascript airbnb(G)
--Dovr� essere fornito un manuale guida in lingua italiana sull'utilizzo del plugin
+-Dovrà essere fornito un manuale guida in lingua italiana sull'utilizzo del plugin
 -Il codice sorgente deve essere pubblicato su un repository di Github
 -L'applicativo deve essere sviluppato usando il framework (cosa useremo per scrivere il codice?)
--Dovr� essere fornito un file per il tracciamento di tutti i bug presenti nel sistema
--Dovranno essere consegnati i risultati dei test di unit� (li useremo?)
+-Dovrà essere fornito un file per il tracciamento di tutti i bug presenti nel sistema
+-Dovranno essere consegnati i risultati dei test di unità (li useremo?)
 -Utilizzare il processo di continuous integration durante lo sviluppo del progetto (la useremo?)
 
 Requisiti di vincolo
--Il plugin deve essere sviluppato in Javascript
+- Il plugin deve essere sviluppato utilizzando delle tecnologie web
+- Il plugin deve essere sviluppato in Javascript
+- Il manuale guida in lingua italiana deve essere prodotto utilizzando il programma "TexStudio"
+- La definizione della rete bayesiana deve essere in formato .json
 
 Requisiti prestazionali
-Le prestazioni del nostro sistema non dipendono dal plugin ma trattandosi di reti bayesiane le prestazioni dipendono dalla velocit� di calcolo della libreria jsbayes.js e dalla complessit� della rete che si sta osservando. Detto ci� non ha abbiamo osservato requisiti prestazionali.
+Le prestazioni del nostro sistema non dipendono dal plugin ma trattandosi di reti bayesiane le prestazioni dipendono dalla velocità di calcolo della libreria jsbayes.js e dalla complessità della rete che si sta osservando. Detto ciò non ha abbiamo osservato requisiti prestazionali.
