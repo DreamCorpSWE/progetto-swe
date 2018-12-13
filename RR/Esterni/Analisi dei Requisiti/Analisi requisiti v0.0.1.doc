@@ -1,3 +1,4 @@
+
 Introduzione
 
 (G) = aggiungere al Glossario
@@ -21,6 +22,10 @@ Capitolato C3: G&B: monitoraggio intelligente di processi DevOps.
 Link al capitolato: https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf
 Grafana: https://grafana.com/
 Libreria Open Source per reti bayesiane: https://github.com/vangj/jsbayes
+Slide lezioni utilizzate durante il corso di Ingegneria del Software: https://www.math.unipd.it/~tullio/IS-1/2018/
+
+1.4) Glossario
+I termini al cui termine � riportato il simbolo (G) sono riportati nel documento "Glossario v1.0.0", Si tratta di termini tecnici il cui significato deve essere spiegato.
 
 2) Descrizione prodotto
 
@@ -34,7 +39,7 @@ realizzazione di un plug-in(G) per lo strumento di monitoraggio Grafana che
 applichi reti Bayesiane al flusso dei dati ricevuti per allarmi o segnalazioni
 tra gli operatori del servizio Cloud e la linea di produzione del software.
 
-2.2) Funzionalità
+2.2) Funzionalit� del prodotto
 1. Leggere la definizione della rete Bayesiana da un file in formato json.
 2. Associare dei nodi della rete, letta dal file json, ad un flusso di dati
 presente in Grafana.
@@ -50,6 +55,7 @@ la loro visualizzazione.
 Il prodotto è rivolto a tutti coloro che gestiscono sistemi di raccolta e
 collezione di dati in modo da poterli monitorare ed intervenire qualora sia
 necessario grazie agli allarmi forniti dal plug-in.
+Gli utenti devono avere familiarit� con il tool di monitoraggio Grafana.
 
 2.4) Vincoli di progettazione
 
@@ -80,6 +86,17 @@ collaborazione degli esperti del settore.
 Bayesiana che siano applicabili all’analisi del flusso di dati di monitoraggio
 al fine di aiutare la linea di produzione del software a scoprire i punti
 migliorabili dalla propria procedura.
+
+2.4.3) Requisiti opzionali che sono stati scelti da implementare
+1. Possibilità di definire “alert” in base a livelli di soglia raggiunti dai
+nodi non collegati al flusso dei dati.
+2. Possibilità di applicare più reti Bayesiane in oggetti di monitoraggio
+diversi.
+
+
+
+2.5) Piattaforma di esecuzione
+Essendo il prodotto un plugin per Grafana, occorre aver scaricato e configurato Grafana in modo da poter installare il plugin.
 
 3) Grafana e reti Bayesiane
 
