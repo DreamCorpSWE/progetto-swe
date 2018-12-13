@@ -1,4 +1,5 @@
-% !TeX spellcheck = en_US
+\documentclass{article}
+% !TeX spellcheck = it_IT
 \input{../../stile/stile.tex}
 
 
@@ -20,66 +21,65 @@
 
 
 \section{Introduzione}
-\subsection{Scopo del documento}
-Questo documento si prefigge lo scopo di garantire a tutti i membri del gruppo un modo comune di lavorare al fine di aumentare l'efficenza. Verranno descritte le scelte architetturali e i vari software scelti.
-\subsection{Il prodotto}
-Il prodotto ha lo scopo di fornire un sistema "smart" di monitoraggio dei sistemi in modo da garantire e migliorare i servizi erogati dall'azienda ai terzi. L'applicativo sarà un estensione scritta in Javascript per il software Grafana, verranno inoltre utilizzate le reti bayesiane.
-\subsection{Glossario}
-Data la presenza di diversi elementi con significato ambiguo è stato necessario l'utilizzo di un glossario volto a disambiguare tali elementi col loro preciso significato.
-\subsection{Riferimenti}
-\subsubsection{Normativi}
-\begin{itemize}
-\item Standard ISO/IEC 12207:1995 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}
-\item Capitolato C3 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
-\end{itemize}
-\subsubsection{Informativi}
-\begin{itemize}
-\item Piano di Progetto v. 1.0
-\item Piano di Qualifica v. 1.0
-\item GitHub
-\item Javascript
-\item 
-\end{itemize}
+    \subsection{Scopo del documento}
+    Questo documento si prefigge lo scopo di garantire a tutti i membri del gruppo un modo comune di lavorare al fine di aumentare l'efficenza. Verranno descritte le scelte architetturali e i vari software scelti.
+    \subsection{Il prodotto}
+    Il prodotto ha lo scopo di fornire un sistema "smart" di monitoraggio dei sistemi in modo da garantire e migliorare i servizi erogati dall'azienda ai terzi. L'applicativo sarà un estensione scritta in Javascript per il software Grafana, verranno inoltre utilizzate le reti bayesiane.
+    \subsection{Glossario}
+    Data la presenza di diversi elementi con significato ambiguo è stato necessario l'utilizzo di un glossario volto a disambiguare tali elementi col loro preciso significato.
+    \subsection{Riferimenti}
+    \subsubsection{Normativi}
+    \begin{itemize}
+        \item Standard ISO/IEC 12207:1995 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}
+        \item Capitolato C3 \newline \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
+    \end{itemize}
+    \subsubsection{Informativi}
+    \begin{itemize}
+        \item Piano di Progetto v. 1.0
+        \item Piano di Qualifica v. 1.0
+        \item GitHub
+        \item Javascript
+        \item 
+    \end{itemize}
 
 
 \newpage
 
 \section{Processi primari}
-\subsection{Accordo di fornitura}
-In questo paragrafo vengono documentate le norme che i membri devono seguire affinchè il gruppo possa diventare committente dei professori Tullio e Cardin e diventare fornitori dell'azienda Zucchetti.
-\subsubsection{Studio di fattibilità}
-Dopo la presentazione dei capitolati il gruppo si è riunito per discutere qual'era la più consona. Dopo aver risolto i dubbi interni si è optato per la scelta del capitolato \textit{numero 3} ed infine parte del gruppo ha steso lo studio di fattibilità, documento, \textit{in versione 1.0.0},  atto a valutare i pro e i contro di ogni progetto permettendo così una più attenta valutazione. \newline
-I punti chiave dell'analisi sonon i seguenti:
-\begin{itemize}
-	\item \textbf{Introduzione:} Viene fatta una breve introduzione del contesto in cui applicare la soluzione;
-	\item \textbf{Finalità: } Viene descritto in modo sintetico lo scopo finale da raggiungere a lavoro completato;
-	\item \textbf{Tecnologie in uso:} Si descrivono genericamente i software che la proponente intende usare;
-	\item \textbf{Conclusioni:} Rappresenta il motivo per cui un capitolato è stato scelto oppure scartato.
-\end{itemize}
-\subsubsection{Documentazione fornita}
-Al fine di assicurare massima trasparenza e qualità alla proponente ed ai committenti verrano elencati i documenti forniti con una breve descrizione del loro contenuto:
-\begin{itemize}
-\item \textbf{Piano di progetto:} descrive la pianificaziona, la consegna e il suo completamento;
-\item \textbf{Analisi dei requisiti:} viene definita l'analisi dei casi d'uso e dei requisiti del gruppo
-\item \textbf{Piano di qualifica:} verifica e validazione e garanzia della qualità dei processi e di prodotto.
-\end{itemize}
- 
-\subsection{Sviluppo}
-\subsubsection{Analisi dei requisiti}
-Con l'analisi dei requisiti è stato preso in analisi ogni capitolato valutandone pro, contro e dando una valutazione finale. Questo documento è stato redatto con lo scopo di:
-\begin{itemize}
-\item 
-\item 
-\end{itemize}
-\subsubsection{Progettazione}
-L'attività di Progettazione consiste nel descrivere una soluzione al problema che sia soddisfacente per tutti gli stackeholders. Cio serve a garantire che il prodotto sviluppato soddisfi le qualità, le proprieta e i bisogni nell'attvita di analisi permettendo cosi di:
-\begin{itemize}
-\item Garantire la qualita del prodotto ;
-\item Ripartire il problema originale in maniera ricorsiva facilitando cosi la codifica delle componenti;
-\item Ottimizzare.
-\end{itemize}	
-\subsubsection{Uso di diagrammi}
-Al fine di essere il piu comprensibili possibile sara necessario far uso su larga scala di diagrammi uml 2.0
-
-\input{processi_supporto.tex}
+    \subsection{Accordo di fornitura}
+    In questo paragrafo vengono documentate le norme che i membri devono seguire affinché il gruppo possa diventare committente dei professori Tullio e Cardin e diventare fornitori dell'azienda Zucchetti.
+        \subsubsection{Studio di fattibilità}
+        Dopo la presentazione dei capitolati il gruppo si è riunito per discutere qual'era la più consona. Dopo aver risolto i dubbi interni si è optato per la scelta del capitolato \textit{numero 3} ed infine parte del gruppo ha steso lo studio di fattibilità, documento, \textit{in versione 1.0.0},  atto a valutare i pro e i contro di ogni progetto permettendo così una più attenta valutazione. \newline
+        I punti chiave dell'analisi sono i seguenti:
+    \begin{itemize}
+	   \item \textbf{Introduzione:} Viene fatta una breve introduzione del contesto in cui applicare la soluzione;
+	   \item \textbf{Finalità: } Viene descritto in modo sintetico lo scopo finale da raggiungere a lavoro completato;
+	   \item \textbf{Tecnologie in uso:} Si descrivono genericamente i software che la proponente intende usare;
+	   \item \textbf{Conclusioni:} Rappresenta il motivo per cui un capitolato è stato scelto oppure scartato.
+    \end{itemize}
+    \subsubsection{Documentazione fornita}
+    Al fine di assicurare massima trasparenza e qualità alla proponente ed ai committenti verrano elencati i documenti forniti con una breve descrizione del loro contenuto:
+    \begin{itemize}
+        \item \textbf{Piano di progetto:} descrive la pianificazione, la consegna e il suo completamento;
+        \item \textbf{Analisi dei requisiti:} viene definita l'analisi dei casi d'uso e dei requisiti del gruppo
+        \item \textbf{Piano di qualifica:} verifica e validazione e garanzia della qualità dei processi e di prodotto.
+    \end{itemize}
+    \subsection{Sviluppo}
+    \subsubsection{Analisi dei requisiti}
+    Con l'analisi dei requisiti è stato preso in analisi ogni capitolato valutandone pro, contro e dando una valutazione finale. Questo documento è stato redatto con lo scopo di:
+    \begin{itemize}
+        \item 
+        \item 
+    \end{itemize}
+    \subsubsection{Progettazione}
+    L'attività di Progettazione consiste nel descrivere una soluzione al problema che sia soddisfacente per tutti gli stackeholders. Ciò serve a garantire che il prodotto sviluppato soddisfi le qualità, le proprietà e i bisogni nell'attività di analisi permettendo cosi di:
+    \begin{itemize}
+        \item Garantire la qualità del prodotto ;
+        \item Ripartire il problema originale in maniera ricorsiva facilitando cosi la codifica delle componenti;
+        \item Ottimizzare.
+    \end{itemize}	
+    \subsubsection{Uso di diagrammi}
+    Al fine di essere il più comprensibili possibile sarà necessario far uso su larga scala di diagrammi uml 2.0
+        \input{processi_supporto.tex}
+        \input{processi_organizzativi.tex}
 \end{document}
