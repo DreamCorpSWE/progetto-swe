@@ -9,11 +9,31 @@
 
 
 		\subsection{Tracciamento Casi d'Uso}
-        Al fine di classificare e rendere leggibili i casi d'uso abbiamo deciso di utilizzare una codifica per descriverli. Ad ogni caso d'uso verrà quindi associata una stringa univoca strutturata nel seguente modo: UCX.Y.Z  dove X,Y,Z sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso.
+        Al fine di classificare e rendere leggibili i casi d'uso abbiamo deciso di utilizzare una codifica per descriverli. Ad ogni caso d'uso verrà quindi associata una stringa univoca strutturata nel seguente modo: UCX.Y  dove X,Y sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso.
+        \begin{itemize}
+        \item \textbf{Codice X:} E' il codice identificativo del caso d'uso generico che potrebbe suddividersi in casi d'uso piu specifici. Nel caso non ci siano questi ultimi, il codice risulta univoco. 
+        \item \textbf{Codice Y:} E' un codice identificativo univoco per il caso d'uso. E' presente solo nel caso in cui il caso d'uso UCX abbia dei sotto casi d'uso più specifici.
+        \end{itemize}
+        
+        \newline
+        Ogni caso d'uso è inoltre definito secondo la seguente struttura:
+         \begin{itemize}
+           \item \textbf{ID:}Il codice del caso d'uso secondo la convenzione specificata precedentemente;
+           \item \textbf{Nome:} Specifica il titolo del caso d'uso;
+           \item \textbf{Descrizione:} Riporta una breve descrizione del caso d'uso;
+           \item \textbf{Precondizione:} Specifica le condizioni che sono identificate come vere
+prima del verificarsi degli eventi del caso d'uso;
+           \item \textbf{Postcondizione:} Specifica le condizioni che sono identificate come
+vere dopo il verificarsi degli eventi del caso d'uso;
+		   \item \textbf{Attori:}Indica gli attori principali e secondari del caso d'uso;
+           \item \textbf{Contestualizzazione / Scenario principale:} Rappresenta il fusso degli eventi attraverso l'uso di una lista numerata.
+         \end{itemize}
 
 		\subsection{Attore primario: Utente generico}
-		Si riferiscono a tutt quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana o il nostro sistema. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
+		Si riferiscono a tutti quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana o il nostro sistema. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
 				\subsubsection{UC1: Inserimento definizione rete bayesiana}
+                	\textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana all'interno di Grafana.
+                    \newline
                     \textbf{Precondizione:} l’utente deve trovarsi nell’interfaccia principale e deve possedere una definizione di rete bayesiana che vuole inserire.
                     \newline
                     \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete.
@@ -27,6 +47,8 @@
                         \end{enumerate}
                         
                 \subsubsection{UC1.1: Inserimento definizione della rete bayesiana sotto forma di file .json}
+                    \textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana sotto forma di file .json all'interno di Grafana.
+                    \newline
                     \textbf{Precondizione:}  l’utente deve trovarsi nell’interfaccia principale e possedere un file .json contenente una definizione di rete bayesiana che vuole inserire.
                     \newline
                     \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete presente nel file .json.
@@ -45,6 +67,7 @@
                         \end{enumerate}
                         
                 \subsubsection{UC1.2: Inserimento definizione rete bayesiana sotto forma di codice json}
+                	\textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana sotto forma di codice json all'interno di Grafana.
                     \textbf{Precondizione:}  l’utente deve trovarsi nell’interfaccia principale e possedere codice json di una definizione di rete bayesiana che vuole inserire.
                     \newline
                     \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete descritta dal codice json.
@@ -305,4 +328,3 @@
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                             \item il sistema avvisa l’utente tramite un messaggio di errore
                         \end{enumerate}
-\newpage
