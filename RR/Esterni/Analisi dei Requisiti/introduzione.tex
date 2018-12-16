@@ -5,7 +5,7 @@ Questo documento si pone come obiettivo quello di effettuare un' analisi dei req
 
 		\subsection{Obiettivo del prodotto}
 
-Il sistema da realizzare sarà  un plug-in di Grafana(G), scritto in linguaggio JavaScript(G), che leggerà da un file json(G) la definizione della rete Bayesiana(G) e quindi permetterà di associare ad alcuni nodi della rete data prelevati dal flusso del monitoraggio.
+Il sistema da realizzare sarà  un plug-in di Grafana(G), scritto in linguaggio JavaScript(G), che leggerà da un file json(G) contenente la definizione della rete Bayesiana(G) e quindi permetterà di associare ad alcuni nodi della rete data un flusso di monitoraggio.
 Ad intervalli predefiniti, verranno eseguiti i calcoli previsti dalla rete Bayesiana, modificando le probabilità dei nodi derivati in base ai dati rilevati dal campo.
 
 
@@ -14,16 +14,25 @@ Ad intervalli predefiniti, verranno eseguiti i calcoli previsti dalla rete Bayes
 Allo scopo di evitare ambiguità a lettori esterni al gruppo, si specifica che all'interno del documento verranno inseriti dei termini con un carattere g come pedice, questo significa che il significato inteso in quella situazione è stato inserito nel Glossario.
 
 
-		\subsection{Riferimenti}
+		\subsection{Riferimenti }
 
+		\subsubsection{Riferimenti Normativi}
 		\begin{itemize}
+			\item Norme di progetto v 1.0.0
 			\item Capitolato C3: G\&B: monitoraggio intelligente di processi DevOps.\newline
 			\url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C3.pdf}
 			\item Grafana:\newline
-            \url{https://grafana.com/}
+			\url{https://grafana.com/}
 			\item Libreria Open Source per reti bayesiane:\newline
 			\url{https://github.com/vangj/jsbayes}
 			\item Slide lezioni utilizzate durante il corso di Ingegneria del Software:\newline
+			\url{https://www.math.unipd.it/~tullio/IS-1/2018/}
+		\end{itemize}
+
+		\subsubsection{Riferimenti Informativi}
+			\begin{itemize}
+			\item Piano di qualifica v 1.0.0
+			\item Slide del corso di "Ingegneria del Software"\newline
 			\url{https://www.math.unipd.it/~tullio/IS-1/2018/}
 		\end{itemize}
 				
