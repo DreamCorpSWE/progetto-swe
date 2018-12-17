@@ -26,9 +26,11 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 \begin{itemize}
 	\item{\textbf{BAC(Budget at Completition)};}
 	\item{\textbf{BV(Budget Variance);}}
+	\item{\textbf{Function Point;} non sono sicuro vada qui...}
 	\item{\textbf{AC(Actual Cost)}.}
 \end{itemize}
 \begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lll}
 		\hline
 		\rowcolor[HTML]{34CDF9} 
@@ -36,31 +38,58 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 		\multicolumn{1}{|l|}{Budget at Completition} & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
 		\multicolumn{1}{|l|}{Budget Variance}        & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
 		\multicolumn{1}{|l|}{Cost Variance}          & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
-	\end{tabular}
+	\end{tabular}%
+}
 \end{table}
 
 \subsection{Verifica}
-\subsection{Gestione}
-
-\section{Qualità di Software}
-\subsection{Scopo}
-Qualità del sowtware effettivo, leggibilità dei documenti (sono un prodotto anche quelli), misura dei test.
-
-\section{Prodotti}
-\subsection{Qualità dei documenti}
-intro e poi obiettivi
-\paragraph{Metriche utilizzate}
+Questo processo ha lo scopo di verificare che tutti gli elementi soddisfino i requisiti necessari. In questa parte ci si prefigge di rispettare i seguenti obiettivi:
 \begin{itemize}
-	\item{\textbf{Gulpease Index}}
-	\item{\textbf{Errori sintattici: }}
+	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica all'aggiunta di un nuovo bug;}
+	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere verificata.}
 \end{itemize}
-
+Viene così utilizzata parte dei criteri fondamentali del \textit{test coverage}
+\paragraph{Metriche utlizzate}.
+\begin{itemize}
+	\item{\textbf{Function coverage}}
+	\item{\textbf{Statement coverage}}
+	\item{\textbf{Edge coverage}}
+	\item{\textbf{Condition coverage}}
+\end{itemize}
 \begin{table}[!htpb]
-	\begin{tabular}{lll}
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|l|l|l|}
 		\hline
 		\rowcolor[HTML]{34CDF9} 
-		{\color[HTML]{333333} \textbf{Nome}}    & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-		\multicolumn{1}{|l|}{Gulpease index}    & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
-		\multicolumn{1}{|l|}{Errori sintattici} & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
-	\end{tabular}
+		{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+		Function coverage                    &                                              &                                            \\ \hline
+		Statement coverage                   &                                              &                                            \\ \hline
+		Edge coverage                        &                                              &                                            \\ \hline
+		Condition coverage                   &                                              &                                            \\ \hline
+	\end{tabular}%
+}
 \end{table}
+\subsection{Analisi e gestione dei rischi}
+Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi durante tutto il processo di realizzazione. Si prefiggonon quindi i seguenti obiettivi:
+\begin{itemize}
+	\item{\textbf{Analisi:} ad ogni fase è necessario analizzare i possibili rischi;}
+	\item{\textbf{Categorizzazione:}  definire il tipo di rischio ad esempio se è di tipo noto, prevedibile o imprevedibile per raffinare gli strumenti con cui agire;}
+	\item{\textbf{Catalogo dei rischi:} al fine di individuare i rischi è utile stilare un catalogo dei rischi, suddiviso in rischi noti e prevedibili.}
+\end{itemize}
+Vengono così utilizzate le seguenti metriche: 
+\begin{itemize}
+	\item{\textbf{Indisponibilità servizi esterni}}
+	\item{\textbf{AGGIUNGERNE ALTRI...}}
+\end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			Indisponibilità \\ servizi esterni                    &                                              
+		\end{tabular}%
+	}
+\end{table}
+\subsection{Versionamento}
+\textbf{LO FACCIAMO ? 353 LO HA MESSO NELLA V2}
