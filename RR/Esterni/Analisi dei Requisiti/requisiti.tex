@@ -3,21 +3,21 @@
     Assegneremo per tanto ad ogni requisito un identificatore univoco, composto da una serie di regole dettate dalla caratteristica stessa del requisiti.
     
     Verificabilità dei requisiti
-    • I requisiti vanno scritti in modo che possano essere
+    \begin{itemize}
+    	\item I requisiti vanno scritti in modo che possano essere
     oggettivamente verificati nel prodotto finale
-    • Occorre quantificare il tasso degli errori.
-    – “Gli operatori esperti dovrebbero poter controllare le
-    funzioni di sistema dopo due ore di formazione.
-    Dopo tale formazione, il numero medio di errori
-    degli operatori esperti non dovrebbe superare i due
-    al giorno”
+        \item Occorre quantificare il tasso degli errori.
+        \item “Gli operatori esperti dovrebbero poter controllare le
+    funzioni di sistema dopo due ore di formazione. Dopo tale formazione, il numero medio di errori degli operatori esperti non dovrebbe superare i due al giorno”.
+    \end{itemize}
     
-    Validazione dei requisiti
-    • La dimostrazione che i requisiti definiscono il
-    sistema davvero voluto dal cliente
-    • La tecnica più importante di validazione dei
-    requisiti è la prototipazione
-
+    Validazione dei requisiti:
+    \begin{itemize}
+        \item La dimostrazione che i requisiti definiscono il
+    sistema davvero voluto dal cliente.
+        \item La tecnica più importante di validazione dei
+    requisiti è la prototipazione.
+    \end{itemize}
 
     Analizzeremo nella seguente sezione i vari requisiti suddivisi in categorie:
     \begin{itemize}
@@ -31,6 +31,48 @@
     \end{itemize}
 		\subsection{Requisiti Funzionali}			
         Descrivono in dettaglio i servizi che verranno forniti dal sistema agli attori.
+        \\
+        \\
+        \begin{tabular}{|l|c|l|l|}
+		\hline
+		Codice & Priorità & Descrizione & Fonte\\
+        \hline
+        RC1 & Compulsory & Inserimento della definizione della rete bayesiana & Interno\\
+        \hline
+        RC1.1 & Compulsory & Inserimento della definizione della rete bayesiana sotto forma di file .json & Interno\\
+        \hline
+        RC1.2 & Compulsory & Inserimento definizione rete bayesiana sotto forma di codice json & Interno\\
+        \hline
+        RC2 & Compulsory & Associazione di un nodo della rete ad un flusso dati di Grafana & Interno\\
+        \hline
+        RO3 & Optional & Gestione della duplice associazione di due nodi della rete ad uno stesso flusso dati di Grafana\\
+        \hline
+        RO3.1 & Optional & Annullamento dell'operazione di associazione multipla & Interno\\
+        \hline
+        RC3.2 & Compulsory & Rimozione nodo precedentemente associato e associazione nuovo nodo & Interno\\
+        \hline
+        RC4 & Compulsory & Visualizzazione del messaggio di conferma di annullamento dell'operazione & Interno\\
+        \hline
+        RC5 & Compulsory & Rimozione di un nodo della rete associato ad un flusso dati di Grafana & Interno\\
+        \hline
+        RO6 & Optional & Definizione di un alert personalizzato per un flusso dati non monitorato & Interno\\
+        \hline
+        RO7 & Optional & Modifica di un alert & Interno\\
+        \hline
+        RO8 & Optional & Rimozione di un alert & Interno\\
+        \hline
+        RC9 & Compulsory & Lancio di un alert & Interno\\
+        \hline
+        RC10 & Compulsory & Visualizzazione errore & Interno\\
+        \hline
+        RC10.1 & Compulsory & visualizzazione errore di interpretazione della rete bayesiana & Interno\\
+        \hline
+        RC10.2 & Compulsory & Visualizzazione errore di invio del messaggio di alert & Interno\\
+        \hline
+        RC10.3 & Compulsory & Visualizzazione errore di configurazione dell’alert & Interno\\
+        \hline
+        \end{tabular}
+
         
         \subsection{Requisiti Non Funzionali}
         Descrivono i vincoli sul sistema e sul suo processo di sviluppo
