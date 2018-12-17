@@ -121,6 +121,11 @@ Log 2-12-18 gruppo 1
 
 NOTA: per quando usiamo git per caricare i file, sarebbe meglio creare un nuovo branch, calirace li i file e poi unire i due branch, così si possono fare i controlli sulle modifiche e mantenere traccia di cosa è strato cambiato. 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> StudioDiFattibilita
 Log 4-12-18
 	modifica dei compiti assegnati ai gruppi: l'analisi dei requisiti passa al gruppo 2 e le norme di progetto passano al gruppo 1
 	divisione dei ruoli all'interno del gruppo fino al 20/12/18
@@ -145,4 +150,8 @@ Inizio casi d'uso.
 
 Log 10-12-2018
 Continuazione di casi d'uso (scritto piú grafico). 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
+>>>>>>> StudioDiFattibilita
