@@ -1,25 +1,25 @@
 \section{Analisi dei rischi}
 
 	Di seguito verranno definiti i rischi individuati dal gruppo Dream Corp. associando ad ognuno di essi un impatto sul progetto e una probabilità che si verifichi. Viene associato inoltre una risposta contenitiva del rischio. 
-	\newline \newline
-	\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
-		\hline
-		\textbf{Identificativo} & \textbf{Descrizione rischio} & \textbf{Probabilità} & \textbf{Impatto} & \textbf{Risposta Contenitiva}\\
-		\hline
-		R1 & Errata stima della durata delle attività da programmare & Alta & Alto & Considerare sempre un certo slack temporale e pianificazione all’indietro\\
-		\hline
-		R2 & Conflitti interni al gruppo di progetto & Bassa & Basso & Team building sociale e confronti diretti\\
-		\hline
-		R3 & Sottostima del tempo richiesto per l’apprendimento di nuove tecnologie (GitHub, Grafana,...) & Media & Medio & Confronto con esperti per dubbi e chiarimenti al fine di prevenire ritardi\\
-		\hline
-		R4 & Problemi Software di terze parti (perdita di dati su GitHub) & Molto  Bassa & Basso &  Backup due volte la settimana\\
-		\hline
-		R5 & Ridefinizione dei requisiti & Bassa & Molto Alto & ?\\
-		\hline
-	\end{tabularx}
-	\newline 
-	 \newline
-	 \newline
+	\begin{table}[h!]
+		\begin{tabular}{|c|p{3.6cm}|c|c|p{3.6cm}|}
+			\hline
+			\textbf{Identificativo} & \textbf{Descrizione rischio} & \textbf{Probabilità} & \textbf{Impatto} & \textbf{Risposta Contenitiva}\\
+			\hline
+			R1 & Errata stima della durata delle attività da programmare & Alta & Alto & Considerare sempre un certo slack temporale e pianificazione all’indietro\\
+			\hline
+			R2 & Conflitti interni al gruppo di progetto & Bassa & Basso & Team building sociale e confronti diretti\\
+			\hline
+			R3 & Sottostima del tempo richiesto per l’apprendimento di nuove tecnologie (GitHub, Grafana,...) & Media & Medio & Confronto con esperti per dubbi e chiarimenti al fine di prevenire ritardi\\
+			\hline
+			R4 & Problemi Software di terze parti (perdita di dati su GitHub) & Molto  Bassa & Basso &  Backup due volte la settimana\\
+			\hline
+			R5 & Ridefinizione dei requisiti & Bassa & Molto Alto & ?\\
+			\hline
+		\end{tabular}
+		\caption{Analisi dei Rischi}
+	\end{table}
+	
 	Per analizzare il fattore di rischio del progetto adottiamo una scala numerica per l’impatto così definita:
 	\begin{itemize}
 		\item Molto Basso: 1
@@ -30,31 +30,34 @@
 	\end{itemize}
 	Ed inoltre creiamo una scala di probabilità discreta così definita:
 	\begin{itemize}
-		\item Molto Bassa: 10%
-		\item Bassa: 25%
-		\item Media: 50%
-		\item Alta: 75%
-		\item Molto Alta: 90%
+		\item Molto Bassa: 10\%
+		\item Bassa: 25\%
+		\item Media: 50\%
+		\item Alta: 75\%
+		\item Molto Alta: 90\%
 	\end{itemize}
 	L’utilizzo di una scala numerica ci permette di analizzare più efficacemente l’impatto probabile all’interno del nostro progetto e quindi anche di pianificare all’indietro tenendo conto di queste analisi.
 	Elaborazione dei nostri rischi:
-	\newline \newline
-	\begin{tabularx}{\textwidth}{|X|X|X|X|}
-		\hline
-		r1 & 75\% & 4 & 3 \\
-		\hline
-		r2 &  25\%  & 2  & 0.5 \\
-		\hline
-		r3  & 50\%  & 3  & 1.5 \\
-		\hline
-		r4  & 10\% &  2 &  0.2 \\
-		\hline
-		r5  & 25\%  & 5  & 1.25 \\
-		\hline
-		\textbf{Media}  & 37\% &  3.2 &  28.66666667\\
-		\hline
-	\end{tabularx}
-	\newline \newline
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			r1 & 75\% & 4 & 3 \\
+			\hline
+			r2 &  25\%  & 2  & 0.5 \\
+			\hline
+			r3  & 50\%  & 3  & 1.5 \\
+			\hline
+			r4  & 10\% &  2 &  0.2 \\
+			\hline
+			r5  & 25\%  & 5  & 1.25 \\
+			\hline
+			\textbf{Media}  & 37\% &  3.2 &  28.66666667\\
+			\hline
+		\end{tabular}
+		\caption{Probabilità dei Rischi}
+	\end{table}
+	
 	Dalla nostra distribuzione di rischi e probabilità otteniamo un profilo di rischio:
 	Probabilità media di un rischio = 37\% (Bassa-Media)
 	Impatto medio di un rischio = 3.2 (Medio)

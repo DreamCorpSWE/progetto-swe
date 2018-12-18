@@ -9,20 +9,24 @@ Con lo scopo di rispettare le scadenze descritte in questo documento è stata re
 \end{itemize} 
 In base alle scadenze inserite ad inizio documento, le macro-fasi saranno suddivise in questi periodi temporali:
 \newline
-\begin{tabular}{|l|l|l|}
-	\hline
-	\textbf{Fase} & \textbf{inizio} & \textbf{fine}\\
-	\hline
-	Attività preliminari di avvio ed analisi dei requisiti & 19/11/2018 & 14/01/2019 \\
-	\hline
-	Progettazione architetturale & 22/01/2019 & 08/03/2019\\
-	\hline
-	Progettazione di dettaglio e codifica & 16/03/2019 & 12/04/2019\\
-	\hline
-	Validazione e collaudo & 20/04/2019 & 10/05/2019\\
-	\hline
-\end{tabular}
-\newline
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Fase} & \textbf{inizio} & \textbf{fine}\\
+		\hline
+		Attività preliminari di avvio ed analisi dei requisiti & 19/11/2018 & 14/01/2019 \\
+		\hline
+		Progettazione architetturale & 22/01/2019 & 08/03/2019\\
+		\hline
+		Progettazione di dettaglio e codifica & 16/03/2019 & 12/04/2019\\
+		\hline
+		Validazione e collaudo & 20/04/2019 & 10/05/2019\\
+		\hline
+	\end{tabular}
+	\caption{Pianificazione}
+\end{table}
+
 Queste fasi vengono inserite in un diagramma di Gantt. Dove le milestone vengono assunte come principali scadenze di ogni fase. Verranno inoltre segnalati con colori diversi quelle scadenze che sono bloccanti oppure no ed  ogni attività è rappresentata tramite le sue sotto attività.
 \newline Avendo in mente l'obiettivo di far ricoprire ad ogni membro del gruppo tutti i ruoli, ogni macro-fase è stata divisa in 2 parti, indicativamente della stessa durata, così da avere un momento definito per il cambio i ruoli e per fare una verifica intermedia al periodo per valutare l'avanzamento del lavoro. 
 
@@ -42,27 +46,30 @@ In ordine di esecuzione le attività principali sono le seguenti:
 \paragraph{Diagramma di Gantt}
 ->Immagine Diagramma
 
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{4.5cm}|p{4.5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Suddivisione temporale da rifare}}\\
+		\hline
+		\textbf{Ruolo} & \textbf{19/11/18 - 20/12/18} & \textbf{20/12/18 - 14/01/19} \\
+		\hline
+		\textbf{Responsabile} & \pie  & \parbox{4.5cm}{\mic \\\daL}  \\
+		\hline
+		\textbf{Amministratore} &\parbox{4.5cm}{ \mic \\ \gia} & \parbox{4.5cm}{\mat \\\daL }\\
+		\hline
+		\textbf{Analista} & \mat & \pie\\ & \daL &  \daG\\ & \daG & \\
+		\hline
+		\textbf{Progettista} & - & - \\
+		\hline
+		\textbf{Programmatore} & - & - \\
+		\hline
+		\multirow{3}{*}{\textbf{Verificatore}} & \mar & \mar\\ && \gia \\
+		\hline
+	\end{tabular}
+	\caption{Suddivisione temporale delle attività preliminari}
+\end{table}
 
-\begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{Suddivisione temporale}}\\
-	\hline
-	\textbf{Ruolo} & \textbf{19/11/18 - 20/12/18} & \textbf{20/12/18 - 14/01/19} \\
-	\hline
-	\multirow{2}{*}{\textbf{Responsabile}} & \multirow{2}{*}{Pietro Casotto}  & Michele Clerici \\ && Davide Liu  \\
-	\hline
-	\multirow{2}{*}{\textbf{Amministratore}} & Michele Clerici  & Matteo Bordin\\
-	& Gianluca Pegoraro & Davide Liu \\
-	\hline
-	\multirow{3}{*}{\textbf{Analista}} & Matteo Bordin & Pietro Casotto\\ & Davide Liu &  Davide Ghiotto\\ & Davide Ghiotto & \\
-	\hline
-	\textbf{Progettista} & - & - \\
-	\hline
-	\textbf{Programmatore} & - & - \\
-	\hline
-	\multirow{3}{*}{\textbf{Verificatore}} & Marco Davanzo & Marco Davanzo\\ && Gianluca Pegoraro \\
-	\hline
-\end{tabular}
 
 \subsection{Progettazione architetturale}
 Il periodo di \textit{Progettazione architetturale} comincia il giorno dopo la presentazione per la \textit{Revisione dei requisiti} (22/01/2019) e si conclude con la consegna dei documenti per la \textit{Revisione di Progettazione} (08/03/2019). Le attività principali sono:
@@ -78,25 +85,31 @@ Il periodo di \textit{Progettazione architetturale} comincia il giorno dopo la p
 \paragraph{Diagramma di Gantt}
 ->Immagine Diagramma
 
-\begin{tabular}{|l|l|l|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{Suddivisione temporale}}\\
-	\hline
-	\textbf{Ruolo} & \textbf{22/01/19 - 13/02/19} & \textbf{13/2/19 - 08/03/2019} \\
-	\hline
-	\textbf{Responsabile} & Davide Liu & Davide Ghiotto \\
-	\hline
-	\textbf{Amministratore} & Davide Ghiotto & Gianluca Pegoraro \\
-	\hline
-	\textbf{Analista} & Pietro Casotto Michele Clerici Marco Davanzo Gianluca Pegoraro & - \\
-	\hline
-	\textbf{Progettista} & Matteo Bordin & Davide Liu Marco Davanzo \\
-	\hline
-	\textbf{Programmatore} & - & Michele Clerici \\
-	\hline
-	\textbf{Verificatore} & - & Matteo Bordin Pietro Casotto \\
-	\hline
-\end{tabular}
+\begin{table}[h!]
+	\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|l|p{4.5cm}|p{4.5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Suddivisione temporale}}\\
+		\hline
+		\textbf{Ruolo} & \textbf{22/01/19 - 13/02/19} & \textbf{13/2/19 - 08/03/2019} \\
+		\hline
+		\textbf{Responsabile} & \daL & \daG \\
+		\hline
+		\textbf{Amministratore} & \daG & \gia \\
+		\hline
+		\textbf{Analista} & \parbox{4.5cm}{\pie\\ \mic\\ \mar\\ \gia} & - \\
+		\hline
+		\textbf{Progettista} & \mat &  \parbox{4.5cm}{\daL \\ \mar} \\
+		\hline
+		\textbf{Programmatore} & - & \mic \\
+		\hline
+		\textbf{Verificatore} & - &  \parbox{4.5cm}{\mat \\ \pie} \\
+		\hline
+	\end{tabular}
+	\caption{suddivisione temporale della Progettazione architetturale}
+\end{table}
+
 
 \subsection{Progettazione di dettaglio e codifica}
 Questo periodo inizia il giorno dopo la \textit{Revisione di Progettazione}(16/03/2019) e si conclude
@@ -118,17 +131,17 @@ con la consegna dei documenti per la \textit{Revisione di Qualifica}(12/04/2019)
 	\hline
 	\textbf{Ruolo} & \textbf{16/03/19 - 29/03/19} & \textbf{29/03/19 - 12/04/19} \\
 	\hline
-	\textbf{Responsabile} & Gianluca Pegoraro & Marco Davanzo \\
+	\textbf{Responsabile} & \gia & \mar \\
 	\hline
-	\textbf{Amministratore} & Marco Davanzo & Matteo Bordin  \\
+	\textbf{Amministratore} & \mar & \mat  \\
 	\hline
 	\textbf{Analista} & &  \\
 	\hline
-	\textbf{Progettista} & Pietro Casotto Michele Clerici Davide Ghiotto &  \\
+	\textbf{Progettista} & \pie \mic \daG &  \\
 	\hline
-	\textbf{Programmatore} & Matteo Bordin Davide Liu & Pietro Casotto Davide Ghiotto Gianluca Pegoraro \\
+	\textbf{Programmatore} & \mat \daL & \pie \daG \gia \\
 	\hline
-	\textbf{Verificatore} &  & Michele Clerici Davide Liu \\
+	\textbf{Verificatore} &  & \mic \daL \\
 	\hline
 \end{tabular}
 
@@ -150,17 +163,17 @@ Questo periodo inizia il giorno dopo la  \textit{Revisione di Qualifica}(20/04/2
 	\hline
 	\textbf{Ruolo} & \textbf{20/04/19 - 29/04/19} & \textbf{29/04/19 - 10/05/19} \\
 	\hline
-	\textbf{Responsabile} & Matteo Bordin  & Pietro Casotto   \\
+	\textbf{Responsabile} & \mat  & \pie   \\
 	\hline
-	\textbf{Amministratore} & Pietro Casotto & Michele Clerici \\
+	\textbf{Amministratore} & \pie & \mic \\
 	\hline
-	\textbf{Analista} & Matteo Bordin Davide Liu Davide Ghiotto & Pietro Casotto Davide Ghiotto \\
+	\textbf{Analista} & \mat \daL \daG & \pie \daG \\
 	\hline
 	\textbf{Progettista} & - & - \\
 	\hline
-	\textbf{Programmatore} & Davide Liu Marco Davanzo & - \\
+	\textbf{Programmatore} & \daL \mar & - \\
 	\hline
-	\textbf{Verificatore} & Michele Clerici Davide Ghiotto Gianluca Pegoraro & Matteo Bordin Davide Liu Davide Ghiotto Marco Davanzo Gianluca Pegoraro \\
+	\textbf{Verificatore} & \mic \daG \gia & \mic \mat \daL \daG \mar \gia \\
 	\hline
 \end{tabular}
 
