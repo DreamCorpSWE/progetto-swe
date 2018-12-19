@@ -1,0 +1,16 @@
+% da include in stile.tex per poter colorare le tabelle
+% \usepackage[table]{xcolor}
+
+\begin{table}[h!] % h! serve per posizionarla relativamente
+            \centering
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Col1} & \textbf{Col2} & \textbf{Col3} & \textbf{Col4}\\
+                \hline
+                Value1 & Value2 & Value3 & Value4\\
+        \end{tabular}
+        \caption{Caption} %descrizone a fine tabella
+        \label{tab:my_label}
+\end{table}
