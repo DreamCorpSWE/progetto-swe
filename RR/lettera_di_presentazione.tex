@@ -1,0 +1,127 @@
+
+
+\documentclass[10pt,stdletter,dateno,sigright]{newlfm} 
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{hyperref}
+\usepackage[italian]{babel}
+\usepackage{eurosym}
+\usepackage{color, colortbl}
+\usepackage{tabu}
+
+\definecolor{tableHeader}{RGB}{34,139,34}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^2.5mm_1.5mm
+
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} 
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0.1in} % Slightly decrease the height of the signature field
+
+%\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+%\PhrPhone{Telefono} % Customize the "Telephone" text
+\PhrEmail{Email: dreamcorp.swe@gmail.com} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{\pbroglio \\ \ProjectResp\ \\ \GroupName \\ } % Name
+
+\addrfrom{
+12 gennaio 2019\\[12pt] % Date
+Via Trieste, 63, 35131, Padova (PD) 
+}
+
+%\phonefrom{(000) 111-1111} % Phone number
+
+\emailfrom{\Email} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Egregio Tullio Vardanega, Egregio Riccardo Cardin,} % Greeting text
+\closeline{Cordiali Saluti,} % Closing text
+
+\nameto{Alla cortese attenzione del Committente: \\Prof. Tullio Vardanega 
+\\Prof. Riccardo Cardin } % Addressee of the letter above the to address
+\signature{\includegraphics[height=0.09\textheight]{./firma/paolo.jpeg}}
+\addrto{
+Universit\`a degli Studi di Padova \\ % To address
+Dipartimento di Matematica \\
+Via Trieste, 62, 35131 Padova (PD)
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Con la presente, il gruppo DreamCorp intende comunicarVi ufficialmente l'impegno alla realizzazione del prodotto da Voi commissionato, denominato:
+\begin{center}
+    \textbf{\textit{G&B: monitoraggio intelligente di processi DevOps}}
+\end{center}
+proposto da Zucchetti.
+
+Allegati alla presente lettera potrete trovare i seguenti documenti che illustrano in dettaglio analisi del prodotto, di pianificazione e relativi criteri a garanzia della qualit\`a:
+ 
+\begin{itemize}
+    \item \textit{\AR\ v 1.0.0} (Documenti Esterni/AnalisiDeiRequisiti\_v1.0.0.pdf);
+    \item \textit{\Gloss\ v 1.0.0} (Documenti Esterni/Glossario\_v1.0.0.pdf);
+    \item \textit{\PdP\ v 1.0.0} (Documenti Esterni/PianoDiProgetto\_v1.0.0.pdf);
+    \item \textit{\PdQ\ ------------v 1.0.0} (Documenti Esterni/PianoDiQualifica\_v1.0.0.pdf);
+    \item \textit{\VerbExt\ 2016-12-14} (Documenti Esterni/Verbali.pdf);
+    \item \textit{\NdP\ v 1.0.0} (Documenti Interni/NormeDiProgetto\_v1.0.0.pdf);
+    \item \textit{\SdF\ v 1.0.0} (Documenti Interni/StudioDiFattibilita\_v1.0.0.pdf).
+    %\item eventuali verbali interni
+\end{itemize}
+ 
+Il gruppo DreamCorp ha stimato di consegnare il prodotto richiesto entro il giorno \textit{Luned\`i 08 Maggio 2017}, con relativo collaudo, salvo ulteriori accordi, per il giorno \textit{Venerd\`i 17 Maggio 2019}. 
+Il preventivo di costo fissato \`e pari a \textbf{13.500 \euro}, come descritto all'interno del documento PianoDiProgetto.\\ \\
+\newpage
+\ \\
+Di seguito \`e riportato l'organigramma del gruppo:
+\begin{table}[h]
+	\begin{center}
+		\begin{tabu} to \textwidth  { >{\centering}m{0.25\linewidth} >{\centering\arraybackslash}m{0.15\linewidth}}
+			\rowfont{\bfseries\sffamily\leavevmode\color{white}}
+			\rowcolor{tableHeader}
+			%\hline
+			\textbf{Nome} & \textbf{Matricola} \\
+			%\hline
+			% sostituire Nome Cognome con il comando appropriato
+			Matteo Bordin & 1140775 \\
+			%\hline
+			Michele Clerici & 1122656\\
+			%\hline
+			Davide Ghiotto & 1144423 \\
+			%\hline
+			Davide Liu & 1140717\\
+			%\hline
+			Gianluca Pegoraro & 1049140\\
+			%\hline
+			Marco Davanzo & 1096549\\
+			%\hline
+			Pietro Casarotto & 1097143\\
+			%\hline
+		\end{tabu}
+		\caption{Elenco Componenti}
+	\end{center}
+\end{table}
+
+Rimaniamo a Vostra completa disposizione per rispondere a dubbi e chiarimenti sui documenti presentati. \\ \\
+%----------------------------------------------------------------------------------------
+\end{newlfm}
+\end{document}
