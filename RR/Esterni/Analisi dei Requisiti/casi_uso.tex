@@ -1,6 +1,6 @@
 \section{Casi d'Uso}
 		\subsection{Attori}			
-        I casi d'uso\pedice definiscono interazioni tra il sistema e gli attori esterni\pedice. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
+        I casi d'uso definiscono interazioni tra il sistema e gli attori esterni. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
         Riportiamo due attori:
         \begin{itemize}
             \item Utente generico
@@ -9,60 +9,38 @@
 
 
 		\subsection{Tracciamento Casi d'Uso}
-        Al fine di classificare e rendere leggibili i casi d'uso abbiamo deciso di utilizzare una codifica per descriverli. Ad ogni caso d'uso verrà quindi associata una stringa univoca strutturata nel seguente modo: UCX.Y  dove X,Y sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso.
-        \begin{itemize}
-        \item \textbf{Codice X:} E' il codice identificativo del caso d'uso generico che potrebbe suddividersi in casi d'uso piu specifici. Nel caso non ci siano questi ultimi, il codice risulta univoco. 
-        \item \textbf{Codice Y:} E' un codice identificativo univoco per il caso d'uso. E' presente solo nel caso in cui il caso d'uso UCX abbia dei sotto casi d'uso più specifici.
-        \end{itemize}
-        
-        \newpage
-        Ogni caso d'uso è inoltre definito secondo la seguente struttura:
-         \begin{itemize}
-           \item \textbf{ID:}Il codice del caso d'uso secondo la convenzione specificata precedentemente;
-           \item \textbf{Nome:} Specifica il titolo del caso d'uso;
-           \item \textbf{Descrizione:} Riporta una breve descrizione del caso d'uso;
-           \item \textbf{Precondizione:} Specifica le condizioni che sono identificate come vere
-prima del verificarsi degli eventi del caso d'uso;
-           \item \textbf{Postcondizione:} Specifica le condizioni che sono identificate come
-vere dopo il verificarsi degli eventi del caso d'uso;
-		   \item \textbf{Attori:}Indica gli attori principali e secondari del caso d'uso;
-           \item \textbf{Contestualizzazione / Scenario principale:} Rappresenta il fusso degli eventi attraverso l'uso di una lista numerata.
-         \end{itemize}
+        Al fine di classificare e rendere leggibili i casi d'uso abbiamo deciso di utilizzare una codifica per descriverli. Ad ogni caso d'uso verrà quindi associata una stringa univoca strutturata nel seguente modo: UCX.Y.Z  dove X,Y,Z sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso.
 
 		\subsection{Attore primario: Utente generico}
-		Si riferiscono a tutti quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana o il nostro sistema. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
+		Si riferiscono a tutt quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana o il nostro sistema. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
 		
-		\subsubsection{UC1: Inserimento della definizione della rete bayesiana}
-                	\textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana all'interno di Grafana.
+		\includegraphics[width=\textwidth]{UC.png}
+		
+				\subsubsection{UC1: Inserimento definizione rete bayesiana}
+                    \textbf{Precondizione:} l’utente deve trovarsi nell’interfaccia principale e deve possedere una definizione di rete bayesiana che vuole inserire.
                     \newline
-                    \textbf{Precondizione:} L’utente deve trovarsi nell’interfaccia principale e deve possedere una definizione di rete bayesiana che vuole inserire.
-                    \newline
-                    \textbf{Postcondizione:} Viene inserita nell’applicativo la definizione di rete.
+                    \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
-                    \textbf{Contestualizzazione / Scenario principale:} 
-		    \begin{enumerate}
-		    	\item L’utente carica la definizione della rete bayesiana.
-		    \end{enumerate}
-                    \newpage
-                    \textbf{Estensioni:} 
-		    \begin{enumerate}
+                    \textbf{Contestualizzazione / Scenario principale:} l’utente carica la definizione della rete bayesiana.
+                    \newline
+                    \textbf{Estensioni:} \begin{enumerate}
                             \item Problema con l’interpretazione della rete bayesiana \textbf{UC10}
-                    \end{enumerate}
+                        \end{enumerate}
                         
-                \subsubsection{UC1.1: Inserimento della definizione della rete bayesiana sotto forma di file .json}
-                    \textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana sotto forma di file .json all'interno di Grafana.
+                \includegraphics[width=\textwidth]{UC1.png}
+                        
+                \subsubsection{UC1.1: Inserimento definizione della rete bayesiana sotto forma di file .json}
+                    \textbf{Precondizione:}  l’utente deve trovarsi nell’interfaccia principale e possedere un file .json contenente una definizione di rete bayesiana che vuole inserire.
                     \newline
-                    \textbf{Precondizione:}  L’utente deve trovarsi nell’interfaccia principale e possedere un file .json contenente una definizione di rete bayesiana che vuole inserire.
-                    \newline
-                    \textbf{Postcondizione:} Viene inserita nell’applicativo la definizione di rete presente nel file .json.
+                    \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete presente nel file .json.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                         \item L’utente preme il pulsante per l’upload del file .json contenente la definizione di rete
-                        \item L’utente sceglie il file
+                        \item l’utente sceglie il file
                         \item Upload del file
                         \item La rete viene caricata
                     \end{enumerate}
@@ -72,24 +50,22 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                         \end{enumerate}
                         
                 \subsubsection{UC1.2: Inserimento definizione rete bayesiana sotto forma di codice json}
-                	\textbf{Descrizione:} L'utente inserisce la definizione della rete bayesiana sotto forma di codice json all'interno di Grafana.
-                    \textbf{Precondizione:}  L’utente deve trovarsi nell’interfaccia principale e possedere codice json di una definizione di rete bayesiana che vuole inserire.
+                    \textbf{Precondizione:}  l’utente deve trovarsi nell’interfaccia principale e possedere codice json di una definizione di rete bayesiana che vuole inserire.
                     \newline
-                    \textbf{Postcondizione:} Viene inserita nell’applicativo la definizione di rete descritta dal codice json.
+                    \textbf{Postcondizione:} viene inserita nell’applicativo la definizione di rete descritta dal codice json.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item L’utente incolla il codice json nel text area dedicata
-                        \item L’utente preme il pulsante “Insert Bayesian Network”
+                        \item l’utente incolla il codice json nel text area dedicata
+                        \item l’utente preme il pulsante “Insert Bayesian Network”
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
                             \item C’è stato un problema con l’interpretazione della rete bayesiana \textbf{UC10.1}
                         \end{enumerate}
                         
-                \subsubsection{UC2: Associazione di un nodo della rete ad un flusso dati di Grafana}
-			\textbf{Descrizione:} L'utente associa un nodo della rete ad un flusso dati di Grafana.
+                \subsubsection{UC2: Associazione un nodo della rete ad un flusso dati di Grafana}
                     \textbf{Precondizione:}   L’utente deve trovarsi nella schermata di impostazioni della rete bayesiana e deve essere presente la definizione della rete bayesiana.
                     \newline
                     \textbf{Postcondizione:} Il nodo delle rete è associato ad un flusso dati.
@@ -107,13 +83,15 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item Gestione della duplice associazione di un nodo della rete ad uno stesso flusso dati di Grafana \textbf{UC3}
+                            \item Gestione duplice associazione di un nodo della rete ad uno stesso flusso dati di Grafana \textbf{UC3}
                         \end{enumerate}
                 
-                \subsubsection{UC3: Gestione della duplice associazione di due nodi della rete ad uno stesso flusso dati di Grafana}
-                    \textbf{Descrizione:} Il sistema avvisa l’utente che é in corso una duplice associazione di due nodi della stessa rete allo stesso flusso di monitoraggio.
+                \includegraphics[width=\textwidth]{UC2.png}
+                
+                \subsubsection{UC3: Gestione duplice associazione di due nodi della rete ad uno stesso flusso dati di Grafana}
+                    \textbf{Descrizione:} il sistema avvisa l’utente che é in corso una duplice associazione di due nodi della stessa rete allo stesso flusso di monitoraggio.
                     \newline
-                    \textbf{Precondizione:} L’utente ha giá associato ad un nodo della rete il flusso di interesse.
+                    \textbf{Precondizione:} l’utente ha giá associato ad un nodo della rete il flusso di interesse.
                     \newline
                     \textbf{Postcondizione:}  La rete bayesiana possiede un solo nodo associato al flusso di monitoraggio di interesse.
                     \newline
@@ -128,8 +106,8 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                                 \end{enumerate}
                     \end{enumerate}
                 
-                \subsubsection{UC3.1: Annullamento dell'operazione di associazione multipla}
-                    \textbf{Descrizione:}  L’utente richiede l’annullamento dell’operazione.
+                \subsubsection{UC3.1: Annullamento operazione associazione multipla}
+                    \textbf{Descrizione:}  l’utente richiede l’annullamento dell’operazione.
                     \newline
                     \textbf{Precondizione:} Si e’ verificata un tentativo di associazione multipla e l’utente ha deciso di annullare l’operazione.
                     \newline
@@ -142,7 +120,7 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                     \end{enumerate}
                 
                 \subsubsection{UC3.2: Rimozione nodo precedentemente associato e associazione nuovo nodo}
-                    \textbf{Descrizione:} L’utente richiede la sostituzione del nodo correntemente associato con un nuovo nodo a sua scelta.
+                    \textbf{Descrizione:} l’utente richiede la sostituzione del nodo correntemente associato con un nuovo nodo a sua scelta.
                     \newline
                     \textbf{Precondizione:}  Si e’ verificata un tentativo di associazione multipla e l’utente ha deciso di rimuovere il nodo precedentemente associato.
                     \newline
@@ -155,19 +133,19 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                         \item Associazione un nodo della rete ad un flusso \textbf{UC2}
                     \end{enumerate}
                     
-                \subsubsection{UC4: Visualizzazione del messaggio di conferma di annullamento dell'operazione}
-                    \textbf{Descrizione:} Il sistema avvisa l’utente che è in corso l’annullamento dell’operazione.
+                \subsubsection{UC4: Visualizzazione messaggio di conferma annullamento operazione}
+                    \textbf{Descrizione:} il sistema avvisa l’utente che è in corso l’annullamento dell’operazione.
                     \newline
-                    \textbf{Precondizione:} L’utente vuole annullare un’operazione.
+                    \textbf{Precondizione:} l’utente vuole annullare un’operazione.
                     \newline
                     \textbf{Postcondizione:} Il sistema annulla l’operazione.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item Il sistema presenta all’utente un messaggio di conferma annullamento
-                        \item L’utente conferma di voler annullare 
-                        \item L’utente viene reindirizzato alla pagina principale
+                        \item il sistema presenta all’utente un messaggio di conferma annullamento
+                        \item l’utente conferma di voler annullare 
+                        \item l’utente viene reindirizzato alla pagina principale
                     \end{enumerate}
                     
                 \subsubsection{UC5: Rimozione di un nodo della rete associato ad un flusso dati di Grafana}
@@ -192,12 +170,12 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                             \item Visualizzazione messaggio di conferma annullamento operazione \textbf{UC4}
                         \end{enumerate}
                         
-                \subsubsection{UC6: Definizione di un alert personalizzato per un flusso dati non monitorato}
-                    \textbf{Descrizione:} L’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel
+                \subsubsection{UC6: Definizione alert personalizzato per un flusso dati non monitorato}
+                    \textbf{Descrizione:} l’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel
                     \newline
-                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana.
+                    \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana.
                     \newline
-                    \textbf{Postcondizione:} E' stato definito un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} e’ stato definito un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -214,12 +192,14 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                             \item Errore nei dati inseriti per la creazione dell'alert \textbf{UC10.3}
                         \end{enumerate}
                 
+                \includegraphics[width=\textwidth]{UC6.png}
+                
                 \subsubsection{UC7: Modifica di un alert}
-                    \textbf{Descrizione:} L’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel\pedice.
+                    \textbf{Descrizione:} l’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel.
                     \newline
-                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
+                    \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
                     \newline
-                    \textbf{Postcondizione:} E’ stato modificato un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} e’ stato modificato un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -235,12 +215,14 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                             \item Errore nei dati inseriti per la creazione dell'alert \textbf{UC10.3}
                         \end{enumerate}
                         
+                \includegraphics[width=\textwidth]{UC7.png}
+                        
                 \subsubsection{UC8: Rimozione di un alert}
-                    \textbf{Descrizione:}  L’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana.
+                    \textbf{Descrizione:}  l’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana.
                     \newline
-                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
+                    \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
                     \newline
-                    \textbf{Postcondizione:} E’ stato rimosso un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} e’ stato rimosso un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -273,64 +255,67 @@ vere dopo il verificarsi degli eventi del caso d'uso;
                             \item Viene visualizzato un errore di invio messaggio di alert \textbf{UC6.2}
                         \end{enumerate}
                         
+                \includegraphics[width=\textwidth]{UC9.png}
+                        
                 \subsubsection{UC10: Visualizzazione errore}
-                    \textbf{Descrizione:}  Il sistema avvisa l’utente che c’é stato un errore.
+                    \textbf{Descrizione:}  il sistema avvisa l’utente che c’é stato un errore.
                     \newline
-                    \textbf{Precondizione:} Sono avvenute delle operazioni non consentite.
+                    \textbf{Precondizione:} sono avvenute delle operazioni non consentite.
                     \newline
-                    \textbf{Postcondizione:} L’utente e’ consapevole di trovarsi in uno stato di errore.
+                    \textbf{Postcondizione:} l’utente e’ consapevole di trovarsi in uno stato di errore.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Il sistema avvisa l’utente tramite un messaggio di errore
-                            \item L’utente viene rimandato alla pagina principale
+                            \item il sistema avvisa l’utente tramite un messaggio di errore
+                            \item l’utente viene rimandato alla pagina principale
                         \end{enumerate}
                         
-                \subsubsection{UC10.1: Visualizzazione errore di interpretazione della rete bayesiana}
-                    \textbf{Descrizione:}  Il sistema avvisa l’utente che la rete bayesiana non e’ stata interpretata correttamente e non puó essere inserita.
+                \subsubsection{UC10.1: Visualizzazione errore interpretazione rete bayesiana}
+                    \textbf{Descrizione:}  il sistema avvisa l’utente che la rete bayesiana non e’ stata interpretata correttamente e non puó essere inserita.
                     \newline
-                    \textbf{Precondizione:} L’utente tenta di inserire una rete bayesiana non formattata correttamente.
+                    \textbf{Precondizione:} l’utente tenta di inserire una rete bayesiana non formattata correttamente.
                     \newline
-                    \textbf{Postcondizione:} L’utente e’ consapevole di aver inserito una rete bayesiana non formattata correttamente.
+                    \textbf{Postcondizione:} l’utente e’ consapevole di aver inserito una rete bayesiana non formattata correttamente.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Il sistema avvisa l’utente tramite un messaggio di errore
-                            \item L’utente viene rimandato all’interfaccia di upload
+                            \item il sistema avvisa l’utente tramite un messaggio di errore
+                            \item l’utente viene rimandato all’interfaccia di upload
                         \end{enumerate}
                 
-                \subsubsection{UC10.2: Visualizzazione errore di invio del messaggio di alert}
-                    \textbf{Descrizione:} Il sistema avvisa l’utente che e’ avvenuto un errore nell’invio dell’alert.
+                \subsubsection{UC10.2: Visualizzazione errore invio del messaggio di alert}
+                    \textbf{Descrizione:} il sistema avvisa l’utente che e’ avvenuto un errore nell’invio dell’alert.
                     \newline
-                    \textbf{Precondizione:} E’ avvenuto un errore nell’invio dell’alert da parte di Grafana.
+                    \textbf{Precondizione:} e’ avvenuto un errore nell’invio dell’alert da parte di Grafana.
                     \newline
-                    \textbf{Postcondizione:} L’utente e’ consapevole dell’errore nell’invio dell’alert.
+                    \textbf{Postcondizione:} l’utente e’ consapevole dell’errore nell’invio dell’alert.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Il sistema avvisa l’utente tramite un messaggio di errore e tramite l’invio di una mail
+                            \item il sistema avvisa l’utente tramite un messaggio di errore e tramite l’invio di una mail
                         \end{enumerate}
                         
-                \subsubsection{UC10.3: Visualizzazione errore di configurazione dell’alert}
-                    \textbf{Descrizione:} Il sistema avvisa l’utente che e’ avvenuto un errore nella configurazione dell’alert.
+                \subsubsection{UC10.3: Visualizzazione errore configurazione dell’alert}
+                    \textbf{Descrizione:} il sistema avvisa l’utente che e’ avvenuto un errore nella configurazione dell’alert.
                     \newline
-                    \textbf{Precondizione:}  E’ avvenuto un errore nell’inserimento dei dati nell’alert da parte dell’utente.
+                    \textbf{Precondizione:}  e’ avvenuto un errore nell’inserimento dei dati nell’alert da parte dell’utente.
                     \newline
-                    \textbf{Postcondizione:} L’utente e’ consapevole dell’errore di creazione dell’alert.
+                    \textbf{Postcondizione:} l’utente e’ consapevole dell’errore di creazione dell’alert.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Il sistema avvisa l’utente tramite un messaggio di errore
+                            \item il sistema avvisa l’utente tramite un messaggio di errore
                         \end{enumerate}
+\newpage
