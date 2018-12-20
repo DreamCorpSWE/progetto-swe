@@ -1,4 +1,6 @@
 \documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym, toc, xindy]{glossaries}
 
 \input{../../stile/stile.tex}
 \usepackage{eurosym}
@@ -7,19 +9,22 @@
 
 \date{ \myfont 05-12-2018}
 
+\makeglossaries
+
+\input{glossario/glossary.tex}
 
 \begin{document}
-	\maketitle
+    
+    %\maketitle
 	\begin{center}
 	\huge Versione 0.0.3 
 	\\G\&B
 	\end{center}
-	%\newpage
-	\tableofcontents
-	%\input{indice_analitico.tex}
-	
-	%\input{definizioni.tex}
-	
-	%\input{riferimenti.tex}
+    \newpage
+    
+    \glsaddall
+
+    \setglossarystyle{altlisthypergroup}
+    \printglossary[title=Glossario,toctitle=Glossario]
 
 \end{document}
