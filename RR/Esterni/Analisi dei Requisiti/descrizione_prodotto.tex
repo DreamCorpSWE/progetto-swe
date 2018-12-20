@@ -1,13 +1,13 @@
 \section{Descrizione prodotto}
 		\subsection{Scopo del prodotto}			
-Si devono realizzare dei sistemi che possano applicare metodi di intelligenza artificiale al flusso dei dati raccolti, al fine non solo di monitorare la situazione del sistema ma anche per consigliare gli interventi o quanto meno le zone di intervento alla linea di produzione del software.
+Si devono realizzare dei sistemi che possano applicare metodi di intelligenza artificiale\pedice al flusso dei dati raccolti, al fine non solo di monitorare la situazione del sistema ma anche per consigliare gli interventi o quanto meno le zone di intervento alla linea di produzione del software.
 Il presente capitolato ha per oggetto l'affidamento della fornitura per la
-realizzazione di un plugin(G) per lo strumento di monitoraggio Grafana che
+realizzazione di un plug-in per lo strumento di monitoraggio Grafana che
 applichi reti Bayesiane al flusso dei dati ricevuti per allarmi o segnalazioni tra gli operatori del servizio Cloud e la linea di produzione del software.
 
 
 		\subsection{Funzioni del prodotto}
-Il plugin deve poter leggere la definizione di una rete Bayesiana da un file in formato json per poi poter associare un flusso di dati ai nodi della rete. Ad ogni intervallo di tempo stabilito da regole temporali viene applicato il ricalcolo delle probabilità dei nodi della rete. I dati osservati dai nodi non collegati al flusso di monitoraggio vengono forniti a Grafana, tutti i dati disponibili vengono forniti al sistema di creazione di grafici e dashboard per la loro visualizzazione.
+Il plug-in deve poter leggere la definizione di una rete Bayesiana da un file in formato json per poi poter associare un flusso di dati ai nodi della rete. Ad ogni intervallo di tempo stabilito da regole temporali viene applicato il ricalcolo delle probabilità dei nodi della rete. I dati osservati dai nodi non collegati al flusso di monitoraggio vengono forniti a Grafana, tutti i dati disponibili vengono forniti al sistema di creazione di grafici e dashboard\pedice per la loro visualizzazione.
 
 
 		\subsection{Tipologia di utenti}
@@ -29,7 +29,7 @@ Gli utenti devono avere familiarità  con il tool di monitoraggio Grafana.
 		        \end{itemize}
 				\subsubsection{Requisiti opzionali}
 				\begin{itemize}
-					\item Possibilità di definire "alert" in base a livelli di soglia raggiunti dai nodi non collegati al flusso dei dati.
+					\item Possibilità di definire "alert\pedice" in base a livelli di soglia raggiunti dai nodi non collegati al flusso dei dati.
 					\item Possibilità di disegnare la rete Bayesiana con un piccolo editor grafico specializzato.
 					\item Possibilità di applicare più reti Bayesiane in oggetti di monitoraggio diversi.
 					\item Possibilità di creare una rete Bayesiana a partire dai dati raccolti sul campo anzichè svilupparla con la collaborazione degli esperti del settore.
@@ -43,7 +43,7 @@ Gli utenti devono avere familiarità  con il tool di monitoraggio Grafana.
 				
 				
 		\subsection{Vincoli generali}			
-Essendo il prodotto un plugin per Grafana, occorre aver scaricato e configurato Grafana in modo da poter installare il plugin.
+Essendo il prodotto un plugin per Grafana, occorre aver scaricato e configurato Grafana in modo da poter installare il plug-in.
 
 
 \newpage
