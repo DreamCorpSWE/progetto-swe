@@ -1,8 +1,8 @@
 \section{Qualità del Prodotto}
 \subsection{Scopo}
 Qualità del software effettivo, leggibilità dei documenti (sono un prodotto anche quelli), misura dei test.
-
-\section{Prodotti}
+Le norme UNI definiscono la qualità come \textit{"l'insieme delle carrateristiche che gli conferiscono la capacità di soddisfare esigenze espresse o implicite"}
+\subsection{Prodotti}
 \subsection{Qualità dei documenti}
 Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nostri obiettivi sono:
 \begin{itemize}
@@ -40,9 +40,95 @@ Per qualità del software si intende la misura in cui un prodtto software soddis
 \end{itemize}
 \subsubsection{(Int) Correttezza}
 \subsubsection{(Int) Affidibalità}
-\subsubsection{(Int) Efficienza}
+	Un sistema è tanto più affidabile quanto più raramente, durantel 'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
+	\begin{itemize}
+	\item \textbf{Adattabilità:} adattarsi al tipo di utente;
+	\item \textbf{Tempo medio:} tenere basso il tempo medio che intercorre tra due fallimenti successivi.
+\end{itemize}
+\paragraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{MTBF(Mean Time Between Failure)}
+\end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			 MTBF                      &                                              &                                            \\ \hline
+			                   &                                              &                                            \\ \hline
+			                    &                                              &                                            \\ \hline
+			                   &                                              &                                            \\ \hline
+			                                 &                                              &                                            \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+\subsubsection{(Int) Efficienza (Riferimento ai requisiti prestazionali)}
+Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse. Per questo ci prefiggiamo i seguenti obiettivi:
+\begin{itemize}
+	\item \textbf{Utilizzo delle risorse:} le fdunzionalità del software devono ponderare l'utilizzo delle risorse a diposizione.
+\end{itemize}
+\paragraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Tempo di risposta}
+\end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			Tempo di risposta                      &                                              &                                            \\ \hline
+			&                                              &                                            \\ \hline
+			&                                              &                                            \\ \hline
+
+		\end{tabular}%
+	}
+\end{table}
+\subsubsection{Manutenibilità}
+Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefissati i seguenti obiettivi:
+\begin{itemize}
+	\item \textbf{}
+\end{itemize}
+
+\subsubsection{(Ext) Portabilità}
+Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
+\begin{itemize}
+	\item \textbf{Adattabilità:} il prodotto deve adattarsi con il minimo sforzo a tutti gli ambienti di lavoro prefissati;
+	\item \textbf{Sostituibilità:} il prodotto deve poter sostiture un altro software che fa la stessa cosa (RIFERITO AL DISCORSO CHE HA FATTO IL TIPO DELLA ZUCCHETTI)
+\end{itemize}
+\paragraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Supporto browser}
+	\item \textbf{Funzionalità già esistenti} (intendo cosa sa già fare rispetto al programma che va a sostituire e cosa c'è di nuovo)
+\end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			 Supporto Browser                 &                                   &                                 \\ \hline
+			Funzionalità già eistenti             &                                 &                 \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+\subsubsection{(Ext) Evolvità}
 Rappresenta l'indice di utilizzo delle risorse in maniera proprozionato rispetto ai servizi che svolge. Per questo si sono prefissati i seguenti obiettivi:
 \begin{itemize}
 	\item{\textbf{Deadline:}  il programma deve svolgere il lavoro entro i tempi stabiliti;}
 	\item{\textbf{Prestazioni:} si cerca di mantenere le deadline con il minor utilizzo delle risorse.}
 \end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			                     &                                              &                                            \\ \hline
+			&                                              &                                            \\ \hline
+			&                                              &                                            \\ \hline
+			
+		\end{tabular}%
+	}
+\end{table}
