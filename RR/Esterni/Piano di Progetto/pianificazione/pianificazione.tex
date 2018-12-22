@@ -11,11 +11,14 @@ In base alle scadenze inserite ad inizio documento, le macro-fasi saranno suddiv
 \newline
 \begin{table}[h!]
 	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\begin{tabular}{|l|l|l|}
 		\hline
+		\rowcolor{orange!50}
 		\textbf{Fase} & \textbf{inizio} & \textbf{fine}\\
 		\hline
-		Attività preliminari di avvio ed analisi dei requisiti & 19/11/2018 & 14/01/2019 \\
+		Attività preliminari di avvio ed analisi dei requisiti & 15/11/2018 & 14/01/2019 \\
 		\hline
 		Progettazione architetturale & 22/01/2019 & 08/03/2019\\
 		\hline
@@ -27,14 +30,14 @@ In base alle scadenze inserite ad inizio documento, le macro-fasi saranno suddiv
 	\caption{Pianificazione}
 \end{table}
 
-Queste fasi vengono inserite in un diagramma di Gantt. Dove le milestone vengono assunte come principali scadenze di ogni fase. Verranno inoltre segnalati con colori diversi quelle scadenze che sono bloccanti oppure no ed  ogni attività è rappresentata tramite le sue sotto attività.
-\newline Avendo in mente l'obiettivo di far ricoprire ad ogni membro del gruppo tutti i ruoli, ogni macro-fase è stata divisa in 2 parti, indicativamente della stessa durata, così da avere un momento definito per il cambio i ruoli e per fare una verifica intermedia al periodo per valutare l'avanzamento del lavoro. 
-
+Queste fasi vengono inserite in un diagramma di Gantt. dove le milestone sono assunte come principali scadenze di ogni fase. In questi diagrammi ogni attività è rappresentata tramite le sue sotto attività.
+\newline Avendo in mente l'obiettivo di far ricoprire ad ogni membro del gruppo tutti i ruoli, ogni macro-fase è stata divisa in 2 parti così da avere un momento definito per il cambio i ruoli e per fare una verifica intermedia al periodo per valutare l'avanzamento del lavoro. 
 
 \input{pianificazione/AvvioEAnalisi.tex}
-
+\newpage~
 \input{pianificazione/ProgettazioneArchitetturale.tex}
-
+\newpage~
 \input{pianificazione/DettaglioECodifica.tex}
-
+\newpage~
 \input{pianificazione/Validazione.tex}
+\newpage ~\newpage ~
