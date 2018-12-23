@@ -3,15 +3,16 @@
 Qualità del software effettivo, leggibilità dei documenti (sono un prodotto anche quelli), misura dei test.
 Le norme UNI definiscono la qualità come \textit{"l'insieme delle carrateristiche che gli conferiscono la capacità di soddisfare esigenze espresse o implicite"}
 \subsection{Prodotti}
-\subsection{Qualità dei documenti}
+\subsubsection{Qualità dei documenti}
 Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nostri obiettivi sono:
 \begin{itemize}
 	\item{\textbf{Comprensibilià:} devono venire creati dei coumenti di immediata comprensione, per questo si prediligono frasi incisive e si pone l'accento su elementi tecnici presentati da tabelle;}
 	\item{\textbf{Correttezza:} non devono contenere errori ortografici;}
 	\item{\textbf{Leggibilità:} nonostante lo scopo tecnico i documenti devono essere fruibili alla maggior parte delle persone.}
 \end{itemize}
-Vengono così utilizzate le seguenti metriche per poter dare un ranking ai documenti:
-\paragraph{Metriche utilizzate}
+\vspace{0.8cm}
+%Vengono così utilizzate le seguenti metriche per poter dare un ranking ai documenti:
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item{\textbf{Gulpease Index}}
 	\item{\textbf{Errori sintattici}}
@@ -24,7 +25,7 @@ Vengono così utilizzate le seguenti metriche per poter dare un ranking ai docum
 			\hline
 			\rowcolor[HTML]{34CDF9} 
 			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			Gulpease index                       &                                              &                                            \\ \hline
+			Gulpease index                       &          11                                    &                        12                    \\ \hline
 			Errori sintattici                    &                                              &                                            \\ \hline
 			Gunning Fog index                    &                                              &                                            \\ \hline
 			Coleman Liau index                   &                                              &                                            \\ \hline
@@ -32,20 +33,21 @@ Vengono così utilizzate le seguenti metriche per poter dare un ranking ai docum
 		\end{tabular}%
 	}
 \end{table}
-\subsection{Qualità del software}
+\subsubsection{Qualità del software}
 Per qualità del software si intende la misura in cui un prodtto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento sia alla sua struttura interna. I parametri verranno classificati:
 \begin{itemize}
 	\item{\textbf{Interni (Int):} qualità percepita dagli sviluppatori;}
 	\item{\textbf{Esterni (Ext):} qualità percepita dall'utente finale.}
 \end{itemize}
-\subsubsection{(Int) Correttezza}
-\subsubsection{(Int) Affidibalità}
+\paragraph{\textbf{(Int) Correttezza}}
+\paragraph{\textbf{(Int) Affidabilità}}
 	Un sistema è tanto più affidabile quanto più raramente, durantel 'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
 	\begin{itemize}
 	\item \textbf{Adattabilità:} adattarsi al tipo di utente;
 	\item \textbf{Tempo medio:} tenere basso il tempo medio che intercorre tra due fallimenti successivi.
 \end{itemize}
-\paragraph{Metriche utilizzate}
+\vspace{0.8cm}
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{MTBF(Mean Time Between Failure)}
 \end{itemize}
@@ -68,7 +70,8 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 \begin{itemize}
 	\item \textbf{Utilizzo delle risorse:} le fdunzionalità del software devono ponderare l'utilizzo delle risorse a diposizione.
 \end{itemize}
-\paragraph{Metriche utilizzate}
+\vspace{0.8cm}
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{Tempo di risposta}
 \end{itemize}
@@ -90,14 +93,18 @@ Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefiss
 \begin{itemize}
 	\item \textbf{}
 \end{itemize}
-
+\vspace{0.8cm}
+\subparagraph{Metriche utilizzate}
+\begin{itemize}
+	\item
+\end{itemize}
 \subsubsection{(Ext) Portabilità}
 Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
 \begin{itemize}
 	\item \textbf{Adattabilità:} il prodotto deve adattarsi con il minimo sforzo a tutti gli ambienti di lavoro prefissati;
 	\item \textbf{Sostituibilità:} il prodotto deve poter sostiture un altro software che fa la stessa cosa (RIFERITO AL DISCORSO CHE HA FATTO IL TIPO DELLA ZUCCHETTI)
 \end{itemize}
-\paragraph{Metriche utilizzate}
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{Supporto browser}
 	\item \textbf{Funzionalità già esistenti} (intendo cosa sa già fare rispetto al programma che va a sostituire e cosa c'è di nuovo)
@@ -118,6 +125,11 @@ Rappresenta l'indice di utilizzo delle risorse in maniera proprozionato rispetto
 \begin{itemize}
 	\item{\textbf{Deadline:}  il programma deve svolgere il lavoro entro i tempi stabiliti;}
 	\item{\textbf{Prestazioni:} si cerca di mantenere le deadline con il minor utilizzo delle risorse.}
+\end{itemize}
+\vspace{0.8cm}
+\subparagraph{Metriche utilizzate}
+\begin{itemize}
+	\item 
 \end{itemize}
 \begin{table}[!htpb]
 	\resizebox{\textwidth}{!}{%
