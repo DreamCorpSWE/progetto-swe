@@ -21,13 +21,12 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 		\item{\textbf{Standard:} definire uno standard per ogni processo al fine di facilitare il lavoro di gruppo e l'incremento continuo di ogni parte.}
 \end{itemize} 
 \subparagraph{Metriche utlizzate}
-\textbf{(RICHIAMARE LE METRICHE CHE SONO STATE DESCRITTE NELLE NORME DI PROGETTO.}
 \href{https://it.wikipedia.org/wiki/Metriche_di_progetto}{\textbf{PRESE DA QUI}}
 \begin{itemize}
-	\item{\textbf{BAC(Budget at Completition)};}
+	\item{\textbf{SV(Schedule Variance);}}
 	\item{\textbf{BV(Budget Variance);}}
-	\item{\textbf{Function Point;} non sono sicuro vada qui...}
 	\item{\textbf{AC(Actual Cost)}.}
+	\item{\textbf{Function Points;} }
 \end{itemize}
 \begin{table}[!htpb]
 	\resizebox{\textwidth}{!}{%
@@ -35,9 +34,10 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 		\hline
 		\rowcolor[HTML]{34CDF9} 
 		{\color[HTML]{333333} \textbf{Nome}}         & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-		\multicolumn{1}{|l|}{Budget at Completition} & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
-		\multicolumn{1}{|l|}{Budget Variance}        & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
-		\multicolumn{1}{|l|}{Cost Variance}          & \multicolumn{1}{l|}{}                        & \multicolumn{1}{l|}{}                      \\ \hline
+		\multicolumn{1}{|l|}{Schedule Variance} & \multicolumn{1}{l|}{}   & \multicolumn{1}{l|}{}                      \\ \hline
+		\multicolumn{1}{|l|}{Budget Variance}  & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}               \\ \hline
+		\multicolumn{1}{|l|}{Actual Cost}          & \multicolumn{1}{l|}{}         & \multicolumn{1}{l|}{}           \\ \hline
+		\multicolumn{1}{|l|}{Function Points}     & \multicolumn{1}{l|}{}       & \multicolumn{1}{l|}{}      \\ \hline
 	\end{tabular}%
 }
 \end{table}
@@ -79,22 +79,24 @@ Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi
 Vengono così utilizzate le seguenti metriche: 
 \begin{itemize}
 	\item{\textbf{Indisponibilità servizi esterni}}
-	\item{\textbf{AGGIUNGERNE ALTRI...}}
+	\item{\textbf{Rischi non calcolati}}
 \end{itemize}
-\begin{table}[!htpb]
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[!h]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\hline
 			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			Indisponibilità \\ servizi esterni                    &                                              
+			{\color[HTML]{333333} Nome}                                               & {\color[HTML]{333333} Accettazione} & {\color[HTML]{333333} Ottimalità} \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Indisponibilità\\ servizi esterni\end{tabular} &                                     &                                   \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Rischi\\ non previsti\end{tabular}             & 1-2                                 & 0                                 \\ \hline
 		\end{tabular}%
 	}
 \end{table}
 \newpage
 \subsubsection{Gestione Test}
-\textbf{LO FACCIAMO ? 353 LO HA MESSO NELLA V2. BISOGNA PENSARCI}
 Prendendo nota che il processo di sviluppo è ancora in fase embrionale il gruppo non è ancora in grado di fornire delle metriche per la gestione dei test.
 \subsubsection{Versionamento}
-\textbf{LO FACCIAMO ? 353 LO HA MESSO NELLA V2. BISOGNA PENSARCI}
 Come per la gestione dei test vale anche per il processo di versionamento
