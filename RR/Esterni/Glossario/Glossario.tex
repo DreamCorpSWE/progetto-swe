@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[acronym, toc, xindy]{glossaries}
 
-\input{../../stile/stile.tex}
+\input{stile.tex}
 \usepackage{eurosym}
 \title{\myfont{Glossario}}
 \author{Dream Corp.}
@@ -15,12 +15,14 @@
 
 \begin{document}
     
-    %\maketitle
+    \maketitle
 	\begin{center}
 	\huge Versione 0.0.3 
 	\\G\&B
 	\end{center}
     \newpage
+    
+    \input{log_modifiche.tex}
     
     \glsaddall
 
