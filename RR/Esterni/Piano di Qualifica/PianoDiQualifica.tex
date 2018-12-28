@@ -1,0 +1,50 @@
+%\input{../../stile/stile.tex}
+\documentclass[12pt]{article}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\usepackage{eurosym}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{amsmath, tabu}
+\graphicspath{{immagini/}}
+
+\title{\myfont{Piano di Progetto}}
+\date{ \myfont 05-12-2018}
+
+\title{\myfont Piano di Qualifica}
+\font\myfont=cmr12 at 40pt
+\date{\myfont 04-12-2018}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\huge Versione 1.00 
+\\G\&B
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\input{DiarioDelleModifiche}
+\newpage
+
+\input{InformazioniSulDocumento.tex}
+\newpage
+\input{QualitaDiProcesso.tex}
+\newpage
+\input{QualitaDiSoftware.tex}
+\newpage
+
+%Appendici
+\appendix
+\input{ResocontoAttivitaDiVerifica.tex}
+\newpage
+\input{TestDiUnita.tex}
+\newpage
+\input{TestDiIntegrazione.tex}
+\newpage
+\end{document}
