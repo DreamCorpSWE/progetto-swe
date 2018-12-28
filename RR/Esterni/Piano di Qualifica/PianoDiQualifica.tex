@@ -9,6 +9,7 @@
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{appendix}
+\usepackage{amsmath, tabu}
 \graphicspath{{immagini/}}
 
 \title{\myfont{Piano di Progetto}}
@@ -17,16 +18,19 @@
 \title{\myfont Piano di Qualifica}
 \font\myfont=cmr12 at 40pt
 \date{\myfont 04-12-2018}
+
 \begin{document}
 
-  \maketitle
-  \begin{center}
-  \huge Versione 1.00 
-  \\G\&B
-  \end{center}
-  \newpage
-  \tableofcontents
-  \newpage
+\maketitle
+\begin{center}
+\huge Versione 1.00 
+\\G\&B
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\input{DiarioDelleModifiche}
+\newpage
 
 \input{InformazioniSulDocumento.tex}
 \newpage

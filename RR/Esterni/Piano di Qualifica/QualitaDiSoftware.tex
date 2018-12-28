@@ -17,7 +17,7 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 	\item{\textbf{Gulpease Index}}
 	\item{\textbf{Errori sintattici}}
 	\item{\textbf{Gunning Fog index}}
-	\item{\textbf{Coleman Liau index/SMOG}}
+	\item{\textbf{SMOG}}
 \end{itemize}
 \begin{table}[!htpb]
 	\resizebox{\textwidth}{!}{%
@@ -25,11 +25,10 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 			\hline
 			\rowcolor[HTML]{34CDF9} 
 			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			Gulpease index                       &          11                                    &                        12                    \\ \hline
-			Errori sintattici                    &                                              &                                            \\ \hline
-			Gunning Fog index                    &                                              &                                            \\ \hline
-			Coleman Liau index                   &                                              &                                            \\ \hline
-			SMOG                                 &                                              &                                            \\ \hline
+			Gulpease index    &   \textgreater= 40   &     \textgreater= 65-100       \\ \hline
+			Errori sintattici     &  0    &   0      \\ \hline
+			Gunning Fog index    &     \textless= 14       &   \textless= 12   \\ \hline
+			SMOG                  &              \textless= 10                                 &                         \textless= 7.5                   \\ \hline
 		\end{tabular}%
 	}
 \end{table}
@@ -40,6 +39,27 @@ Per qualità del software si intende la misura in cui un prodtto software soddis
 	\item{\textbf{Esterni (Ext):} qualità percepita dall'utente finale.}
 \end{itemize}
 \paragraph{\textbf{(Int) Correttezza}}
+Un programma o sistema software si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti.
+\begin{itemize}
+	\item \textbf{Soddisfazione del cliente:} il cliente è soddisfatto se il software è consforme ai requisiti;
+	\item \textbf{Requisiti opzionali soddisfatti} il cliente è soddisfatto se il software è conforme ai requisiti.
+\end{itemize}
+\subparagraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{percentuale requisiti fondamentali soddisfatti;}
+	\item \textbf{percentuale requisiti opzionali soddisfatti.}
+\end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			requisiti fondamentali \\ soddisfatti  &  95\%  &  100\%      \\ \hline
+			requisiti secondari \\ soddisfatti  &   0\% &   80\%     \\ \hline
+		\end{tabular}%
+	}
+\end{table}
 \paragraph{\textbf{(Int) Affidabilità}}
 	Un sistema è tanto più affidabile quanto più raramente, durantel 'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
 	\begin{itemize}
@@ -49,7 +69,9 @@ Per qualità del software si intende la misura in cui un prodtto software soddis
 \vspace{0.8cm}
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MTBF(Mean Time Between Failure)}
+	\item \textbf{MTBF(Mean Time Between Failures);}
+	\item \textbf{Blocco operazioni non corrette;}
+	\item \textbf{Test conclusi in failure.}
 \end{itemize}
 \begin{table}[!htpb]
 	\resizebox{\textwidth}{!}{%
@@ -57,18 +79,17 @@ Per qualità del software si intende la misura in cui un prodtto software soddis
 			\hline
 			\rowcolor[HTML]{34CDF9} 
 			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			 MTBF                      &                                              &                                            \\ \hline
-			                   &                                              &                                            \\ \hline
-			                    &                                              &                                            \\ \hline
-			                   &                                              &                                            \\ \hline
-			                                 &                                              &                                            \\ \hline
+			 MTBF     &     \textless= 2 ogni 5 build       &     \textless=1 ogni 5 build          \\ \hline
+			 Blocco operazioni\\non corrette   &    80-100\% &  100\%       \\ \hline
+			  Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
 		\end{tabular}%
 	}
 \end{table}
 \subsubsection{(Int) Efficienza (Riferimento ai requisiti prestazionali)}
 Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse. Per questo ci prefiggiamo i seguenti obiettivi:
 \begin{itemize}
-	\item \textbf{Utilizzo delle risorse:} le fdunzionalità del software devono ponderare l'utilizzo delle risorse a diposizione.
+	\item \textbf{Utilizzo delle risorse:} le funzionalità del software devono ponderare l'utilizzo delle risorse a diposizione;
+	\item \textbf{Rispettare la deadline:} il software deve eseguire le proprie funzionalità entro i tempi prestabiliti.
 \end{itemize}
 \vspace{0.8cm}
 \subparagraph{Metriche utilizzate}
@@ -81,23 +102,32 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 			\hline
 			\rowcolor[HTML]{34CDF9} 
 			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			Tempo di risposta                      &                                              &                                            \\ \hline
-			&                                              &                                            \\ \hline
-			&                                              &                                            \\ \hline
-
+			Tempo di risposta        &           0-10s            &      0-3s         \\ \hline                       
 		\end{tabular}%
 	}
 \end{table}
-\subsubsection{Manutenibilità}
+\subsubsection{Manutenibilità - Evolvità}
 Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefissati i seguenti obiettivi:
 \begin{itemize}
-	\item \textbf{}
+	\item \textbf{Incapsulamento:} ogni parte del software aggiunta deve rispettare il \textit{singular responsabilty principle};
+	\item \textbf{Stabilità:} ogni parte del software aggiunta deve essere stabile come le precedenti;
+	\item \textbf{Testabilità:} ogni parte deve essere facilmente testabile come le precedenti.
 \end{itemize}
 \vspace{0.8cm}
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
-	\item
+	\item \textbf{Impatto nuove aggiunte}
 \end{itemize}
+\begin{table}[!htpb]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\rowcolor[HTML]{34CDF9} 
+			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			Impatto nuove aggiunte        &           0-30\%            &      0-10\%         \\ \hline                       
+		\end{tabular}%
+	}
+\end{table}
 \subsubsection{(Ext) Portabilità}
 Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
 \begin{itemize}
@@ -115,32 +145,8 @@ Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto 
 			\hline
 			\rowcolor[HTML]{34CDF9} 
 			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			 Supporto Browser                 &                                   &                                 \\ \hline
-			Funzionalità già eistenti             &                                 &                 \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-\subsubsection{(Ext) Evolvità}
-Rappresenta l'indice di utilizzo delle risorse in maniera proprozionato rispetto ai servizi che svolge. Per questo si sono prefissati i seguenti obiettivi:
-\begin{itemize}
-	\item{\textbf{Deadline:}  il programma deve svolgere il lavoro entro i tempi stabiliti;}
-	\item{\textbf{Prestazioni:} si cerca di mantenere le deadline con il minor utilizzo delle risorse.}
-\end{itemize}
-\vspace{0.8cm}
-\subparagraph{Metriche utilizzate}
-\begin{itemize}
-	\item 
-\end{itemize}
-\begin{table}[!htpb]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|}
-			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			                     &                                              &                                            \\ \hline
-			&                                              &                                            \\ \hline
-			&                                              &                                            \\ \hline
-			
+			 Supporto Browser                 &                80-100\%        &     100\%              \\ \hline
+			Funzionalità già eistenti             &              65-100\%                   &        90-100\%    \\ \hline
 		\end{tabular}%
 	}
 \end{table}
