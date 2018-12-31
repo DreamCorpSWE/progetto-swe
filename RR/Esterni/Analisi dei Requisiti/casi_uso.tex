@@ -3,8 +3,8 @@
         I casi d'uso definiscono interazioni tra il sistema e gli attori esterni. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
         Riportiamo due attori:
         \begin{itemize}
-            \item Utente generico
-            \item Grafana
+            \item Utente generico;
+            \item Grafana.
         \end{itemize}
 
 
@@ -26,7 +26,7 @@
                     \textbf{Contestualizzazione / Scenario principale:} l’utente carica la definizione della rete bayesiana.
                     \newline
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item Problema con l’interpretazione della rete bayesiana \textbf{UC10}
+                            \item Problema con l’interpretazione della rete bayesiana \underline{\textit{UC10}}.
                         \end{enumerate}
                         
                 \includegraphics[width=\textwidth]{UC1.png}
@@ -39,14 +39,14 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item L’utente preme il pulsante per l’upload del file .json contenente la definizione di rete
-                        \item l’utente sceglie il file
-                        \item Upload del file
-                        \item La rete viene caricata
+                        \item L’utente preme il pulsante per l’upload del file .json contenente la definizione di rete;
+                        \item l’utente sceglie il file;
+                        \item Upload del file;
+                        \item La rete viene caricata.
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item C’è stato un problema con l’interpretazione della rete bayesiana \textbf{UC10.1}
+                            \item C’è stato un problema con l’interpretazione della rete bayesiana \underline{\textit{UC10.1}}.
                         \end{enumerate}
                         
                 \subsubsection{UC1.2: Inserimento definizione rete bayesiana sotto forma di codice json}
@@ -57,12 +57,12 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item l’utente incolla il codice json nel text area dedicata
-                        \item l’utente preme il pulsante “Insert Bayesian Network”
+                        \item l’utente incolla il codice json nel text area dedicata;
+                        \item l’utente preme il pulsante “Insert Bayesian Network”.
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item C’è stato un problema con l’interpretazione della rete bayesiana \textbf{UC10.1}
+                            \item C’è stato un problema con l’interpretazione della rete bayesiana \underline{\textit{UC10.1}}.
                         \end{enumerate}
                         
                 \subsubsection{UC2: Associazione un nodo della rete ad un flusso dati di Grafana}
@@ -75,15 +75,15 @@
                     \textbf{Attore secondario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item L’utente seleziona un flusso di monitoraggio
-                        \item Seleziona la funzione “associa”
-                        \item Sceglie la rete bayesiana di interesse da un elenco (se c’è nè più di una)
-                        \item Seleziona il nodo della rete
-                        \item Viene visualizzato un messaggio di conferma (“associazione riuscita”)
+                        \item L’utente seleziona un flusso di monitoraggio;
+                        \item Seleziona la funzione “associa”;
+                        \item Sceglie la rete bayesiana di interesse da un elenco (se c’è nè più di una);
+                        \item Seleziona il nodo della rete;
+                        \item Viene visualizzato un messaggio di conferma (“associazione riuscita”).
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item Gestione duplice associazione di un nodo della rete ad uno stesso flusso dati di Grafana \textbf{UC3}
+                            \item Gestione duplice associazione di un nodo della rete ad uno stesso flusso dati di Grafana \underline{\textit{UC3}}.
                         \end{enumerate}
                 
                 \includegraphics[width=\textwidth]{UC2.png}
@@ -98,11 +98,11 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item Viene visualizzato un messaggio di allerta (“Tentativo duplice associazione”)
+                        \item Viene visualizzato un messaggio di allerta (“Tentativo duplice associazione”);
                         \item All’utente vengono proposte due scelte:
                                 \begin{enumerate}
-                                    \item Annullamento operazione associazione multipla \textbf{UC3.1}
-                                    \item Rimozione nodo precedentemente associato e associazione nuovo nodo \textbf{UC3.2}
+                                    \item Annullamento operazione associazione multipla \underline{\textit{UC3.1}};
+                                    \item Rimozione nodo precedentemente associato e associazione nuovo nodo \underline{\textit{UC3.2}}.
                                 \end{enumerate}
                     \end{enumerate}
                 
@@ -116,7 +116,7 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item Visualizzazione messaggio di conferma annullamento operazione \textbf{UC4}
+                        \item Visualizzazione messaggio di conferma annullamento operazione \underline{\textit{UC4}}.
                     \end{enumerate}
                 
                 \subsubsection{UC3.2: Rimozione nodo precedentemente associato e associazione nuovo nodo}
@@ -129,8 +129,8 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item Rimozione di un nodo della rete associato ad un flusso \textbf{UC5}
-                        \item Associazione un nodo della rete ad un flusso \textbf{UC2}
+                        \item Rimozione di un nodo della rete associato ad un flusso \underline{\textit{UC5}};
+                        \item Associazione un nodo della rete ad un flusso\underline{\textit{UC2}}.
                     \end{enumerate}
                     
                 \subsubsection{UC4: Visualizzazione messaggio di conferma annullamento operazione}
@@ -143,9 +143,9 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item il sistema presenta all’utente un messaggio di conferma annullamento
-                        \item l’utente conferma di voler annullare 
-                        \item l’utente viene reindirizzato alla pagina principale
+                        \item il sistema presenta all’utente un messaggio di conferma annullamento;
+                        \item l’utente conferma di voler annullare; 
+                        \item l’utente viene reindirizzato alla pagina principale.
                     \end{enumerate}
                     
                 \subsubsection{UC5: Rimozione di un nodo della rete associato ad un flusso dati di Grafana}
@@ -160,14 +160,14 @@
                     \textbf{Attore secondario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item L’utente seleziona un flusso di monitoraggio
-                            \item Seleziona la funzione “rimuovi associazione” 
-                            \item Viene visualizzato un messaggio di conferma (“rimozione riuscita”)
+                            \item L’utente seleziona un flusso di monitoraggio;
+                            \item Seleziona la funzione “rimuovi associazione”; 
+                            \item Viene visualizzato un messaggio di conferma (“rimozione riuscita”).
                         \end{enumerate}
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Visualizzazione messaggio di conferma annullamento operazione \textbf{UC4}
+                            \item Visualizzazione messaggio di conferma annullamento operazione \underline{\textit{UC4}}.
                         \end{enumerate}
                         
                 \subsubsection{UC6: Definizione alert personalizzato per un flusso dati non monitorato}
@@ -182,14 +182,14 @@
                     \textbf{Attore secondario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item L’utente preme sul pulsante “create alert”
-                            \item L’utente configura l’alert 
-                            \item L’utente salva la dashboard
+                            \item L’utente preme sul pulsante “create alert”;
+                            \item L’utente configura l’alert ;
+                            \item L’utente salva la dashboard.
                         \end{enumerate}
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Errore nei dati inseriti per la creazione dell'alert \textbf{UC10.3}
+                            \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC10.3}}.
                         \end{enumerate}
                 
                 \includegraphics[width=\textwidth]{UC6.png}
@@ -206,13 +206,13 @@
                     \textbf{Attore secondario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item L’utente configura l’alert 
-                            \item L’utente salva la dashboard
+                            \item L’utente configura l’alert;
+                            \item L’utente salva la dashboard.
                         \end{enumerate}
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Errore nei dati inseriti per la creazione dell'alert \textbf{UC10.3}
+                            \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC10.3}}.
                         \end{enumerate}
                         
                 \includegraphics[width=\textwidth]{UC7.png}
@@ -229,8 +229,8 @@
                     \textbf{Attore secondario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item L’utente preme sul pulsante “delete”
-                            \item L’utente salva la dashboard
+                            \item L’utente preme sul pulsante “delete”;
+                            \item L’utente salva la dashboard.
                         \end{enumerate}
 				
 		\subsection{Attore primario: Granafa}	
@@ -245,14 +245,14 @@
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Grafana rileva che un flusso di monitoraggio (G) non rispetta le condizioni di uno dei suoi alert
-                            \item Grafana invia il messaggio di alert al sistema (noi siamo il sistema a cui invia i dati di alert)
-                            \item I dati vengono gestiti e con l’ausilio della libreria jsbayes vengono ricalcolate le probabilità dei nodi non monitorati
+                            \item Grafana rileva che un flusso di monitoraggio (G) non rispetta le condizioni di uno dei suoi alert;
+                            \item Grafana invia il messaggio di alert al sistema (noi siamo il sistema a cui invia i dati di alert);
+                            \item I dati vengono gestiti e con l’ausilio della libreria jsbayes vengono ricalcolate le probabilità dei nodi non monitorati.
                         \end{enumerate}
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Viene visualizzato un errore di invio messaggio di alert \textbf{UC6.2}
+                            \item Viene visualizzato un errore di invio messaggio di alert \underline{\textit{UC6.2}}.
                         \end{enumerate}
                         
                 \includegraphics[width=\textwidth]{UC9.png}
@@ -269,8 +269,8 @@
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item il sistema avvisa l’utente tramite un messaggio di errore
-                            \item l’utente viene rimandato alla pagina principale
+                            \item il sistema avvisa l’utente tramite un messaggio di errore;
+                            \item l’utente viene rimandato alla pagina principale.
                         \end{enumerate}
                         
                 \subsubsection{UC10.1: Visualizzazione errore interpretazione rete bayesiana}
@@ -285,8 +285,8 @@
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item il sistema avvisa l’utente tramite un messaggio di errore
-                            \item l’utente viene rimandato all’interfaccia di upload
+                            \item il sistema avvisa l’utente tramite un messaggio di errore;
+                            \item l’utente viene rimandato all’interfaccia di upload.
                         \end{enumerate}
                 
                 \subsubsection{UC10.2: Visualizzazione errore invio del messaggio di alert}
@@ -301,7 +301,7 @@
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item il sistema avvisa l’utente tramite un messaggio di errore e tramite l’invio di una mail
+                            \item il sistema avvisa l’utente tramite un messaggio di errore e tramite l’invio di una mail.
                         \end{enumerate}
                         
                 \subsubsection{UC10.3: Visualizzazione errore configurazione dell’alert}
@@ -316,6 +316,6 @@
                     \textbf{Attore secondario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item il sistema avvisa l’utente tramite un messaggio di errore
+                            \item il sistema avvisa l’utente tramite un messaggio di errore;
                         \end{enumerate}
 \newpage
