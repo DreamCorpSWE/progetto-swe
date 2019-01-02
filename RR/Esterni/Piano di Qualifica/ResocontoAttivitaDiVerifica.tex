@@ -6,19 +6,29 @@ In questa sezione verranno analizzate le metriche e le valutazioni scaturite da 
 \clearpage
 \paragraph{Metriche dei processi}
 \hspace{10cm} %risolvere il problema perchè uso il subparagraph
- Verranno presentate solo le metriche dei processi ISO utilizzate fino ad ora.
+\newline Verranno presentate solo le metriche dei processi ISO utilizzate fino ad ora.
 \href{https://www.tablesgenerator.com/}{tabelle}
-\begin{table}[H]
+\begin{table}[!htbp]
+	\centering
+	\renewcommand{\arraystretch}{3} 
+	\rowcolors{2}{gray!25}{white}
 	\begin{tabular}{|l|l|l|l|}
+		\rowcolor{orange!50}
 		\hline
-		\rowcolor[HTML]{34CDF9} 
-		{\color[HTML]{333333} \textbf{Processo}}                                          & {\color[HTML]{333333} \textbf{Valore ottenuto}} & {\color[HTML]{333333} \textbf{Commento}}                                                                                                                                                                                                                             & {\color[HTML]{333333} \textbf{Voto}} \\ \hline
-		Schedule Variance                                                         &                                                 & \begin{tabular}[c]{@{}l@{}}Come si può notare\\ dal diagramma di gantt del ".."\\ sono stati raggiunti\\ gli obiettivi.\end{tabular}                                                                                                                                 &                                      \\ \hline
-		Cost variance                                                             &                                                 & \begin{tabular}[c]{@{}l@{}}Avendo rispettato gli obiettivi \\ entro la deadline prestabilita\\ non ci sono stati aumenti.\end{tabular}                                                                                                                               &                                      \\ \hline
-		Function Points                                                           &                                                 & \begin{tabular}[c]{@{}l@{}}In questa fase non \\ è ancora possibile parlare questa \\ metrica poichè non sono ancora  \\ state decise completamente \\ le funzionalità dell'applicativo \\ e non è ancora stato redatto \\ nessun diagramma a riguardo.\end{tabular} &                                      \\ \hline
-		\begin{tabular}[c]{@{}l@{}}Indisponibilità\\ servizi esterni\end{tabular} &           &     	\begin{tabular}[c]{@{}l@{}}Tutti i servizi \\ esterni da noi usati \\ non hanno avuto disservizi  \end{tabular}  &      \\ \hline
-		\begin{tabular}[c]{@{}l@{}}Rischi non\\ calcolati\end{tabular}            &                                                 & \begin{tabular}[c]{@{}l@{}}Per questa deadline non sono emerse\\ problematiche pertanto non sono presenti\\ rischi non calcolati che gravano\\ sul progetto.\end{tabular}                                                    &                                      \\ \hline
+		\textbf{Processo} & \parbox{2cm}{\textbf{Valore ottenuto}} & \textbf{Commento} & \textbf{Voto} \\
+		\hline
+		Schedule Variance & & \parbox{8cm}{Come si può notare dal diagramma di gantt del ".." sono stati raggiunti gli obiettivi.} & \\
+		\hline
+		Cost variance & & \parbox{8cm}{Avendo rispettato gli obiettivi entro la deadline prestabilita non ci sono stati aumenti.} &\\
+		\hline
+		Function Points & & \parbox{8cm}{In questa fase non è ancora possibile parlare questa metrica poiché non sono ancora state decise completamente le funzionalità dell'applicativo e non è ancora stato redatto nessun diagramma a riguardo.} & \\
+		\hline
+		\parbox{2.5cm}{Indisponibilità servizi esterni} & & \parbox{8cm}{Tutti i servizi esterni da noi usati non hanno avuto disservizi } & \\
+		\hline
+		\parbox{2.5cm}{Rischi non calcolati} & & \parbox{8cm}{Per questa deadline non sono emerse problematiche pertanto non sono presenti rischi non calcolati che gravano sul progetto.} & \\
+		\hline
 	\end{tabular}
+	\caption{TBD}
 \end{table}
 \clearpage
 \paragraph{Maturità macro-processi ISO }
@@ -46,7 +56,7 @@ Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la
 	\clearpage
 \paragraph{Gunning Fog index}
 \hspace{15cm}
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.5]{GunningFogIndex.png}
 	\caption{Gunning Fog index}
@@ -55,7 +65,7 @@ Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la
 %\clearpage
 \paragraph{Simple Measure of Gobbledygook (SMOG)}
 \hspace{15cm}
-\begin{figure}[h!]
+\begin{figure}!htbp]
 	\centering
 	\includegraphics[scale=0.5]{Smog.png}
 	\caption{SMOG}
@@ -63,7 +73,7 @@ Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la
 \clearpage
 \paragraph{Gulpease Index}
 \hspace{15cm}
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.5]{GulpeaseIndex.png}
 	\caption{Gulpease index}

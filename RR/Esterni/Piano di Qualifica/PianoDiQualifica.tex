@@ -1,36 +1,31 @@
-%\input{../../stile/stile.tex}
 \documentclass[12pt]{article}
+
+\newcommand{\documento}{Piano Di Qualifica}
+\input{../../stile/stile.tex}
+\newcommand{\red}{\mic}
+\newcommand{\verp}{TBD}
+\newcommand{\vers}{TBD}
+\newcommand{\res}{TBD}
+\newcommand{\version}{Versione 0.0.0}
+\newcommand{\use}{Esterno}
+\usepackage{eurosym}
+\title{\myfont{Piano di Qualifica}}
+\author{Dream Corp.}
+
+
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
-\usepackage{eurosym}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{hyperref}
-\usepackage{graphicx}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{appendix}
 \usepackage{amsmath, tabu}
 \graphicspath{{immagini/}}
-
-\title{\myfont{Piano di Progetto}}
-\date{ \myfont 05-12-2018}
-
-\title{\myfont Piano di Qualifica}
-\font\myfont=cmr12 at 40pt
 \date{\myfont 04-12-2018}
 
 \begin{document}
 
-\maketitle
-\begin{center}
-\huge Versione 1.00 
-\\G\&B
-\end{center}
-\newpage
-\tableofcontents
-\newpage
-\input{DiarioDelleModifiche}
-\newpage
+\input{../../stile/copertina.tex}
 
 \input{InformazioniSulDocumento.tex}
 \newpage
