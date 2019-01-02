@@ -24,7 +24,7 @@
 			\begin{itemize}
 			\item \textbf{Redazione:} questa fase dura dalla creazione del documento fino alla scrittura completa di tutti i contenuti previsti. Durante questo processo, il Responsabile di Progetto assegna ai Redattori i contenuti da aggiungere e una volta che quest'ultimi saranno esauriti potra' approvare il passaggio alla fase successiva;
 			\item \textbf{Verifica:} in questa fase il documento viene controllato in ogni sua parte attraverso le opportune procedure dai Verificatori che una volta ultimato il lavoro daranno il loro feedback al Responsabile di Progetto; questo puo' dunque approvare il documento che passa quindi alla fase successiva oppure puo' farlo tornare alla fase di Redazione per correggere eventuali imperfezioni riscontrate dai Verificatori;
-			\item \textbf{Approvato:} In questa fase il documento e'pronto per essere rilasciato e la sua versione viene aggiornata ad una major.
+			\item \textbf{Approvato:} In questa fase il documento e' pronto per essere rilasciato e la sua versione viene aggiornata ad una major.
 			\end{itemize}
 		\subsubsection{Lista documenti}
 		\label{3.1.5}
@@ -46,10 +46,10 @@
 			Le norme scritte in questa sezione devono essere seguite in tutti i documenti prodotti dal team DreamCorp:
 			\begin{itemize}
 				\item \textbf{Date:} sono scritte seguendo la regola giorno-mese-anno (DD-MM-YYYY);
-				\item \textbf{Voci nel Glossario:} per segnalare una parola che si trova nel glossario viene posta una G maiuscola a pedice della parola;
+				\item \textbf{Voci nel Glossario:} per segnalare una parola che si trova nel glossario viene posta una \textbf{G} a pedice della parola;
 				\item \textbf{Link interni:} i collegamenti che rimandano a una sezione interna al documento sono scritti in corsivo e sottolineati;
 				\item \textbf{Link esterni:} i collegamenti che rimandano a una pagina web esterna al documento sono scritti in colore blu;
-				\item \textbf{Elenchi puntati:} ogni elemento della lista è caratterizzato da una prima parola o serie di parole in grassetto seguite da due punti \textit{":"} e successivamente dal suo contenuto. Alla fine è posto un punto e virgola \textit{";"} tranne per l'ultimo elemento che è concluso da un punto \textit{"."};
+				\item \textbf{Elenchi puntati:} ogni elemento della lista è caratterizzato in generale da una prima parola o serie di parole in grassetto seguite da due punti \textit{":"} e successivamente dal suo contenuto, ma puo' anche essere formato solamente dal contenuto nei casi in cui non sia necessaria una particolare specifica iniziale. Alla fine è posto un punto e virgola \textit{";"} tranne per l'ultimo elemento che è concluso da un punto \textit{"."};
 				\item \textbf{Citazioni:} le citazioni sono scritte in \textit{corsivo}.
 			\end{itemize}
 		\subsubsection{Struttura dei documenti}
@@ -81,20 +81,20 @@
 			\item \textbf{Contenuto:} occupa l'intera pagina;
 			\item \textbf{Nome Documento:} in basso a sinistra nel piè di pagina;
 			\item \textbf{Numero Pagina:} in basso a destra nel piè di pagina. \newline
-			L'intestazione e il piè di pagina sono separate dal resto del documento attraverso due righe nere orizzontali.
 		\end{itemize}
+		L'intestazione e il piè di pagina sono separate dal resto del documento attraverso due righe nere orizzontali. Ogni nuovo capitolo (identificato in \LaTeX ~con il comando \textit{\textbackslash{}section}) comincia sempre in una nuova pagine.
 		\subsubsection{Strumenti di supporto}
-			Il formato scelto per la stesura della documentazione è il  LATEX che permette una maggiore precisione e uniformità fra tutti i membri del gruppo. L'ambiente di sviluppo scelto è \textbf{TeXstudio} il quale è risultato il più completo in termini di funzioni e praticità.
+			Il formato scelto per la stesura della documentazione è il  LATEX che permette una maggiore precisione e uniformità fra tutti i membri del gruppo. L'ambiente di sviluppo scelto è \textbf{TeXstudio\pedice} il quale è risultato il più completo in termini di funzioni e praticità.
 	\subsection{Versionamento}
-		E' stata scelta la tecnologia Git per le parti del progetto e della documentazione che necessitano di un versionamento e il servizio utilizzato è GitHub. Per tutte le altre parti lo strumento di condivisione di cui si serve il gruppo DreamCorp è una cartella su Google Drive.
+		E' stata scelta la tecnologia Git per le parti del progetto e della documentazione che necessitano di un versionamento e il servizio utilizzato è GitHub. Per tutte le altre parti lo strumento di condivisione di cui si serve il gruppo DreamCorp è una cartella su Google Drive\pedice.
 		\subsubsection{Comandi di base}
 			In seguito vengono descritti i comandi principali di cui si è servito il team per l'uso di Git all'interno del progetto:
 			\begin{itemize}
-				\item \textbf{git clone:} crea una copia in locale del repository;
+				\item \textbf{git clone:} crea una copia in locale del repository\pedice;
 				\item \textbf{git pull:} aggiorna la cartella in locale col contenuto del repository in remoto;
-				\item \textbf{git checkout:} permette di cambiare branch su cui si sta lavorando;
+				\item \textbf{git checkout:} permette di cambiare branch\pedice su cui si sta lavorando;
 				\item \textbf{git add:} aggiunge uno o più file a seconda del comando alla lista dei file tracciati da Git. Aggiungendo il simbolo "." si possono aggiungere tutti i file modificati con un solo comando;
-				\item \textbf{git commit -m "\textit{Messaggio}":} fa il commit delle modifiche effettuate in locale di tutti i file che sono stati aggiunti attraverso il comando \textit{git add}. Il messaggio da inserire non è opzionale e deve descrivere lo scopo del commit;
+				\item \textbf{git commit -m "\textit{Messaggio}":} fa il commit\pedice delle modifiche effettuate in locale di tutti i file che sono stati aggiunti attraverso il comando \textit{git add}. Il messaggio da inserire non è opzionale e deve descrivere lo scopo del commit;
 				\item \textbf{git push:} carica in remoto le modifiche effettuate in locale;
 				\item \textbf{git status:} permette di consultare  lo stato del repository locale mostrando i file tracciati e non.
 			\end{itemize}
