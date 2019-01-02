@@ -14,7 +14,13 @@
 		\subsection{Attore primario: Utente generico}
 		Si riferiscono a tutt quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana o il nostro sistema. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
 		
-		\includegraphics[width=\textwidth]{UC.png}
+		\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=\textwidth]{UC.png}
+			\caption{TBD}
+		\end{figure}
+		\clearpage
+		
 		
 				\subsubsection{UC1: Inserimento definizione rete bayesiana}
                     \textbf{Precondizione:} l’utente deve trovarsi nell’interfaccia principale e deve possedere una definizione di rete bayesiana che vuole inserire.
@@ -25,11 +31,17 @@
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} l’utente carica la definizione della rete bayesiana.
                     \newline
-                    \textbf{Estensioni:} \begin{enumerate}
+                    \textbf{Estensioni:} 
+                    	\begin{enumerate}
                             \item Problema con l’interpretazione della rete bayesiana \underline{\textit{UC10}}.
                         \end{enumerate}
                         
-                \includegraphics[width=\textwidth]{UC1.png}
+                		\begin{figure}[!htbp]
+		                	\centering
+		                	\includegraphics[width=\textwidth]{UC1.png}
+		                	\caption{TBD}
+			            \end{figure}
+		            \clearpage
                         
                 \subsubsection{UC1.1: Inserimento definizione della rete bayesiana sotto forma di file .json}
                     \textbf{Precondizione:}  l’utente deve trovarsi nell’interfaccia principale e possedere un file .json contenente una definizione di rete bayesiana che vuole inserire.
@@ -86,7 +98,12 @@
                             \item Gestione duplice associazione di un nodo della rete ad uno stesso flusso dati di Grafana \underline{\textit{UC3}}.
                         \end{enumerate}
                 
-                \includegraphics[width=\textwidth]{UC2.png}
+                		\begin{figure}[!htbp]
+		                	\centering
+		                	\includegraphics[width=\textwidth]{UC2.png}
+		                	\caption{TBD}
+		                \end{figure}
+	                \clearpage
                 
                 \subsubsection{UC3: Gestione duplice associazione di due nodi della rete ad uno stesso flusso dati di Grafana}
                     \textbf{Descrizione:} il sistema avvisa l’utente che é in corso una duplice associazione di due nodi della stessa rete allo stesso flusso di monitoraggio.
@@ -192,7 +209,12 @@
                             \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC10.3}}.
                         \end{enumerate}
                 
-                \includegraphics[width=\textwidth]{UC6.png}
+                		\begin{figure}[!htbp]
+		                	\centering
+		                	\includegraphics[width=\textwidth]{UC6.png}
+		                	\caption{TBD}
+		                \end{figure}
+	                	\clearpage
                 
                 \subsubsection{UC7: Modifica di un alert}
                     \textbf{Descrizione:} l’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel.
@@ -215,7 +237,12 @@
                             \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC10.3}}.
                         \end{enumerate}
                         
-                \includegraphics[width=\textwidth]{UC7.png}
+                		\begin{figure}[!htbp]
+		                	\centering
+		                	\includegraphics[width=\textwidth]{UC7.png}
+		                	\caption{TBD}
+		                \end{figure}
+	                \clearpage
                         
                 \subsubsection{UC8: Rimozione di un alert}
                     \textbf{Descrizione:}  l’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana.
@@ -252,10 +279,15 @@
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Viene visualizzato un errore di invio messaggio di alert \underline{\textit{UC6.2}}.
-                        \end{enumerate}
-                        
-                \includegraphics[width=\textwidth]{UC9.png}
+                        \item Viene visualizzato un errore di invio messaggio di alert \underline{\textit{UC6.2}}.
+                    \end{enumerate}
+                    
+                	\begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC9.png}
+                    	\caption{TBD}
+                    \end{figure}
+                \clearpage
                         
                 \subsubsection{UC10: Visualizzazione errore}
                     \textbf{Descrizione:}  il sistema avvisa l’utente che c’é stato un errore.
