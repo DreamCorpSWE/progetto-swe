@@ -20,17 +20,21 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 	\item{\textbf{SMOG}}
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			Gulpease index    &   \textgreater= 40   &     \textgreater= 65-100       \\ \hline
 			Errori sintattici     &  0    &   0      \\ \hline
 			Gunning Fog index    &     \textless= 14       &   \textless= 12   \\ \hline
 			SMOG                  &              \textless= 10                                 &                         \textless= 7.5                   \\ \hline
-		\end{tabular}%
+		\end{tabular}
 	}
+	\caption{TBD}
 \end{table}
 \subsubsection{Qualità del software}
 Per qualità del software si intende la misura in cui un prodtto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento sia alla sua struttura interna. I parametri verranno classificati:
@@ -50,15 +54,19 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 	\item \textbf{percentuale requisiti opzionali soddisfatti.}
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			requisiti fondamentali \\ soddisfatti  &  95\%  &  100\%      \\ \hline
 			requisiti secondari \\ soddisfatti  &   0\% &   80\%     \\ \hline
-		\end{tabular}%
+		\end{tabular}
 	}
+	\caption{TBD}
 \end{table}
 \paragraph{\textbf{(Int) Affidabilità}}
 	Un sistema è tanto più affidabile quanto più raramente, durantel 'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
@@ -74,16 +82,20 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 	\item \textbf{Test conclusi in failure.}
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|}
-			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-			 MTBF     &     \textless= 2 ogni 5 build       &     \textless=1 ogni 5 build          \\ \hline
-			 Blocco operazioni\\non corrette   &    80-100\% &  100\%       \\ \hline
-			  Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
-		\end{tabular}%
+	\begin{tabular}{|l|l|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Nome} &  \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+		MTBF     &     \textless= 2 ogni 5 build       &     \textless=1 ogni 5 build          \\ \hline
+		Blocco operazioni non corrette   &    80-100\% &  100\%       \\ \hline
+		Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
+	\end{tabular}
 	}
+	\caption{TBD}
 \end{table}
 \subsubsection{(Int) Efficienza (Riferimento ai requisiti prestazionali)}
 Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse. Per questo ci prefiggiamo i seguenti obiettivi:
@@ -97,14 +109,18 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 	\item \textbf{Tempo di risposta}
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			Tempo di risposta        &           0-10s            &      0-3s         \\ \hline                       
-		\end{tabular}%
+		\end{tabular}
 	}
+	\caption{TBD}
 \end{table}
 \subsubsection{Manutenibilità - Evolvità}
 Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefissati i seguenti obiettivi:
@@ -119,14 +135,18 @@ Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefiss
 	\item \textbf{Impatto nuove aggiunte}
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			Impatto nuove aggiunte        &           0-30\%            &      0-10\%         \\ \hline                       
-		\end{tabular}%
+		\end{tabular}
 	}
+	\caption{TBD}
 \end{table}
 \subsubsection{(Ext) Portabilità}
 Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
@@ -140,13 +160,17 @@ Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto 
 	\item \textbf{Funzionalità già esistenti} (intendo cosa sa già fare rispetto al programma che va a sostituire e cosa c'è di nuovo)
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			 Supporto Browser                 &                80-100\%        &     100\%              \\ \hline
 			Funzionalità già eistenti             &              65-100\%                   &        90-100\%    \\ \hline
-		\end{tabular}%
+		\end{tabular}
 	}
+	\caption{TBD}
 \end{table}

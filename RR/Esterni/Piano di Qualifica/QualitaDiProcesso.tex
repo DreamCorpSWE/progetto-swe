@@ -29,16 +29,24 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 	\item{\textbf{Function Points.} }
 \end{itemize}
 \begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{lll}
+	\begin{tabular}{|l|l|l|}
 		\hline
-		\rowcolor[HTML]{34CDF9} 
-		{\color[HTML]{333333} \textbf{Nome}}         & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-		\multicolumn{1}{|l|}{Schedule Variance} & \multicolumn{1}{l|}{\textgreater = -3 giorni}   & \multicolumn{1}{l|}{0 giorni}                      \\ \hline
-		\multicolumn{1}{|l|}{Budget Variance}  & \multicolumn{1}{l|}{\textgreater = -15\%}    & \multicolumn{1}{l|}{\textgreater = 0}               \\ \hline
-		\multicolumn{1}{|l|}{Function Points}     & \multicolumn{1}{l|}{-}       & \multicolumn{1}{l|}{-}      \\ \hline
-	\end{tabular}%
-}
+		\rowcolor{orange!50} 
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		Schedule Variance & \textgreater = -3 giorni &0 giorni \\
+		\hline
+		Budget Variance & \textgreater = -15\% & \textgreater = 0 \\ 
+		\hline
+		Function Points & - & - \\
+		\hline
+	\end{tabular}
+	}
+	\caption{TBD}
 \end{table}
 
 \subsubsection{Verifica (prc2)}
@@ -58,18 +66,30 @@ Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
 	\item{\textbf{Branch coverage}}
 \end{itemize}
 \begin{table}[!htpb]
+	%\resizebox{\textwidth}{!}{%
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
+		\rowcolor{orange!50}
 		\hline
-		\rowcolor[HTML]{34CDF9} 
-		{\color[HTML]{333333} \textbf{Nome}} & {\color[HTML]{333333} \textbf{Accettazione}} & {\color[HTML]{333333} \textbf{Ottimalità}} \\ \hline
-		Line coverage              &                90\%                              &                100\%                            \\ \hline
-		Functional coverage                &     93\%(non più alto per evitare ridondanza)         &  	100\%             \\ \hline
-		Path coverage                        &        96\%           &              100\%                              \\ \hline
-		Condition coverage                   &            98\%       &               100\%                             \\ \hline
-		Branch coverage                   &            95\%                 &               100\%                             \\ \hline
-	\end{tabular}%
-}
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		Line coverage & 90\% & 100\% \\
+		\hline
+		Functional coverage & 93\%(non più alto per evitare ridondanza) & 100\% \\
+		\hline
+		Path coverage & 96\% & 100\% \\
+		\hline
+		Condition coverage & 98\% & 100\% \\
+		\hline
+		Branch coverage & 95\% & 100\% \\
+		\hline
+	\end{tabular}
+	}
+	\caption{TBD}
+%}
 \end{table}
 \subsubsection{Analisi e gestione dei rischi (prc3)}
 Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi durante tutto il processo di realizzazione. Si prefiggonon quindi i seguenti obiettivi:
@@ -84,15 +104,22 @@ Vengono così utilizzate le seguenti metriche:
 	\item{\textbf{Rischi non calcolati}}
 	\subparagraph{nota:} per le metriche descritte in questa tabella viene utilizzato un indice numerico positivo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo. (\textbf{non so se le note vadano qui o vadano spiegate in qualche altro documento})
 \end{itemize}
-\begin{table}[!h]
+\begin{table}[!htbp]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
 			\hline
-			\rowcolor[HTML]{34CDF9} 
-			{\color[HTML]{333333} Nome}                                               & {\color[HTML]{333333} Accettazione} & {\color[HTML]{333333} Ottimalità} \\ \hline
-			\begin{tabular}[c]{@{}l@{}}Servizi\\ esterni non \\ raggiungibili\end{tabular} &                0                     &              0                     \\ \hline
-			\begin{tabular}[c]{@{}l@{}}Rischi\\ non previsti\end{tabular} & 0 & 0                                 \\ \hline
-		\end{tabular}%
+			Nome & Accettazione & Ottimalità \\
+			\hline
+			Servizi esterni non raggiungibili & 0 & 0 \\
+			\hline
+			Rischi non previsti & 0 & 0 \\
+			\hline
+		\end{tabular}
+	\caption{TBD}
 	}
 \end{table}
 \newpage
