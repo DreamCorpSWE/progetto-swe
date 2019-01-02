@@ -10,11 +10,14 @@
 \usepackage{lastpage}
 \usepackage{nopageno}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
 \usepackage [colorlinks=true,urlcolor=blue, linkcolor=black]{hyperref}
 \newcommand{\subtitle}[1]{%
     \posttitle{%
         \par\end{center}
         \begin{center}\LARGE#1\end{center}
+
     \vskip0.5em}%
 }
 
@@ -30,7 +33,16 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\leftmark}
-\lhead{\includegraphics[width = 15mm]{logo.png}}
+\lhead{\includegraphics[width = 20mm]{../../logo.png}}
 \rfoot{Pagina \thepage \space di \pageref{LastPage}}
-\lfoot{Analisi dei requisiti}
+\lfoot{\documento}
 \renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\mat}{Matteo Bordin}
+\newcommand{\pie}{Pietro Casotto}
+\newcommand{\mic}{Michele Clerici}
+\newcommand{\mar}{Marco Davanzo}
+\newcommand{\daG}{Davide Ghiotto}
+\newcommand{\daL}{Davide Liu}
+\newcommand{\gia}{Gianluca Pegoraro}
+\newcommand{\pedice}{\ped{\textbf{G}}}

@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+
+\newcommand{\documento}{Piano Di Qualifica}
+\input{../../stile/stile.tex}
+\newcommand{\red}{\mic}
+\newcommand{\verp}{TBD}
+\newcommand{\vers}{TBD}
+\newcommand{\res}{TBD}
+\newcommand{\version}{Versione 0.0.0}
+\newcommand{\use}{Esterno}
+\usepackage{eurosym}
+\title{\myfont{Piano di Qualifica}}
+\author{Dream Corp.}
+
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{amsmath, tabu}
+\graphicspath{{immagini/}}
+\date{\myfont 04-12-2018}
+
+\begin{document}
+
+\input{../../stile/copertina.tex}
+
+\input{InformazioniSulDocumento.tex}
+\newpage
+\input{QualitaDiProcesso.tex}
+\newpage
+\input{QualitaDiSoftware.tex}
+\newpage
+
+%Appendici
+\appendix
+\input{ResocontoAttivitaDiVerifica.tex}
+\newpage
+\input{TestDiUnita.tex}
+\newpage
+\input{TestDiIntegrazione.tex}
+\newpage
+\end{document}
