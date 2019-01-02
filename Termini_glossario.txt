@@ -1,0 +1,44 @@
+//Da Analisi dei Requisiti
+capitolato
+DevOps
+Zucchetti
+plug-in
+Grafana
+Javascript
+json
+rete bayesiana
+flusso di monitoraggio
+intelligenza artificale
+dashboard
+alert
+casi d'uso
+attori esterni (utente generico e grafana)
+panel
+strumento di monitoraggio
+query
+machine learning
+requisiti
+github
+airbnb
+open-source
+
+//Da Norme di Progetto
+efficenza
+stakeholders
+UML
+Slack
+Gmail
+IssueTrackingSystem
+TexStudio
+Google Drive
+repository
+branch
+commit
+
+//Da Piano di Progetto
+Framework
+Tecnology Baseline
+Diagramma di Gantt
+Milestone
+
+\newcommand{\pedice}{\ped { \textbf{G}}}
