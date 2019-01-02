@@ -9,6 +9,8 @@
 \usepackage{lastpage}
 \usepackage{nopageno}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
 \usepackage [colorlinks=true,urlcolor=blue, linkcolor=black]{hyperref}
 \newcommand{\subtitle}[1]{%
     \posttitle{%
@@ -30,7 +32,16 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\leftmark}
-\lhead{Logo azienda}
+\lhead{\includegraphics[width = 20mm]{../../logo.png}}
 \rfoot{Pagina \thepage \space di \pageref{LastPage}}
-\lfoot{Studio di fattibilità}
+\lfoot{\documento}
 \renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\mat}{Matteo Bordin}
+\newcommand{\pie}{Pietro Casotto}
+\newcommand{\mic}{Michele Clerici}
+\newcommand{\mar}{Marco Davanzo}
+\newcommand{\daG}{Davide Ghiotto}
+\newcommand{\daL}{Davide Liu}
+\newcommand{\gia}{Gianluca Pegoraro}
+\newcommand{\pedice}{\ped{\textbf{G}}}
