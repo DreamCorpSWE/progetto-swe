@@ -2,8 +2,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[acronym, toc, xindy]{glossaries}
 
-\input{stile.tex}
-\usepackage{eurosym}
+\newcommand{\documento}{Glossario}
+\input{../../stile/stile.tex}
+\newcommand{\red}{TBD}
+\newcommand{\verp}{TBD}
+\newcommand{\vers}{TBD}
+\newcommand{\res}{TBD}
+\newcommand{\version}{Versione TBD}
+\newcommand{\use}{Esterno}
 \title{\myfont{Glossario}}
 \author{Dream Corp.}
 
@@ -15,14 +21,33 @@
 
 \begin{document}
     
-    \maketitle
-	\begin{center}
-	\huge Versione 0.0.3 
+\maketitle
+\begin{center}
+	\includegraphics[width = 70mm]{../../logo.png}\newline
+	\huge \version 
 	\\G\&B
-	\end{center}
-    \newpage
-    
-    \input{log_modifiche.tex}
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Redazione & \red \\
+			Verifica & \verp\\
+			& \vers\\
+			Responsabile & \res\\
+			Uso & \use\\
+			Destinatari & Dream Corp. \\
+			& Zucchetti SpA\\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+		\end{tabular}
+	\end{table}
+	
+\end{center}
+\newpage
+\input{versionamento.tex}
     
     \glsaddall
 
