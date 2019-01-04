@@ -37,7 +37,7 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 	\caption{TBD}
 \end{table}
 \subsubsection{Qualità del software}
-Per qualità del software si intende la misura in cui un prodtto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento sia alla sua struttura interna. I parametri verranno classificati:
+Per qualità del software si intende la misura in cui un prodtto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento sia alla sua struttura interna. I parametri verranno classificati in:
 \begin{itemize}
 	\item{\textbf{Interni (Int):} qualità percepita dagli sviluppatori;}
 	\item{\textbf{Esterni (Ext):} qualità percepita dall'utente finale.}
@@ -45,13 +45,13 @@ Per qualità del software si intende la misura in cui un prodtto software soddis
 \paragraph{\textbf{(Int) Correttezza}}
 Un programma o sistema software si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti.
 \begin{itemize}
-	\item \textbf{Soddisfazione del cliente:} il cliente è soddisfatto se il software è consforme ai requisiti;
-	\item \textbf{Requisiti opzionali soddisfatti} il cliente è soddisfatto se il software è conforme ai requisiti.
+	\item \textbf{Soddisfazione del cliente:} il cliente è soddisfatto se il software è conforme ai requisiti;
+	\item \textbf{Requisiti opzionali soddisfatti:} il cliente è soddisfatto se il software è conforme ai requisiti.
 \end{itemize}
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{percentuale requisiti fondamentali soddisfatti;}
-	\item \textbf{percentuale requisiti opzionali soddisfatti.}
+	\item \textbf{percentuale requisiti fondamentali soddisfatti}
+	\item \textbf{percentuale requisiti opzionali soddisfatti}
 \end{itemize}
 \begin{table}[!htpb]
 	\centering
@@ -62,14 +62,14 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 			\rowcolor{orange!50}
 			\hline
 			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
-			requisiti fondamentali \\ soddisfatti  &  95\%  &  100\%      \\ \hline
-			requisiti secondari \\ soddisfatti  &   0\% &   80\%     \\ \hline
+			requisiti fondamentali soddisfatti  &  95\%  &  100\%      \\ \hline
+			requisiti secondari soddisfatti  &   0\% &   80\%     \\ \hline
 		\end{tabular}
 	}
-	\caption{TBD}
+	\caption{Metriche utilizzate per la Correttezza}
 \end{table}
 \paragraph{\textbf{(Int) Affidabilità}}
-	Un sistema è tanto più affidabile quanto più raramente, durantel 'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
+	Un sistema è tanto più affidabile quanto più raramente, durante l'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
 	\begin{itemize}
 	\item \textbf{Adattabilità:} adattarsi al tipo di utente;
 	\item \textbf{Tempo medio:} tenere basso il tempo medio che intercorre tra due fallimenti successivi.
@@ -95,7 +95,7 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 		Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
 	\end{tabular}
 	}
-	\caption{TBD}
+	\caption{Metriche utilizzate per Affidabilità}
 \end{table}
 \subsubsection{(Int) Efficienza (Riferimento ai requisiti prestazionali)}
 Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse. Per questo ci prefiggiamo i seguenti obiettivi:
@@ -120,9 +120,9 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 			Tempo di risposta        &           0-10s            &      0-3s         \\ \hline                       
 		\end{tabular}
 	}
-	\caption{TBD}
+	\caption{Metriche utilizzate Efficienza}
 \end{table}
-\subsubsection{Manutenibilità - Evolvità}
+\subsubsection{Manutenibilità}
 Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefissati i seguenti obiettivi:
 \begin{itemize}
 	\item \textbf{Incapsulamento:} ogni parte del software aggiunta deve rispettare il \textit{singular responsabilty principle};
@@ -146,7 +146,7 @@ Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefiss
 			Impatto nuove aggiunte        &           0-30\%            &      0-10\%         \\ \hline                       
 		\end{tabular}
 	}
-	\caption{TBD}
+	\caption{Metriche utilizzate Manutenibilità}
 \end{table}
 \subsubsection{(Ext) Portabilità}
 Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
@@ -172,5 +172,5 @@ Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto 
 			Funzionalità già eistenti             &              65-100\%                   &        90-100\%    \\ \hline
 		\end{tabular}
 	}
-	\caption{TBD}
+	\caption{Metriche utilizzate Portabilità}
 \end{table}
