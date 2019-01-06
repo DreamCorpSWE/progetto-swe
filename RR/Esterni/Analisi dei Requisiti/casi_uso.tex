@@ -108,7 +108,7 @@
                 \subsubsection{UC3: Gestione duplice associazione di due nodi della rete ad uno stesso flusso dati di Grafana}
                     \textbf{Descrizione:} il sistema avvisa l’utente che é in corso una duplice associazione di due nodi della stessa rete allo stesso flusso di monitoraggio.
                     \newline
-                    \textbf{Precondizione:} l’utente ha giá associato ad un nodo della rete il flusso di interesse.
+                    \textbf{Precondizione:} l’utente ha giá associato il flusso di interesse ad un nodo della rete.
                     \newline
                     \textbf{Postcondizione:}  La rete bayesiana possiede un solo nodo associato al flusso di monitoraggio di interesse.
                     \newline
@@ -188,7 +188,7 @@
                         \end{enumerate}
                         
                 \subsubsection{UC6: Definizione alert personalizzato per un flusso dati non monitorato}
-                    \textbf{Descrizione:} l’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel
+                    \textbf{Descrizione:} l’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione "alert" all'interno dell'edit di un panel.
                     \newline
                     \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana.
                     \newline
@@ -200,7 +200,7 @@
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                             \item L’utente preme sul pulsante “create alert”;
-                            \item L’utente configura l’alert ;
+                            \item L’utente configura l’alert;
                             \item L’utente salva la dashboard.
                         \end{enumerate}
                     
@@ -217,11 +217,11 @@
 	                	\clearpage
                 
                 \subsubsection{UC7: Modifica di un alert}
-                    \textbf{Descrizione:} l’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed e’ gia’ sulla sezione alert di edit di un panel.
+                    \textbf{Descrizione:} l’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed è già sulla sezione "alert" all'interno dell'edit di un panel.
                     \newline
                     \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
                     \newline
-                    \textbf{Postcondizione:} e’ stato modificato un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} è stato modificato un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -247,9 +247,9 @@
                 \subsubsection{UC8: Rimozione di un alert}
                     \textbf{Descrizione:}  l’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana.
                     \newline
-                    \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
+                    \textbf{Precondizione:} sono presenti dei flussi dati non monitorati su Grafana ed esiste un alert a loro associato.
                     \newline
-                    \textbf{Postcondizione:} e’ stato rimosso un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} è stato rimosso un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -265,14 +265,14 @@
 		        \subsubsection{UC9: Lancio di un alert}
                     \textbf{Descrizione:} Grafana ha rilevato che una delle condizioni dell'alert sono state violate e avviene quindi il "lancio" dell'alert stesso.
                     \newline
-                    \textbf{Precondizione:} Il flusso di monitoraggio (G) di interesse ha un alert ed è associato ad un nodo di una rete bayesiana.
+                    \textbf{Precondizione:} Il flusso di monitoraggio \pedice{G} di interesse ha un alert ed è associato ad un nodo di una rete bayesiana.
                     \newline
                     \textbf{Postcondizione:} Vengonono interpretati i dati per il ricalcolo delle probabilità con il contributo di “jsbayes”.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Grafana rileva che un flusso di monitoraggio (G) non rispetta le condizioni di uno dei suoi alert;
+                            \item Grafana rileva che un flusso di monitoraggio \pedice{G} non rispetta le condizioni di uno dei suoi alert;
                             \item Grafana invia il messaggio di alert al sistema (noi siamo il sistema a cui invia i dati di alert);
                             \item I dati vengono gestiti e con l’ausilio della libreria jsbayes vengono ricalcolate le probabilità dei nodi non monitorati.
                         \end{enumerate}
