@@ -1,1 +1,77 @@
-\section{consuntivo e preventivo a finire}
+\section{Consuntivo di periodo e Preventivo a finire}
+spiegazione di come imposto le tabelle successive
+\subsection{Consuntivo di periodo}
+\subsubsection{Consuntivo Orario del Periodo di avvio e analisi}
+\begin{table}[!htbp]
+			\centering
+			\renewcommand{\arraystretch}{2} 
+			\rowcolors{2}{gray!25}{white}
+			\begin{tabular}{|l c c c c c c|c| }
+				\rowcolor{orange!50}
+				\hline
+				\multicolumn{8}{|c|}{\textbf{Consuntivo orario del Periodo di avvio e analisi}}\\
+				\hline
+				\textbf{Nominativo} & RES 	& AMM 	& ANA 	& PRO 	& PRG 	& VER 	& \textbf{Totale} \\
+				\hline
+				\mat 				& -		& 6		& 10 \red{+1} & -		& -		& 2		& 18 \red{+1}\\
+				\hline
+				\pie 				& 12 \red{+2}	& -		& 6 \green{-1}		& -		& - 	& -		& 18 \red{+1}\\
+				\hline
+				\mic  				& -		& -		& 6	\green{-1}	& -		& -		& 12 \red{+1}	& 18\\
+				\hline
+				\mar  				& -		& 12 \green{-2}	& 2		& -		& - 	& 4 \red{+2}	& 18\\
+				\hline
+				\daG  				& 6		& -		& 12 \green{-1}	& -		& - 	& -		& 18 \green{-1}\\
+				\hline
+				\daL 				& -		& 3 \green{-1}		& 11	& -		& -		& 4		& 18 \green{-1}\\
+				\hline
+				\gia 				& -		& 6	\red{+2}	& -		& -		& -		& 12 \green{-2} & 18\\
+				\hline
+			\end{tabular}
+			\caption{Consuntivo Orario del Periodo di avvio e analisi}
+		\end{table}
+\subsubsection{Consuntivo economico del Periodo di avvio e analisi}
+\begin{table}[!htbp]
+			\centering
+			\renewcommand{\arraystretch}{2} 
+			\rowcolors{2}{gray!25}{white}
+			\begin{tabular}{| c c c|}
+				\rowcolor{orange!50}
+				\hline
+				\multicolumn{3}{|c|}{\textbf{Consuntivo economico del Periodo di avvio e analisi}}\\
+				\hline
+				\textbf{Ruolo} 			& Ore 	& Costo\\
+				\hline
+				\textbf{Responsabile}	& 18 \red{+2} 	& 540 \red{+60}\\
+				\hline
+				\textbf{Amministratore}	& 27 \green{-1}	& 540 \green{-20}\\
+				\hline
+				\textbf{Analista}		& 47 \green{-2}	& 1175 \green{-50}\\
+				\hline
+				\textbf{Progettista}	& 0 	& 0\\
+				\hline
+				\textbf{Programmatore}	& 0 	& 0\\
+				\hline
+				\textbf{Verificatore} 	& 34 \red{+1}	& 510 \red{+15}\\
+				\hline
+				\textbf{Totale} 		& 126	& 2768 \red{+5}\\
+				\hline 
+			\end{tabular}
+			\caption{Consuntivo economico del Periodo di avvio e analisi}
+		\end{table}
+\subsubsection{Conclusioni}
+\subsection{Preventivo a finire}
+\begin{table}[h!] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Col1} & \textbf{Col2} & \textbf{Col3} & \textbf{Col4}\\
+                \hline
+                Value1 & Value2 & Value3 & Value4\\
+        \end{tabular}
+        \caption{Preventivo a finire} %descrizone a fine tabella
+        \label{tab:my_label}
+\end{table}
