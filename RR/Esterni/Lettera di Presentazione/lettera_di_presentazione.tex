@@ -1,22 +1,14 @@
-\documentclass[10pt,stdletter,dateno,sigright]{newlfm} 
+\documentclass[12pt,stdletter,dateno,sigright]{newlfm} 
 
-\input{..\..\stile\stile.tex}
+\input{../../stile/stile.tex}
 \usepackage{charter} % Use the Charter font for the document text
 \usepackage{hyperref}
 \usepackage[italian]{babel}
 \usepackage{eurosym}
-\usepackage{color, colortbl}
-\usepackage{tabu}
-
-\definecolor{tableHeader}{RGB}{34,139,34}
-\definecolor{tableLineOne}{RGB}{245, 245, 245}
-\definecolor{tableLineTwo}{RGB}{224, 224, 224}
-\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
-%\tabulinesep = \^2.5mm\_1.5mm
-
+\usepackage[table]{color, colortbl}
 
 \newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
-\includegraphics[width=1.2\linewidth]{logo.png}}} 
+	\includegraphics[width=1.2\linewidth]{../../logo.png}}} 
 \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
 
 \newlfmP{sigsize=0.1in} % Slightly decrease the height of the signature field
@@ -31,11 +23,11 @@
 %	YOUR NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\namefrom{\pie \\ \ProjectResp\ \\ \GroupName \\ } % Name
+\namefrom{\pie \\ Responsabile di Progetto \\ \GroupName \\ } % Name
 
 \addrfrom{
-12 gennaio 2019\\[12pt] % Date
-Via Trieste, 63, 35131, Padova (PD) 
+	12 gennaio 2019\\[12pt] % Date
+	Via Trieste, 63, 35131, Padova (PD) 
 }
 
 \emailfrom{\Email} % Email address
@@ -48,72 +40,76 @@ Via Trieste, 63, 35131, Padova (PD)
 \closeline{Cordiali Saluti,} % Closing text
 
 \nameto{Alla cortese attenzione del Committente: \\Prof. Tullio Vardanega 
-\\Prof. Riccardo Cardin } % Addressee of the letter above the to address
-\signature{\includegraphics[height=0.09\textheight]{./firma/pietro.jpeg}}
+	\\Prof. Riccardo Cardin } % Addressee of the letter above the to address
+\signature{\includegraphics[height=0.09\textheight]{../../stile/firme/pietro.png}}
 
 \addrto{
-Universit\`a degli Studi di Padova \\ % To address
-Dipartimento di Matematica \\
-Via Trieste, 62, 35131 Padova (PD)
+	Università degli Studi di Padova \\ % To address
+	Dipartimento di Matematica \\
+	Via Trieste, 62, 35131 Padova (PD)
 }
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\begin{newlfm}
-
-
-Con la presente, il gruppo DreamCorp. intende comunicarVi ufficialmente l'impegno alla realizzazione del prodotto da Voi commissionato, denominato:
-\begin{center}
-    \textbf{\textit{G\&B: monitoraggio intelligente di processi DevOps}}
-\end{center}
-proposto da Zucchetti.
-
-Allegati alla presente lettera potrete trovare i seguenti documenti che illustrano in dettaglio analisi del prodotto, di pianificazione e relativi criteri a garanzia della qualità:
- 
-\begin{itemize}
-    \item \textit{Analisi dei Requisiti v1.0.0} (Esterni/AnalisiDeiRequisiti.pdf);
-    \item \textit{Glossario\ v1.0.0} (Esterni/Glossario.pdf);
-    \item \textit{Piano di Progetto v1.0.0} (Esterni/PianoDiProgetto.pdf);
-    \item \textit{Piano di Qualifica v1.0.0} (Esterni/PianoDiQualifica.pdf);
-    \item \textit{Verbali} (Interni/Verbali.pdf);
-    \item \textit{Norme di Progetto v 1.0.0}; (Interni/NormeDiProgetto.pdf);
-    \item \textit{Studio di Fattibilità v 1.0.0} (Interni/StudioDiFattibilita.pdf).
-\end{itemize}
- 
-Il gruppo DreamCorp. ha stimato di consegnare il prodotto richiesto entro il giorno \textit{venerdì 10 Maggio 2019}, con relativo collaudo, salvo ulteriori accordi, per il giorno \textit{Venerdì 17 Maggio 2019}. 
-Il preventivo di costo fissato \`e pari a \textbf{13264 \euro}, come descritto all'interno del piano di progetto.\\ \\
-\newpage
-\ \\
-Di seguito sono riportati i membri del gruppo:
-\begin{table}[!htpb]
-	\centering
-	\renewcommand{\arraystretch}{2} 
-	\rowcolors{2}{gray!25}{white}
-	\begin{tabular}{c |c}
-		\rowcolor{orange!50}
-			%\hline
-			\textbf{Nome} & \textbf{Matricola} \\
-			%\hline
-			% sostituire Nome Cognome con il comando appropriato
-			\mat & 1140775 \\
-			%\hline
-			\mic & 1122656\\
-			%\hline
-			\daG & 1144423 \\
-			%\hline
-			\daL & 1140717\\
-			%\hline
-			\gia & 1049140\\
-			%\hline
-			\mar & 1096549\\
-			%\hline
-			\pie & 1097143\\
-			%\hline
-	\end{tabular}
-\end{table}
-\newline
-Rimaniamo a Vostra completa disposizione per rispondere a dubbi e chiarimenti sui documenti presentati. \\ \\
-%----------------------------------------------------------------------------------------
-\end{newlfm}
+	\begin{newlfm}
+		Con la presente, il gruppo \GroupName intende comunicarVi ufficialmente l'impegno alla realizzazione del prodotto da Voi commissionato, denominato:
+		\begin{center}
+			\textbf{\textit{G\&B: monitoraggio intelligente di processi DevOps}}
+		\end{center}
+		proposto da ZUCCHETTI SpA.
+		
+		Allegati alla presente lettera potrete trovare i seguenti documenti che illustrano in dettaglio l'analisi del prodotto, la pianificazione e i relativi criteri a garanzia della qualità:
+		
+		\begin{itemize}
+			\item \textit{Analisi dei Requisiti v1.0.0} (Esterni/AnalisiDeiRequisiti.pdf);
+			\item \textit{Glossario\ v1.0.0} (Esterni/Glossario.pdf);
+			\item \textit{Piano di Progetto v1.0.0} (Esterni/PianoDiProgetto.pdf);
+			\item \textit{Piano di Qualifica v1.0.0} (Esterni/PianoDiQualifica.pdf);
+			\item \textit{Verbali} (Interni/Verbali.pdf);
+			\item \textit{Norme di Progetto v 1.0.0}; (Interni/NormeDiProgetto.pdf);
+			\item \textit{Studio di Fattibilità v 1.0.0} (Interni/StudioDiFattibilita.pdf).
+		\end{itemize}
+		
+		Il gruppo \GroupName ha stimato di consegnare il prodotto richiesto entro il giorno \textit{venerdì 10 Maggio 2019}, con relativo collaudo, salvo ulteriori accordi, per il giorno \textit{Venerdì 17 Maggio 2019}. 
+		Il preventivo di costo fissato \`e pari a \textbf{13264 \euro}, come descritto all'interno del piano di progetto.
+		\newline
+		~\newline
+		Di seguito sono riportati i membri del gruppo:
+		\begin{table}[!htpb]
+			\centering
+			\renewcommand{\arraystretch}{2}
+			\begin{tabular}{c |c}
+				\rowcolor{orange!50}
+				%\hline
+				\textbf{Nome} & \textbf{Matricola} \\
+				%\hline
+				\rowcolor{white}
+				\mat & 1140775 \\
+				%\hline
+				\rowcolor{gray!25}
+				\pie & 1097143\\
+				%\hline
+				\rowcolor{white}
+				\mic & 1122656\\
+				%\hline
+				\rowcolor{gray!25}
+				\mar & 1096549\\
+				%\hline
+				\rowcolor{white}
+				\daG & 1144423 \\
+				%\hline
+				\rowcolor{gray!25}
+				\daL & 1140717\\
+				%\hline
+				\rowcolor{white}
+				\gia & 1049140\\
+				%\hline
+			\end{tabular}
+		\end{table}
+		\newline
+		Rimaniamo a Vostra completa disposizione per rispondere a dubbi e chiarimenti sui documenti presentati.
+		\newline ~\newline
+	\end{newlfm}
 \end{document}
+
