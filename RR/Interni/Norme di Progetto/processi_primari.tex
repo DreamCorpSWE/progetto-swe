@@ -107,5 +107,36 @@
 	        \item Ripartire il problema originale in maniera ricorsiva facilitando cosi la codifica delle componenti;
 	        \item Ottimizzare.
 	    \end{itemize}	
-	    \subsubsection{Uso di diagrammi}
-	    Al fine di essere il più comprensibili possibile sarà necessario far uso su larga scala di diagrammi UML\pedice 2.0
+	    \textbf{Uso di diagrammi} Al fine di essere il più comprensibili possibile sarà necessario far uso su larga scala di diagrammi UML\pedice 2.0
+	    \subsubsection{Codifica}
+	In  questa  sotto-sezione  vengono  elencate  le  norme   alle  quali  i  Programmatori  devono attenersi durante l’attivita di programmazione ed implementazione. Ogni  norma e'  rappresentata  da  un  paragrafo contenente un titolo,  una breve descrizione e, se necessario, un esempio esplicativo.  Alcune di esse possono anche contenere una lista di possibili eccezioni d’uso. L’uso di norme e convenzioni e' fondamentale per permettere la generazione di codice leggibile e uniforme, agevolare le fasi di manutenzione,  verifica e validazione e migliorare la qualita' di prodotto. \newline
+~\newline	
+\textbf{Identazione 1:} I blocchi innestati devono essere correttamente indentati usando quattro spazi per ciascun livello. \newline
+	Esempio:\newline
+~\newline	
+	\textbf{Identazione 2:} E' vietato l'uso di tabulazioni che possono non essere uniformi tra diversi editor o IDE. Al loro posto vanno usati gli opportuni spazi. \newline
+~\newline	
+	\textbf{Identazione 3:} Il codice che fa parte di un blocco deve essere innestato allo stesso livello di quel blocco. \newline
+	Esempio:\newline
+~\newline	
+	\textbf{Parentesizzazione 1:} I blocchi di codice sono sempre racchiusi fra parentesi graffe.\newline 
+	\textbf{Eccezione:} se il blocco e' composto da un'unica istruzione le parentesi possono essere omesse.\newline
+	~\newline
+	\textbf{Parentesizzazione 2:} Le parentesi graffe iniziano sempre nella stessa linea del codice. \newline
+	~\newline
+	\textbf{Nomenclatura:} Classi, metodi e variabili devono avere un nome univoco e quanto piu' descrittivo possibile. Inoltre devono rispettare le buone norme di scrittura in modo da distingure immediatamente se si tratta di un nome di una classe, un metodo o una variabile. Nello specifico:\newline
+	\begin{itemize}
+	\item \textbf{Classi:} cominciano sempre con la lettera maiuscola;
+	\item \textbf{Metodi:} cominciano sempre con una lettera minuscola e se sono composti da piu' parole le successive iniziano con una lettera maiuscola;
+	\item \textbf{Variabili:} tutte le lettere sono minuscole ed e' consentito l'utilizzo del simbolo underscore "\_".\newline
+	\end{itemize}
+	La lingua utilizzata deve essere l'inglese.\newline
+	~\newline
+	\textbf{TODO:} Un commento TODO va utilizzato per descrivere codice non definitivo, migliorabile e per soluzioni a breve termine. Puo' essere anche usato per eventi futuri specificando accuratamente la data.\newline
+	\textbf{Esempio:}\newline
+	~\newline
+	\textbf{Visibilita':} Le variabili vanno dichiarate strettamente dove sono necessarie, ovvero nel blocco piu' interno che comprenda il loro utilizzo. Le variabili di ciclo vanno dichiarate nello statement a meno di una motivazione valida e oppotunamente giustificata per non fare cio'. Le variabili globali vanno evitate in tutti i casi.\newline
+	~\newline
+	\textbf{Inizializzazione:} Le variabili vanno inizializzate il prima possibile, nel migliore dei casi subito dopo la loro dichiarazione. \newline
+	~\newline
+	\textbf{Lunghezza metodi e codice:} E' da evitare una lunghezza eccessiva sia nei metodi che nelle righe di codice. Nel primo caso una giusta suddivisione rende piu' manutenibili i vari metodi e piu' chiaro il loro scopo, nel secondo rende il codice piu' scorrevole \newline
