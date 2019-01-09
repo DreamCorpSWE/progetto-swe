@@ -19,11 +19,10 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 	\item{\textbf{Gunning Fog index}}
 	\item{\textbf{SMOG}}
 \end{itemize}
-\begin{table}[!htpb]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
@@ -33,8 +32,7 @@ Ci si prefigge lo scopo di creare dei documenti standardizzati, per questo i nos
 			Gunning Fog index    &     \textless= 14       &   \textless= 12   \\ \hline
 			SMOG                  &              \textless= 10                                 &                         \textless= 7.5                   \\ \hline
 		\end{tabular}
-	}
-	\caption{TBD}
+	\caption{Metriche utilizzate Qualità dei documenti}
 \end{table}
 \subsubsection{Qualità del software}
 Per qualità del software si intende la misura in cui un prodtto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento che alla struttura interna. I parametri verranno classificati in:
@@ -50,8 +48,8 @@ Al fine di rendere piu' facile il tracciamento dei parametri viene utilizzata un
 Dove X e Y sono numeri interi progressivi indipendenti.
 
 
-\paragraph{\textbf{I1: Correttezza}} 
-Un programma o sistema software si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti.
+\myparagraph{E1: Correttezza} 
+Un programma o sistema software si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti. Per raggiungerla ci siamo posti i seguenti obiettivi:
 \begin{itemize}
 	\item \textbf{Soddisfazione del cliente:} il cliente è soddisfatto se il software è conforme ai requisiti;
 	\item \textbf{Requisiti opzionali soddisfatti:} soddisfare piu' requisiti opzionali possibili
@@ -65,7 +63,6 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
@@ -73,16 +70,15 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 			requisiti fondamentali soddisfatti  &  95\%  &  100\%      \\ \hline
 			requisiti secondari soddisfatti  &   0\% &   80\%     \\ \hline
 		\end{tabular}
-	}
 	\caption{Metriche utilizzate per la Correttezza}
 \end{table}
-\paragraph{\textbf{I2: Affidabilità}}
+\myparagraph{E2: Affidabilità}
 	Un sistema è tanto più affidabile quanto più raramente, durante l'uso del sistema, si manifestano malfunzionamenti. Pertanto ci siamo posti questi obiettivi:
 	\begin{itemize}
 	\item \textbf{Adattabilità:} adattarsi al tipo di utente;
 	\item \textbf{Tempo medio:} tenere basso il tempo medio che intercorre tra due fallimenti successivi.
 \end{itemize}
-\vspace{0.8cm}
+
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{MTBF(Mean Time Between Failures);}
@@ -93,7 +89,6 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
 		\rowcolor{orange!50}
 		\hline
@@ -102,16 +97,15 @@ Un programma o sistema software si dice corretto se si comporta esattamente seco
 		Blocco operazioni non corrette   &    0-20\% &  0\%       \\ \hline
 		Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
 	\end{tabular}
-	}
 	\caption{Metriche utilizzate per Affidabilità}
 \end{table}
-\paragraph{\textbf{I3: Efficienza}}
+\myparagraph{I1: Efficienza}
 Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse. Per questo ci prefiggiamo i seguenti obiettivi:
 \begin{itemize}
 	\item \textbf{Utilizzo delle risorse:} le funzionalità del software devono ponderare l'utilizzo delle risorse a diposizione;
 	\item \textbf{Rispettare la deadline:} il software deve eseguire le proprie funzionalità entro i tempi prestabiliti.
 \end{itemize}
-\vspace{0.8cm}
+
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{Tempo di risposta}
@@ -120,67 +114,37 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
 			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
-			Tempo di risposta        &           0-10s            &      0-3s         \\ \hline                       
+			Tempo di risposta        &           $<$ 300ms            &      $<$ 100ms         \\ \hline                       
 		\end{tabular}
-	}
 	\caption{Metriche utilizzate Efficienza}
 \end{table}
 
-\paragraph{\textbf{E1: Manutenibilità}}
+\myparagraph{I2: Manutenibilità}
 Riguarda la facilità di apportare modifiche al sistema realizzato. Sono prefissati i seguenti obiettivi:
 \begin{itemize}
 	\item \textbf{Incapsulamento:} ogni parte del software aggiunta deve rispettare il \textit{singular responsabilty principle\pedice};
 	\item \textbf{Stabilità:} ogni parte del software aggiunta deve essere stabile come le precedenti;
 	\item \textbf{Testabilità:} ogni parte deve essere facilmente testabile come le precedenti.
 \end{itemize}
-\vspace{0.8cm}
+
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item \textbf{Impatto nuove aggiunte}
 \end{itemize}
-\begin{table}[!htpb]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
 			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			Impatto nuove aggiunte        &           0-30\%            &      0-10\%         \\ \hline                       
 		\end{tabular}
-	}
 	\caption{Metriche utilizzate Manutenibilità}
 \end{table}
-
-\paragraph{\textbf{E2: Portabilità}}
-Rappresenta la caratteristica di poter funzionare su ambienti diversi. Pertanto ci siamo prefissati i seguenti obiettivi:
-\begin{itemize}
-	\item \textbf{Adattabilità:} il prodotto deve adattarsi con il minimo sforzo a tutti gli ambienti di lavoro prefissati;
-	\item \textbf{Sostituibilità:} il prodotto deve poter sostiture un altro software che fa la stessa cosa (RIFERITO AL DISCORSO CHE HA FATTO IL TIPO DELLA ZUCCHETTI)
-\end{itemize}
-\subparagraph{Metriche utilizzate}
-\begin{itemize}
-	\item \textbf{Supporto browser}
-	\item \textbf{Funzionalità già esistenti} (intendo cosa sa già fare rispetto al programma che va a sostituire e cosa c'è di nuovo)
-\end{itemize}
-\begin{table}[!htpb]
-	\centering
-	\renewcommand{\arraystretch}{2} 
-	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|}
-			\rowcolor{orange!50}
-			\hline
-			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
-			 Supporto Browser                 &                80-100\%        &     100\%              \\ \hline
-			Funzionalità già esistenti             &              65-100\%                   &        90-100\%    \\ \hline
-		\end{tabular}
-	}
-	\caption{Metriche utilizzate Portabilità}
-\end{table}
+\clearpage

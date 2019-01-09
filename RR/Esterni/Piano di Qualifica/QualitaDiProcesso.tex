@@ -5,9 +5,12 @@ Il documento si prefigge di adottare la qualità di processo come esigenza fonda
 Con l'obiettivo di ottenere un miglioramento continuo della qualità in un'ottica a lungo termine e all'utilizzo ottimale delle risorse è stato adottato il ciclo di Deming o ciclo PDCA.\newline
 I processi qui descritti misurano la qualità del lavoro interno (ad esempio se stiamo lavorando secondo i tempi stabiliti).
 Ogni processo verra' inizialmente descritto e il gruppo identifichera' per esso degli obiettivi. Conseguentemente verranno elencate le metriche scelte per l'analisi dell'andamento di questi ultimi.
-Per facilitare il tracciamento dei processi viene utilizzata una rappresentazione contratta formulata come segue: \textbf{PX}
-	\newline
-	Dove X e' un numero intero progressivo
+Per facilitare il tracciamento dei processi viene utilizzata una rappresentazione contratta formulata come segue:\newline
+\begin{center}
+    \textbf{PX}
+\end{center} 
+\\
+	Dove P sta per \textit{processo} e X e' un numero intero progressivo.
 
 \subsubsection{P1: Definizione e Pianificazione}
 Poter controllare al meglio un processo si è scelto il modello incrementale, inoltre vengono descritte le attività e i compiti da svolgere, la pianificazione del lavoro e dei costi da sostenere. Il gruppo inoltre si prefigge di rispettare i seguenti obiettivi:
@@ -27,7 +30,6 @@ Poter controllare al meglio un processo si è scelto il modello incrementale, in
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
 		\hline
 		\rowcolor{orange!50} 
@@ -35,12 +37,11 @@ Poter controllare al meglio un processo si è scelto il modello incrementale, in
 		\hline
 		Schedule Variance & \textgreater = -3 giorni &0 giorni \\
 		\hline
-		Budget Variance & \textgreater = +-15\% & \textgreater = 0 \\ 
+		Budget Variance & -15 \% $<$ x $<$ +15 \% & = 0 \\ 
 		\hline
 		Function Points & - & - \\
 		\hline
 	\end{tabular}
-	}
 	\caption{Metriche utilizzate per la Definizione e Pianificazione}
 \end{table}
 
@@ -49,10 +50,9 @@ Questo processo ha lo scopo di verificare che tutti gli elementi soddisfino i re
 \begin{itemize}
 	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica alla comparsa di un nuovo bug;}
 	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere compresa e condivisa da collaboratori diversi dall'autore.}
-	\item{\textbf{Parlare di integrazione continua...forse}}
 \end{itemize}
 Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
-\subparagraph{Metriche utilizzate}.
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
 	\item{\textbf{Line coverage}(primitiva rispetto alle successive, fornisce un'idea generale)}
 	\item{\textbf{Functional coverage}}
@@ -61,11 +61,9 @@ Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
 	\item{\textbf{Branch coverage}}
 \end{itemize}
 \begin{table}[!htpb]
-	%\resizebox{\textwidth}{!}{%
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
 		\rowcolor{orange!50}
 		\hline
@@ -82,7 +80,6 @@ Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
 		Branch coverage & 95\% & 100\% \\
 		\hline
 	\end{tabular}
-	}
 	\caption{Metriche utilizzate per la Verifica}
 %}
 \end{table}
@@ -97,13 +94,11 @@ Vengono così utilizzate le seguenti metriche:
 \begin{itemize}
 	\item{\textbf{Servizi esterni non raggiungibili}}
 	\item{\textbf{Rischi non calcolati}}
-	\subparagraph{nota:} per le metriche descritte in questa tabella viene utilizzato un indice numerico positivo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo. (\textbf{non so se le note vadano qui o vadano spiegate in qualche altro documento})
 \end{itemize}
 \begin{table}[!htbp]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
@@ -114,9 +109,9 @@ Vengono così utilizzate le seguenti metriche:
 			Rischi non previsti & 0 & 0 \\
 			\hline
 		\end{tabular}
-	}
-	\caption{TBD}
+	\caption{Metriche Analisi e Gestione dei rischi}
 \end{table}
+\subparagraph{\textbf{NB}:} per le metriche descritte in questa tabella viene utilizzato un indice intero non negativo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo.
 \newpage
 \subsubsection{P4: Gestione Test}
 Prendendo nota che il processo di sviluppo è ancora in fase embrionale il gruppo non è ancora in grado di fornire delle metriche per la gestione dei test.
