@@ -3,12 +3,12 @@
 \usepackage[acronym, toc, xindy]{glossaries}
 
 \newcommand{\documento}{Glossario}
-\input{../../stile/stile.tex}
-\newcommand{\red}{TBD}
-\newcommand{\verp}{TBD}
-\newcommand{\vers}{TBD}
-\newcommand{\res}{TBD}
-\newcommand{\version}{Versione TBD}
+\input{stile.tex}
+\newcommand{\red}{\daL}
+\newcommand{\verp}{\mic}
+\newcommand{\vers}{\gia}
+\newcommand{\res}{\pie}
+\newcommand{\version}{Versione 1.0.0}
 \newcommand{\use}{Esterno}
 \title{\myfont{Glossario}}
 \author{Dream Corp.}
@@ -23,7 +23,7 @@
     
 \maketitle
 \begin{center}
-	\includegraphics[width = 70mm]{../../logo.png}\newline
+	\includegraphics[width = 70mm]{logo.png}\newline
 	\huge \version 
 	\\G\&B
 	
@@ -52,6 +52,6 @@
     \glsaddall
 
     \setglossarystyle{altlisthypergroup}
-    \printglossary[title=Glossario,toctitle=Glossario]
+    \printglossary[title=Glossario,toctitle=Glossario,nonumberlist]
 
 \end{document}

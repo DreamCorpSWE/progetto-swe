@@ -1,0 +1,76 @@
+\documentclass{article}
+\input{../../stile/stile.tex}
+
+\newcommand{\red}{\parbox{4.5cm}{\daL}}
+\newcommand{\verp}{\mic}
+\newcommand{\vers}{\gia}
+\newcommand{\res}{\pie}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\usepackage{eurosym}
+\author{Dream Corp.}
+
+\title{\myfont Verbale Esterno}
+\font\myfont=cmr12 at 40pt
+\date{\myfont 12-12-2018}
+
+\begin{document}
+  
+    \maketitle
+	\begin{center}
+	\includegraphics[width = 80mm]{../../logo.png}\newline
+	\huge \version 
+	\\G\&B
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Redazione & \red \\
+			Verifica & \verp\\
+			& \vers\\
+			Responsabile & \res\\
+			Uso & \use\\
+			Destinatari & Dream Corp. \\
+			& Zucchetti SpA\\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+		\end{tabular}
+	\end{table}
+	
+	\end{center}
+  
+  
+  \newpage
+\newline
+~\newline
+\section{Riunione}
+    \subsection{Informazioni generali}
+    \begin{itemize}
+        \item \textbf{Motivo della riunione}: C'è stato un incontro con il rappresentate dell'azienda proponente del progetto in cui sono state chiarite le tecnologie da impiegare per lo sviluppo del progetto. In seguito sono stati dati sono stati chiariti meglio i casi d'uso tramite un colloquio con il rappresentante.
+        \item \textbf{Luogo e Data}: Aula 1BC50 Torre Archimede, 12/12/2018;
+        \item \textbf{Orario}: 14:00-15:00;
+        \item \textbf{Partecipanti}: Il rappresentate dell'azienda proponente del progetto e tutti i membri del gruppo.
+    \end{itemize}
+    \newpage
+    
+\section{Risultati}
+    \subsection{Ordine del giorno}
+    Argomenti chiariti durante il seminario:
+    \begin{enumerate}
+        \item \textbf{Significato di DevOps}: La parola DevOps deriva dall'unione delle parole Development e Operations, Development perchè si basa su un sistema specifico e Operations perchè devono essere garantiti sistemi funzionanti e attivi, inoltre devono essere segnalati possibili miglioramenti allo sviluppo. Riassumendo si può dire che il programma una volta sviluppato non esce più dalla fabbrica ma viene gestito dagli stessi programmatori e dai sistemisti;
+        \item \textbf{Introduzione a Grafana}: Grafana può monitorare praticamente ogni cosa, questo permette di controllare la salute di un sistema ed identificarne i punti deboli da correggere. I dati raccolti possono essere gestiti da un database specializzato per gestire serie temporali (InfluxDB) e Grafana lo interroga presentato i risultati ottenuti su dashboards ed inviando notifiche per allarmi;
+        \item \textbf{Funzionamento reti Bayesiane}: E' stato mostrato un tool per simulare il funzionamento delle reti Bayesiane in modo da comprenderle meglio la loro natura. In particolare è stata enfatizzata la possibilità di fare inferenza di variabili non osservabili tramite l'inserimento di nodi il cui valore è già conosciuto.
+    \end{enumerate}
+    \\
+    Domande effettuate verso la proponente:
+    \begin{enumerate}
+        \item \textbf{Se la rete Bayesiana deve ricalibrare il valore della probabilità condizionata dei nodi della rete in funzione degli eventi passati}: La risposta è stata negativa in quanto la rete deve soltanto proporre le cause più probabili con l'inferenza bayesiana senza anadare a modificare i pesi stessi delle probabilità dei nodi. Riassumendo la rete deve essere strutturalmente statica;
+        \item \textbf{Cosa si intende per nodi non monitorati}: Sono dei nodi non associati ad un flusso dati in Grafana su cui si deve fare inferenza bayesiana.
+    \end{enumerate}
+    \subsection{Resoconto}
+    L'incontro ha confermato le nostre ipotesi quindi non sono state prese ulteriori decisioni in base alle risposte fornite dalla proponente.
+    
+\end{document}
