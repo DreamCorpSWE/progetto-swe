@@ -45,7 +45,7 @@
 		\subsubsection{Norme tipografiche}
 			Le norme scritte in questa sezione devono essere seguite in tutti i documenti prodotti dal team DreamCorp:
 			\begin{itemize}
-				\item \textbf{Date:} sono scritte seguendo la regola anno-mese-giorno (YYYY-MM-DD);
+				\item \textbf{Date:} sono scritte seguendo la regola anno-mese-giorno (DD-MM-YYYY);
 				\item \textbf{Voci nel Glossario:} per segnalare una parola che si trova nel glossario viene posta una \textbf{G} a pedice della parola;
 				\item \textbf{Link interni:} i collegamenti che rimandano a una sezione interna al documento sono scritti in corsivo e sottolineati;
 				\item \textbf{Link esterni:} i collegamenti che rimandano a una pagina web esterna al documento sono scritti in colore blu;
@@ -68,12 +68,13 @@
 				\item \textbf{Responsabile:} persona a capo del progetto nel momento in cui è stato approvato;
 				\item \textbf{Redattori:} persone incaricate nella stesura del documento;
 				\item \textbf{Verificatori:} persone incaricate di controllare la qualità del documento;
-				\item \textbf{Stato:} punto del ciclo di vita nel quale si trova il documento;
-				\item \textbf{Classificazione:} Interno o Esterno;
+				\item \textbf{Uso:} Interno o Esterno;
 				\item \textbf{Destinatari:} persone alle quali è destinate il documento.
 			\end{itemize}
 		\textbf{Diario delle modifiche}  Si trova a partire dalla seconda pagina del documento e riporta sotto forma di tabella tutte le modifiche apportate al documento. La tabella è composta da quattro colonne che contengono rispettivamente descrizione della modifica, autore della modifica, data della modifica e versione a cui è arrivato il documento.
 		\newline \newline \textbf{Indice}  E' posto sempre dopo il Diario delle Modifiche e contiene l'elenco dei capitoli e sottocapitoli in cui è diviso il documento.
+		\newline \newline \textbf{Elenco delle Tabelle} Contiene la lista delle tabelle presenti nel documento; è presente solo quando necessaria, ovvero se nel documento si trova almeno una tabella.
+		\newline \newline \textbf{Elenco delle Figure} Contiene la lista delle immagini presenti nel documento; è presente solo se nel documento c'è almeno un'immagine.
 		\newline \newline \textbf{Contenuto}  Il documento è completato dal suo contenuto. Ogni pagina è composta come di seguito:\newline
 		\begin{itemize}
 			\item \textbf{Logo del team:} in alto a sinistra nell'intestazione;
@@ -84,6 +85,7 @@
 		\end{itemize}
 		L'intestazione e il piè di pagina sono separate dal resto del documento attraverso due righe nere orizzontali. Ogni nuovo capitolo (identificato in \LaTeX ~con il comando \textit{\textbackslash{}section}) comincia sempre in una nuova pagina.
 		\subsubsection{Strumenti di supporto}
+		\label{3.1.8}
 			Il formato scelto per la stesura della documentazione è il  \LaTeX ~che permette una maggiore precisione e uniformità fra tutti i membri del gruppo. L'ambiente di sviluppo scelto è \textbf{TeXstudio\pedice} il quale è risultato il più completo in termini di funzioni e praticità.
 	\subsection{Versionamento}
 		E' stata scelta la tecnologia Git per le parti del progetto e della documentazione che necessitano di un versionamento e il servizio utilizzato è GitHub. Per tutte le altre parti lo strumento di condivisione di cui si serve il gruppo DreamCorp è una cartella su Google Drive\pedice.
@@ -110,7 +112,13 @@
 		L'aumento di una cifra comporta l'azzeramento di quelle alla sua destra. \newline
 	\subsection{Verifica}
 		\subsubsection{Analisi statica}
-
+			L'analisi statica della documentazione e del codice è divisa in due fasi, Walkthrough e Inspection:
+			\begin{itemize}
+				\item \textbf{Walkthrough:} questa fase consiste nella lettura di tutto il documento da esaminare e nella creazione di una lista degli errori trovati da utilizzare nella fase successiva.
+				\item \textbf{Inspection:} questa fase consiste nella rilettura del documento attraverso la lista creata precedentemente per un'analisi mirata. \newline
+			\end{itemize}
+		Gli strumenti utilizzati per l'Analisi statica si possono trovare nella sezione \hyperref[3.1.8]{\textit{\underline{3.1.8}}} di questo documento.\newline
 		\subsubsection{Analisi dinamica}
-
-		\subsubsection{Strumenti di verifica}
+			Essendo applicato solo al codice del software, il processo di Analisi dinamica deve ancora essere definito in modo definitivo; in generale consisterà nella creazione e esecuzione di vari test.\newline
+		\subsubsection{Strumenti di verifica del software}
+		Gli strumenti di verifica del software verranno definiti in fase di programmazione e codifica del software stesso.\newline
