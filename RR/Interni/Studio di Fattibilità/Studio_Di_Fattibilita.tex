@@ -2,10 +2,9 @@
 
 \newcommand{\documento}{Studio di Fattibilità}
 \input{../../stile/stile.tex}
-\newcommand{\red}{\pie}
-\newcommand{\verp}{\mic}
-\newcommand{\vers}{\mar}
-\newcommand{\res}{\pie}
+\newcommand{\red}{\parbox{3cm}{\pie \\ \mic}}
+\newcommand{\verp}{\parbox{3cm}{\mar \\ \daL}}
+\newcommand{\res}{\daG}
 \newcommand{\version}{Versione 0.5.3}
 \newcommand{\use}{Interno}
 %\usepackage{array}
@@ -16,36 +15,33 @@
 \begin{document}
 \maketitle
 \begin{center}
-	\includegraphics[width = 80mm]{../../logo.png}\newline
-	\huge \version 
-	\\G\&B
-	
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{r|l}
-			\multicolumn{2}{c}{Informazioni sul documento}\\
-			\hline
-			Versione & \version \\
-			Redazione & \red \\
-			Verifica & \verp\\
-			& \vers\\
-			Responsabile & \res\\
-			Uso & \use\\
-			Destinatari & Dream Corp. \\
-			& Zucchetti SpA\\
-			& Prof. Tullio Vardanega\\
-			& Prof. Riccardo Cardin\\
-		\end{tabular}
-	\end{table}
-	
+    ~~~~~~~~~~~~~~~~~~\includegraphics[width = 70mm]{../../logo.png}
+    \newline
+    \huge 
+    \\G\&B
+    
+    \begin{table}[!htpb]
+        \centering
+        \begin{tabular}{r|l}
+            \multicolumn{2}{c}{Informazioni sul documento}\\
+            \hline
+            Versione & \version \\
+            Responsabile & \res\\
+            Redattori & \red \\
+            Verificatori & \verp\\
+            Uso & \use\\
+            Destinatari & Dream Corp. \\
+            & Zucchetti SpA\\
+            & Prof. Tullio Vardanega\\
+            & Prof. Riccardo Cardin\\
+        \end{tabular}
+    \end{table}
+    
 \end{center}
 \newpage
+~
 \input{versionamento.tex}
 \clearpage
-\newpage
-\tableofcontents
-\newpage
-\newpage
 \input{Introduzione.tex}
 \newpage
 \input{C3.tex}
