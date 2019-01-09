@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+
+\newcommand{\documento}{Piano Di Progetto}
+\input{../../stile/stile.tex}
+\newcommand{\red}{\pie}
+\newcommand{\verp}{\parbox{3cm}{\mic \\ \mar}}
+\newcommand{\res}{\pie}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\newcommand{\verde}{\textcolor{green}}
+\newcommand{\rosso}{\textcolor{red}}
+\usepackage{eurosym}
+\usepackage{array}
+\title{\myfont{Piano di Progetto}}
+\author{Dream Corp.}
+
+\date{10/01/2019}
+
+
+\begin{document}
+	\input{../../stile/copertina.tex}
+	\newpage
+	\input{introduzione.tex}
+	\clearpage
+	\input{analisi_rischi.tex}
+	\clearpage
+	\input{modello_sviluppo.tex}
+	\clearpage
+	\input{pianificazione/pianificazione.tex}
+	\clearpage
+	\input{preventivo/preventivo.tex}
+	\clearpage
+	\input{consuntivo.tex}
+	\clearpage
+	\input{preventivo_a_finire.tex}
+
+\end{document}

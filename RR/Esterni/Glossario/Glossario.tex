@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym, toc, xindy]{glossaries}
+
+\newcommand{\documento}{Glossario}
+\input{stile.tex}
+\newcommand{\red}{\daL}
+\newcommand{\verp}{\mic}
+\newcommand{\vers}{\gia}
+\newcommand{\res}{\pie}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\title{\myfont{Glossario}}
+\author{Dream Corp.}
+
+\date{ \myfont 05-12-2018}
+
+\makeglossaries
+
+\input{glossario/glossary.tex}
+
+\begin{document}
+    
+\maketitle
+\begin{center}
+	\includegraphics[width = 70mm]{logo.png}\newline
+	\huge \version 
+	\\G\&B
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Redazione & \red \\
+			Verifica & \verp\\
+			& \vers\\
+			Responsabile & \res\\
+			Uso & \use\\
+			Destinatari & Dream Corp. \\
+			& Zucchetti SpA\\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+		\end{tabular}
+	\end{table}
+	
+\end{center}
+\newpage
+\input{versionamento.tex}
+    \clearpage
+    \glsaddall
+
+    \setglossarystyle{altlisthypergroup}
+    \printglossary[title=Glossario,toctitle=Glossario,nonumberlist]
+
+\end{document}

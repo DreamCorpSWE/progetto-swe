@@ -1,0 +1,22 @@
+capitolato
+DevOps
+Zucchetti
+plug-in
+Grafana
+Javascript
+json
+rete bayesiana
+flusso di monitoraggio
+intelligenza artificale
+dashboard
+alert
+casi d'uso
+attori esterni (utente generico e grafana)
+panel
+strumento di monitoraggio
+query
+machine learning
+requisiti
+github
+airbnb
+open-source

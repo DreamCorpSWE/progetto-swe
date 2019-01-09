@@ -1,0 +1,95 @@
+
+\section{Tracciamento dei Requisiti}
+Per facilitare la lettura e la visualizzazione verranno presentate delle tabelle indicizzate in modo specifico:
+\begin{itemize}
+    \item Tracciamento Priorità-Requisito
+    \item Tracciamento Tipologia-Requisito
+\end{itemize}
+
+\newpage
+\subsection{Tracciamento: Priorità-Requisito}
+Di seguito viene riportata una tabella riassuntiva che descrive le priorità dei requisiti e i requisiti appartenenti a quella priorità per rendere di più facile lettura la distribuzione per priorità.
+Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nella sezioni precedenti.   
+
+\begin{table}[!htbp] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|p{2cm}|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Priorità Requisito} & \textbf{Codice Requisiti} \\
+                \hline
+                Compulsory & RFC1, RFC1.1, RFC1.2, RFC2, RFC3.2, RFC4, RFC5, RFC9, RFC10, RFC10.1, RFC10.2, RFC10.3, RCV2, RCV3, RCV4, RCV5, RQC1, RQC2, RQC4\\
+                \hline
+                Optional & RFO3, RFO3.1, RFO6, RFCO7, RFO8, RVO1, RQO3\\
+                \hline
+        \end{tabular}
+        \caption{Tracciamento Priorità-Requisito} %descrizone a fine tabella
+\end{table}
+
+\newpage
+\subsection{Tracciamento: Tipologia-Requisito}
+Di seguito viene riportata una tabella riassuntiva che descrive le tipologie di requisiti e i requisiti appartenenti a quella tipologia per rendere di più facile lettura la distribuzione per tipologia.
+Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nella sezioni precedenti.
+
+\begin{table}[!htbp] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|p{2cm}|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Tipologia Requisito} & \textbf{Codice Requisiti} \\
+                \hline
+                Funzionale & RFC1, RFC1.1, RFC1.2, RFC2, RFO3, RFO3.1, RFC3.2, RFC4, RFC5, RFO6, RFCO7, RFO8, RFC9, RFC10, RFC10.1, RFC10.2, RFC10.3 \\
+                \hline
+                Vincolo & RVO1, RCV2, RCV3, RCV4, RCV5\\
+                \hline
+                Qualità & RQC1, RQC2, RQO3, RQC4\\
+                \hline
+        \end{tabular}
+        \caption{Tracciamento Tipologia-Requisito} %descrizone a fine tabella
+\end{table}
+
+\newpage
+\subsection{Riepilogo}
+Di seguito viene riportata una tabella riassuntiva a doppia entrata con la tipologia di requisito per colonna e la priorità per riga. Viene riportato come valore il numero per ogni tipologia e priorità al fine di avere un quadro generale ed immediato della distribuzione degli stessi.
+
+\begin{table}[!htbp] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|c|c|c|c|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline & \textbf{Funzionali} & \textbf{Vincolo} & \textbf{Qualità} & \textbf{Prestazionali} & \textbf{Tot. Priorità}\\
+                \hline
+                \textbf{Compulsory} & 12 & 4 & 3 & 0 & 19\\
+                \hline
+                \textbf{Optional} & 5 & 1 & 1 & 0 & 7\\
+                \hline
+                \textbf{Tot. Tipologia} & 17 & 5 & 4 & 0 & 26\\
+                \hline
+        \end{tabular}
+        \caption{Riepilogo Distribuzione Requisiti} %descrizone a fine tabella
+\end{table}
+
+
+%\subsection{SPOSTALA IN PIANO DI QUALIFICA}
+
+%Verificabilità dei requisiti
+    %\begin{itemize}
+        %\item I requisiti vanno scritti in modo che possano essere
+    %oggettivamente verificati nel prodotto finale
+    %    \item Occorre quantificare il tasso degli errori.
+        %\item “Gli operatori esperti dovrebbero poter controllare le
+    %funzioni di sistema dopo due ore di formazione. Dopo tale formazione, il numero %medio di errori degli operatori esperti non dovrebbe superare i due al giorno”.
+    %\end{itemize}
+    
+    %Validazione dei requisiti:
+    %\begin{itemize}
+        %\item La dimostrazione che i requisiti definiscono il
+    %sistema davvero voluto dal cliente.
+        %\item La tecnica più importante di validazione dei
+    %requisiti è la prototipazione.
+    %\end{itemize}
