@@ -1,6 +1,6 @@
 
 \section{Requisiti}
-    Tracciare i requisiti \pedice significa che requisiti correlati vengono raggruppati e collegati per facilitare la lettura grazie a tabelle e indicizizzazioni.
+    Tracciare i requisiti\pedice significa che requisiti correlati vengono raggruppati e collegati per facilitare la lettura grazie a tabelle e indicizizzazioni.
     Assegneremo per tanto ad ogni requisito un identificatore univoco, composto da una serie di regole dettate dalla caratteristica stessa del requisiti.
     
     \subsubsection{Categorie}
@@ -15,8 +15,8 @@
             \end{itemize}
     \end{itemize}
     
-    \subsubsection{Tracciabilita'}
-    Il codice con cui ogni requisito viene univocamente indicizzato e' formato da una regola di composizione definita in questo modo:
+    \subsubsection{Tracciabilità}
+    Il codice con cui ogni requisito viene univocamente indicizzato è formato da una regola di composizione definita in questo modo:
     \newline
     
     \begin{center}
@@ -29,7 +29,7 @@
         \item F|Q|V|P:
             \begin{itemize}
                 \item F: Funzionale;
-                \item Q: Qualita';
+                \item Q: Qualità;
                 \item V: Vincolo;
                 \item P: Prestazionale.
             \end{itemize}
@@ -52,8 +52,7 @@
     
 		\subsection{Requisiti Funzionali}			
         Descrivono in dettaglio i servizi che verranno forniti dal sistema agli attori.
-        
-        \begin{table}[]
+        \begin{table}[!htpb]
             \centering
             \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
             \rowcolors{2}{gray!25}{white}
@@ -77,6 +76,18 @@
                 RFC3.2 & Compulsory & Rimozione nodo precedentemente associato e associazione nuovo nodo & Interno\\
                 \hline
                 RFC4 & Compulsory & Visualizzazione del messaggio di conferma di annullamento dell'operazione & Interno\\
+                \hline
+			\end{tabular}
+			\caption{Requisiti Funzionali}
+		\end{table}
+        \begin{table}[!htpb]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white}
+            \begin{tabular}{|l|c|p{8cm}|c|}
+                \rowcolor{orange!50}
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
                 \hline
                 RFC5 & Compulsory & Rimozione di un nodo della rete associato ad un flusso dati di Grafana & Interno\\
                 \hline
@@ -114,13 +125,13 @@
             \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
                 \rowcolor{orange!50} %colore intestazione
         		\hline
-        		\textbf{Codice} & \textbf{Priorita'} & \textbf{Descrizione} & \textbf{Fonte}\\
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
                 \hline
-                RVO1 &  Optional & Il codice sorgente deve essere pubblicato su un repository di Github \pedice & Capitolato/Interno\\
+                RVO1 &  Optional & Il codice sorgente deve essere pubblicato su un repository di Github\pedice & Capitolato/Interno\\
                 \hline
                 RVC2 & Compulsory & Il plugin deve essere sviluppato in linguaggio Javascript & Capitolato\\
                 \hline
-                RVC3 & Compulsory & Il plugin deve essere open-source \pedice & Capitolato\\
+                RVC3 & Compulsory & Il plugin deve essere open-source\pedice & Capitolato\\
                 \hline
                 RVC4 & Compulsory & Il plugin deve essere pubblicato su Grafana.com & Interno\\
                 \hline
@@ -139,18 +150,18 @@
             \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
                 \rowcolor{orange!50} %colore intestazione
         		\hline
-        		\textbf{Codice} & \textbf{Priorita'} & \textbf{Descrizione} & \textbf{Fonte}\\
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
                 \hline
                 RQC1 &  Compulsory & La  progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato "Piano di qualifica v 1.0.0" & Interno\\
                 \hline
                 RQC2 &  Compulsory & Devono essere rispettate le norme definite nel documento "Norme di progetto v1.0.0" & Interno\\
                 \hline
-                RQO3 &  Optional & Il codice JavaScript \pedice deve attenersi allo stile Javascript airbnb \pedice & Interno\\
+                RQO3 &  Optional & Il codice JavaScript\pedice deve attenersi allo stile Javascript airbnb\pedice & Interno\\
                 \hline
                 RQC4 &  Compulsory & Dovrà essere fornito un manuale guida in lingua italiana sull'utilizzo del plugin & Capitolato\\
                 \hline
             \end{tabular}
-            \caption{Requisiti di qualita'} %descrizone a fine tabella
+            \caption{Requisiti di qualità} %descrizone a fine tabella
         \end{table}
         
 %- SUCCESSIVI REQUISITI DI QUALITA'
