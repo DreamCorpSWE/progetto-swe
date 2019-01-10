@@ -1,6 +1,6 @@
 \section{Casi d'Uso}
-		\subsection{Attori}			
-        I casi d'uso definiscono interazioni tra il sistema e gli attori esterni. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
+		\subsection{Attori}
+			I casi d'uso definiscono interazioni tra il sistema e gli attori esterni. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
         Riportiamo due attori:
         \begin{itemize}
             \item Utente generico;
@@ -16,7 +16,7 @@
 		
 		\begin{figure}[!htbp]
 			\centering
-			\includegraphics[width=0.95\textwidth]{UC.png}
+			\includegraphics[width=0.85\textwidth]{UC.png}
 			\caption{UC0 - Casi d'uso generali}
 		\end{figure}
 		\clearpage
@@ -265,14 +265,14 @@
 		        \subsubsection{UC9: Lancio di un alert}
                     \textbf{Descrizione:} Grafana ha rilevato che una delle condizioni dell'alert sono state violate e avviene quindi il "lancio" dell'alert stesso.
                     \newline
-                    \textbf{Precondizione:} Il flusso di monitoraggio \pedice{G} di interesse ha un alert ed è associato ad un nodo di una rete bayesiana.
+                    \textbf{Precondizione:} Il flusso di monitoraggio\pedice di interesse ha un alert ed è associato ad un nodo di una rete bayesiana.
                     \newline
                     \textbf{Postcondizione:} Vengonono interpretati i dati per il ricalcolo delle probabilità con il contributo di “jsbayes”.
                     \newline
                     \textbf{Attore primario:} Grafana.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                            \item Grafana rileva che un flusso di monitoraggio \pedice{G} non rispetta le condizioni di uno dei suoi alert;
+                            \item Grafana rileva che un flusso di monitoraggio\pedice non rispetta le condizioni di uno dei suoi alert;
                             \item Grafana invia il messaggio di alert al sistema (noi siamo il sistema a cui invia i dati di alert);
                             \item I dati vengono gestiti e con l’ausilio della libreria jsbayes vengono ricalcolate le probabilità dei nodi non monitorati.
                         \end{enumerate}
