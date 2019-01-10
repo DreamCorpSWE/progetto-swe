@@ -1,16 +1,11 @@
 \section{Qualità di processo}
 \subsection{Scopo}
-Il documento si prefigge di adottare la qualità di processo come esigenza fondamentale per perseguire la qualità di prodotto. Proprio per questo si è deciso di adottare il PDCA e lo standard ISO/IEC 15504 denominato SPICE. Inoltre si vuole far presente come l'insieme di questi contenuti non sia definitivo ma anzi viene incrementato durante il percorso.
+Il documento si prefigge di adottare la qualità di processo come esigenza fondamentale per perseguire la qualità di prodotto. Proprio per questo si è deciso di adottare il PDCA\pedice e lo standard ISO/IEC 15504\pedice denominato SPICE. Inoltre si vuole far presente come l'insieme di questi contenuti non sia definitivo ma anzi viene incrementato durante il percorso.
 \subsection{Processi}
 Con l'obiettivo di ottenere un miglioramento continuo della qualità in un'ottica a lungo termine e all'utilizzo ottimale delle risorse è stato adottato il ciclo di Deming o ciclo PDCA.\newline
-I processi qui descritti misurano la qualità del lavoro interno (ad esempio se stiamo lavorando secondo i tempi stabiliti).
-Ogni processo verra' inizialmente descritto e il gruppo identifichera' per esso degli obiettivi. Conseguentemente verranno elencate le metriche scelte per l'analisi dell'andamento di questi ultimi.
-Per facilitare il tracciamento dei processi viene utilizzata una rappresentazione contratta formulata come segue:\newline
-\begin{center}
-    \textbf{PX}
-\end{center} 
-\\
-	Dove P sta per \textit{processo} e X e' un numero intero progressivo.
+I processi descritti di seguito misurano la qualità del lavoro interno (ad esempio se stiamo lavorando secondo i tempi prestabiliti).
+Ogni processo verrà inizialmente descritto e il gruppo identificherà per esso degli obiettivi. Conseguentemente verranno elencate le metriche scelte per l'analisi dell'andamento di questi ultimi. \\
+Le metriche utilizzate per i processi sono definite nelle \textit{Norme di progetto} alla §3.4:
 
 \subsubsection{P1: Definizione e Pianificazione}
 Poter controllare al meglio un processo si è scelto il modello incrementale, inoltre vengono descritte le attività e i compiti da svolgere, la pianificazione del lavoro e dei costi da sostenere. Il gruppo inoltre si prefigge di rispettare i seguenti obiettivi:
@@ -23,8 +18,6 @@ Poter controllare al meglio un processo si è scelto il modello incrementale, in
 \begin{itemize}
 	\item{\textbf{SV(Schedule Variance);}}
 	\item{\textbf{BV(Budget Variance);}}
-	%\item{\textbf{AC(Actual Cost)}.} serve già a calcolare budget variance
-	\item{\textbf{Function Points.} }
 \end{itemize}
 \begin{table}[!htpb]
 	\centering
@@ -37,9 +30,7 @@ Poter controllare al meglio un processo si è scelto il modello incrementale, in
 		\hline
 		Schedule Variance & \textgreater = -3 giorni &0 giorni \\
 		\hline
-		Budget Variance & -15 \% $<$ x $<$ +15 \% & = 0 \\ 
-		\hline
-		Function Points & - & - \\
+		Budget Variance & -15 \% $<$ x $<$ +15 \% & -1\% $<$ x $<$ +1\% \\ 
 		\hline
 	\end{tabular}
 	\caption{Metriche utilizzate per la Definizione e Pianificazione}
@@ -51,16 +42,16 @@ Questo processo ha lo scopo di verificare che tutti gli elementi soddisfino i re
 	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica alla comparsa di un nuovo bug;}
 	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere compresa e condivisa da collaboratori diversi dall'autore.}
 \end{itemize}
-Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
+Viene così utilizzata parte dei criteri fondamentali del code coverage\pedice
 \subparagraph{Metriche utilizzate}
 \begin{itemize}
-	\item{\textbf{Line coverage}(primitiva rispetto alle successive, fornisce un'idea generale)}
+	\item{\textbf{Line coverage}}
 	\item{\textbf{Functional coverage}}
 	\item{\textbf{Path coverage}}
 	\item{\textbf{Condition coverage}}
 	\item{\textbf{Branch coverage}}
 \end{itemize}
-\begin{table}[!htpb]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
@@ -104,9 +95,9 @@ Vengono così utilizzate le seguenti metriche:
 			\hline
 			Nome & Accettazione & Ottimalità \\
 			\hline
-			Servizi esterni non raggiungibili & 0 & 0 \\
+			Servizi esterni non raggiungibili & 2 & 0 \\
 			\hline
-			Rischi non previsti & 0 & 0 \\
+			Rischi non previsti & 2 & 0 \\
 			\hline
 		\end{tabular}
 	\caption{Metriche Analisi e Gestione dei rischi}
