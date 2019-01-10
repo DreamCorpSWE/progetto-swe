@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+//Da Analisi dei Requisiti
+=======
+>>>>>>> development
 capitolato
 DevOps
 Zucchetti
@@ -19,4 +23,29 @@ machine learning
 requisiti
 github
 airbnb
+<<<<<<< HEAD
 open-source
+
+//Da Norme di Progetto
+efficenza
+stakeholders
+UML
+Slack
+Gmail
+IssueTrackingSystem
+TexStudio
+Google Drive
+repository
+branch
+commit
+
+//Da Piano di Progetto
+Framework
+Tecnology Baseline
+Diagramma di Gantt
+Milestone
+
+\newcommand{\pedice}{\ped { \textbf{G}}}
+=======
+open-source
+>>>>>>> development
