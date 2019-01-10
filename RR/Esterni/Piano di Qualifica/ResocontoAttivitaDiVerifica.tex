@@ -7,28 +7,30 @@ In questa sezione verranno analizzate le metriche e le valutazioni scaturite da 
 \paragraph{Metriche dei processi}
 \hspace{10cm} %risolvere il problema perchè uso il subparagraph
 \newline Verranno presentate solo le metriche dei processi ISO utilizzate fino ad ora.
-\href{https://www.tablesgenerator.com/}{tabelle}
+Per gli esiti viene usata la seguente codifica:
+\begin{itemize}
+	\item \textbf{X: } esito positivo;
+	\item \textbf{-: } esito negativo.
+\end{itemize}
 \begin{table}[!htbp]
 	\centering
-	\renewcommand{\arraystretch}{3} 
+	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\begin{tabular}{|l|l|l|l|}
+	\begin{tabular}{|l|p{2cm}|p{7cm}|l|}
 		\rowcolor{orange!50}
 		\hline
-		\textbf{Processo} & \parbox{2cm}{\textbf{Valore ottenuto}} & \textbf{Commento} & \textbf{Voto} \\
+		\textbf{Processo} & \textbf{Valore ottenuto} & \textbf{Commento} & \textbf{Esito} \\
 		\hline
-		Schedule Variance & & \parbox{8cm}{Come si può notare dal diagramma di gantt del ".." sono stati raggiunti gli obiettivi.} & \\
+		Schedule Variance & ~~0 giorni & Come si può notare dal diagramma di gantt del \textit{piano di progetto} sono stati raggiunti gli obiettivi nei tempi prefissati. & ~~X \\
 		\hline
-		Cost variance & & \parbox{8cm}{Avendo rispettato gli obiettivi entro la deadline prestabilita non ci sono stati aumenti.} &\\
+		Budget variance & ~~\EUR{ -5} & Avendo rispettato gli obiettivi entro la deadline prestabilita non ci sono aumenti minimi. &  ~~X \\
 		\hline
-		Function Points & & \parbox{8cm}{In questa fase non è ancora possibile parlare questa metrica poiché non sono ancora state decise completamente le funzionalità dell'applicativo e non è ancora stato redatto nessun diagramma a riguardo.} & \\
+		{Indisponibilità servizi esterni} & ~~0 & Tutti i servizi esterni da noi usati non hanno avuto disservizi  & ~~X\\
 		\hline
-		\parbox{2.5cm}{Indisponibilità servizi esterni} & & \parbox{8cm}{Tutti i servizi esterni da noi usati non hanno avuto disservizi } & \\
-		\hline
-		\parbox{2.5cm}{Rischi non calcolati} & & \parbox{8cm}{Per questa deadline non sono emerse problematiche pertanto non sono presenti rischi non calcolati che gravano sul progetto.} & \\
+		Rischi non calcolati & ~~0 & Per questa deadline non sono emerse problematiche pertanto non sono presenti rischi non calcolati che gravano sul progetto. & ~~X\\
 		\hline
 	\end{tabular}
-	\caption{TBD}
+	\caption{Metriche dei processi}
 \end{table}
 \clearpage
 \paragraph{Maturità macro-processi ISO }
@@ -39,20 +41,17 @@ In questa sezione verranno analizzate le metriche e le valutazioni scaturite da 
 	\caption{Maturità macro-processi ISO 15504}
 \end{figure}
 \begin{itemize}
-	\item \textbf{prc1:} processo gestito da automatismi, il gruppo sta imparando ad utilizzare quest'ultimi per rendere il lavoro più preciso e con meno possibilità di errore. Usando ad esempio toggle per il conteggio ore e integrazione slack con github tracciando le issue ha
+	\item \textbf{P1:} processo gestito da automatismi, il gruppo sta imparando ad utilizzare quest'ultimi per rendere il lavoro più preciso e con meno possibilità di errore. Usando ad esempio toggl per il conteggio ore e integrazione slack con github tracciando le issue ha
 	permesso di ottenere una migliore pianificazione;
-	\item \textbf{prc2:} processo non ancora istanziato poichè non fa parte della revisione di requisit, abbiamo analizzato solo metriche in funzione degli obiettivi;
-	\item \textbf{prc3:} processo non ancora istanziato, sarà comunque quasi completamente automatizzato
+	\item \textbf{P2:} processo non ancora istanziato poichè non fa parte della revisione di requisiti, abbiamo analizzato solo metriche in funzione degli obiettivi;
+	\item \textbf{P3:} processo non ancora istanziato, sarà comunque quasi completamente automatizzato
 \end{itemize}
 \clearpage
 \subsubsection{Qualità di prodotto}
 In questa fase ci si concentra principalmente sulla redazione dei documenti, pertanto le uniche metriche utilizzate sono quelle riguardanti i documenti.
 Poichè, in particolari circostanze (non necessariamente rare), la valutazione automatica della leggibilità, se non tiene conto in alcun modo dei significati delle parole, può dare risultati inattendibili, per non dire fuorvianti si è scelto di non valutare i documenti tramite script che calcolano le metriche.
-Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la dovuta cautela \\
-\href{https://docs.google.com/spreadsheets/d/1yMKJyV4I8FXQ7GUQOq8m1RdZeTYFTJ387ixzofNrfLI/edit?usp=sharing}{modifica grafici}\\
-\href{https://www.webfx.com/tools/read-able/check.php?tab=Test+By+Url&uri=https%3A%2F%2Fwww.ispazio.net}{prova test leggibilità}
-	 \\ \\
-	Come si può notare dal trend dei grafici l'obiettivo è stato quasi sempre rispettato ottenendo dei documenti con una leggibilità media da istruzione superiore.
+Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la dovuta cautela. \\
+Come si può notare dal trend dei grafici l'obiettivo è stato quasi sempre rispettato ottenendo dei documenti con una leggibilità media da istruzione superiore.
 	\clearpage
 \paragraph{Gunning Fog index}
 \hspace{15cm}
@@ -65,7 +64,7 @@ Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la
 %\clearpage
 \paragraph{Simple Measure of Gobbledygook (SMOG)}
 \hspace{15cm}
-\begin{figure}!htbp]
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.5]{Smog.png}
 	\caption{SMOG}
@@ -79,11 +78,11 @@ Nonostante cioò sono metriche puramente sintattiche, sono da considerare con la
 	\caption{Gulpease index}
 \end{figure}
 
-\paragraph{Errori sintattici}
-\hspace{15cm}
+\myparagraph{Errori sintattici}
  I verificatori hanno eliminato gli errori rimanenti presenti nei documenti, raggiungendo così il valore ottimale prefissato attraverso il software per il controllo ortografico presente in TexStudio. 
+ 
 \subsubsection{Conclusioni}
-Parlare se si è sforati nel budget (parlare quindi di metriche per il budget) e in quel caso perchè è successo.
+Complessivamente il gruppo non ha sforato il monte ore prestabilito ed il Budget Variance e' stato di -0.037\% che equivale ad un aumento di \EUR{5}. Tale aumento non andrà ad influenzare il costo del preventivo a termine. 
 \clearpage
 \subsection{Revisione di Progettazione (RP)}
 Questa sezione verrà riempita durante il periodo definito.

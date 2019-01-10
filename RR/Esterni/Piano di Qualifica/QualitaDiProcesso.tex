@@ -1,38 +1,28 @@
 \section{Qualità di processo}
 \subsection{Scopo}
-\textit{"Da tubi sporchi non esce acqua pulita"}.
-\newline
-Con questa frase questo documento si prefigge  lo scopo di adottare la qualità di processo come esigenza fondamentale per perseguire la qualità di prodotto. Proprio per questo si è deciso di adottare il PDCA e lo standard ISO/IEC 15504 denominato SPICE. Inoltre si vuole far presente come l'insieme di questi contenuti non sia definitivo ma anzi viene incrementato durante il percorso. \textbf{Questo documento deve rispondere al cosa e non al come.}
-%\subsection{Procedure di controllo}
-%La qualità di processo viene suddivisa in:
-%\begin{itemize}
-%	\item{\textbf{Definizione:} per controllarlo e raccontarlo meglio};
-%	\item{\textbf{Controllo:} perchè sia conforme alle attese e costi meno};
-%	\item{\textbf{Validazione:}  per validare tramite PDCA.}
-%\end{itemize}
+Il documento si prefigge di adottare la qualità di processo come esigenza fondamentale per perseguire la qualità di prodotto. Proprio per questo si è deciso di adottare il PDCA\pedice e lo standard ISO/IEC 15504\pedice denominato SPICE. Inoltre si vuole far presente come l'insieme di questi contenuti non sia definitivo ma anzi viene incrementato durante il percorso.
 \subsection{Processi}
-Con l'obiettivo di ottenere un miglioramento continuo della qualità in un'ottica a lungo raggio e all'utilizzo ottimale delle risorse è stato adottato il ciclo di Deming o ciclo PDCA. (\textbf{LA SPIEGAZIONE DEL PDCA DOVREBBE ANDARE SULLE NORME IN UN CAPITOLO A PARTE})\newline I processi qui descritti misurano la qualità del lavoro interno, ad esmepio se stimo lavorando secondo i tempi stabiliti
+Con l'obiettivo di ottenere un miglioramento continuo della qualità in un'ottica a lungo termine e all'utilizzo ottimale delle risorse è stato adottato il ciclo di Deming o ciclo PDCA.\newline
+I processi descritti di seguito misurano la qualità del lavoro interno (ad esempio se stiamo lavorando secondo i tempi prestabiliti).
+Ogni processo verrà inizialmente descritto e il gruppo identificherà per esso degli obiettivi. Conseguentemente verranno elencate le metriche scelte per l'analisi dell'andamento di questi ultimi. \\
+Le metriche utilizzate per i processi sono definite nelle \textit{Norme di progetto} alla §3.4:
 
-\subsubsection{Definizione e Pianificazione (prc1)}
-Poter controllare al meglio un processo si è scelto il modello incrementale/Agile, inoltre vengono descritte le attività e i compiti da svolgere, la pianificazione del lavoro e dei costi da sostenere . (\textbf{NON DESCRIVO I MODELLI /NON USO LE APPENDICI / IN QUESTO DOCUMENTO SI DEVE PARLARE DI QUANTITA' MISURABILI e NON DI COME CI SI ARRIVA}) Il gruppo inoltre si prefigge di rispettare i seguenti obiettivi:
+\subsubsection{P1: Definizione e Pianificazione}
+Poter controllare al meglio un processo si è scelto il modello incrementale, inoltre vengono descritte le attività e i compiti da svolgere, la pianificazione del lavoro e dei costi da sostenere. Il gruppo inoltre si prefigge di rispettare i seguenti obiettivi:
 \begin{itemize}
-		\item{\textbf{Calendario:} assicurarsi di organizzare gli obiettivi assicurandosi del loro peso per poter rispettare le scadenze}
-		\item{\textbf{Budget:} tramite le metriche descritte si cerca di allineare il budget il più possibile con gli obiettivi prefissati;}
+		\item{\textbf{Scadenze:} assicurarsi di organizzare gli obiettivi assicurandosi del loro peso per poter rispettare le scadenze}
+		\item{\textbf{Budget:} tramite le metriche descritte si cerca di allineare il budget il più possibile agli obiettivi prefissati;}
 		\item{\textbf{Standard:} definire uno standard per ogni processo al fine di facilitare il lavoro di gruppo e l'incremento continuo di ogni parte.}
 \end{itemize} 
 \subparagraph{Metriche utlizzate}
-\href{https://it.wikipedia.org/wiki/Metriche_di_progetto}{\textbf{PRESE DA QUI}}
 \begin{itemize}
 	\item{\textbf{SV(Schedule Variance);}}
 	\item{\textbf{BV(Budget Variance);}}
-	%\item{\textbf{AC(Actual Cost)}.} serve già a calcolare budget variance
-	\item{\textbf{Function Points.} }
 \end{itemize}
 \begin{table}[!htpb]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
 		\hline
 		\rowcolor{orange!50} 
@@ -40,37 +30,31 @@ Poter controllare al meglio un processo si è scelto il modello incrementale/Agi
 		\hline
 		Schedule Variance & \textgreater = -3 giorni &0 giorni \\
 		\hline
-		Budget Variance & \textgreater = -15\% & \textgreater = 0 \\ 
-		\hline
-		Function Points & - & - \\
+		Budget Variance & -15 \% $<$ x $<$ +15 \% & -1\% $<$ x $<$ +1\% \\ 
 		\hline
 	\end{tabular}
-	}
-	\caption{TBD}
+	\caption{Metriche utilizzate per la Definizione e Pianificazione}
 \end{table}
 
-\subsubsection{Verifica (prc2)}
+\subsubsection{P2: Verifica}
 Questo processo ha lo scopo di verificare che tutti gli elementi soddisfino i requisiti necessari. In questa parte ci si prefigge di rispettare i seguenti obiettivi:
 \begin{itemize}
-	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica all'aggiunta di un nuovo bug;}
-	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere verificata.}
-	\item{\textbf{Parlare id integrazione continua...forse}}
+	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica alla comparsa di un nuovo bug;}
+	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere compresa e condivisa da collaboratori diversi dall'autore.}
 \end{itemize}
-Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
-\subparagraph{Metriche utilizzate}.
+Viene così utilizzata parte dei criteri fondamentali del code coverage\pedice
+\subparagraph{Metriche utilizzate}
 \begin{itemize}
-	\item{\textbf{Line coverage}(primitiva rispetto alle successive, fornisce un'idea generale)}
+	\item{\textbf{Line coverage}}
 	\item{\textbf{Functional coverage}}
 	\item{\textbf{Path coverage}}
 	\item{\textbf{Condition coverage}}
 	\item{\textbf{Branch coverage}}
 \end{itemize}
-\begin{table}[!htpb]
-	%\resizebox{\textwidth}{!}{%
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|l|l|l|}
 		\rowcolor{orange!50}
 		\hline
@@ -87,43 +71,40 @@ Viene così utilizzata parte dei criteri fondamentali del \textit{code coverage}
 		Branch coverage & 95\% & 100\% \\
 		\hline
 	\end{tabular}
-	}
-	\caption{TBD}
+	\caption{Metriche utilizzate per la Verifica}
 %}
 \end{table}
-\subsubsection{Analisi e gestione dei rischi (prc3)}
-Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi durante tutto il processo di realizzazione. Si prefiggonon quindi i seguenti obiettivi:
+\subsubsection{P3: Analisi e gestione dei rischi}
+Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi durante tutto il processo di realizzazione. Ci prefiggiamo quindi i seguenti obiettivi:
 \begin{itemize}
-	\item{\textbf{Analisi:} ad ogni fase è necessario analizzare i possibili rischi;}
-	\item{\textbf{Categorizzazione:}  definire il tipo di rischio ad esempio se è di tipo noto, prevedibile o imprevedibile per raffinare gli strumenti con cui agire;}
-	\item{\textbf{Catalogo dei rischi:} al fine di individuare i rischi è utile stilare un catalogo dei rischi utilizzando la suddivisione del punto precedente.}
+	\item{\textbf{Analisi:} analizzare i possibili rischi ad ogni fase;}
+	\item{\textbf{Categorizzazione:}  definire il tipo di rischio per raffinare gli strumenti con cui agire (se è di tipo noto, prevedibile o imprevedibile);}
+	\item{\textbf{Catalogo dei rischi:} al fine di individuare i rischi è utile stilarne un catalogo utilizzando la suddivisione del punto precedente.}
 \end{itemize}
 Vengono così utilizzate le seguenti metriche: 
 \begin{itemize}
 	\item{\textbf{Servizi esterni non raggiungibili}}
 	\item{\textbf{Rischi non calcolati}}
-	\subparagraph{nota:} per le metriche descritte in questa tabella viene utilizzato un indice numerico positivo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo. (\textbf{non so se le note vadano qui o vadano spiegate in qualche altro documento})
 \end{itemize}
 \begin{table}[!htbp]
 	\centering
 	\renewcommand{\arraystretch}{2} 
 	\rowcolors{2}{gray!25}{white}
-	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\rowcolor{orange!50}
 			\hline
 			Nome & Accettazione & Ottimalità \\
 			\hline
-			Servizi esterni non raggiungibili & 0 & 0 \\
+			Servizi esterni non raggiungibili & 2 & 0 \\
 			\hline
-			Rischi non previsti & 0 & 0 \\
+			Rischi non previsti & 2 & 0 \\
 			\hline
 		\end{tabular}
-	}
-	\caption{TBD}
+	\caption{Metriche Analisi e Gestione dei rischi}
 \end{table}
+\subparagraph{\textbf{NB}:} per le metriche descritte in questa tabella viene utilizzato un indice intero non negativo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo.
 \newpage
-\subsubsection{Gestione Test (prc4)}
+\subsubsection{P4: Gestione Test}
 Prendendo nota che il processo di sviluppo è ancora in fase embrionale il gruppo non è ancora in grado di fornire delle metriche per la gestione dei test.
-\subsubsection{Versionamento (prc5)}
+\subsubsection{P5: Versionamento}
 Come per la gestione dei test vale anche per il processo di versionamento

@@ -6,22 +6,22 @@
 \newcommand{\verp}{TBD}
 \newcommand{\vers}{TBD}
 \newcommand{\res}{TBD}
-\newcommand{\version}{Versione 0.0.0}
+\newcommand{\version}{Versione 0.0.1}
 \newcommand{\use}{Esterno}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\ \\}
 \usepackage{eurosym}
-\title{\fontsize{40}{40}\selectfont Piano di Qualifica}
+\title{\myfont{Piano di Qualifica}}
 \author{Dream Corp.}
 
 
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
-\usepackage[table,xcdraw]{xcolor}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{appendix}
 \usepackage{amsmath, tabu}
 \graphicspath{{immagini/}}
-\date{04-12-2018}
+\date{\myfont 04-12-2018}
 
 \begin{document}
 
@@ -36,10 +36,10 @@
 
 %Appendici
 \appendix
-\input{ResocontoAttivitaDiVerifica.tex}
-\newpage
 \input{TestDiUnita.tex}
 \newpage
 \input{TestDiIntegrazione.tex}
+\newpage
+\input{ResocontoAttivitaDiVerifica.tex}
 \newpage
 \end{document}
