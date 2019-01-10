@@ -13,12 +13,10 @@
 \date{12/12/2018}
 
 \begin{document}
-  
-    \maketitle
-	\begin{center}
+\maketitle
+\begin{center}
 	\hspace{5em}
-	   \includegraphics[width =70mm]{../../logo.png}\newline
-	\huge Versione 1.0.0 
+	\includegraphics[width =70mm]{../../logo.png}\newline
 	\\G\&B
 	\begin{table}[!htpb]
 		\centering
@@ -30,18 +28,16 @@
 			Redattori & \red \\
 			Verificatori & \verp\\
 			Uso & \use\\
-
+			
 			Destinatari & Dream Corp. \\
-			& Zucchetti SpA\\
 			& Prof. Tullio Vardanega\\
 			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
 		\end{tabular}
 	\end{table}
-	\end{center}
-  
-  
-  \newpage
-\newline
+\end{center}
+\newpage
+
 ~\newline
 \section{Riunione}
     \subsection{Informazioni generali}
@@ -61,7 +57,6 @@
         \item \textbf{Introduzione a Grafana}: Grafana può monitorare praticamente ogni cosa, questo permette di controllare la salute di un sistema ed identificarne i punti deboli da correggere. I dati raccolti possono essere gestiti da un database specializzato per gestire serie temporali (InfluxDB) e Grafana lo interroga presentando i risultati ottenuti su dashboards ed inviando notifiche per allarmi;
         \item \textbf{Funzionamento delle reti Bayesiane}: E' stato mostrato un tool per simulare il funzionamento delle reti Bayesiane in modo da comprenderle meglio la loro natura. In particolare è stata enfatizzata la possibilità di fare inferenza di variabili non osservabili tramite l'inserimento di nodi il cui valore è già conosciuto.
     \end{enumerate}
-    \\
     Domande effettuate verso la proponente:
     \begin{enumerate}
         \item \textbf{La rete Bayesiana deve ricalibrare il valore della probabilità condizionata dei nodi della rete in funzione degli eventi passati?}: La risposta è stata negativa in quanto la rete deve soltanto proporre le cause più probabili con l'inferenza bayesiana senza anadare a modificare i pesi stessi delle probabilità dei nodi. Riassumendo la rete deve essere strutturalmente statica;
