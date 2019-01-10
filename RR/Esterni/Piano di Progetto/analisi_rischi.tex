@@ -24,7 +24,7 @@
 		\caption{Analisi dei Rischi}
 	\end{table}
 	\clearpage
-	Per analizzare il fattore di rischio del progetto adottiamo una scala numerica così definita:
+	Per analizzare l'impatto che un rischio puó avere sul progetto adottiamo una scala numerica così definita:
 	\begin{itemize}
 		\item Molto Basso: 1
 		\item Basso: 2
@@ -40,34 +40,46 @@
 		\item Alta: 75\%
 		\item Molto Alta: 90\%
 	\end{itemize}
-	L’utilizzo di una scala numerica ci permette di analizzare più efficacemente l’impatto probabile all’interno del nostro progetto e quindi anche di pianificare all’indietro tenendo conto di queste analisi.
-	Elaborazione dei nostri rischi:
+	L’utilizzo di una scala numerica ci permette di analizzare più efficacemente l’impatto probabile all’interno del nostro progetto e quindi anche di pianificare all’indietro tenendo conto di queste analisi. \\ \\ Procederemo adesso con il calcolo della \textit{magnitudo} di ogni rischio.
+	La magnitudo viene calcolata come prodotto dell'impatto del rischio e la probabilità che esso si verifichi. \\ \\
+	Magnitudo = Impatto * Probabilità \\ \\
 	\begin{table}[!htpb]
 		\centering
 		\renewcommand{\arraystretch}{2} 
 		\rowcolors{1}{white}{gray!25}
-		\begin{tabular}{|l|l|l|l|}
+		\begin{tabular}{|c|c|c|c|}
+		    \rowcolor{orange!50}
+		    \hline
+		    \textbf{Identificativo} & \textbf{Probabilità} & \textbf{Impatto} & \textbf{Magnitudo}\\
 			\hline
-			r1 & 75\% & 4 & 3 \\
+			R1 & 75\% & 4 & 3 \\
 			\hline
-			r2 &  25\%  & 2  & 0.5 \\
+			R2 &  25\%  & 2  & 0.5 \\
 			\hline
-			r3  & 50\%  & 3  & 1.5 \\
+			R3  & 50\%  & 3  & 1.5 \\
 			\hline
-			r4  & 10\% &  2 &  0.2 \\
+			R4  & 10\% &  2 &  0.2 \\
 			\hline
-			r5  & 25\%  & 5  & 1.25 \\
+			R5  & 25\%  & 5  & 1.25 \\
 			\hline
-			\textbf{Media}  & 37\% &  3.2 &  28.66666667\\
+			\textbf{Media}  & \textbf{37 \%}&  \textbf{3.2} &  \textbf{1,29}\\
 			\hline
 		\end{tabular}
 		\caption{Probabilità dei Rischi}
 	\end{table}
 	\newline
-	Dalla nostra distribuzione di rischi e probabilità otteniamo un profilo di rischio:\newline
-	Probabilità media di un rischio = 37\% (Bassa-Media)\newline
-	Impatto medio di un rischio = 3.2 (Medio)\newline
-	Somma impatto*probabilità = 6.45\newline
-	Massima somma impatto*probabilità = 0.9(Molto Alta) * numero\_rischi *5 (Molto Alto) = 22.5\newline
-	Profilo di rischio= 6.45/22.5 = 28,7\% (Basso)\newline
-	Concludendo possiamo ritenere il nostro profilo di rischio abbastanza basso.
+	\begin{figure}
+	    \centering
+	    \includegraphics[scale=0.6]{elaborazione_manitudo.png} 
+	    \caption{Grafico Confronto Probabilità-Impatto-Magnitudo}
+	\end{figure}
+	\newline
+	Dall'elaborazione presenta nella tabella 8 otteniamo:
+	\begin{itemize}
+	    \item Probabilità media di un rischio = 37 \% (Bassa-Media);
+	    \item Impatto medio di un rischio = 3.2 (Medio);
+	    \item  Magnitudo media = 1,29.
+	\end{itemize}
+	Magnitudo nel caso pessimo: 5 (impatto massimo) * 90 \%(probabilità molto alta) = 4,5.\\
+	Predisposizione al rischio, calcolata come rapporto tra magnitudo media e magnitudo nel caso pessimo = 1,29/4,5 = \textbf{ 28,7 \% }\\ \\
+	Concludendo possiamo ritenere la nostra predisposizione al rischio abbastanza bassa.
