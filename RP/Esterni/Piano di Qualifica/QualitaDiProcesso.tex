@@ -1,0 +1,184 @@
+\section{Qualità di Processo}
+\subsection{Scopo}
+Il documento si prefigge di adottare la qualità di processo come esigenza fondamentale per perseguire la qualità di prodotto. Proprio per questo si è deciso di adottare il PDCA\pedice~e lo standard ISO/IEC 15504\pedice~denominato SPICE. Inoltre si vuole far presente come l'insieme di questi contenuti non sia definitivo ma anzi viene incrementato durante il percorso.
+\subsection{Processi}
+Con l'obiettivo di ottenere un miglioramento continuo della qualità in un'ottica a lungo termine e all'utilizzo ottimale delle risorse è stato adottato il ciclo di Deming o ciclo PDCA.\newline
+I processi descritti di seguito misurano la qualità del lavoro interno (ad esempio se stiamo lavorando secondo i tempi prestabiliti).
+Ogni processo verrà inizialmente descritto e il gruppo identificherà per esso degli obiettivi. Conseguentemente verranno elencate le metriche scelte per l'analisi dell'andamento di questi ultimi. \\
+Le metriche utilizzate per i processi sono definite nelle \textit{Norme di progetto} all'appendice B1:
+\newpage
+\subsubsection{P1: Definizione e Pianificazione}
+Poter controllare al meglio un processo si è scelto il modello incrementale, inoltre vengono descritte le attività e i compiti da svolgere, la pianificazione del lavoro e dei costi da sostenere. \\\\
+\textbf{Obiettivi:}
+\begin{itemize}
+		\item{\textbf{Scadenze:} assicurarsi di organizzare gli obiettivi assicurandosi del loro peso per poter rispettare le scadenze;}
+		\item{\textbf{Budget:} tramite le metriche descritte si cerca di allineare il budget il più possibile agli obiettivi prefissati;}
+		\item \textbf{Standard:} definire uno standard per ogni processo al fine di facilitare il lavoro di gruppo e l'incremento continuo di ogni parte.\\
+\end{itemize} 
+\textbf{Metriche utlizzate}
+\begin{itemize}
+	\item{\textbf{SV(Schedule Variance);}}
+	\item{\textbf{BV(Budget Variance).}}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\rowcolor{orange!50} 
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		Schedule Variance & $\geq$ -3 giorni &0 giorni \\
+		\hline
+		Budget Variance & -15 \% $<$ x $<$ +15 \% & -1\% $<$ x $<$ +1\% \\ 
+		\hline
+	\end{tabular}
+	\caption{Metriche utilizzate per la Definizione e Pianificazione}
+\end{table}
+\newpage
+\subsubsection{P2: Verifica}
+Questo processo ha lo scopo di verificare che tutti gli elementi soddisfino i requisiti necessari. \\\\
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item{\textbf{Commit brevi ed incisivi:} per facilitare così un'analisi ed un miglior intervento di verifica alla comparsa di un nuovo bug;}
+	\item{\textbf{Commenti al codice:} ogni porzione di codice deve essere commentata così da poter essere compresa e condivisa da collaboratori diversi dall'autore.}
+\end{itemize}
+Viene così utilizzata parte dei criteri fondamentali del code coverage\pedice.\\\\
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item{\textbf{Line coverage};}
+	\item{\textbf{Functional coverage};}
+	\item{\textbf{Path coverage};}
+	\item{\textbf{Condition coverage};}
+	\item{\textbf{Branch coverage}.}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		Line coverage & 90\% & 100\% \\
+		\hline
+		Functional coverage & 93\%(non più alto per evitare ridondanza) & 100\% \\
+		\hline
+		Path coverage & 96\% & 100\% \\
+		\hline
+		Condition coverage & 98\% & 100\% \\
+		\hline
+		Branch coverage & 95\% & 100\% \\
+		\hline
+	\end{tabular}
+	\caption{Metriche utilizzate per la Verifica}
+\end{table}
+\newpage
+\subsubsection{P3: Analisi e gestione dei rischi}
+Questo processo ha lo scopo di monitorare ed evitare l'insorgere di nuovi rischi durante tutto il processo di realizzazione.\\\\
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item\textbf{Analisi:} analizzare i possibili rischi ad ogni fase;
+	\item\textbf{Categorizzazione:}  definire il tipo di rischio per raffinare gli strumenti con cui agire (se è di tipo noto, prevedibile o imprevedibile);
+	\item\textbf{Catalogo dei rischi:} al fine di individuare i rischi è utile stilarne un catalogo utilizzando la suddivisione del punto precedente.\\
+\end{itemize}
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item{\textbf{Servizi esterni non raggiungibili};}
+	\item{\textbf{Rischi non calcolati}.}
+\end{itemize}
+\begin{table}[!htbp]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			Nome & Accettazione & Ottimalità \\
+			\hline
+			Servizi esterni non raggiungibili & 2 & 0 \\
+			\hline
+			Rischi non calcolati & 2 & 0 \\
+			\hline
+		\end{tabular}
+	\caption{Metriche Analisi e Gestione dei rischi}
+\end{table}
+\subparagraph{\textbf{NB}:} per le metriche descritte in questa tabella viene utilizzato un indice intero non negativo che indica il numero di servizi esterni non raggiungibili o rischi non previsti che hanno minato temporaneamente il processo.
+\newpage
+\subsubsection{P4: Gestione Test}
+Per garantire una gestione efficacie dell'analisi dinamica è necessario stabilire delle misurazioni sull'esecuzione di essa.\\\\
+\textbf{Metriche utilizzate:}
+\begin{itemize}
+    \item \textbf{Percentuale di test case passati;}
+    \item \textbf{Percentuale di test case falliti;}
+    \item \textbf{Tempo medio del team di sviluppo per la risoluzione di errori;} 
+    \item \textbf{Efficienza della progettazione dei test;}
+    \item \textbf{Contenimento dei difetti;}
+    \item \textbf{Percentuale di difetti sistemati;}
+    \item \textbf{Copertura dei test eseguiti;}
+    \item \textbf{Copertura dei requisiti;}
+    \item \textbf{Difetti per requisito;}
+\end{itemize}
+\begin{table}[!htbp]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			Nome & Accettazione & Ottimalità \\
+			\hline 
+			Percentuale di test case passati        & >90\%     & >95\%   \\
+			\hline
+	    	Percentuale di test case falliti        & <10\%     & <5\%   \\
+			\hline
+			Tempo medio del team di sviluppo per la risoluzione di errori
+			& <4 h      & <2 h   \\
+			\hline
+			Efficienza della progettazione dei test & <3 h      & <2 h  \\
+			\hline
+	    	Contenimento dei difetti                & >65\%     & >80\%  \\
+			\hline
+			Percentuale di difetti sistemati        & >90\%     & >95\%  \\
+			\hline
+			Copertura dei test eseguiti             & >80\%     & >95\%  \\
+			\hline
+			Copertura dei requisiti                 & 100\%     & 100\%  \\
+			\hline
+			Difetti per requisito                   & -         & 0   \\
+			\hline
+		\end{tabular}
+	\caption{Metriche Analisi e Gestione dei rischi}
+\end{table}
+\clearpage
+\subsubsection{P5: Versionamento}
+Questo processo ha lo scopo di monitorare la frequenza e la correttezza dei commit\pedice, tramite il conteggio delle build\pedice automatiche di Travis\pedice e il loro risultato \\
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item\textbf{Commit piccoli:} i commit effettuati devono essere di dimensioni ridotte per garantire che il codice sia sempre aggiornato e che il suo ciclo di vita sia sempre monitorabile;
+	\item\textbf{Build positive:} ogni commit deve contenere codice corretto, che permetta almeno la compilazione del codice, per evitare l'inutile propagazione di errori.\\
+\end{itemize}
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item{\textbf{Media numero build Travis per settimana};}
+	\item{\textbf{Percentuale build Travis superate}.}
+\end{itemize}
+\begin{table}[!htbp]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			Nome & Accettazione & Ottimalità \\
+			\hline
+			Media numero build Travis per settimana & 15 & 20 \\
+			\hline
+			Percentuale build Travis superate. & 15 & 20 \\
+			\hline
+		\end{tabular}
+	\caption{Metriche Analisi e Gestione dei rischi}
+\end{table}
+\newpage

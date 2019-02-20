@@ -1,0 +1,27 @@
+
+I casi d'uso possono essere riutilizzati (per esempio le conferme o qualche errore) in tal caso conviene fare un caso d'uso a parte
+ATTENZIONE alle pre e post
+
+Da discutere UC3 intero. In base alla mia breve progettazione non è nemmeno necessario porsi il problema della duplice associazione per l'utente. noi dobbiamo garantirla ma all'utente sarà totalmente oscuro cosa succede. 
+Basterà che nel caso d'uso UC2 (quello di associazione nodi) non si mostrino, per una certa rete, i nodi che sono già stati assegnati ad un flusso dati. Così si evita di rompere la proprietà di biunivocità e per i casi d'uso è molto semplificato e pulito.
+
+Propongo di creare un caso UC2 che sia:
+UC2: configurazione associazione nodo-flusso dati
+In cui all'interno sia presente una scelta.
+Dopo aver selezionato il flusso dati, dopo aver selezionato la rete bayesiana,...
+1) C'è già un'associazione --> ci mostra il nodo selezionato in precedenza
+2) Non c'è già un'associazione --> ci fa scegliere da una lista i nodi possibili.
+Se ne avevamo già uno, possiamo rimuoverlo, con il pulsante "Dissocia".
+Una volta fatto "dissocia" si torna al caso in cui nessun nodo è stato associato al flusso dati e quindi il secondo caso della scelta
+
+
+UCx modifica dati del panel in modalità edit.--->UC3
+    uc x.1 titolo
+    uc x.2 descrizione
+    uc x.3 salvataggio dashboard
+
+fare caso d'uso per entrare in modalitá modifica
+
+
+le pre condizioni descrivono la situazione in quel momento quindi es. "é disponibile la finestra di selezione" quindi in modo impersonale e che descrive solo la situazione attuale
+casomai anche la schermata in cui ci si trova

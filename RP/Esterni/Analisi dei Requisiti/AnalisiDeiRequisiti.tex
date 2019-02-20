@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\newcommand{\documento}{Analisi dei requisiti}
+\input{stile/stile.tex}
+\newcommand{\red}{ \mat\\ & \daG \\ & \daL}
+
+\newcommand{\verp}{\gia}
+\newcommand{\res}{\daG}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\usepackage{eurosym}
+\title{\fontsize{40}{40}\selectfont Analisi dei requisiti}
+\author{Dream Corp.}
+
+
+\date{10/01/2019}
+
+
+
+\begin{document}
+	\input{stile/copertina.tex}
+	\newpage
+	
+	\input{introduzione.tex}
+	
+	\input{descrizione_prodotto.tex}
+	
+	\input{casi_uso.tex}
+	
+	\input{requisiti.tex}
+	
+	\input{tracciamento.tex}
+	
+	\newpage
+	\appendix
+	\input{grafana_reti_bayesiane.tex}
+	
+\end{document}

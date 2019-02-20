@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\input{stile/stile.tex}
+\newcommand{\documento}{Glossario}
+
+\newcommand{\red}{\daL}
+\newcommand{\verp}{\mic}
+\newcommand{\vers}{\gia}
+\newcommand{\res}{\pie}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\renewcommand\thesection{}
+\usepackage{eurosym}
+\title{\fontsize{40}{40}\selectfont Glossario}
+\author{Dream Corp.}
+
+
+\date{10/01/2019}
+
+\begin{document}
+    
+\maketitle
+	\begin{center}
+	\hspace{5em}
+	   \includegraphics[width =70mm]{../../logo.png}\newline
+	\\G\&B
+	\begin{table}[!htpb]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Responsabile & \res\\
+			Redattori & \red \\
+			Verificatori & \verp\\
+			Uso & \use\\
+
+			Destinatari & Dream Corp. \\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
+		\end{tabular}
+	\end{table}
+	\end{center}
+	\newpage
+	~
+	\input{versionamento.tex}
+	\clearpage
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\input{glossary_words.tex}
+
+\end{document}

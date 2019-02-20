@@ -1,0 +1,180 @@
+\section{Qualità di Prodotto}
+\subsection{Scopo}
+Per garantire una buona qualità di prodotto, il gruppo ha individuato dallo standard ISO/IEC 9126\pedice~gli obiettivi di qualità adeguati al contesto ed ha stilato le seguenti metriche coerenti con essi, mantenendo così il livello di qualità perseguito.
+
+\subsection{Prodotti}
+Le metriche utilizzate per i prodotti sono definite nelle \textit{Norme di progetto} all'appendice B2:
+\newpage
+\subsubsection{Qualità dei documenti}
+I documenti prodotti dovranno essere standardizzati, leggibili, sintatticamente e semanticamente corretti.\\\\
+\textbf{Obiettivi di qualità:}
+\begin{itemize}
+	\item{\textbf{Comprensibilità:} devono venire creati dei documenti di immediata comprensione, per questo si prediligono frasi incisive e si pone l'accento su elementi tecnici presentati da tabelle;}
+	\item\textbf{Correttezza:} non devono contenere errori ortografici;
+	\item\textbf{Leggibilità:} nonostante lo scopo tecnico i documenti devono essere fruibili alla maggior parte delle persone.\\
+\end{itemize}
+%Vengono così utilizzate le seguenti metriche per poter dare un ranking ai documenti:
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item{\textbf{Gulpease Index\pedice};}
+	\item{\textbf{Errori sintattici};}
+	\item{\textbf{Gunning Fog index\pedice};}
+	\item{\textbf{Simple measure of Goobledygook (SMOG)\pedice}.}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+			Gulpease index    &   50-100   &    65-100       \\ \hline
+			Errori sintattici     &  0    &   0      \\ \hline
+			Gunning Fog index    &     \textless= 13      &   \textless= 10   \\ \hline
+			SMOG                  &              \textless= 13                                &                         \textless= 10                   \\ \hline
+		\end{tabular}
+	\caption{Metriche utilizzate Qualità dei documenti}
+\end{table}
+\newpage
+\subsubsection{Qualità del software}
+Per qualità del software si intende la misura in cui un prodotto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento che alla struttura interna. 
+
+\myparagraph{E1: Correttezza} 
+Un programma o sistema software si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti.\\\\
+\textbf{Obiettivi di qualità:}
+\begin{itemize}
+	\item \textbf{Soddisfazione del cliente:} il cliente è soddisfatto se il software è conforme ai requisiti;
+	\item \textbf{Requisiti opzionali soddisfatti:} soddisfare più requisiti opzionali possibili.\\
+\end{itemize}
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Percentuale requisiti fondamentali soddisfatti};
+	\item \textbf{Percentuale requisiti opzionali soddisfatti}.
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+			Requisiti fondamentali soddisfatti  &  95\%  &  100\%      \\ \hline
+			Requisiti secondari soddisfatti  &   0\% &   80\%     \\ \hline
+		\end{tabular}
+	\caption{Metriche utilizzate per la Correttezza}
+\end{table}
+\myparagraph{E2: Affidabilità}
+	Un sistema è tanto più affidabile quanto più raramente, durante l'uso del sistema, si manifestano malfunzionamenti.\\\\
+\textbf{Obiettivi di qualità:}
+\begin{itemize}
+	\item \textbf{Adattabilità:} adattarsi al tipo di utente;
+	\item \textbf{Tempo medio:} tenere basso il tempo medio che intercorre tra due fallimenti successivi.
+\end{itemize}
+\textbf{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Mean Time Between Failures (MTBF)\pedice;}
+	\item \textbf{Blocco operazioni non corrette;}
+	\item \textbf{Test conclusi in failure.}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Nome} &  \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+		MTBF     & $\leq$ 2 ogni 5 build & $\leq$1 ogni 5 build          \\ \hline
+		Blocco operazioni non corrette   &    0-20\% &  0\%       \\ \hline
+		Test conlusi in failure          &     0-10\%          &      0\%        \\ \hline
+	\end{tabular}
+	\caption{Metriche utilizzate per Affidabilità}
+\end{table}
+\myparagraph{E3: Usabilità}
+Rappresenta la capacità del prodotto di essere facilmente comprensibile ed attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.\\\\
+\textbf{Obiettivi di qualità:}
+\begin{itemize}
+    \item \textbf{Comprensibilità:} l’utente deve essere in grado di riconoscere le funzionalità offerte dal software e deve comprendere le modalità di utilizzo per raggiungere i risultati attesi;
+    \item \textbf{Apprendibilità:} deve essere data la possibilità all'utente di imparare ad utilizzare l’applicazione senza troppo impegno;
+\end{itemize}
+\subparagraph{Metriche utilizzate:}
+\begin{itemize}
+    \item \textbf{Comprensibilità delle funzioni offerte};
+    \item \textbf{Facilità di apprendimento delle funzionalità};
+\end{itemize}
+
+\myparagraph{I1: Efficienza}
+Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse.\\\\
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item \textbf{Utilizzo delle risorse:} le funzionalità del software devono ponderare l'utilizzo delle risorse a diposizione;
+	\item \textbf{Rispettare la deadline:} il software deve eseguire le proprie funzionalità entro i tempi prestabiliti.
+\end{itemize}
+
+\subparagraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Tempo di risposta.}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+			Tempo di risposta        &           $<$ 300ms            &      $<$ 100ms         \\ \hline                       
+		\end{tabular}
+	\caption{Metriche utilizzate Efficienza}
+\end{table}
+
+\myparagraph{I2: Manutenibilità}
+Riguarda la facilità di apportare modifiche al sistema realizzato.\\\\
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item \textbf{Incapsulamento:} ogni parte del software aggiunta deve rispettare il singular responsabilty principle\pedice;
+	\item \textbf{Stabilità:} ogni parte del software aggiunta deve essere stabile come le precedenti;
+	\item \textbf{Testabilità:} ogni parte deve essere facilmente testabile come le precedenti.
+\end{itemize}
+
+\subparagraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{Impatto nuove aggiunte}
+\end{itemize}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+			Impatto nuove aggiunte        &          <30\%            &      <10\%         \\ \hline                       
+		\end{tabular}
+	\caption{Metriche utilizzate Manutenibilità}
+\end{table}
+\newpage
+\subsubsection{Tracciamento Parametri Qualità del Software}
+Di seguito viene riportata una tabella riassuntiva che riporta per ogni parametro, su cui viene misurata la qualità del software, il tipo e il numero di metriche scelte. \\ \\ Questa tabella è utile per avere una visione d'insieme dei parametri di qualità del software e per il tracciamento di questi ultimi.
+
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|c|c|c|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Identificativo} & \textbf{Tipologia} & \textbf{Numero Metriche} \\ \hline
+			E1 & Esterno & 2 \\ \hline
+			E2 & Esterno & 3 \\ \hline  
+			E3 & Esterno & 2 \\ \hline                       
+			I1 & Interno & 1 \\ \hline                       
+			I2 & Interno & 1 \\ \hline                       
+			\textbf{Totale} &  & 9 \\ \hline   
+		\end{tabular}
+	\caption{Tracciamento Parametri Qualità del Software}
+\end{table}
+
+\clearpage

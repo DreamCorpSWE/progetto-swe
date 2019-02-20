@@ -1,0 +1,261 @@
+
+\section{Requisiti}
+    Tracciare i requisiti\pedice significa che requisiti correlati vengono raggruppati e collegati per facilitare la lettura grazie a tabelle e l'indicizzazione.
+    Assegneremo per tanto ad ogni requisito un identificatore univoco, composto da una serie di regole dettate dalla caratteristica stessa del requisiti.
+    
+    \subsubsection{Categorie}
+    Analizzeremo nella seguente sezione i vari requisiti suddivisi in categorie:
+    \begin{itemize}
+        \item Funzionali;
+        \item Non funzionali:
+            \begin{itemize}
+                \item Requisiti di vincolo;
+                \item Requisiti di qualità;
+                \item Requisiti prestazionali.
+            \end{itemize}
+    \end{itemize}
+    
+    \subsubsection{Tracciabilità}
+    Il codice con cui ogni requisito viene univocamente indicizzato è formato da una regola di composizione definita in questo modo:
+    \newline
+    
+    \begin{center}
+        \textbf{R+(F|Q|V|P)+(C|O)+(X(.Y|(LETTER))*)}    
+    \end{center}
+    
+    
+    \begin{itemize}
+        \item R : Requisito;
+        \item F|Q|V|P:
+            \begin{itemize}
+                \item F: Funzionale;
+                \item Q: Qualità;
+                \item V: Vincolo;
+                \item P: Prestazionale.
+            \end{itemize}
+        \item C|O:
+            \begin{itemize}
+                \item C: Compulsory (Obbligatorio);
+                \item O: Optional (Opzionale).
+            \end{itemize}
+        \item X.Y: sono numeri naturali concatenati con un punto per descrivere un sotto requisito.
+    \end{itemize}
+    
+    
+    \subsubsection{Fonti}
+    Le varie fonti sono:
+        \begin{itemize}
+            \item Interno: il requisito proviene da una decisione del gruppo "Dream Corp";
+            \item Capitolato: il requisito proviene dalle richieste del capitolato;
+            \item Esterno: il requisito proviene da un incontro con la proponente.
+        \end{itemize}
+    
+		\subsection{Requisiti Funzionali}			
+        Descrivono in dettaglio i servizi che verranno forniti dal sistema agli attori.
+        \begin{table}[!htpb]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white}
+            \begin{tabular}{|l|c|p{8cm}|c|}
+                \rowcolor{orange!50}
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
+                \hline
+                RFC1 & Compulsory & Inserimento definizione rete Bayesiana & Capitolato\\
+                \hline
+                RFC1A & Compulsory & Inserimento definizione della rete bayesiana sotto forma di file json & Interno\\
+                \hline
+                RFC1A.1 & Compulsory & Scelta del file json & Interno\\
+                \hline
+                RFC1B & Compulsory & Inserimento definizione rete Bayesiana sotto forma di codice json & Interno\\
+                \hline
+                RFC2 & Compulsory & Modifica di un panel & Interno\\
+                \hline
+                RFC2.1 & Compulsory & Selezione del flusso di monitoraggio & Interno\\
+                \hline
+                RFC2.2 & Compulsory & Attivazione modalità "modifica" di un panel & Interno\\
+                \hline
+                RFC2.3 & Compulsory & Modifica delle informazioni principali di un panel & Interno\\
+                \hline
+                RFC2.3.1 & Compulsory & Modifica titolo di un panel & Interno\\
+                \hline
+                RFC2.3.2 & Compulsory & Modifica descrizione di un panel & Interno\\
+                \hline
+                RFC2.4 & Compulsory & Chiusura modalità "modifica" di un panel & Interno\\
+                \hline
+                RFC3 & Compulsory & Configurazione associazione di un flusso dati di Grafana ad un nodo della rete bayesiana & Interno\\
+                \hline
+                RFC3.1 & Compulsory & Selezione della rete bayesiana & Interno\\
+                \hline
+                RFC3.2 & Compulsory &  Modifica associazione nodo-flusso dati & Interno\\
+                \hline
+                RFC3.2A & Compulsory & Associazione di un nodo della rete al flusso dati & Interno\\
+                \hline
+                RFC3.2A.1 & Compulsory & Selezione di un nodo della rete & Interno\\
+                \hline
+                RFC3.2A.2 & Compulsory & Selezione della funzione "Associa" & Interno\\
+                \hline
+                RFC3.2A.3 & Compulsory & Visualizzazione messaggio di conferma associazione & Interno\\
+                \hline
+                
+			\end{tabular}
+			\caption{Requisiti Funzionali}
+		\end{table}
+		
+		
+        \begin{table}[!htpb]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white}
+            \begin{tabular}{|l|c|p{8cm}|c|}
+                \rowcolor{orange!50}
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
+                \hline
+                RFC3.2B & Compulsory & Dissociazione del nodo della rete dal flusso dati & Interno\\
+                \hline
+                RFC3.2B.1 & Compulsory & Selezione della funzione "Dissocia" & Interno\\
+                \hline
+                RFC3.2B.2 & Compulsory & Visualizzazione messaggio di conferma associazione & Interno\\
+                \hline
+                RFC4 & Compulsory & Salvataggio Dashboard & Interno\\
+                \hline
+                RFC4.1 & Compulsory & Lancio funzione salvataggio Dashboard & Interno\\
+                \hline
+                RFC4.1A & Compulsory & Lancio funzione salvataggio Dashboard tramite pulsante & Interno\\
+                \hline
+                RFC4.1B & Compulsory & Lancio funzione salvataggio Dashboard tramite shortcut & Interno\\
+                \hline
+                RFC4.2 & Compulsory & Inserimento note nel salvataggio Dashboard & Interno\\
+                \hline
+                RFO5 & Optional & Definizione di un alert personalizzato per un flusso dati non monitorato & Capitolato\\
+                \hline
+                RFO5.1 & Optional & Apertura della configurazione per un nuovo alert & Interno\\
+                \hline
+                RFO5.2 & Optional & Definizione notifica dell'alert & Interno\\
+                \hline
+                RFO5.2.1 & Optional & Inserimento destinatario notifica & Capitolato\\
+                \hline
+                RFO5.2.2 & Optional & Inserimento messaggio notifica & Interno\\
+                \hline
+                RFC6 & Compulsory & Apertura panel "Alert" & Interno\\
+                \hline
+                RFC7 & Compulsory & Configurazione dei dati dell'alert & Interno\\
+                \hline
+                RFC7.1 & Compulsory & Modifica nome dell'alert & Interno\\
+                \hline
+                RFC7.2 & Compulsory & Modifica tempo di valutazione condizione alert & Interno\\
+                \hline
+                RFC7.3 & Compulsory & Modifica soglia di tolleranza per lancio di un alert & Interno\\
+                \hline
+        \end{tabular}
+            \caption{Requisiti Funzionali}
+        \end{table}
+        
+        \begin{table}[!htpb]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white}
+            \begin{tabular}{|l|c|p{8cm}|c|}
+                \rowcolor{orange!50}
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
+                \hline
+                RFC7.4 & Compulsory & Aggiunta condizione & Interno\\
+                \hline
+                RFC7.5 & Compulsory & Modifica condizione & Interno\\
+                \hline
+                RFC7.6 & Compulsory & Eliminazione condizione & Interno\\
+                \hline
+                RFC7.7 & Compulsory & Modifica dello stato del sistema nel caso non ci siano valori o tutti i valori siano nulli & Interno\\
+                \hline
+                RFC7.8 & Compulsory & Test delle condizioni & Interno\\
+                \hline
+                RFC8 & Compulsory & Modifica di un alert & Interno\\
+                \hline
+                RFC8.1 & Compulsory & Modifica notifica dell'alert & Interno\\
+                \hline
+                RFC8.1.1 & Compulsory & Modifica destinatario notifica & Interno\\
+                \hline
+                RFC8.1.2 & Compulsory & Modifica messaggio notifica & Interno\\
+                \hline
+                RFC9 & Compulsory & Rimozione di un alert & Interno\\
+                \hline
+                RFC9.1 & Compulsory & Visualizzazione messaggio di conferma cancellazione alert & Interno\\
+                \hline
+                RFC10 & Compulsory & Lancio di un alert & Interno\\
+                \hline
+                RFC11 & Compulsory & Visualizzazione errore interpretazione rete Bayesiana & Interno\\
+                \hline
+                RFC12 & Compulsory & Visualizzazione errore invio del messaggio di alert & Interno\\
+                \hline
+                RFC13 & Compulsory & Visualizzazione errore configurazione dell'alert & Interno\\
+                \hline
+                RFC14 & Compulsory & Chiusura di una finestra con messaggio & Interno\\
+                \hline
+                RFC15 & Compulsory & Annullamento salvataggio dashboard & Interno\\
+                \hline
+                RFC16 & Compulsory & Errore salvataggio dashboard & Interno\\
+                \hline
+                RFC17 & Compulsory & Annullamento cancellazione alert & Interno\\
+                \hline
+        \end{tabular}
+            \caption{Requisiti Funzionali}
+        \end{table}
+        
+        \newpage
+
+        
+        \subsection{Requisiti Non Funzionali}
+        Descrivono i vincoli sul sistema e sul suo processo di sviluppo
+        \subsubsection{Requisiti di vincolo}
+        
+        \begin{table}[!htbp]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
+                \hline
+                RVC1 & Compulsory & Il plugin deve essere sviluppato in linguaggio Javascript & Capitolato\\
+                \hline
+                RVC2 & Compulsory & Il plugin deve essere open-source\pedice & Capitolato\\
+                \hline
+                RVC3 & Compulsory & La definizione della rete bayesiana deve essere in formato json & Capitolato\\
+                \hline
+            \end{tabular}
+            \caption{Requisiti di vincolo} %descrizone a fine tabella
+        \end{table}
+        
+        \subsubsection{Requisiti di qualità}
+        \clearpage
+        
+        \begin{table}[!htbp]
+            \centering
+            \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|p{8cm}|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
+                \hline
+                RQC1 &  Compulsory & La  progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato "Piano di qualifica v 1.0.0" & Interno\\
+                \hline
+                RQC2 &  Compulsory & Devono essere rispettate le norme definite nel documento "Norme di progetto v1.0.0" & Interno\\
+                \hline
+                RQO3 &  Optional & Il codice JavaScript\pedice deve attenersi allo stile Javascript airbnb\pedice & Interno\\
+                \hline
+                RQC4 &  Compulsory & Dovrà essere fornito un manuale guida in lingua italiana sull'utilizzo del plugin & Capitolato\\
+                \hline
+                RQO5 &  Optional & Il codice sorgente deve essere pubblicato su un repository di Github\pedice & Capitolato/Interno\\
+                \hline
+                RQC6 & Compulsory & Il plugin deve essere pubblicato su Grafana.com & Interno\\
+                \hline
+            \end{tabular}
+            \caption{Requisiti di qualità}
+        \end{table}
+        
+        \subsubsection{Requisiti prestazionali}
+        Le prestazioni del nostro sistema non dipendono dal plugin ma trattandosi di reti Bayesiane le prestazioni dipendono dalla velocità di calcolo della libreria jsbayes e dalla complessità della rete che si sta osservando. Detto ciò non ha abbiamo osservato requisiti prestazionali.

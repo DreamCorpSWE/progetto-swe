@@ -1,0 +1,938 @@
+\subsection{Test di Validazione}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV01 & RFC1A & 
+			\textbf{Inserimento definizione della rete bayesiana sotto forma di file json.}
+			\newline
+			Verificare che l'utente possa inserire una definizione di una rete bayesiana sotto forma di file Json.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate} 
+				\item L’utente preme il pulsante per l’upload del file; 
+				\item L’utente sceglie il file json contenente la definizione di rete; 
+				\item Upload del file; 
+				\item La rete viene caricata. 
+			\end{enumerate}
+			& N.I.\\
+		\hline
+		TV02 & RFC11 & 
+			\textbf{Visualizzazione errore di interpretazione rete Bayesiana.} 
+			\newline 
+			Verificare che venga visualizzato l'errore di interpretazione della rete Bayesiana dopo il caricamento di un file json non corretto. 
+			\newline 
+			\textbf{Procedimento: } 
+			\begin{enumerate} 
+				\item L’utente preme il pulsante per l’upload del file; 
+				\item L’utente sceglie ul file; 
+				\item Il sistema avvisa l'utente aprendo una finestra che mostra un messaggio di errore; 
+				\item L'utente chiude il messaggio di avviso premendo su "Ok"; 
+				\item L'utente viene rimandato all'interfaccia di upload. 
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV03 & RFC1B 	& 
+			\textbf{Inserimento definizione della rete Bayesiana sotto forma di codice json.} 
+			\newline
+			Verificare che l'utente possa inserisca la definizione della rete bayesiana sotto forma di codice json. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente incolla il codice json nel text area dedicata; 
+				\item L’utente preme il pulsante “Insert Bayesian Network”; 
+				\item La rete viene caricata. 
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV04 & RFC11 	& 
+			\textbf{Visualizzazione errore interpretazione rete Bayesiana.} 
+			\newline
+			Verificare che venga visualizzato l'errore di interpretazione della rete Bayesiana dopo il caricamento di codice json non valido. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente incolla il codice json nel text area dedicata; 
+				\item L’utente preme il pulsante “Insert Bayesian Network”; 
+				\item Il sistema avvisa l'utente aprendo una finestra che mostra un messaggio di errore; 
+				\item L'utente chiude il messaggio di avviso premendo su "Ok"; 
+				\item L'utente viene rimandato all'interfaccia di upload. 
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV05 & RFC2 	& 
+			\textbf{Modifica di un panel.} 
+			\newline 
+			Verificare che l’utente possa modificare le impostazioni di un panel. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente seleziona un flusso dati di monitoraggio; 
+				\item L’utente entra in modalità "modifica" del flusso dati selezionato; 
+				\item L’utente modifica le informazioni principali del panel; 
+				\item L'utente salva le modifiche, salvando la dashboard; 
+				\item L’utente chiude la modalità "modifica" del panel. 
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV06 & RFC2.1 	&
+			\textbf{Selezione del flusso di monitoraggio.}
+			\newline 
+			Verificare che l'utente possa selezionare il panel che monitora i dati del flusso di interesse.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente seleziona il panel che rappresenta graficamente il flusso dati di interesse e preme sul titolo.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV07 & RFC2.2 	&
+			\textbf{Attivazione modalità "modifica" di un panel}
+			\newline 
+			Verificare che l'utente possa attivare la modalità "modifica" di un panel.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente seleziona un panel;
+				\item L’utente sceglie la funzione "Edit" tra le opzioni del panel.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV08 & RFC2.3 	&
+			\textbf{Modifica delle informazioni principali di un panel.}
+			\newline
+			Verificare che l’utente possa modificare le informazioni principali di un panel. 
+			\newline 
+			\textbf{Procedimento:}		
+			\begin{enumerate} 
+				\item L'utente seleziona la sezione "General" all'interno della schermata di modifica del panel; 
+				\item L’utente modifica il titolo; 
+				\item L’utente modifica la descrizione; 
+				\item L'utente salva la dashboard.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV09 & RFC2.3.1 &
+			\textbf{Modifica titolo di un panel.}
+			\newline
+			Verificare che l'utente possa modificare il titolo per meglio identificare il flusso dati rappresentato.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente seleziona la sezione "General" all'interno della schermata di modifica del panel; 
+				\item L’utente modifica il titolo a piacimento nell’apposita sezione "Title"; 
+				\item L'utente salva la dashboard.
+			\end{enumerate}
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV10 & RFC2.3.2 &
+			\textbf{Modifica descrizione di un panel.}
+			\newline
+			Verificare che l'utente possa modificare la descrizione per permettere una più completa comprensione del flusso dati rappresentato.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}\item L'utente seleziona la sezione "General" all'interno della schermata di modifica del panel; 
+				\item L’utente modifica la descrizione a piacimento nell’apposita sezione "Description"; 
+				\item L'utente salva la dashboard.	
+			\end{enumerate}
+			& N.I.\\
+		\hline
+		TV11 & RFC2.4 	&
+			\textbf{Chiusura modalità "modifica" di un panel.}
+			\newline
+			Verificare che l'utente possa uscire dalla modalità "modifica" del panel.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}\item L'utente seleziona la sezione "General" all'interno della schermata di modifica del panel; 
+				\item L’utente preme la "X" a destra della schermata di modifica del panel.
+			\end{enumerate}
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV12 & RFC3 	&
+			\textbf{Configurazione dell'associazione di un flusso dati ad un nodo della rete bayesiana.} 
+			\newline
+			Verificare che l’utente possa configurare l'associazione tra il flusso dati rappresentato dal panel selezionato e un nodo di una rete bayesiana per poterci poi applicare metodi di inferenza. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L'utente sceglie la rete bayesiana di interesse; 
+				\item L'utente modifica l'associazione nodo-flusso dati.
+				\item L'utente salva le modifiche.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV13 & RFC3.1 	&
+			\textbf{Selezione della rete bayesiana.}
+			\newline
+			Verificare che l'utente possa sceglie la rete bayesiana entro cui ricercare il nodo da associare al panel.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L’utente sceglie la rete bayesiana di interesse.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV14 & RFC3.2 	&
+			\textbf{Modifica associazione nodo-flusso dati.}
+			\newline
+			Verificare che l'utente possa modificare l’associazione presente oppure crearne una nuova con il flusso dati rappresentato dal panel.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate} 
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L'utente sceglie la rete bayesiana di interesse;
+				\item L’utente modifica l’associazione tra nodi della rete selezionata e il flusso dati rappresentato dal panel in modifica.
+				\item L'utente salva le modifiche.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV15 & RFC3.2A &
+			\textbf{Associazione di un nodo della rete al flusso dati.} 
+			\newline
+			Verificare che l’utente possa associare un nodo della rete al flusso dati. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item Seleziona il nodo della rete; 
+				\item Seleziona la funzione “Associa”; 
+				\item Viene visualizzato un messaggio di conferma associazione (“Associazione riuscita”).		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV16 & RFC3.2A.1 &
+			\textbf{Selezione di un nodo della rete.}
+			\newline
+			Verificare che l'utente possa scegliere un nodo della rete che modellerà l’andamento del flusso dati.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L'utente sceglie la rete bayesiana di interesse;
+				\item L’utente seleziona da un elenco il nodo appartenente alla rete precedentemente selezionata che vuole associare.
+			\end{enumerate} 
+			& N.I.\\
+		\hline		
+		TV17 & RFC3.2A.2 &
+			\textbf{Selezione della funzione "Associa".}
+			\newline
+			Verificare che l'utente possa associare il nodo precedentemente scelto ad un flusso dati.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L'utente sceglie la rete bayesiana di interesse;
+				\item L’utente seleziona da un elenco il nodo appartenente alla rete precedentemente selezionata che vuole associare;
+				\item L’utente clicca sul pulsante "Associa" che attiva la funzione di associazione.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV18 & RFC3.2A.3 &
+			\textbf{Visualizzazione messaggio di conferma associazione.}
+			\newline
+			Verificare che l'utente possa associare il nodo precedentemente scelto al flusso dati.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel; 
+				\item L'utente sceglie la rete bayesiana di interesse;
+				\item L’utente seleziona da un elenco il nodo appartenente alla rete precedentemente selezionata che vuole associare;
+				\item L’utente clicca sul pulsante "Associa" che attiva la funzione di associazione;
+				\item L’utente visualizza il messaggio di conferma associazione ("Associazione riuscita").
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV19 & RFC3.2B &
+			\textbf{Dissociazione del nodo della rete dal flusso dati.} 
+			\newline
+			Verificare che l’utente possa eliminare l'associazione precedente tra il flusso e il nodo della rete selezionata. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel;
+				\item Seleziona la funzione “Dissocia”; 
+				\item Viene visualizzato un messaggio di conferma dissociazione (“Dissociazione riuscita”).		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV20 & RFC3.2B.1 &
+			\textbf{Selezione della funzione "Dissocia".}
+			\newline
+			Verificare che l'utente possa selezionare la funzione dissocia.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente clicca sul pulsante "Dissocia" che attiva la funzione di dissociazione.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV21 & RFC3.2B.2 &
+			\textbf{Visualizzazione messaggio di conferma associazione.}
+			\newline
+			Verificare che l'utente possa venire a conoscenza che la dissociazione è andata a buon fine.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente clicca sul pulsante "Dissocia" che attiva la funzione di dissociazione;
+				\item L’utente visualizza il messaggio di conferma dissociazione ("Dissociazione riuscita").
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV22 & RFC4 &
+			\textbf{Salvataggio Dashboard.} 
+			\newline
+			Verificare che l’utente possa salvare le modifiche fatte alla Dashboard corrente. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente lancia la funzione di salvataggio Dashboard; 
+				\item L'utente inserisce opzionalmente le note dei cambiamenti effettuati; 
+				\item L'utente preme su "Save".		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV23 & RFC15 &
+			\textbf{Annullamento salvataggio dashboard.} 
+			\newline
+			Verificare che l’utente possa annullare l'operazione di salvataggio dei nuovi dati inseriti nella dashboard. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente lancia la funzione di salvataggio Dashboard; 
+				\item L'utente inserisce opzionalmente le note dei cambiamenti effettuati; 
+				\item L'utente decide di non voler salvare e preme su "Cancel"; 
+				\item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV24 & RFC16 &
+			\textbf{Errore salvataggio dashboard.} 
+			\newline
+			Verificare che l’utente riceva un errore durante l'operazione di salvataggio dei nuovi dati inseriti nella dashboard. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente lancia la funzione di salvataggio Dashboard; 
+				\item L'utente inserisce opzionalmente le note dei cambiamenti effettuati; 
+				\item L'utente preme su "Save"; 
+				\item L'utente riceve un messaggio di errore;
+				\item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV25 & RFC4.1 &
+			\textbf{Lancio funzione di salvataggio Dashboard.}
+			\newline
+			Verificare che l'utente possa avviare la funzione di salvataggio di una Dashboard tramite l’apposito pulsante o con comandi da tastiera.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente lancia la funzione di salvataggio Dashboard premendo sul pulsante apposito in alto a destra.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV26 & RFC4.1A &
+			\textbf{Lancio funzione salvataggio Dashboard tramite pulsante.}
+			\newline
+			Verificare che l'utente possa premere sul pulsante apposito per il lancio della funzione di salvataggio.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente lancia la funzione di salvataggio Dashboard premendo sul pulsante apposito in alto a destra;
+				\item L'utente salva la dashboard.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV27 & RFC4.1B &
+			\textbf{Lancio funzione salvataggio Dashboard tramite shortcut da tastiera.}
+			\newline
+			Verificare che l'utente possa premere sul pulsante apposito per il lancio della funzione di salvataggio.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente lancia la funzione di salvataggio Dashboard tramite il comando "CTRL+S";
+				\item L'utente salva la dashboard.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV28 & RFC4.2 &
+			\textbf{Inserimento note nel salvataggio Dashboard.}
+			\newline
+			Verificare che l'utente possa inserire delle note per identificare meglio i cambiamenti effettuati fino a questo salvataggio della Dashboard.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente lancia la funzione di salvataggio Dashboard; 
+				\item L’utente inserisce le informazioni che ritiene importanti da mettere come note al salvataggio delle modifiche della Dashboard.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV29 & RFC5 &
+			\textbf{Definizione di un alert personalizzato per un flusso dati non monitorato.} 
+			\newline
+			Verificare che l’utente possa creare un alert associato ad un flusso dati non monitorato su Grafana ed nella schermata di modifica di un panel. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul panel "Alert"; 
+				\item L’utente preme sul pulsante “Create alert”; 
+				\item L'utente modifica i dati dell'alert; 
+				\item L'utente definisce la notifica dell'alert.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV30 & RFC5.1 &
+			\textbf{Apertura della configurazione per un nuovo alert.}
+			\newline
+			Verificare che l'utente possa premere sul pulsante "Create Alert" per creare un nuovo alert.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente preme sul panel "Alert"; 
+				\item L’utente preme sul pulsante "Create Alert".
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV31 & RFC5.2 &
+			\textbf{Definizione notifica dell'alert.} 
+			\newline
+			Verificare che l’utente possa definire come ricevere e cosa scrivere nella notifica che invierà l'alert. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L'utente aggiunge un destinatario; 
+				\item L'utente scrive un messaggio.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV32 & RFC5.2.1 &
+			\textbf{Inserimento destinatario notifica.}
+			\newline
+			Verificare che l'utente possa inserire nel form "Send to" il destinatario della notifica.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L’utente inserisce il destinatario della notifica.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV33 & RFC5.2.2 &
+			\textbf{Inserimento messaggio notifica.}
+			\newline
+			Verificare che l'utente possa inserire nel form "Message" il messaggio della notifica.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L’utente inserisce il messaggio della notifica.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV34 & RFC6 &
+			\textbf{Apertura panel "Alert".}
+			\newline
+			Verificare che l'utente possa premere sul panel per visualizzare l’alert.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert".
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV35 & RFC7 &
+			\textbf{Configurazione dei dati dell'alert.} 
+			\newline
+			Verificare che l’utente possa modificare i campi precompilati per la configurazione di un alert. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica il nome dell'alert; 
+				\item L'utente modifica il valore "Evaluate every"; 
+				\item L'utente modifica il valore "For"; 
+				\item L'utente può aggiungere una condizione; 
+				\item L'utente modifica una condizione; 
+				\item L'utente può cancellare una condizione; 
+				\item L'utente sceglie lo stato nel caso non ci siano valori o tutti i valori siano nulli; 
+				\item L'utente testa le condizioni.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV36 & RFC13 &
+			\textbf{Visualizzazione errore configurazione dell'alert.} 
+			\newline
+			Verificare che il sistema avvisi l’utente che è avvenuto un errore nella configurazione dell'alert. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L’utente preme sul pulsante "Alert";
+				\item L'utente modifica i dati dell'alert; 
+				\item Il sistema avvisa l’utente tramite un messaggio di errore; 
+				\item L'utente chiude il messaggio di avviso premendo su "Ok".		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV37 & RFC7.1 &
+			\textbf{Modifica nome dell’alert.}
+			\newline
+			Verificare che l'utente possa modificare il nome dell’alert nell’apposito form.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica il nome dell’alert.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV38 & RFC7.2 &
+			\textbf{Modifica tempo di valutazione condizione alert.}
+			\newline
+			Verificare che l'utente possa modificare il valore per definire ogni quanto tempo verranno notati possibili superamenti di soglia
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica il valore "Evaluate every".
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV39 & RFC7.3 &
+			\textbf{Modifica soglia di tolleranza per lancio di un alert.}
+			\newline
+			Verificare che l'utente possa modificare il valore per definire la tolleranza temporale prima del lancio.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica il valore "For".
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV40 & RFC7.4 &
+			\textbf{Aggiunta condizione.}
+			\newline
+			Verificare che l'utente possa aggiungere una condizione sotto forma di query premendo sul pulsante "+".
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente può aggiungere una condizione.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV41 & RFC7.5 &
+			\textbf{Modifica condizione.}
+			\newline
+			Verificare che l'utente possa modificare la condizione su cui si baserà il lancio dell’alert.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica una condizione.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV42 & RFC7.6 &
+			\textbf{Eliminazione condizione.}
+			\newline
+			Verificare che l'utente possa eliminare una condizione premendo sul pulsante con simbolo un cestino.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente elimina una condizione.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV43 & RFC7.7 &
+			\textbf{Modifica dello stato del sistema nel caso non ci siano valori o tutti i valori siano nulli.}
+			\newline
+			Verificare che l'utente possa modificare lo stato in cui sarà il sistema nel caso non ci siano dati o tutti i valori siano nulli.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L’utente preme sul pulsante "Alert";
+				\item L’utente modifica lo stato del sistema nel caso non ci siano valori o tutti i valori siano nulli.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV44 & RFC8 &
+			\textbf{Modifica di un alert.} 
+			\newline
+			Verificare che l’utente possa modificare un alert associato ad un flusso dati non monitorato su Grafana. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul panel "Alert"; 
+				\item L'utente modifica i dati dell'alert; 
+				\item L'utente modifica la notifica dell'alert.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV45 & RFC13 &
+			\textbf{Visualizzazione errore configurazione dell'alert.} 
+			\newline
+			Verificare che il sistema avvisi l’utente che è avvenuto un errore nella configurazione dell'alert. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente modifica i dati dell'alert; 
+				\item Il sistema avvisa l’utente tramite un messaggio di errore; 
+				\item L'utente chiude il messaggio di avviso premendo su "Ok".		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV46 & RFC8.1 &
+			\textbf{Modifica notifica dell'alert.} 
+			\newline
+			Verificare che l’utente possa modificare il metodo di ricevimento e il contenuto della notifica. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L'utente modifica il destinatario; 
+				\item L'utente modifica il messaggio.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV47 & RFC8.1.1 &
+			\textbf{Modifica destinatario notifica.}
+			\newline
+			Verificare che l'utente possa modificare nel form "Send to" il destinatario della notifica.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L’utente modifica il destinatario della notifica.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV48 & RFC8.1.2 &
+			\textbf{Modifica messaggio notifica.}
+			\newline
+			Verificare che l'utente possa modificare nel form "Message" il messaggio della notifica.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item L'utente preme sul pulsante "Notifications"; 
+				\item L’utente modifica il messaggio della notifica.
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV49 & RFC9 &
+			\textbf{Rimozione di un alert.} 
+			\newline
+			Verificare che l’utente possa eliminare un alert associato ad un flusso dati non monitorato su Grafana. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul panel "Alert"; 
+				\item L’utente preme sul pulsante “Delete”; 
+				\item L’utente visualizza un messaggio di richiesta di conferma di cancellazione.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV50 & RFC17 &
+			\textbf{Annullamento cancellazione alert.} 
+			\newline
+			Verificare che l’utente possa annullare la cancellazione dell'alert. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item L'utente preme sul panel "Alert"; 
+				\item L’utente preme sul pulsante “Delete”; 
+				\item L'utente visualizza un messaggio di richiesta di conferma di cancellazione dell'alert;
+				\item L'utente preme il pulsante "Cancel".		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV51 & RFC9.1 &
+			\textbf{Visualizzazione messaggio di conferma cancellazione alert.} 
+			\newline
+			Verificare che l’utente possa confermare l'operazione di cancellazione dell'alert oppure annullarla. 
+			\newline 
+			\textbf{Procedimento:}
+			\begin{enumerate} 
+				\item L'utente preme sul panel "Alert"; 
+				\item L’utente preme sul pulsante “Delete”; 
+				\item L'utente visualizza un messaggio di richiesta di conferma di cancellazione;
+				\item L'utente preme su "Delete".		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+		TV52 & RFC10 &
+			\textbf{Lancio di un alert.} 
+			\newline
+			Verificare che Grafana rilevi che una delle condizioni dell'alert è stata violata e quindi "lanci" l'alert stesso. 
+			\newline 
+			\textbf{Procedimento:} 
+			\begin{enumerate} 
+				\item Grafana rileva che un flusso di monitoraggio rispetta le condizioni di uno dei suoi alert; 
+				\item Si apre una finestra per visualizzare i dati riguardanti il nodo associato al flusso di monitoraggio e la condizione che ha fatto scattare l'alert; 
+				\item La libreria jsbayes ricalcola le probabilità dei nodi non monitorati.		
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TV53 & RFC12 &
+			\textbf{Visualizzazione errore invio del messaggio di alert.}
+			\newline
+			Verificare che Grafana avvisi l’utente che e’ avvenuto un errore durante l’invio dell’alert.
+			\newline
+			\textbf{Procedimento:}
+			\begin{enumerate}
+				\item Il sistema apre una finestra con il messaggio di fallimento dell'alert;
+				\item l'utente chiude il messaggio di avviso premendo su "Ok".
+			\end{enumerate} 
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}

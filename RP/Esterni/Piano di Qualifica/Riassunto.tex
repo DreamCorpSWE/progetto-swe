@@ -1,0 +1,124 @@
+\section{Tabelle riassuntive}
+    \subsection{Qualità di Processo}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|p{8cm}|p{3.5cm}|p{3.5cm}|}
+		\hline
+		\rowcolor{orange!50} 
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		\multicolumn{3}{|c|}{P1: Definizione e Pianificazione}\\
+		\hline
+		Schedule Variance & $\geq$ -3 giorni &0 giorni \\
+		\hline
+		Budget Variance & -15 \% $<$ x $<$ +15 \% & -1\% $<$ x $<$ +1\% \\ 
+		\hline
+		\multicolumn{3}{|c|}{P2: Verifica} \\
+		\hline
+		Line coverage & 90\% & 100\% \\
+		\hline
+		Functional coverage & 93\% & 100\% \\
+		\hline
+		Path coverage & 96\% & 100\% \\
+		\hline
+		Condition coverage & 98\% & 100\% \\
+		\hline
+		Branch coverage & 95\% & 100\% \\
+		\hline
+		\multicolumn{3}{|c|}{P3: Analisi e gestione dei rischi} \\
+		\hline
+		Servizi esterni non raggiungibili & 2 & 0 \\
+		\hline
+		Rischi non calcolati & 2 & 0 \\
+		\hline
+	\end{tabular}
+	\caption{Metriche Qualità di Processo P.1}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|p{8cm}|p{3.5cm}|p{3.5cm}|}
+		\hline
+		\rowcolor{orange!50} 
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\
+		\hline
+		\multicolumn{3}{|c|}{P4: Gestione Test} \\
+		\hline 
+		Percentuale di test case passati        & >90\%     & >95\%   \\
+		\hline
+			Percentuale di test case falliti        & <10\%     & <5\%   \\
+		\hline
+		Tempo medio per la risoluzione di errori
+		& <4 h      & <2 h   \\
+		\hline
+		Efficienza della progettazione dei test & <3 h      & <2 h  \\
+		\hline
+			Contenimento dei difetti                & >65\%     & >80\%  \\
+		\hline
+		Percentuale di difetti sistemati        & >90\%     & >95\%  \\
+		\hline
+		Copertura dei test eseguiti             & >80\%     & >95\%  \\
+		\hline
+		Copertura dei requisiti                 & 100\%     & 100\%  \\
+		\hline
+		Difetti per requisito                   & -         & 0   \\
+		\hline
+		\multicolumn{3}{|c|}{P5: Versionamento} \\
+		\hline
+		Media numero build Travis per settimana & 15 & 20 \\
+		\hline
+		Percentuale build Travis superate. & 15 & 20 \\
+		\hline
+	\end{tabular}
+	\caption{Metriche Qualità di Processo P.2}
+\end{table}
+\clearpage
+\subsection{Qualità di Prodotto}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|p{8cm}|p{3.5cm}|p{3.5cm}|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ 
+		\hline
+		\multicolumn{3}{|c|}{E1: Correttezza}\\
+		\hline
+		Gulpease index & 50-100 & 65-100 \\ \hline
+		Errori sintattici & 0 & 0 \\ \hline
+		Gunning Fog index & \textless= 13 & \textless= 10 \\ \hline
+		SMOG & \textless= 13 & \textless= 10 \\ \hline
+	    \multicolumn{3}{|c|}{E2: Affidabilità} \\
+		\hline
+		Requisiti fondamentali soddisfatti & 95\% & 100\% \\ \hline
+		Requisiti secondari soddisfatti & 0\% & 80\% \\ \hline
+	    \multicolumn{3}{|c|}{E3: Usabilità} \\
+		\hline
+		MTBF & $\leq$ 2 ogni 5 build & $\leq$1 ogni 5 build \\ \hline
+		Blocco operazioni non corrette & 0-20\% & 0\% \\ \hline
+		Test conlusi in failure & 0-10\% & 0\% \\ \hline
+	\end{tabular}
+	\caption{Metriche Qualità di Prodotto P.1}
+\end{table}	        
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|p{8cm}|p{3.5cm}|p{3.5cm}|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ 
+		\hline
+        \multicolumn{3}{|c|}{I1: Efficienza} \\
+		\hline
+		Tempo di risposta & $<$ 300ms & $<$ 100ms \\ \hline 
+	    \multicolumn{3}{|c|}{I2: Manutenibilità} \\
+		\hline
+		Impatto nuove aggiunte & <30\% & <10\% \\ \hline 
+	\end{tabular}
+	\caption{Metriche Qualità di Prodotto P.2}
+\end{table}

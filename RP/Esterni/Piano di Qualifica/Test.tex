@@ -1,0 +1,38 @@
+\section{Piano dei Test}
+
+In questa sezione illustreremo i test che abbiamo deciso di implementare ed eseguire per garantire il funzionamento della componente software sviluppata.
+\newline
+Nelle tabelle dei paragrafi successivi troverete:
+\begin{itemize}
+    \item \textbf{Codice}: un identificatore del test con il seguente formato
+    \[
+        T[Tipo][ID]
+    \]
+    dove:
+    \begin{itemize}
+        \item \textbf{Tipo}: indica il tipo di test ed è indicato da una delle seguenti lettere:
+        \begin{itemize}
+            \item \textbf{V}: test di validazione;
+            \item \textbf{S}: test di sistema;
+            \item \textbf{I}: test di integrazione;
+            \item \textbf{U}: test di unità.
+        \end{itemize}
+        \item \textbf{ID}: un identificatore numerico a 2 cifre specifico per ogni test
+    \end{itemize}
+    \item \textbf{Requisito}: indica il requisito a cui il test fa riferimento; 
+    \item \textbf{Descrizione}: breve descrizione dello scopo del test;
+    \item \textbf{Stato}: indica lo stato del test, che può essere:
+    \begin{itemize}
+        \item \textbf{N.I.}: non implementato;
+        \item \textbf{N.S.}: non superato;
+        \item \textbf{S.}: superato.
+    \end{itemize}
+\end{itemize}
+\newpage
+\input{TestDiValidazione.tex}
+\clearpage
+\input{TestDiSistema.tex}
+\newpage
+\input{TestDiIntegrazione.tex}
+\newpage
+\input{TestDiUnita.tex}

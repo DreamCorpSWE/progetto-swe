@@ -1,0 +1,80 @@
+\documentclass{article}
+\input{../../stile/stile.tex}
+
+
+\newcommand{\documento}{Verbale 07/02/2019}
+\newcommand{\red}{\mar}
+\newcommand{\verp}{\pie}
+\newcommand{\res}{\daL}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\title{\fontsize{40}{40}\selectfont Verbale esterno 07/02/2019}
+\author{Dream Corp.}
+\date{07/02/2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\hspace{5em}
+	\includegraphics[width =70mm]{../../logo.png}\newline
+	\\G\&B
+	\begin{table}[!htpb]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Responsabile & \res\\
+			Redattori & \red \\
+			Verificatori & \verp\\
+			Uso & \use\\
+			
+			Destinatari & Dream Corp. \\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
+		\end{tabular}
+	\end{table}
+\end{center}
+\newpage
+
+~\newline
+\section{Riunione}
+    \subsection{Informazioni generali}
+    \begin{itemize}
+        \item \textbf{Motivo della riunione}: C'è stato un incontro con il rappresentate dell'azienda proponente dove sono stati chiariti alcuni dubbi riguardo alcune funzionalità da implementare nel plugin\pedice non specificate nella descrizione del capitolato precedentemente fornita.
+        \item \textbf{Luogo e Data}: Ufficio a Padova della Zucchetti, 07/02/2019;
+        \item \textbf{Orario}: 14:30-16:00;
+        \item \textbf{Partecipanti}: Il rappresentate dell'azienda proponente del progetto e tutti i membri del gruppo.
+    \end{itemize}
+    \newpage
+    
+\section{Risultati}
+    \subsection{Ordine del giorno}
+    Argomenti chiariti durante il seminario:
+    \begin{enumerate}
+        \item \textbf{Libertà nella scelta del numero di livelli di soglia associati ad un nodo}: Ogni nodo ha associati più livelli di soglia al superamento dei quali viene fatto scattare il relativo allarme. La proponente non ha imposto vincoli sul numero di livelli di soglia da impostare perciò, per maggiore semplicità di implementazione è stato deciso di impostarne al massimo tre: basso, medio, alto;
+        \item \textbf{Conferma della scelta dei requisiti opzionali}: La proponente è stata soddisfatta dai requisiti opzionali scelti, ovvero, la possibilità di far creare dall'utente degli alert personalizzati e la possibilità di associare lo stesso flusso dati a nodi di differenti reti Bayesiane.;
+        \item \textbf{Interesse nell'utilizzo del plugin}: Il plugin si rivelerà molto utile all'azienda Zucchetti in quanto con l'avvento della fatturazione elettronica si trova ogni giorno a gestire milioni di fatturazioni ogni ora. Di conseguenza, è molto importante per loro poter tenere sotto controllo diverse metriche come il tempo di risposta delle query ed individuarne possibili malfunzionamenti.
+    \end{enumerate}
+    
+    \subsection{Tracciamento delle decisioni}
+    \begin{table}[!h] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2}
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|c|p{6cm}|l|l|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice} & \textbf{Decisione}\\
+                \hline
+                VER-2019-02-07.1 & Implementazioni di al più 3 livelli di soglia per quanto riguarda un singolo nodo\\
+                \hline
+                VER-2019-02-07.2 & Conferma dei requisiti opzionali decisi\\
+                \hline
+        \end{tabular}
+        \caption{Tracciamento delle modifiche} %descrizone a fine tabella
+        \label{tab:Tracciamento delle modifiche}
+        \end{table}
+    
+\end{document}

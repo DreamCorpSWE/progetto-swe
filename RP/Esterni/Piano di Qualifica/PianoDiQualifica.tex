@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+
+\newcommand{\documento}{Piano Di Qualifica}
+\input{../../stile/stile.tex}
+\newcommand{\red}{\mic \\ & \daG}
+\newcommand{\verp}{\gia}
+\newcommand{\res}{\mic}
+\newcommand{\version}{Versione 2.0.0}
+\newcommand{\use}{Esterno}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\ \\}
+\usepackage{eurosym}
+\title{\fontsize{40}{40}\selectfont Piano di Qualifica}
+\author{Dream Corp.}
+
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{amsmath, tabu}
+\graphicspath{{immagini/}}
+\date{10/01/2019}
+
+\begin{document}
+
+\input{../../stile/copertina.tex}
+
+\input{InformazioniSulDocumento.tex}
+\newpage
+\input{QualitaDiProcesso.tex}
+\newpage
+\input{QualitaDiSoftware.tex}
+\newpage
+\input{Riassunto.tex}
+\clearpage
+
+%Appendici
+\appendix
+\input{Test.tex}
+\newpage
+\input{ResocontoAttivitaDiVerifica.tex}
+\newpage
+\end{document}

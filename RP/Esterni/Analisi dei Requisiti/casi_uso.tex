@@ -1,0 +1,1077 @@
+\section{Casi d'Uso}
+		\subsection{Attori}
+			I casi d'uso definiscono interazioni tra il sistema e gli attori esterni. L'elenco di questi ultimi e l'analisi delle relazioni in funzione dei diversi scopi che questi attori perseguono è fondamentale per una corretta descrizione dei casi d'uso.
+        Riportiamo due attori:
+        \begin{itemize}
+            \item Utente generico;
+            \item Grafana.
+        \end{itemize}
+
+		\subsection{Tracciamento Casi d'Uso}
+        Al fine di classificare e rendere leggibili i casi d'uso abbiamo deciso di utilizzare una codifica per descriverli. Ad ogni caso d'uso verrà quindi associata una stringa univoca strutturata nel seguente modo:
+        \begin{equation}
+            UCX.Y.Z    
+        \end{equation}
+        dove X,Y,Z sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso. \newline
+        \newline
+        Per rappresentare una scelta tra casi d'uso tra loro mutuamente esclusivi abbiamo deciso di adottare il seguente criterio: nella codifica del caso d'uso verrà aggiunta una lettera maiuscola, tra parentesi tonde, per indicare un insieme di scelte per risolvere il caso d'uso generico, rappresentato dalla normale codifica numerica X.Y.Z. La finale codifica di un caso d'uso di specializzazione sarà quindi:
+        \begin{equation}
+            UCX(A).Y(A).Z(A)
+        \end{equation}
+        L'utilizzo di tale criterio sarà utilizzato solo in caso di bisogno e quindi non è detto che sia presente in tutti i casi d'uso.
+        
+ 
+        \begin{figure}[!htbp]
+                	\centering
+                	\includegraphics[width=\textwidth]{UCgeneral.png}
+                	\caption{UCgenerale: Caso d'uso generale}
+                \end{figure}  
+              \clearpage      
+		\subsection{Attore primario: Utente generico}
+		Si riferiscono a tutti quei casi d'uso che hanno come attore primario l'utente e come attore secondario Grafana. Descrivono tutte le interazioni possibili compiute direttamente dall'utente.
+                    
+                        
+		
+				\subsubsection{UC1: Inserimento definizione rete Bayesiana}
+                    \textbf{Precondizione:} L’utente deve trovarsi nell'interfaccia principale e deve possedere una definizione di rete Bayesiana che vuole inserire (Fig.\ref{uc1}).
+                    \newline
+                    \textbf{Postcondizione:} Viene inserita nell'applicativo la definizione di rete.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} L’utente carica la definizione della rete Bayesiana.
+                    \newline
+                    \textbf{Estensioni:} 
+                    	\begin{enumerate}
+                            \item Problema con l’interpretazione della rete Bayesiana \underline{\textit{UC11}}.
+                        \end{enumerate}
+                        
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[scale=0.55]{UC1.png}
+                    	\caption{UC1: Inserimento definizione rete Bayesiana}
+                    	\label{uc1}
+                    \end{figure}
+                    \clearpage
+                
+                        
+                \subsubsection{UC1(A): Inserimento definizione della rete bayesiana sotto forma di file json}
+                    \textbf{Descrizione:} L’utente vuole inserire la definizione della rete bayesiana sotto forma di file json.\\
+                    \textbf{Precondizione:}  L’utente deve trovarsi nell'interfaccia principale e possedere un file json contenente una definizione di rete Bayesiana che vuole inserire (Fig.\ref{uc1a}).
+                    \newline
+                    \textbf{Postcondizione:} Viene inserita nell'applicativo la definizione di rete presente nel file json.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente preme il pulsante per l’upload del file json contenente la definizione di rete;
+                        \item L’utente sceglie il file \underline{\textit{UC1(A).1}};
+                        \item Upload del file;
+                        \item La rete viene caricata.
+                    \end{enumerate}
+                    
+                    \textbf{Estensioni:} \begin{enumerate}
+                            \item C’è stato un problema con l’interpretazione della rete Bayesiana \underline{\textit{UC11}}.
+                        \end{enumerate}
+                        
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[scale=0.8]{UC1(A).png}
+                    	\caption{UC1(A): Inserimento definizione della rete bayesiana sotto forma di file json}
+                    	\label{uc1a}
+                    \end{figure}
+                    
+                    \clearpage    
+                    
+                \subsubsection{UC1(A).1: Scelta del file json }
+                     \textbf{Descrizione:} L’utente sceglie il file json.\\
+                    \textbf{Precondizione:} È disponibile la schermata di selezione del file.   
+                    \newline
+                    \textbf{Postcondizione:} Il file è stato selezionato. 
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente sceglie il file.
+                    \end{enumerate}
+                    
+                        
+                \subsubsection{UC1(B): Inserimento definizione rete Bayesiana sotto forma di codice json}
+                    \textbf{Descrizione:} L’utente vuole inserire la definizione della rete bayesiana sotto forma di codice json.\\
+                    \textbf{Precondizione:}  L’utente deve trovarsi nell'interfaccia principale di Grafana e possedere codice json di una definizione di rete Bayesiana che vuole inserire.
+                    \newline
+                    \textbf{Postcondizione:} Viene inserita nell'applicativo la definizione di rete descritta dal codice json.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente incolla il codice json nel text area dedicata;
+                        \item L’utente preme il pulsante “Insert Bayesian Network”;
+                        \item La rete viene caricata.
+                    \end{enumerate}
+                    
+                    \textbf{Estensioni:} \begin{enumerate}
+                            \item C’è stato un problema con l’interpretazione della rete bayesiana \underline{\textit{UC11}}.
+                        \end{enumerate}
+                        
+                
+                        
+                \subsubsection{UC2: Modifica di un panel}
+                    \textbf{Descrizione:} L’utente vuole modificare delle impostazioni di un determinato panel (Fig.\ref{uc2}).
+                    \newline
+                    \textbf{Precondizione:} Deve essere presente almeno un flusso dati rappresentato da un panel.
+                    \newline
+                    \textbf{Postcondizione:} Il panel selezionato è stato modificato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente seleziona un flusso dati di monitoraggio \underline{\textit{UC2.1}};
+                        \item L’utente entra in modalità "modifica" del flusso dati selezionato \underline{\textit{UC2.2}};
+                        \item L’utente modifica le informazioni principali del panel \underline{\textit{UC2.3}};
+                        \item L’utente è soddisfatto delle modifiche;
+                        \item L'utente salva le modifiche, salvando la dashboard \underline{\textit{UC4}}.
+                        \item L’utente chiude la modalità "modifica" del panel \underline{\textit{UC2.4}}.
+                    \end{enumerate}
+                    
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[scale=0.6]{UC2.png}
+                    	\caption{UC2: Modifica di un panel}
+                    	\label{uc2}
+                    \end{figure}
+                    \clearpage
+                \subsubsection{UC2.1: Selezione del flusso di monitoraggio}
+                    \textbf{Descrizione:} L'utente seleziona il panel che monitora i dati del flusso di interesse.\\
+                    \textbf{Precondizione:} L'utente deve possedere un flusso dati rappresentato da un panel.
+                    \newline
+                    \textbf{Postcondizione:} Un flusso di monitoraggio è selezionato, facendo comparire delle operazioni possibili su di esso.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente seleziona, tra i diversi panel nella sua dashboard, quello che rappresenta graficamente il flusso dati di interesse e preme sul titolo.
+                    \end{enumerate}
+                    
+                \subsubsection{UC2.2: Attivazione modalità "modifica" di un panel}
+                    \textbf{Descrizione:} L'utente attiva la modalità "modifica" di un panel.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve aver selezionato un flusso dati premendo sul titolo del panel relativo.
+                    \newline
+                    \textbf{Postcondizione:} Un flusso di monitoraggio è in modalità "modifica".
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente sceglie la funzione "Edit" tra le opzioni eseguibili.
+                    \end{enumerate}
+                    
+                    
+                    
+                \subsubsection{UC2.3:  Modifica delle informazioni principali di un panel}
+                    \textbf{Descrizione:} L’utente modifica le informazioni generali del panel inserendo titolo e descrizione (Fig.\ref{uc2.3}).
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel.
+                    \newline
+                    \textbf{Postcondizione:} Vengono modificate delle informazioni del panel interessato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente seleziona la sezione "General" all'interno della schermata di modifica del panel;
+                        \item L’utente modifica il titolo \underline{\textit{UC2.3.1}};
+                        \item L’utente modifica la descrizione \underline{\textit{UC2.3.2}};
+                        \item L'utente salva la dashboard \underline{\textit{UC4}}.
+                    \end{enumerate}
+                    
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC2-3.png}
+                    	\caption{UC2.3:  Modifica delle informazioni principali di un panel}
+                    	\label{uc2.3}
+                    \end{figure}
+                    
+                \subsubsection{UC2.3.1: Modifica titolo di un panel}
+                    \textbf{Descrizione:} L’utente modifica il titolo per meglio identificare il flusso dati rappresentato.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel e essere nella sezione "General".
+                    \newline
+                    \textbf{Postcondizione:} Viene modificato il titolo del panel.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente modifica il titolo a piacimento nell'apposita sezione "Title".
+                    \end{enumerate}
+                
+                \subsubsection{UC2.3.2: Modifica descrizione di un panel}
+                    \textbf{Descrizione:} L’utente modifica la descrizione per permettere una più completa comprensione del flusso dati rappresentato.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel e essere nella sezione "General".
+                    \newline
+                    \textbf{Postcondizione:} Viene modificata la descrizione del panel.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente modifica la descrizione a piacimento nell'apposita sezione "Description".
+                    \end{enumerate}
+                    
+                \subsubsection{UC2.4: Chiusura modalità "modifica" di un panel}
+                    \textbf{Descrizione:} L’utente ha terminato le modifiche ed esce dalla modalità "modifica" del panel.
+                    \newline
+                    \textbf{Precondizione:} L'utente ha salvato la dashboard dopo essere entrato in modalità modifica del panel.
+                    \newline
+                    \textbf{Postcondizione:} Il panel non è più in modalità "modifica".
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente preme la "X" a destra della schermata di modifica del panel.
+                    \end{enumerate}
+                
+    
+                        
+                \subsubsection{UC3: Configurazione associazione di un flusso dati di Grafana ad un nodo della rete bayesiana}
+                    \textbf{Descrizione:} L’utente vuole configurare l'associazione tra il flusso dati rappresentato dal panel selezionato e un nodo di una rete bayesiana per poterci poi applicare metodi di inferenza (Fig.\ref{uc3}).
+                    \newline
+                    \textbf{Precondizione:} Deve essere presente almeno una definizione di rete bayesiana e l'utente deve trovarsi in modalità "modifica" di un panel.
+                    \newline
+                    \textbf{Postcondizione:} E' avvenuta la configurazione desiderata dall'utente riguardante l'associazione nodo-flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente seleziona la sezione "Bayesian Network" all'interno della schermata di modifica del panel;
+                        \item L'utente sceglie la rete bayesiana di interesse da un elenco (se c'è né più di una) \underline{\textit{UC3.1}};
+                        \item L'utente modifica l'associazione nodo-flusso dati \underline{\textit{UC3.2}}.
+                    \end{enumerate}
+                    
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC3.png}
+                    	\caption{UC3: Configurazione associazione di un flusso dati di Grafana ad un nodo della rete bayesiana}
+                    	\label{uc3}
+                    \end{figure}
+                    
+                \subsubsection{UC3.1: Selezione della rete bayesiana}
+                    \textbf{Descrizione:} L’utente sceglie, tra le proposte, la rete bayesiana entro cui ricercare il nodo da associare al panel.
+                    \newline
+                    \textbf{Precondizione:} Il panel è in modalità "modifica".
+                    \newline
+                    \textbf{Postcondizione:} La rete bayesiana di interesse è selezionata.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente sceglie la rete bayesiana di interesse da un elenco (se c'è né più di una).
+                    \end{enumerate}
+                    
+               
+                
+                \subsubsection{UC3.2: Modifica associazione nodo-flusso dati}
+                    \textbf{Descrizione:} L’utente modifica l'associazione presente, oppure ne crea una nuova, con il flusso dati rappresentato dal panel (Fig.\ref{uc3.2}).
+                    \newline
+                    \textbf{Precondizione:} L'utente deve aver selezionato un rete bayesiana all'interno della sezione "Bayesian Network" della schermata di modifica di un panel.
+                    \newline
+                    \textbf{Postcondizione:} Sono state modificate le associazioni nodo-flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente modifica l'associazione tra nodi della rete selezionata e il flusso dati rappresentato dal panel in modifica.
+                    \end{enumerate}
+                    
+                     \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[scale=0.7]{UC3-2.png}
+                    	\caption{UC3.2: Modifica associazione nodo-flusso dati}
+                    	\label{uc3.2}
+                    \end{figure}
+                
+                \clearpage
+                    
+                \subsubsection{UC3.2(A): Associazione di un nodo della rete al flusso dati}
+                    \textbf{Descrizione:} L’utente sceglie di associare un nodo della rete al flusso dati (Fig.\ref{uc3.2a}).
+                    \newline
+                    \textbf{Precondizione:} Non è presente un'associazione di un nodo di quella rete con il flusso dati.
+                    \newline
+                    \textbf{Postcondizione:} E' avvenuta l'associazione del nodo selezionato al flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item Seleziona il nodo della rete     \underline{\textit{UC3.2(A).1}};
+                        \item Seleziona la funzione “Associa” \underline{\textit{UC3.2(A).2}};
+                        \item Viene visualizzato un messaggio di conferma associazione (“Associazione riuscita”) \underline{\textit{UC3.2(A).3}}.
+                \end{enumerate}
+                    
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC3-2(A).png}
+                    	\caption{UC3.2(A): Associazione di un nodo della rete al flusso dati}
+                    	\label{uc3.2a}
+                    \end{figure}
+                    
+                \subsubsection{UC3.2(A).1: Selezione di un nodo della rete}
+                    \textbf{Descrizione:} L’utente sceglie, tra quelli proposti, un nodo della rete che modellerà l'andamento del flusso dati.
+                    \newline
+                    \textbf{Precondizione:} E' stata selezionata una rete bayesiana all'interno della quale ricercare un nodo da associare al flusso dati precedentemente associato.
+                    \newline
+                    \textbf{Postcondizione:} E' stato scelto il nodo a cui associare il flusso di monitoraggio.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente seleziona il nodo appartenente alla rete precedentemente selezionata che vuole associare da un elenco.
+                    \end{enumerate}
+                    
+                \subsubsection{UC3.2(A).2: Selezione della funzione "Associa"}
+                    \textbf{Descrizione:} L’utente associa il nodo precedentemente scelto al flusso dati.
+                    \newline
+                    \textbf{Precondizione:}  È stato selezionato il nodo a cui associare il flusso di monitoraggio.
+                    \newline
+                    \textbf{Postcondizione:} Il flusso dati è associato al nodo delle rete desiderato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente clicca sul pulsante "Associa" che attiva la funzione di associazione.
+                    \end{enumerate} 
+                
+	           
+	            \subsubsection{UC3.2(A).3: Visualizzazione messaggio di conferma associazione}
+	                \textbf{Descrizione:} L’utente è a conoscenza che l'associazione è andata a buon fine.
+	                \newline
+                    \textbf{Precondizione:} Il nodo della rete bayesiana è stato associato al flusso di monitoraggio con successo.
+                    \newline
+                    \textbf{Postcondizione:} Il sistema mostra all'utente la conferma dell'associazione.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente visualizza il messaggio di conferma associazione ("Associazione riuscita").
+                    \end{enumerate}
+                    
+                
+                    
+                \subsubsection{UC3.2(B): Dissociazione del nodo della rete dal flusso dati}
+                    \textbf{Descrizione:} L’utente vuole eliminare l'associazione precedente tra il flusso e il nodo della rete selezionata (Fig.\ref{uc3.2b}).
+                    \newline
+                    \textbf{Precondizione:} E' presente un'associazione di un nodo di quella rete con il flusso dati.
+                    \newline
+                    \textbf{Postcondizione:} E' stata rimossa l'associazione del nodo precedentemente associato al flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} 
+                    \begin{enumerate}
+                        \item Seleziona la funzione “Dissocia” \underline{\textit{UC3.2(B).1}};
+                        \item Viene visualizzato un messaggio di conferma dissociazione (“Dissociazione riuscita”) \underline{\textit{UC3.2(B).2}}.   
+                    \end{enumerate}    
+                
+                \begin{figure}[!htbp]
+                	\centering
+                	\includegraphics[width=\textwidth]{UC3-2(B).png}
+                	\caption{UC3.2(B): Dissociazione del nodo della rete dal flusso dati}
+                	\label{uc3.2b}
+                \end{figure}
+                
+                \subsubsection{UC3.2(B).1: Selezione della funzione "Dissocia"}
+                    \textbf{Descrizione:} L’utente seleziona la funzione dissocia.
+                    \newline
+                    \textbf{Precondizione:}  E' già presente un'associazione nodo-flusso dati per la rete selezionata.
+                    \newline
+                    \textbf{Postcondizione:} Il flusso dati non è più associato al nodo delle rete.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L’utente clicca sul pulsante "Dissocia" che attiva la funzione di dissociazione.
+                    \end{enumerate} 
+	           
+	                
+	            \subsubsection{UC3.2(B).2: Visualizzazione messaggio di conferma associazione}
+	                \textbf{Descrizione:} L’utente è a conoscenza che la dissociazione è andata a buon fine.
+	                \newline
+                    \textbf{Precondizione:} Il nodo della rete bayesiana è stato dissociato dal flusso di monitoraggio con successo.
+                    \newline
+                    \textbf{Postcondizione:} Il sistema mostra all'utente la conferma della dissociazione.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente visualizza il messaggio di conferma dissociazione ("Dissociazione riuscita").
+                    \end{enumerate}
+                    
+                    
+                    
+                \subsubsection{UC4: Salvataggio Dashboard}
+                    \textbf{Descrizione:} L’utente vuole salvare le modifiche della Dashboard corrente (Fig.\ref{uc4}).
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi su una schermata di una dashboard.
+                    \newline
+                    \textbf{Postcondizione:} Avviene il salvataggio delle modifiche.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente lancia la funzione di salvataggio Dashboard \underline{\textit{UC4.1}};
+                        \item L'utente inserisce opzionalmente le note dei cambiamenti effettuati \underline{\textit{UC4.2}};
+                        \item L'utente preme su "Save".
+                    \end{enumerate}
+                    \textbf{Estensioni:} \begin{enumerate}
+                            \item C’è stato un problema con il salvataggio della Dashboard \underline{\textit{UC16}}.
+                            \item L'utente decide di non voler salvare e preme su "Cancel" \underline{\textit{UC15}}.
+                        \end{enumerate}
+                \clearpage
+                \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC4.png}
+                    	\caption{UC4 - Salvataggio Dashboard}
+                    	\label{uc4}
+                    \end{figure}   
+                
+                \subsubsection{UC4.1: Lancio funzione salvataggio Dashboard}
+                    \textbf{Descrizione:} L’utente avvia la funzione di salvataggio di una Dashboard tramite comandi da tastiera o con l'apposito pulsante.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi su una schermata di una dashboard.
+                    \newline
+                    \textbf{Postcondizione:} Avviene il lancio della funzione di salvataggio della dashboard.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente lancia la funzione di salvataggio Dashboard premendo sul pulsante apposito in alto a destra.
+                    \end{enumerate}
+                
+                \subsubsection{UC4.1(A): Lancio funzione salvataggio Dashboard tramite pulsante}
+                    \textbf{Descrizione:} L’utente preme sul pulsante apposito per il lancio della funzione di salvataggio.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi su una schermata di una dashboard.
+                    \newline
+                    \textbf{Postcondizione:} Avviene il lancio della funzione di salvataggio della dashboard.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente lancia la funzione di salvataggio Dashboard premendo sul pulsante apposito in alto a destra.
+                    \end{enumerate}
+                
+                \subsubsection{UC4.1(B): Lancio funzione salvataggio Dashboard tramite shortcut}
+                    \textbf{Descrizione:} L’utente esegue il comando "CTRL+S" per il lancio della funzione di salvataggio.
+                    \newline
+                    \textbf{Precondizione:} L'utente deve trovarsi su una schermata di una dashboard.
+                    \newline
+                    \textbf{Postcondizione:} Avviene il lancio della funzione di salvataggio della dashboard.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente lancia la funzione di salvataggio Dashboard tramite il comando "CTRL+S".
+                    \end{enumerate}
+                
+                \subsubsection{UC4.2: Inserimento note nel salvataggio Dashboard}
+                    \textbf{Descrizione:} L’utente vuole inserire delle note per identificare meglio i cambiamenti effettuati fino a questo salvataggio della Dashboard.
+                    \newline
+                    \textbf{Precondizione:} L'utente ha lanciato il salvataggio di una Dashboard.
+                    \newline
+                    \textbf{Postcondizione:} L'utente ha inserito le informazioni che ritiene più pertinenti.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente inserisce le informazioni che ritiene importanti da mettere come note al salvataggio delle modifiche della Dashboard.
+                    \end{enumerate}
+                
+                   
+                          
+                \subsubsection{UC5: Definizione di un alert personalizzato per un flusso dati non monitorato}
+                    \textbf{Descrizione:} L’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed nella schermata di modifica di un panel (Fig.\ref{uc5}).
+                    \newline
+                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana.
+                    \newline
+                    \textbf{Postcondizione:} È stato definito un alert personalizzato per il flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme sul panel "Alert" \underline{\textit{UC6}};
+                            \item L’utente preme sul pulsante “Create alert” \underline{\textit{UC5.1}};
+                            \item L'utente modifica i dati dell'alert\underline{\textit{UC7}};
+                            \item L'utente definisce la notifica dell'alert \underline{\textit{UC5.2}}.
+                        \end{enumerate}
+                        
+                        
+                        \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC5.png}
+                    	\caption{UC5 - Definizione di un alert personalizzato per un flusso dati non monitorato}
+                    	\label{uc5}
+                    \end{figure} 
+                    \clearpage
+                \subsubsection{UC5.1: Apertura della configurazione per un nuovo alert}
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Create Alert" per creare un nuovo alert.
+                    \newline
+                    \textbf{Precondizione:} L'utente visualizza il panel "alert".
+                    \newline
+                    \textbf{Postcondizione:} Sono disponibili i campi precompilati per la creazione di un alert.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L’utente preme sul pulsante "Create Alert".
+                        \end{enumerate}  
+                        
+                        
+                        
+                    
+                \subsubsection{UC5.2: Definizione notifica dell'alert }
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per definire come ricevere e cosa scrivere nella notifica che invierà l'alert (Fig.\ref{uc5.2}).
+                    \newline
+                    \textbf{Precondizione:} L'utente si trova nel panel "Alert".
+                    \newline
+                    \textbf{Postcondizione:} Destinatario e descrizione dell'alert sono definiti.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme sul pulsante "Notifications";
+                            \item L'utente aggiunge un destinatario \underline{\textit{UC5.2.1}};
+                            \item L'utente scrive un messaggio \underline{\textit{UC5.2.2}}.
+                        \end{enumerate}
+                        \clearpage
+                        \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC5-2.png}
+                    	\caption{UC5.2 - Definizione notifica dell'alert}
+                    	\label{uc5.2}
+                    \end{figure}  
+                        
+                \subsubsection{UC5.2.1: Inserimento destinatario notifica }
+                    \textbf{Descrizione:} L’utente inserisce nel form "Send to" il destinatario della notifica.
+                    \newline
+                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \newline
+                    \textbf{Postcondizione:} Il contatto per il destinatario é inserito.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente inserisce il destinatario della notifica.
+                        \end{enumerate}        
+                
+                
+                \subsubsection{UC5.2.2: Inserimento messaggio notifica }
+                    \textbf{Descrizione:} L’utente inserisce nel form "Message" il messaggio della notifica.
+                    \newline
+                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \newline
+                    \textbf{Postcondizione:} Il messaggio della notifica é inserito.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente inserisce il messaggio della notifica.
+                        \end{enumerate} 
+                 
+                \subsubsection{UC6: Apertura panel "Alert"}
+                    \textbf{Descrizione:} L’utente preme sul panel per visualizzare l'alert.
+                    \newline
+                    \textbf{Precondizione:} L'utente si trova nella dashboard del plugin.
+                    \newline
+                    \textbf{Postcondizione:} Il panel per visualizzare un alert é aperto.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L’utente preme sul panel "Alert".
+                        \end{enumerate}   
+                    
+                        
+                        
+                     		
+                \subsubsection{UC7: Configurazione dei dati dell'alert}
+                    \textbf{Descrizione:} L’utente modifica i campi precompilati per la configurazione di un alert (Fig.\ref{uc7}).
+                    \newline
+                    \textbf{Precondizione:} L'utente si trova nel panel alert.
+                    \newline
+                    \textbf{Postcondizione:} L'alert é configurato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L’utente modifica il nome dell'alert \underline{\textit{UC7.1}};
+                            \item L'utente modifica il valore "Evaluate every" \underline{\textit{UC7.2}};
+                            \item L'utente modifica il valore "For" \underline{\textit{UC7.3}};
+                            \item L'utente può aggiungere una condizione \underline{\textit{UC7.4}};
+                            \item L'utente modifica una condizione \underline{\textit{UC7.5}};
+                            \item L'utente può cancellare una condizione \underline{\textit{UC7.6}};
+                            \item L'utente sceglie lo stato nel caso non ci siano valori o tutti i valori siano nulli \underline{\textit{UC7.7}};
+                            \item L'utente testa le condizioni \underline{\textit{UC7.8}}.
+                        \end{enumerate}
+                        
+                \textbf{Estensioni:} 
+                    \begin{enumerate}
+                            \item Errore nei dati inseriti per la configurazione dell'alert \underline{\textit{UC13}}.
+                        \end{enumerate}
+        
+        \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC7.png}
+                    	\caption{UC7 - Configurazione dei dati dell'alert}
+                    	\label{uc7}
+                    \end{figure} 
+                
+                \subsubsection{UC7.1: Modifica nome dell'alert}
+                    \textbf{Descrizione:} L’utente modifica il nome dell'alert nell'apposito form.
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form per la scrittura del nome dell'alert.
+                    \newline
+                    \textbf{Postcondizione:} Il nuovo nome dell'alert é inserito.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L’utente modifica il nome dell'alert.
+                        \end{enumerate}
+                        
+                \subsubsection{UC7.2: Modifica tempo di valutazione condizione alert}
+                    \textbf{Descrizione:} L’utente modifica il valore per definire ogni quanto tempo Grafana controllerà la validità delle condizioni dell'alert.  
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "Evaluate every" per la scrittura del valore.
+                    \newline
+                    \textbf{Postcondizione:} Il valore "Evaluate every" é modificato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica il valore "Evaluate every".
+                        \end{enumerate}
+                
+                \subsubsection{UC7.3: Modifica soglia di tolleranza per lancio di un alert}
+                    \textbf{Descrizione:} L’utente modifica il valore per definire la tolleranza temporale prima del lancio di un alert.  
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "For" per la scrittura del valore.
+                    \newline
+                    \textbf{Postcondizione:} Il valore "For" é modificato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica il valore "For" .
+                        \end{enumerate}
+                
+                
+                \subsubsection{UC7.4: Aggiunta condizione }
+                    \textbf{Descrizione:} L’utente può aggiungere una condizione sotto forma di query premendo sul pulsante "+".
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "Conditions" per la definizione della condizione.
+                    \newline
+                    \textbf{Postcondizione:} La condizione é pronta ad essere definita.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente può aggiungere una condizione;
+                        \end{enumerate}   
+                      
+                \subsubsection{UC7.5: Modifica condizione }
+                    \textbf{Descrizione:} L’utente modifica la condizione su cui si baserà Grafana per il lancio dell'alert.
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "Conditions" e almeno una condizione deve essere presente.
+                    \newline
+                    \textbf{Postcondizione:} Una condizione é modificata.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica una condizione .
+                        \end{enumerate}  
+                
+                
+                
+                \subsubsection{UC7.6: Eliminazione condizione }
+                    \textbf{Descrizione:} L’utente può eliminare una condizione premendo sul pulsante con simbolo un cestino.
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "Conditions" e deve essere presente almeno una condizione.
+                    \newline
+                    \textbf{Postcondizione:} Una condizione é eliminata.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente può eliminare una condizione.
+                        \end{enumerate}
+                        
+                \subsubsection{UC7.7: Modifica dello stato del sistema nel caso non ci siano valori o tutti i valori siano nulli }
+                    \textbf{Descrizione:} L’utente modifica lo stato in cui sarà il sistema nel caso non ci siano dati o tutti i valori siano nulli.
+                    \newline
+                    \textbf{Precondizione:} Il sistema visualizza il form "If no data or all values are null".
+                    \newline
+                    \textbf{Postcondizione:} Lo stato é definito.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica lo stato del sistema nel caso non ci siano valori o tutti i valori siano nulli.
+                        \end{enumerate}
+                        
+                 \subsubsection{UC7.8: Test delle condizioni }
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Test Rule" per testare se le condizioni.
+                    \newline
+                    \textbf{Precondizione:} Tutti i form per definire un alert sono compilati .
+                    \newline
+                    \textbf{Postcondizione:} L'utente visualizza i risultati del test.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente testa le condizioni.
+                        \end{enumerate}
+                        
+                        
+                		
+            
+                      		
+               \subsubsection{UC8: Modifica di un alert}
+                    \textbf{Descrizione:} L’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed è già sulla sezione "alert" all'interno della sezione "modifica" di un panel (Fig.\ref{uc8}).
+                    \newline
+                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
+                    \newline
+                    \textbf{Postcondizione:} È stato modificato un alert personalizzato per il flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme sul panel "Alert" \underline{\textit{UC6}};
+                            \item L'utente modifica i dati dell'alert \underline{\textit{UC7}};
+                            \item L'utente modifica la notifica dell'alert \underline{\textit{UC8.1}}.
+                        \end{enumerate}
+                    
+                    \textbf{Estensioni:} 
+                    \begin{enumerate}
+                            \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC13}}.
+                        \end{enumerate} 		
+                		
+                        \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC8.png}
+                    	\caption{UC8 - Modifica di un alert}
+                    	\label{uc8}
+                    \end{figure}
+                        
+                      
+                \subsubsection{UC8.1: Modifica notifica dell'alert }
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per modificare il metodo di ricevimento e il contenuto della notifica (Fig.\ref{uc8.1}).
+                    \newline
+                    \textbf{Precondizione:} L'utente si trova nel panel "Alert".
+                    \newline
+                    \textbf{Postcondizione:} Destinatario e descrizione dell'alert sono modificati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme sul pulsante "Notifications";
+                            \item L'utente modifica il destinatario \underline{\textit{UC8.1.1}};
+                            \item L'utente modifica il messaggio \underline{\textit{UC8.1.2}}.
+                        \end{enumerate}
+                        
+                         \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC8-1.png}
+                    	\caption{UC8.1 - Modifica notifica dell'alert}
+                    	\label{uc8.1}
+                    \end{figure}
+                        
+                \subsubsection{UC8.1.1: Modifica destinatario notifica }
+                    \textbf{Descrizione:} L’utente modifica nel form "Send to" il destinatario della notifica.
+                    \newline
+                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \newline
+                    \textbf{Postcondizione:} Il contatto per il destinatario é modificato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica il destinatario della notifica.
+                        \end{enumerate}        
+                
+                
+                \subsubsection{UC8.1.2: Modifica messaggio notifica }
+                    \textbf{Descrizione:} L’utente modifica nel form "Message" il messaggio della notifica.
+                    \newline
+                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \newline
+                    \textbf{Postcondizione:} Il messaggio della notifica é modificato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente modifica il messaggio della notifica.
+                        \end{enumerate} 		
+                		
+                		
+                		
+                    
+                \subsubsection{UC9: Rimozione di un alert}
+                    \textbf{Descrizione:}  L’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana (Fig.\ref{uc9}).
+                    \newline
+                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana ed esiste un alert a loro associato.
+                    \newline
+                    \textbf{Postcondizione:} Non é presente un alert personalizzato per il flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme sul panel "Alert" \underline{\textit{UC6}};
+                            \item L’utente preme sul pulsante “Delete”;
+                            \item L’utente visualizza un messaggio di richiesta di conferma di cancellazione \underline{\textit{UC9.1}}.
+                        \end{enumerate}
+                    
+                    \textbf{Estensioni:} 
+                    \begin{enumerate}
+                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC17}}.
+                        \end{enumerate}
+                        
+                        \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC9.png}
+                    	\caption{UC9 - Rimozione di un alert}
+                    	\label{uc9}
+                    \end{figure}   
+                        
+                \subsubsection{UC9.1: Visualizzazione messaggio di conferma cancellazione alert}
+                    \textbf{Descrizione:}  L’utente può confermare l'operazione di cancellazione dell'alert oppure annullarla.
+                    \newline
+                    \textbf{Precondizione:} L'utente ha premuto su "Delete".
+                    \newline
+                    \textbf{Postcondizione:} Non é presente un alert personalizzato per il flusso dati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente visualizza un messaggio di richiesta di conferma di cancellazione.
+                            \item L'utente preme su "Delete".
+                        \end{enumerate}
+                \textbf{Estensioni:} 
+                    \begin{enumerate}
+                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC17}}.
+                        \end{enumerate}
+				
+		\subsection{Attore primario: Grafana}	
+		
+		        \subsubsection{UC10: Lancio di un alert}
+                    \textbf{Descrizione:} Grafana ha rilevato che una delle condizioni dell'alert sono state violate e avviene quindi il "lancio" dell'alert stesso.
+                    \newline
+                    \textbf{Precondizione:} Il flusso di monitoraggio\pedice di interesse ha un alert ed è associato ad un nodo di una rete bayesiana, inoltre, il valore corrente del flusso è entro il range di valori impostati nelle condizioni dell'alert associato.
+                    \newline
+                    \textbf{Postcondizione:} Vengono interpretati i dati per il ricalcolo delle probabilità con il contributo di “jsbayes”.
+                    \newline
+                    \textbf{Attore primario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item Grafana rileva che un flusso di monitoraggio\pedice rispetta le condizioni di uno dei suoi alert;
+                            \item Si apre una finestra per visualizzare i dati riguardanti il nodo associato al flusso di monitoraggio e la condizione che ha fatto scattare l'alert;
+                            \item La libreria jsbayes ricalcola le probabilità dei nodi non monitorati.
+                        \end{enumerate}
+                    
+                    \textbf{Estensioni:} 
+                    \begin{enumerate}
+                        \item Viene visualizzato un errore di invio messaggio di alert. \underline{\textit{UC12}}.
+                    \end{enumerate}
+                    
+                      
+                      
+                \subsubsection{UC11: Visualizzazione errore interpretazione rete Bayesiana}
+                    \textbf{Descrizione:} Il sistema avvisa l’utente che la rete Bayesiana non è stata interpretata correttamente e non può essere inserita (Fig.\ref{uc11}).
+                    \newline
+                    \textbf{Precondizione:} L’utente inserisce una rete Bayesiana non formattata correttamente.
+                    \newline
+                    \textbf{Postcondizione:} L’utente è consapevole di aver inserito una rete Bayesiana non formattata correttamente.
+                    \newline
+                    \textbf{Attore primario:} Grafana.
+                    \newline
+                    \textbf{Attore secondario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item il sistema avvisa l'utente aprendo una finestra che mostra un messaggio di errore;
+                            \item L'utente chiude il messaggio di avviso premendo su "Ok", \underline{\textit{UC14}};
+                            \item L'utente viene rimandato all'interfaccia di upload in modo che abbia la possibilità di inserire una nuova rete, \underline{\textit{UC1}};.
+                        \end{enumerate}
+                
+                \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC11.png}
+                    	\caption{UC11 - Visualizzazione errore interpretazione rete Bayesiana}
+                    	\label{uc11}
+                    \end{figure}
+                
+                \subsubsection{UC12: Visualizzazione errore invio del messaggio di alert}
+                    \textbf{Descrizione:} Il sistema avvisa l'utente che e’ avvenuto un errore nell'invio dell'alert.
+                    \newline
+                    \textbf{Precondizione:} E’ avvenuto un errore nell'invio dell'alert da parte di Grafana.
+                    \newline
+                    \textbf{Postcondizione:} L’utente è consapevole dell'errore nell'invio dell'alert.
+                    \newline
+                    \textbf{Attore primario:} Grafana.
+                    \newline
+                    \textbf{Attore secondario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item Il sistema apre una finestra con il messaggio di fallimento dell'alert;
+                            \item l'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC14}};.
+                        \end{enumerate}
+                        
+                \subsubsection{UC13: Visualizzazione errore configurazione dell'alert}
+                    \textbf{Descrizione:} Il sistema avvisa l’utente che è avvenuto un errore nella configurazione dell'alert.
+                    \newline
+                    \textbf{Precondizione:} E' avvenuto un errore nell'inserimento dei dati nell'alert da parte dell'utente.
+                    \newline
+                    \textbf{Postcondizione:} L’utente è consapevole dell'errore nella creazione dell'alert.
+                    \newline
+                    \textbf{Attore primario:} Grafana.
+                    \newline
+                    \textbf{Attore secondario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item Il sistema avvisa l’utente tramite un messaggio di errore;
+                            \item L'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC14}}.
+                        \end{enumerate}
+                        
+                \subsubsection{UC14: Chiusura di una finestra con messaggio}
+                    \textbf{Descrizione:} L'utente visualizza un messaggio e poi chiude la finestra che lo contiene.
+                    \newline
+                    \textbf{Precondizione:} E' aperta una finestra con un messaggio da dare all'utente ed un pulsante "Ok" per chiuderla.
+                    \newline
+                    \textbf{Postcondizione:} L'utente ha chiuso la finestra.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente chiude il messaggio di avviso premendo su "Ok".
+                        \end{enumerate}
+                        
+                \subsubsection{UC15: Annullamento salvataggio dashboard}
+                    \textbf{Descrizione:} Viene annullata l'operazione di salvataggio dei nuovi dati inseriti nella dashboard.
+                    \newline
+                    \textbf{Precondizione:} L'utente preme il pulsante "Cancel" nella finestra di salvataggio della dashboard. 
+                    \newline
+                    \textbf{Postcondizione:} Sono annullate le modifiche effettuate sulla dashboard.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.
+                        \end{enumerate}
+                        
+                    \subsubsection{UC16: Errore salvataggio dashboard}
+                    \textbf{Descrizione:} L'utente tenta di salvare le modifiche effettuate alla dashboard ma un errore ne impedisce il salvataggio.
+                    \newline
+                    \textbf{Precondizione:} L'utente preme il pulsante "Save" nell'apposita finestra per salvare le modifiche alla dashboard.
+                    \newline
+                    \textbf{Postcondizione:} L'utente viene rimandato alla dashboard perdendo le modifiche effettuate.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.
+                        \end{enumerate}
+                        
+                    \subsubsection{UC17: Annullamento cancellazione alert}
+                    \textbf{Descrizione:} Viene annullata l'operazione di cancellazione dell'alert.
+                    \newline
+                    \textbf{Precondizione:} L'utente non vuole cancellare l'alert.
+                    \newline
+                    \textbf{Postcondizione:} È annullata l'operazione di cancellazione dell'alert.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Attore secondario:} Grafana.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme il pulsante "Cancel".
+                            
+                        \end{enumerate}
+\newpage
+

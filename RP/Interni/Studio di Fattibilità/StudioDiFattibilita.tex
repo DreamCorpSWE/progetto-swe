@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage{anyfontsize}
+\usepackage{titlesec}
+\newcommand{\documento}{Studio di Fattibilit\`a}
+\input{../../stile/stile.tex}
+\newcommand{\red}{\pie \\ & \mic}
+\newcommand{\verp}{\mar \\ & \daL}
+\newcommand{\res}{\mat}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Interno}
+
+\title{\fontsize{40}{40}\selectfont Studio di Fattibilità}
+\author{Dream Corp.}
+
+\date{30/11/2018}
+\begin{document}
+\maketitle
+\begin{center}
+	\hspace{5em}
+	\includegraphics[width =70mm]{../../logo.png}\newline
+	\\G\&B
+	\begin{table}[!htpb]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Responsabile & \res\\
+			Redattori & \red \\
+			Verificatori & \verp\\
+			Uso & \use\\
+			
+			Destinatari & Dream Corp. \\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
+		\end{tabular}
+	\end{table}
+\end{center}
+\newpage
+~
+\input{versionamento.tex}
+\clearpage
+\input{Introduzione.tex}
+\newpage
+\input{C3.tex}
+\newpage
+\input{C1.tex}
+\newpage
+\input{C2.tex}
+\newpage
+\input{C4.tex}
+\newpage
+\input{C5.tex}
+\newpage
+\input{C6.tex}		
+\end{document}
