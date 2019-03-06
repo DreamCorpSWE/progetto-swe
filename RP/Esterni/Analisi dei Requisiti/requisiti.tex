@@ -1,7 +1,7 @@
 
 \section{Requisiti}
     Tracciare i requisiti\pedice significa che requisiti correlati vengono raggruppati e collegati per facilitare la lettura grazie a tabelle e l'indicizzazione.
-    Assegneremo per tanto ad ogni requisito un identificatore univoco, composto da una serie di regole dettate dalla caratteristica stessa del requisiti.
+    Assegneremo per tanto ad ogni requisito un identificatore univoco, composto da una serie di regole dettate dalla caratteristica stessa del requisito.
     
     \subsubsection{Categorie}
     Analizzeremo nella seguente sezione i vari requisiti suddivisi in categorie:
@@ -45,7 +45,7 @@
     \subsubsection{Fonti}
     Le varie fonti sono:
         \begin{itemize}
-            \item Interno: il requisito proviene da una decisione del gruppo "Dream Corp";
+            \item Interno: il requisito proviene da una decisione del gruppo "Dream Corp.";
             \item Capitolato: il requisito proviene dalle richieste del capitolato;
             \item Esterno: il requisito proviene da un incontro con la proponente.
         \end{itemize}
@@ -56,7 +56,7 @@
             \centering
             \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
             \rowcolors{2}{gray!25}{white}
-            \begin{tabular}{|l|c|p{8cm}|c|}
+            \begin{tabular}{|l|c|p{9cm}|c|}
                 \rowcolor{orange!50}
         		\hline
         		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
@@ -97,17 +97,14 @@
                 \hline
                 RFC3.2A.3 & Compulsory & Visualizzazione messaggio di conferma associazione & Interno\\
                 \hline
-                
 			\end{tabular}
-			\caption{Requisiti Funzionali}
+			\caption{Requisiti Funzionali P1}
 		\end{table}
-		
-		
         \begin{table}[!htpb]
             \centering
             \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
             \rowcolors{2}{gray!25}{white}
-            \begin{tabular}{|l|c|p{8cm}|c|}
+            \begin{tabular}{|l|c|p{9cm}|c|}
                 \rowcolor{orange!50}
         		\hline
         		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
@@ -148,22 +145,21 @@
                 \hline
                 RFC7.3 & Compulsory & Modifica soglia di tolleranza per lancio di un alert & Interno\\
                 \hline
-        \end{tabular}
-            \caption{Requisiti Funzionali}
+                RFC7.4 & Compulsory & Aggiunta condizione & Interno\\
+                \hline
+                RFC7.5 & Compulsory & Modifica condizione & Interno\\
+                \hline
+            \end{tabular}
+            \caption{Requisiti Funzionali P2}
         \end{table}
-        
         \begin{table}[!htpb]
             \centering
             \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
             \rowcolors{2}{gray!25}{white}
-            \begin{tabular}{|l|c|p{8cm}|c|}
+            \begin{tabular}{|l|c|p{9cm}|c|}
                 \rowcolor{orange!50}
         		\hline
         		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
-                \hline
-                RFC7.4 & Compulsory & Aggiunta condizione & Interno\\
-                \hline
-                RFC7.5 & Compulsory & Modifica condizione & Interno\\
                 \hline
                 RFC7.6 & Compulsory & Eliminazione condizione & Interno\\
                 \hline
@@ -183,24 +179,32 @@
                 \hline
                 RFC9.1 & Compulsory & Visualizzazione messaggio di conferma cancellazione alert & Interno\\
                 \hline
-                RFC10 & Compulsory & Lancio di un alert & Interno\\
+                RFC10 & Compulsory & Inizio monitoraggio rete & Interno\\
                 \hline
-                RFC11 & Compulsory & Visualizzazione errore interpretazione rete Bayesiana & Interno\\
+                RFC10.1 & Compulsory & Inserimento numero di samples & Interno\\
                 \hline
-                RFC12 & Compulsory & Visualizzazione errore invio del messaggio di alert & Interno\\
+                RFC10.2 & Compulsory & Inserimento tempo di refresh & Interno\\
                 \hline
-                RFC13 & Compulsory & Visualizzazione errore configurazione dell'alert & Interno\\
+                RFC11 & Compulsory & Fine monitoraggio rete & Interno\\
                 \hline
-                RFC14 & Compulsory & Chiusura di una finestra con messaggio & Interno\\
+                RFC12 & Compulsory & Lancio di un alert & Interno\\
                 \hline
-                RFC15 & Compulsory & Annullamento salvataggio dashboard & Interno\\
+                RFC13 & Compulsory & Visualizzazione errore interpretazione rete Bayesiana & Interno\\
                 \hline
-                RFC16 & Compulsory & Errore salvataggio dashboard & Interno\\
+                RFC14 & Compulsory & Visualizzazione errore invio del messaggio di alert & Interno\\
                 \hline
-                RFC17 & Compulsory & Annullamento cancellazione alert & Interno\\
+                RFC15 & Compulsory & Visualizzazione errore configurazione dell'alert & Interno\\
+                \hline
+                RFC16 & Compulsory & Chiusura di una finestra con messaggio & Interno\\
+                \hline
+                RFC17 & Compulsory & Annullamento salvataggio dashboard & Interno\\
+                \hline
+                RFC18 & Compulsory & Errore salvataggio dashboard & Interno\\
+                \hline
+                RFC19 & Compulsory & Annullamento cancellazione alert & Interno\\
                 \hline
         \end{tabular}
-            \caption{Requisiti Funzionali}
+            \caption{Requisiti Funzionali P3}
         \end{table}
         
         \newpage
@@ -226,12 +230,10 @@
                 RVC3 & Compulsory & La definizione della rete bayesiana deve essere in formato json & Capitolato\\
                 \hline
             \end{tabular}
-            \caption{Requisiti di vincolo} %descrizone a fine tabella
+            \caption{Requisiti di vincolo} %descrizione a fine tabella
         \end{table}
-        
-        \subsubsection{Requisiti di qualità}
         \clearpage
-        
+        \subsubsection{Requisiti di qualità}
         \begin{table}[!htbp]
             \centering
             \renewcommand{\arraystretch}{1.5} % dimensione verticale delle righe
@@ -241,9 +243,9 @@
         		\hline
         		\textbf{Codice} & \textbf{Priorità} & \textbf{Descrizione} & \textbf{Fonte}\\
                 \hline
-                RQC1 &  Compulsory & La  progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato "Piano di qualifica v 1.0.0" & Interno\\
+                RQC1 &  Compulsory & La  progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato "\PdP" & Interno\\
                 \hline
-                RQC2 &  Compulsory & Devono essere rispettate le norme definite nel documento "Norme di progetto v1.0.0" & Interno\\
+                RQC2 &  Compulsory & Devono essere rispettate le norme definite nel documento "\NdP" & Interno\\
                 \hline
                 RQO3 &  Optional & Il codice JavaScript\pedice deve attenersi allo stile Javascript airbnb\pedice & Interno\\
                 \hline

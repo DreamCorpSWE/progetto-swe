@@ -1,0 +1,77 @@
+\documentclass{article}
+\input{../../stile/stile.tex}
+
+
+\newcommand{\documento}{Verbale 22/02/2019}
+\newcommand{\red}{\mat}
+\newcommand{\verp}{\pie}
+\newcommand{\res}{\daL}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\title{\fontsize{40}{40}\selectfont Verbale esterno 22/02/2019}
+\author{Dream Corp.}
+\date{22/02/2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\hspace{5em}
+	\includegraphics[width =70mm]{../../logo.png}\newline
+	\\G\&B
+	\begin{table}[!htpb]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Responsabile & \res\\
+			Redattori & \red \\
+			Verificatori & \verp\\
+			Uso & \use\\
+			
+			Destinatari & Dream Corp. \\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
+		\end{tabular}
+	\end{table}
+\end{center}
+\newpage
+
+~\newline
+\section{Riunione}
+    \subsection{Informazioni generali}
+    \begin{itemize}
+        \item \textbf{Motivo della riunione}: C'è stato un incontro con il rappresentate dell'azienda proponente dove sono state discusse le implementazioni tecnologiche scelte dal gruppo per lo sviluppo del plugin\pedice.
+        \item \textbf{Luogo e Data}: Ufficio a Padova della Zucchetti, 22/02/2019;
+        \item \textbf{Orario}: 14:30-16:00;
+        \item \textbf{Partecipanti}: Il rappresentate dell'azienda proponente del progetto, \mat, \daG, \gia.
+    \end{itemize}
+    \newpage
+    
+\section{Risultati}
+    \subsection{Ordine del giorno}
+    Argomenti chiariti durante il seminario:
+    \begin{enumerate}
+        \item \textbf{Scelte tecnologiche adottate}: il proponente ha reagito positivamente alle scelte effettuate e ha proposto un futuro incontro, da definire in seguito, in cui si potrà provare il plugin direttamente con i database della Zucchetti.
+    \end{enumerate}
+    
+    \subsection{Tracciamento delle decisioni}
+    \begin{table}[!h] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2}
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|c|p{6cm}|l|l|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice} & \textbf{Decisione}\\
+                \hline
+                VER-2019-02-22.1 & Continuo sviluppo del plugin con le tecnologie adottate\\
+                \hline
+
+        \end{tabular}
+        \caption{Tracciamento delle modifiche} %descrizone a fine tabella
+        \label{tab:Tracciamento delle modifiche}
+        \end{table}
+    
+\end{document}

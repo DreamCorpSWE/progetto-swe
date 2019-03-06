@@ -14,7 +14,7 @@
         \end{equation}
         dove X,Y,Z sono dei numeri progressivi per indicare specificità all'interno dei casi d'uso. \newline
         \newline
-        Per rappresentare una scelta tra casi d'uso tra loro mutuamente esclusivi abbiamo deciso di adottare il seguente criterio: nella codifica del caso d'uso verrà aggiunta una lettera maiuscola, tra parentesi tonde, per indicare un insieme di scelte per risolvere il caso d'uso generico, rappresentato dalla normale codifica numerica X.Y.Z. La finale codifica di un caso d'uso di specializzazione sarà quindi:
+        Per rappresentare una scelta di casi d'uso tra loro mutuamente esclusivi abbiamo deciso di adottare il seguente criterio: nella codifica del caso d'uso verrà aggiunta una lettera maiuscola, tra parentesi tonde, per indicare un insieme di scelte per risolvere il caso d'uso generico, rappresentato dalla normale codifica numerica X.Y.Z. La finale codifica di un caso d'uso di specializzazione sarà quindi:
         \begin{equation}
             UCX(A).Y(A).Z(A)
         \end{equation}
@@ -23,7 +23,7 @@
  
         \begin{figure}[!htbp]
                 	\centering
-                	\includegraphics[width=\textwidth]{UCgeneral.png}
+                	\includegraphics[width=13cm]{UCgeneral.png}
                 	\caption{UCgenerale: Caso d'uso generale}
                 \end{figure}  
               \clearpage      
@@ -33,7 +33,8 @@
                         
 		
 				\subsubsection{UC1: Inserimento definizione rete Bayesiana}
-                    \textbf{Precondizione:} L’utente deve trovarsi nell'interfaccia principale e deve possedere una definizione di rete Bayesiana che vuole inserire (Fig.\ref{uc1}).
+				    \textbf{Descrizione:} L’utente vuole inserire una definizione di rete bayesiana.\\
+                    \textbf{Precondizione:} L’utente deve trovarsi nell'interfaccia principale e deve possedere una definizione di rete Bayesiana che vuole inserire.
                     \newline
                     \textbf{Postcondizione:} Viene inserita nell'applicativo la definizione di rete.
                     \newline
@@ -43,7 +44,7 @@
                     \newline
                     \textbf{Estensioni:} 
                     	\begin{enumerate}
-                            \item Problema con l’interpretazione della rete Bayesiana \underline{\textit{UC11}}.
+                            \item Problema con l’interpretazione della rete Bayesiana \underline{\textit{UC13}}.
                         \end{enumerate}
                         
                     \begin{figure}[!htbp]
@@ -57,7 +58,7 @@
                         
                 \subsubsection{UC1(A): Inserimento definizione della rete bayesiana sotto forma di file json}
                     \textbf{Descrizione:} L’utente vuole inserire la definizione della rete bayesiana sotto forma di file json.\\
-                    \textbf{Precondizione:}  L’utente deve trovarsi nell'interfaccia principale e possedere un file json contenente una definizione di rete Bayesiana che vuole inserire (Fig.\ref{uc1a}).
+                    \textbf{Precondizione:}  L’utente deve trovarsi nell'interfaccia principale e possedere un file json contenente una definizione di rete Bayesiana che vuole inserire.
                     \newline
                     \textbf{Postcondizione:} Viene inserita nell'applicativo la definizione di rete presente nel file json.
                     \newline
@@ -71,7 +72,7 @@
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item C’è stato un problema con l’interpretazione della rete Bayesiana \underline{\textit{UC11}}.
+                            \item C’è stato un problema con l’interpretazione della rete Bayesiana \underline{\textit{UC13}}.
                         \end{enumerate}
                         
                     \begin{figure}[!htbp]
@@ -105,19 +106,19 @@
                     \textbf{Attore primario:} Utente.
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
-                        \item L’utente incolla il codice json nel text area dedicata;
+                        \item L’utente incolla il codice json nella textarea dedicata;
                         \item L’utente preme il pulsante “Insert Bayesian Network”;
                         \item La rete viene caricata.
                     \end{enumerate}
                     
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item C’è stato un problema con l’interpretazione della rete bayesiana \underline{\textit{UC11}}.
+                            \item C’è stato un problema con l’interpretazione della rete bayesiana \underline{\textit{UC13}}.
                         \end{enumerate}
                         
                 
                         
                 \subsubsection{UC2: Modifica di un panel}
-                    \textbf{Descrizione:} L’utente vuole modificare delle impostazioni di un determinato panel (Fig.\ref{uc2}).
+                    \textbf{Descrizione:} L’utente vuole modificare delle impostazioni di un determinato panel.
                     \newline
                     \textbf{Precondizione:} Deve essere presente almeno un flusso dati rappresentato da un panel.
                     \newline
@@ -171,7 +172,7 @@
                     
                     
                 \subsubsection{UC2.3:  Modifica delle informazioni principali di un panel}
-                    \textbf{Descrizione:} L’utente modifica le informazioni generali del panel inserendo titolo e descrizione (Fig.\ref{uc2.3}).
+                    \textbf{Descrizione:} L’utente modifica le informazioni generali del panel inserendo titolo e descrizione.
                     \newline
                     \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel.
                     \newline
@@ -196,7 +197,7 @@
                 \subsubsection{UC2.3.1: Modifica titolo di un panel}
                     \textbf{Descrizione:} L’utente modifica il titolo per meglio identificare il flusso dati rappresentato.
                     \newline
-                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel e essere nella sezione "General".
+                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel ed essere nella sezione "General".
                     \newline
                     \textbf{Postcondizione:} Viene modificato il titolo del panel.
                     \newline
@@ -209,7 +210,7 @@
                 \subsubsection{UC2.3.2: Modifica descrizione di un panel}
                     \textbf{Descrizione:} L’utente modifica la descrizione per permettere una più completa comprensione del flusso dati rappresentato.
                     \newline
-                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel e essere nella sezione "General".
+                    \textbf{Precondizione:} L'utente deve trovarsi in modalità "modifica" di un panel ed essere nella sezione "General".
                     \newline
                     \textbf{Postcondizione:} Viene modificata la descrizione del panel.
                     \newline
@@ -235,11 +236,11 @@
     
                         
                 \subsubsection{UC3: Configurazione associazione di un flusso dati di Grafana ad un nodo della rete bayesiana}
-                    \textbf{Descrizione:} L’utente vuole configurare l'associazione tra il flusso dati rappresentato dal panel selezionato e un nodo di una rete bayesiana per poterci poi applicare metodi di inferenza (Fig.\ref{uc3}).
+                    \textbf{Descrizione:} L’utente vuole configurare l'associazione tra il flusso dati rappresentato dal panel selezionato e un nodo di una rete bayesiana per poterci poi applicare metodi di inferenza.
                     \newline
                     \textbf{Precondizione:} Deve essere presente almeno una definizione di rete bayesiana e l'utente deve trovarsi in modalità "modifica" di un panel.
                     \newline
-                    \textbf{Postcondizione:} E' avvenuta la configurazione desiderata dall'utente riguardante l'associazione nodo-flusso dati.
+                    \textbf{Postcondizione:} \`E avvenuta la configurazione desiderata dall'utente riguardante l'associazione nodo-flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -276,9 +277,9 @@
                
                 
                 \subsubsection{UC3.2: Modifica associazione nodo-flusso dati}
-                    \textbf{Descrizione:} L’utente modifica l'associazione presente, oppure ne crea una nuova, con il flusso dati rappresentato dal panel (Fig.\ref{uc3.2}).
+                    \textbf{Descrizione:} L’utente modifica l'associazione presente, oppure ne crea una nuova, con il flusso dati rappresentato dal panel.
                     \newline
-                    \textbf{Precondizione:} L'utente deve aver selezionato un rete bayesiana all'interno della sezione "Bayesian Network" della schermata di modifica di un panel.
+                    \textbf{Precondizione:} L'utente deve aver selezionato una rete bayesiana all'interno della sezione "Bayesian Network" della schermata di modifica di un panel.
                     \newline
                     \textbf{Postcondizione:} Sono state modificate le associazioni nodo-flusso dati.
                     \newline
@@ -300,11 +301,11 @@
                 \clearpage
                     
                 \subsubsection{UC3.2(A): Associazione di un nodo della rete al flusso dati}
-                    \textbf{Descrizione:} L’utente sceglie di associare un nodo della rete al flusso dati (Fig.\ref{uc3.2a}).
+                    \textbf{Descrizione:} L’utente sceglie di associare un nodo della rete al flusso dati.
                     \newline
                     \textbf{Precondizione:} Non è presente un'associazione di un nodo di quella rete con il flusso dati.
                     \newline
-                    \textbf{Postcondizione:} E' avvenuta l'associazione del nodo selezionato al flusso dati.
+                    \textbf{Postcondizione:} \`E avvenuta l'associazione del nodo selezionato al flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -326,9 +327,9 @@
                 \subsubsection{UC3.2(A).1: Selezione di un nodo della rete}
                     \textbf{Descrizione:} L’utente sceglie, tra quelli proposti, un nodo della rete che modellerà l'andamento del flusso dati.
                     \newline
-                    \textbf{Precondizione:} E' stata selezionata una rete bayesiana all'interno della quale ricercare un nodo da associare al flusso dati precedentemente associato.
+                    \textbf{Precondizione:} \`E stata selezionata una rete bayesiana all'interno della quale ricercare un nodo da associare al flusso dati precedentemente associato.
                     \newline
-                    \textbf{Postcondizione:} E' stato scelto il nodo a cui associare il flusso di monitoraggio.
+                    \textbf{Postcondizione:} \`E stato scelto il nodo a cui associare il flusso di monitoraggio.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -343,7 +344,7 @@
                     \newline
                     \textbf{Precondizione:}  È stato selezionato il nodo a cui associare il flusso di monitoraggio.
                     \newline
-                    \textbf{Postcondizione:} Il flusso dati è associato al nodo delle rete desiderato.
+                    \textbf{Postcondizione:} Il flusso dati è associato al nodo della rete desiderato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -372,11 +373,11 @@
                 
                     
                 \subsubsection{UC3.2(B): Dissociazione del nodo della rete dal flusso dati}
-                    \textbf{Descrizione:} L’utente vuole eliminare l'associazione precedente tra il flusso e il nodo della rete selezionata (Fig.\ref{uc3.2b}).
+                    \textbf{Descrizione:} L’utente vuole eliminare l'associazione precedente tra il flusso e il nodo della rete selezionata.
                     \newline
-                    \textbf{Precondizione:} E' presente un'associazione di un nodo di quella rete con il flusso dati.
+                    \textbf{Precondizione:} \`E presente un'associazione di un nodo di quella rete con il flusso dati.
                     \newline
-                    \textbf{Postcondizione:} E' stata rimossa l'associazione del nodo precedentemente associato al flusso dati.
+                    \textbf{Postcondizione:} \`E stata rimossa l'associazione del nodo precedentemente associato al flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -398,9 +399,9 @@
                 \subsubsection{UC3.2(B).1: Selezione della funzione "Dissocia"}
                     \textbf{Descrizione:} L’utente seleziona la funzione dissocia.
                     \newline
-                    \textbf{Precondizione:}  E' già presente un'associazione nodo-flusso dati per la rete selezionata.
+                    \textbf{Precondizione:}  \`E già presente un'associazione nodo-flusso dati per la rete selezionata.
                     \newline
-                    \textbf{Postcondizione:} Il flusso dati non è più associato al nodo delle rete.
+                    \textbf{Postcondizione:} Il flusso dati non è più associato al nodo della rete.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -429,7 +430,7 @@
                     
                     
                 \subsubsection{UC4: Salvataggio Dashboard}
-                    \textbf{Descrizione:} L’utente vuole salvare le modifiche della Dashboard corrente (Fig.\ref{uc4}).
+                    \textbf{Descrizione:} L’utente vuole salvare le modifiche della Dashboard corrente.
                     \newline
                     \textbf{Precondizione:} L'utente deve trovarsi su una schermata di una dashboard.
                     \newline
@@ -445,8 +446,8 @@
                         \item L'utente preme su "Save".
                     \end{enumerate}
                     \textbf{Estensioni:} \begin{enumerate}
-                            \item C’è stato un problema con il salvataggio della Dashboard \underline{\textit{UC16}}.
-                            \item L'utente decide di non voler salvare e preme su "Cancel" \underline{\textit{UC15}}.
+                            \item C’è stato un problema con il salvataggio della Dashboard \underline{\textit{UC18}}.
+                            \item L'utente decide di non voler salvare e preme su "Cancel" \underline{\textit{UC17}}.
                         \end{enumerate}
                 \clearpage
                 \begin{figure}[!htbp]
@@ -519,7 +520,7 @@
                    
                           
                 \subsubsection{UC5: Definizione di un alert personalizzato per un flusso dati non monitorato}
-                    \textbf{Descrizione:} L’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana ed nella schermata di modifica di un panel (Fig.\ref{uc5}).
+                    \textbf{Descrizione:} L’utente desidera creare un alert associato ad un flusso dati non monitorato su Grafana e nella schermata di modifica di un panel.
                     \newline
                     \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana.
                     \newline
@@ -563,7 +564,7 @@
                         
                     
                 \subsubsection{UC5.2: Definizione notifica dell'alert }
-                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per definire come ricevere e cosa scrivere nella notifica che invierà l'alert (Fig.\ref{uc5.2}).
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per definire come ricevere e cosa scrivere nella notifica che invierà l'alert.
                     \newline
                     \textbf{Precondizione:} L'utente si trova nel panel "Alert".
                     \newline
@@ -589,9 +590,9 @@
                 \subsubsection{UC5.2.1: Inserimento destinatario notifica }
                     \textbf{Descrizione:} L’utente inserisce nel form "Send to" il destinatario della notifica.
                     \newline
-                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \textbf{Precondizione:} L'utente è nella sezione "Notifications" .
                     \newline
-                    \textbf{Postcondizione:} Il contatto per il destinatario é inserito.
+                    \textbf{Postcondizione:} Il contatto per il destinatario è inserito.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -605,9 +606,9 @@
                 \subsubsection{UC5.2.2: Inserimento messaggio notifica }
                     \textbf{Descrizione:} L’utente inserisce nel form "Message" il messaggio della notifica.
                     \newline
-                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \textbf{Precondizione:} L'utente è nella sezione "Notifications" .
                     \newline
-                    \textbf{Postcondizione:} Il messaggio della notifica é inserito.
+                    \textbf{Postcondizione:} Il messaggio della notifica è inserito.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -622,7 +623,7 @@
                     \newline
                     \textbf{Precondizione:} L'utente si trova nella dashboard del plugin.
                     \newline
-                    \textbf{Postcondizione:} Il panel per visualizzare un alert é aperto.
+                    \textbf{Postcondizione:} Il panel per visualizzare un alert è aperto.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -636,11 +637,11 @@
                         
                      		
                 \subsubsection{UC7: Configurazione dei dati dell'alert}
-                    \textbf{Descrizione:} L’utente modifica i campi precompilati per la configurazione di un alert (Fig.\ref{uc7}).
+                    \textbf{Descrizione:} L’utente modifica i campi precompilati per la configurazione di un alert.
                     \newline
                     \textbf{Precondizione:} L'utente si trova nel panel alert.
                     \newline
-                    \textbf{Postcondizione:} L'alert é configurato.
+                    \textbf{Postcondizione:} L'alert è configurato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -659,7 +660,7 @@
                         
                 \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Errore nei dati inseriti per la configurazione dell'alert \underline{\textit{UC13}}.
+                            \item Errore nei dati inseriti per la configurazione dell'alert \underline{\textit{UC15}}.
                         \end{enumerate}
         
         \begin{figure}[!htbp]
@@ -674,7 +675,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form per la scrittura del nome dell'alert.
                     \newline
-                    \textbf{Postcondizione:} Il nuovo nome dell'alert é inserito.
+                    \textbf{Postcondizione:} Il nuovo nome dell'alert è inserito.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -689,7 +690,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "Evaluate every" per la scrittura del valore.
                     \newline
-                    \textbf{Postcondizione:} Il valore "Evaluate every" é modificato.
+                    \textbf{Postcondizione:} Il valore "Evaluate every" è modificato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -704,7 +705,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "For" per la scrittura del valore.
                     \newline
-                    \textbf{Postcondizione:} Il valore "For" é modificato.
+                    \textbf{Postcondizione:} Il valore "For" è modificato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -720,7 +721,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "Conditions" per la definizione della condizione.
                     \newline
-                    \textbf{Postcondizione:} La condizione é pronta ad essere definita.
+                    \textbf{Postcondizione:} La condizione è pronta ad essere definita.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -735,7 +736,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "Conditions" e almeno una condizione deve essere presente.
                     \newline
-                    \textbf{Postcondizione:} Una condizione é modificata.
+                    \textbf{Postcondizione:} Una condizione è modificata.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -752,7 +753,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "Conditions" e deve essere presente almeno una condizione.
                     \newline
-                    \textbf{Postcondizione:} Una condizione é eliminata.
+                    \textbf{Postcondizione:} Una condizione è eliminata.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -767,7 +768,7 @@
                     \newline
                     \textbf{Precondizione:} Il sistema visualizza il form "If no data or all values are null".
                     \newline
-                    \textbf{Postcondizione:} Lo stato é definito.
+                    \textbf{Postcondizione:} Lo stato è definito.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -797,9 +798,9 @@
             
                       		
                \subsubsection{UC8: Modifica di un alert}
-                    \textbf{Descrizione:} L’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed è già sulla sezione "alert" all'interno della sezione "modifica" di un panel (Fig.\ref{uc8}).
+                    \textbf{Descrizione:} L’utente desidera modificare un alert associato ad un flusso dati non monitorato su Grafana ed è già sulla sezione "alert" all'interno della sezione "modifica" di un panel.
                     \newline
-                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana e esiste un alert a loro associato.
+                    \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana ed esiste un alert a loro associato.
                     \newline
                     \textbf{Postcondizione:} È stato modificato un alert personalizzato per il flusso dati.
                     \newline
@@ -815,7 +816,7 @@
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC13}}.
+                            \item Errore nei dati inseriti per la creazione dell'alert \underline{\textit{UC15}}.
                         \end{enumerate} 		
                 		
                         \begin{figure}[!htbp]
@@ -827,7 +828,7 @@
                         
                       
                 \subsubsection{UC8.1: Modifica notifica dell'alert }
-                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per modificare il metodo di ricevimento e il contenuto della notifica (Fig.\ref{uc8.1}).
+                    \textbf{Descrizione:} L’utente preme sul pulsante "Notifications" per modificare il metodo di ricevimento e il contenuto della notifica.
                     \newline
                     \textbf{Precondizione:} L'utente si trova nel panel "Alert".
                     \newline
@@ -853,9 +854,9 @@
                 \subsubsection{UC8.1.1: Modifica destinatario notifica }
                     \textbf{Descrizione:} L’utente modifica nel form "Send to" il destinatario della notifica.
                     \newline
-                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \textbf{Precondizione:} L'utente è nella sezione "Notifications" .
                     \newline
-                    \textbf{Postcondizione:} Il contatto per il destinatario é modificato.
+                    \textbf{Postcondizione:} Il contatto per il destinatario è modificato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -869,9 +870,9 @@
                 \subsubsection{UC8.1.2: Modifica messaggio notifica }
                     \textbf{Descrizione:} L’utente modifica nel form "Message" il messaggio della notifica.
                     \newline
-                    \textbf{Precondizione:} L'utente é nella sezione "Notifications" .
+                    \textbf{Precondizione:} L'utente è nella sezione "Notifications" .
                     \newline
-                    \textbf{Postcondizione:} Il messaggio della notifica é modificato.
+                    \textbf{Postcondizione:} Il messaggio della notifica è modificato.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -885,11 +886,11 @@
                 		
                     
                 \subsubsection{UC9: Rimozione di un alert}
-                    \textbf{Descrizione:}  L’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana (Fig.\ref{uc9}).
+                    \textbf{Descrizione:}  L’utente desidera eliminare un alert associato ad un flusso dati non monitorato su Grafana.
                     \newline
                     \textbf{Precondizione:} Sono presenti dei flussi dati non monitorati su Grafana ed esiste un alert a loro associato.
                     \newline
-                    \textbf{Postcondizione:} Non é presente un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} Non è presente un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -903,7 +904,7 @@
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC17}}.
+                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC19}}.
                         \end{enumerate}
                         
                         \begin{figure}[!htbp]
@@ -918,7 +919,7 @@
                     \newline
                     \textbf{Precondizione:} L'utente ha premuto su "Delete".
                     \newline
-                    \textbf{Postcondizione:} Non é presente un alert personalizzato per il flusso dati.
+                    \textbf{Postcondizione:} Non è presente un alert personalizzato per il flusso dati.
                     \newline
                     \textbf{Attore primario:} Utente.
                     \newline
@@ -930,12 +931,78 @@
                         \end{enumerate}
                 \textbf{Estensioni:} 
                     \begin{enumerate}
-                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC17}}.
+                            \item L'utente preme sul pulsante "Cancel" nel momento di conferma cancellazione. \underline{\textit{UC19}}.
+                        \end{enumerate}
+                        
+            \subsubsection{UC10: Inizio monitoraggio rete}
+                    \textbf{Descrizione:}  L’utente desidera iniziare a monitorare tutti i nodi associati di una specifica rete.
+                    \newline
+                    \textbf{Precondizione:} Sono presenti delle strutture di reti bayesiana e l'utente si trova nella pagina di controllo delle reti.
+                    \newline
+                    \textbf{Postcondizione:} I nodi associati della rete scelta sono monitorati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente inserisce il numero di sample\pedice applicati alla rete.
+                            \item L'utente inserisce il tempo di refresh del ricalcolo delle probabilità.
+                            \item L'utente preme il pulsante "Start" per l'avvio del monitoraggio.
+                        \end{enumerate}
+                        \clearpage
+                        
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC10.png}
+                    	\caption{UC10 - Inizio monitoraggio rete}
+                    	\label{uc9}
+                    \end{figure} 
+                        
+                \subsubsection{UC10.1: Inserimento numero di samples}
+                    \textbf{Descrizione:}  L’utente inserisce il numero di samples appplicati alla rete.
+                    \newline
+                    \textbf{Precondizione:} Sono presenti delle strutture di reti bayesiana e l'utente si trova nella pagina di controllo delle reti.
+                    \newline
+                    \textbf{Postcondizione:} Il campo per il numero di samples è compilato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente inserisce il numero di samples applicati alla rete.
+                        \end{enumerate}
+                        
+                \subsubsection{UC10.2: Inserimento tempo di refresh }
+                    \textbf{Descrizione:}  L’utente inserisce il tempo di refresh  da applicare alla rete.
+                    \newline
+                    \textbf{Precondizione:} Sono presenti delle strutture di reti bayesiana e l'utente si trova nella pagina di controllo delle reti.
+                    \newline
+                    \textbf{Postcondizione:} Il campo per il tempo di refresh è compilato.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                        \item L'utente inserisce il tempo di refresh del ricalcolo delle probabilità.                                 
+                    \end{enumerate}
+                        
+                        
+                        
+                        
+                        
+            \subsubsection{UC11: Fine monitoraggio rete}
+                    \textbf{Descrizione:}  L’utente desidera bloccare il monitoraggio di tutti i nodi associati di una specifica rete .
+                    \newline
+                    \textbf{Precondizione:} Sono presenti delle strutture di reti bayesiana, i nodi della rete bayesiana sono monitorati e l'utente si trova nella pagina di controllo delle reti.
+                    \newline
+                    \textbf{Postcondizione:} I nodi associati della rete scelta non sono monitorati.
+                    \newline
+                    \textbf{Attore primario:} Utente.
+                    \newline
+                    \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
+                            \item L'utente preme il pulsante "Stop" per l'avvio del monitoraggio.
                         \end{enumerate}
 				
 		\subsection{Attore primario: Grafana}	
 		
-		        \subsubsection{UC10: Lancio di un alert}
+		        \subsubsection{UC12: Lancio di un alert}
                     \textbf{Descrizione:} Grafana ha rilevato che una delle condizioni dell'alert sono state violate e avviene quindi il "lancio" dell'alert stesso.
                     \newline
                     \textbf{Precondizione:} Il flusso di monitoraggio\pedice di interesse ha un alert ed è associato ad un nodo di una rete bayesiana, inoltre, il valore corrente del flusso è entro il range di valori impostati nelle condizioni dell'alert associato.
@@ -952,13 +1019,13 @@
                     
                     \textbf{Estensioni:} 
                     \begin{enumerate}
-                        \item Viene visualizzato un errore di invio messaggio di alert. \underline{\textit{UC12}}.
+                        \item Viene visualizzato un errore di invio messaggio di alert. \underline{\textit{UC15}}.
                     \end{enumerate}
                     
                       
                       
-                \subsubsection{UC11: Visualizzazione errore interpretazione rete Bayesiana}
-                    \textbf{Descrizione:} Il sistema avvisa l’utente che la rete Bayesiana non è stata interpretata correttamente e non può essere inserita (Fig.\ref{uc11}).
+                \subsubsection{UC13: Visualizzazione errore interpretazione rete Bayesiana}
+                    \textbf{Descrizione:} Il sistema avvisa l’utente che la rete Bayesiana non è stata interpretata correttamente e non può essere inserita.
                     \newline
                     \textbf{Precondizione:} L’utente inserisce una rete Bayesiana non formattata correttamente.
                     \newline
@@ -970,18 +1037,20 @@
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                             \item il sistema avvisa l'utente aprendo una finestra che mostra un messaggio di errore;
-                            \item L'utente chiude il messaggio di avviso premendo su "Ok", \underline{\textit{UC14}};
-                            \item L'utente viene rimandato all'interfaccia di upload in modo che abbia la possibilità di inserire una nuova rete, \underline{\textit{UC1}};.
+                            \item L'utente chiude il messaggio di avviso premendo su "Ok", \underline{\textit{UC16}};
+                            \item L'utente viene rimandato all'interfaccia di upload in modo che abbia la possibilità di inserire una nuova rete, \underline{\textit{UC1}}.
                         \end{enumerate}
                 
                 \begin{figure}[!htbp]
                     	\centering
-                    	\includegraphics[width=\textwidth]{UC11.png}
-                    	\caption{UC11 - Visualizzazione errore interpretazione rete Bayesiana}
+                    	\includegraphics[width=\textwidth]{UC13.png}
+                    	\caption{UC13 - Visualizzazione errore interpretazione rete Bayesiana}
                     	\label{uc11}
                     \end{figure}
+                    
+                    \clearpage
                 
-                \subsubsection{UC12: Visualizzazione errore invio del messaggio di alert}
+                \subsubsection{UC14: Visualizzazione errore invio del messaggio di alert}
                     \textbf{Descrizione:} Il sistema avvisa l'utente che e’ avvenuto un errore nell'invio dell'alert.
                     \newline
                     \textbf{Precondizione:} E’ avvenuto un errore nell'invio dell'alert da parte di Grafana.
@@ -994,13 +1063,20 @@
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                             \item Il sistema apre una finestra con il messaggio di fallimento dell'alert;
-                            \item l'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC14}};.
+                            \item l'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC16}}.
                         \end{enumerate}
                         
-                \subsubsection{UC13: Visualizzazione errore configurazione dell'alert}
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC14.png}
+                    	\caption{UC14 - Visualizzazione errore invio del messaggio di alert}
+                    	\label{uc11}
+                    \end{figure}
+                        
+                \subsubsection{UC15: Visualizzazione errore configurazione dell'alert}
                     \textbf{Descrizione:} Il sistema avvisa l’utente che è avvenuto un errore nella configurazione dell'alert.
                     \newline
-                    \textbf{Precondizione:} E' avvenuto un errore nell'inserimento dei dati nell'alert da parte dell'utente.
+                    \textbf{Precondizione:} \`E avvenuto un errore nell'inserimento dei dati nell'alert da parte dell'utente.
                     \newline
                     \textbf{Postcondizione:} L’utente è consapevole dell'errore nella creazione dell'alert.
                     \newline
@@ -1010,13 +1086,20 @@
                     \newline
                     \textbf{Contestualizzazione / Scenario principale:} \begin{enumerate}
                             \item Il sistema avvisa l’utente tramite un messaggio di errore;
-                            \item L'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC14}}.
+                            \item L'utente chiude il messaggio di avviso premendo su "Ok" \underline{\textit{UC16}}.
                         \end{enumerate}
                         
-                \subsubsection{UC14: Chiusura di una finestra con messaggio}
+                    \begin{figure}[!htbp]
+                    	\centering
+                    	\includegraphics[width=\textwidth]{UC15.png}
+                    	\caption{UC15 - Visualizzazione errore configurazione dell'alert}
+                    	\label{uc11}
+                    \end{figure}
+                        
+                \subsubsection{UC16: Chiusura di una finestra con messaggio}
                     \textbf{Descrizione:} L'utente visualizza un messaggio e poi chiude la finestra che lo contiene.
                     \newline
-                    \textbf{Precondizione:} E' aperta una finestra con un messaggio da dare all'utente ed un pulsante "Ok" per chiuderla.
+                    \textbf{Precondizione:} \`E aperta una finestra con un messaggio da dare all'utente ed un pulsante "Ok" per chiuderla.
                     \newline
                     \textbf{Postcondizione:} L'utente ha chiuso la finestra.
                     \newline
@@ -1028,7 +1111,7 @@
                             \item L'utente chiude il messaggio di avviso premendo su "Ok".
                         \end{enumerate}
                         
-                \subsubsection{UC15: Annullamento salvataggio dashboard}
+                \subsubsection{UC17: Annullamento salvataggio dashboard}
                     \textbf{Descrizione:} Viene annullata l'operazione di salvataggio dei nuovi dati inseriti nella dashboard.
                     \newline
                     \textbf{Precondizione:} L'utente preme il pulsante "Cancel" nella finestra di salvataggio della dashboard. 
@@ -1043,7 +1126,7 @@
                             \item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.
                         \end{enumerate}
                         
-                    \subsubsection{UC16: Errore salvataggio dashboard}
+                    \subsubsection{UC18: Errore salvataggio dashboard}
                     \textbf{Descrizione:} L'utente tenta di salvare le modifiche effettuate alla dashboard ma un errore ne impedisce il salvataggio.
                     \newline
                     \textbf{Precondizione:} L'utente preme il pulsante "Save" nell'apposita finestra per salvare le modifiche alla dashboard.
@@ -1058,7 +1141,7 @@
                             \item L'utente torna alla schermata della dashboard perdendo le ultime modifiche effettuate.
                         \end{enumerate}
                         
-                    \subsubsection{UC17: Annullamento cancellazione alert}
+                    \subsubsection{UC19: Annullamento cancellazione alert}
                     \textbf{Descrizione:} Viene annullata l'operazione di cancellazione dell'alert.
                     \newline
                     \textbf{Precondizione:} L'utente non vuole cancellare l'alert.
@@ -1073,5 +1156,3 @@
                             \item L'utente preme il pulsante "Cancel".
                             
                         \end{enumerate}
-\newpage
-

@@ -3,34 +3,33 @@
 \newcommand{\documento}{Analisi dei requisiti}
 \input{stile/stile.tex}
 \newcommand{\red}{ \mat\\ & \daG \\ & \daL}
-
-\newcommand{\verp}{\gia}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\newcommand{\verp}{\pie}
 \newcommand{\res}{\daG}
-\newcommand{\version}{Versione 1.0.0}
+\newcommand{\version}{Versione 2.0.0}
 \newcommand{\use}{Esterno}
 \usepackage{eurosym}
 \title{\fontsize{40}{40}\selectfont Analisi dei requisiti}
 \author{Dream Corp.}
 
 
-\date{10/01/2019}
+\date{07/03/2019}
 
 
 
 \begin{document}
 	\input{stile/copertina.tex}
 	\newpage
-	
 	\input{introduzione.tex}
-	
+	\newpage
 	\input{descrizione_prodotto.tex}
-	
+	\newpage
 	\input{casi_uso.tex}
-	
+	\newpage
 	\input{requisiti.tex}
-	
+	\newpage
 	\input{tracciamento.tex}
-	
 	\newpage
 	\appendix
 	\input{grafana_reti_bayesiane.tex}

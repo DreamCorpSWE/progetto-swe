@@ -1,4 +1,4 @@
-\subsection{Consuntivo del Periodo di avvio e analisi dei requisiti}
+\subsection{Periodo di avvio e analisi dei requisiti}
 
 \subsubsection{Consuntivo Orario}
 Nel consuntivo orario del periodo di avvio e analisi vengono riportate, per ogni persona, le ore preventivate nella pianificazione (colore nero) e di fianco un numero che può essere di due colori:
@@ -72,5 +72,31 @@ Nel consuntivo economico del periodo di avvio e analisi vengono riportate, per o
 Le ore preventivate risultano uguali a quelle consuntivate, e allo stesso modo anche la variazione di costo è trascurabile. 
 Tuttavia, come mostrato dai valori delle tabelle, abbiamo assegnato troppe ore ad alcuni ruoli rispetto ad altri. Nel consuntivo è risultato infatti un riequilibrio delle ore:
 sono stati sottostimati i ruoli con meno ore assegnate e sovrastimati i ruoli con più ore assegnate. 
-L'accaduto può essere spiegato da un pianificazione guidata dall'inesperienza: non siamo stati in grado di stimare il peso di alcuni ruoli.
+L'accaduto può essere spiegato da una pianificazione guidata dall'inesperienza: non siamo stati in grado di stimare il peso di alcuni ruoli.
 Queste considerazioni dovranno guidare il seguente preventivo a finire.
+
+\subsubsection{Preventivo a finire}
+Il preventivo a finire viene presentato come tabella suddivisa in periodi. Per il calcolo del consuntivo di un periodo ancora da avviare viene utilizzato il valore a preventivo.
+\begin{table}[h!] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Periodo} & \textbf{Preventivo in \euro} & \textbf{Consuntivo in \euro}\\
+                \hline
+                Attività preliminari di avvio ed analisi dei requisiti & 2765 & 2770\\
+                \hline
+                Progettazione architetturale & 3416 & -\\
+                \hline
+                Progettazione di dettaglio e codifica & 4518 & -\\
+                \hline
+                Validazione e collaudo & 2565 & -\\
+                \hline
+                \textbf{Totale} & 13264 \euro & 13269 \euro\\
+                \hline
+        \end{tabular}
+        \caption{Preventivo a finire} %descrizone a fine tabella
+        \label{tab:my_label}
+\end{table}

@@ -1,0 +1,222 @@
+\subsection{Periodo di Progettazione architetturale}
+
+\subsubsection{Consuntivo Orario}
+Nel consuntivo orario del periodo di progettazione architetturale vengono riportate, per ogni persona, le ore preventivate nella pianificazione (colore nero) e di fianco un numero che può essere di due colori:
+\begin{itemize}
+    \item \rosso{rosso}: un numero positivo rappresentante le ore richieste in più rispetto al preventivo;
+    \item \verde{verde}: un numero negativo rappresentante le ore richieste in meno rispetto al preventivo.
+\end{itemize}
+\begin{table}[!htbp]
+			\centering
+			\renewcommand{\arraystretch}{2} 
+			\rowcolors{2}{gray!25}{white}
+				\begin{tabular}{|l c c c c c c|c| }
+		\rowcolor{orange!50}
+		\hline
+		\multicolumn{8}{|c|}{\textbf{Suddivisione delle ore nei vari ruoli}}\\
+		\hline
+		\textbf{Nominativo} & RES 	& AMM 	& ANA 	& PRO 	& PRG 	& VER 	& \textbf{Totale} \\
+		\hline
+		\mat 				& - 	& -		& -	        	& 14 \rosso{+1}	& -		& 10	& 24 \rosso{+1}\\
+		\hline
+		\pie  				& -		& -	  	& 7 \rosso{+1}	& -		& 7 \rosso{+2}		& 10	& 24 \rosso{+3}\\
+		\hline
+		\mic  				& 8		& 12 \rosso{+2}	& -		& -		& 4 \rosso{+3}		& -		& 24 \rosso{+5}\\
+		\hline
+		\mar  				& -		& -	         	& 7		& 13 \rosso{+7}	& 4		& -		& 24 \rosso{+7}\\
+		\hline
+		\daG  				& -		& -	           	& -		& 14 \rosso{+10}	& -		& 10	& 24 \rosso{+10}\\
+		\hline
+		\daL  				& 8		& 12 \rosso{+3}	& -		& -		& 4	\rosso{+5}	& -		& 24 \rosso{+8}\\
+		\hline
+		\gia  				& -		& -		& 6	\rosso{+2}	& 7	\rosso{+2}	& 11	& -		& 24 \rosso{+4}\\
+		\hline
+	\end{tabular}
+			\caption{Consuntivo orario del Progettazione architetturale}
+		\end{table}
+\subsubsection{Consuntivo economico del Periodo di avvio e analisi}
+Nel consuntivo economico del periodo di progettazione architetturale vengono riportate, per ogni ruolo, le ore e i costi preventivati nella pianificazione (colore nero) e di fianco ad essi un numero che può essere di due colori:
+\begin{itemize}
+    \item \rosso{rosso}: un numero positivo rappresentante l'aumento rispetto al preventivo;
+    \item \verde{verde}: un numero negativo rappresentante la diminuzione rispetto al preventivo.
+\end{itemize}
+\begin{table}[!htbp]
+			\centering
+			\renewcommand{\arraystretch}{2} 
+			\rowcolors{2}{gray!25}{white}
+				\begin{tabular}{| c c c|}
+		\rowcolor{orange!50}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Suddivisione delle ore nei vari ruoli}}\\
+		\hline
+		\textbf{Ruolo} 			& Ore 	& Costo\\
+		\hline
+		\textbf{Responsabile}	&16		&480\\
+		\hline
+		\textbf{Amministratore}	&24	\rosso{+5}	&480 \rosso{+100}\\
+		\hline
+		\textbf{Analista}		&20 \rosso{+3}		&500 \rosso{+75}\\
+		\hline
+		\textbf{Progettista}	&48	\rosso{+20}	&1056 \rosso{+440}\\
+		\hline
+		\textbf{Programmatore}	&30	\rosso{+10}	&450 \rosso{+150}\\
+		\hline
+		\textbf{Verificatore} 	&30		&450\\
+		\hline
+		\textbf{Totale} 		&168 \rosso{+38}	&3416 \rosso{+765}\\
+		\hline 
+	\end{tabular}
+			\caption{Consuntivo economico del Periodo di Progettazione architetturale}
+		\end{table}
+\subsubsection{Conclusioni}
+Le ore richieste per portare a termine questa fase del progetto sono state superiori a quelle inizialmente stimate sia per cause interne che esterne. L'analista ha sforato il suo numero di ore a causa dell'obbligo della revisione dei documenti in base alle richieste di modifica del professore in seguito ai risultati della RR. L'amministratore ha impiegato più ore in quanto è stato ampiamente revisionato ed ampliato il documento \textit{Norme}. Il progettista ha lavorato più ore perché la progettazione è stata svolta più in dettaglio rispetto alla fase attuale e per lo stesso motivo anche il programmatore ha più ore del dovuto ma l'aumento è stato relativamente inferiore
+rispetto a quello del progettista.
+
+\subsubsection{Preventivo a finire}
+Il preventivo a finire viene presentato come tabella suddivisa in periodi. Per il calcolo del consuntivo di un periodo ancora da avviare viene utilizzato il valore a preventivo.
+\begin{table}[h!] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|l|c|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Periodo} & \textbf{Preventivo in \euro} & \textbf{Consuntivo in \euro}\\
+                \hline
+                Attività preliminari di avvio ed analisi dei requisiti & 2765 & 2770\\
+                \hline
+                Progettazione architetturale & 3416 & 4181\\
+                \hline
+                Progettazione di dettaglio e codifica & 4518\verde{-696} & -\\
+                \hline
+                Validazione e collaudo & 2565 & -\\
+                \hline
+                \textbf{Totale} & 13264 \euro & 13338 \euro\\
+                \hline
+        \end{tabular}
+        \caption{Preventivo a finire} %descrizone a fine tabella
+        \label{tab:my_label}
+\end{table}
+\newpage
+\subsubsection{Variazione della pianificazione}
+In seguito al consuntivo orario effettivo della fase RP sono stati riviste le assegnazioni delle ore ai ruoli per la fase RQ per contenere i costi del progetto:
+	
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l c c c c c c|c| }
+		\rowcolor{orange!50}
+		\hline
+		\multicolumn{8}{|c|}{\textbf{Suddivisione delle ore nei vari ruoli}}\\
+		\hline
+		\textbf{Nominativo} & RES 	& AMM 	& ANA 	& PRO 	& PRG 	& VER 	& \textbf{Totale} \\
+		\hline
+		\mat  				& 8		& -		& -		& -		& 22 \verde{-5}	& 6		& 36 \verde{-5}\\
+		\hline
+		\pie  				& -		& -		& -		& 16 \verde{-5} & 20 	& -		& 36 \verde{-5}\\
+		\hline
+		\mic  				& -		& -		& -		& 16 \verde{-5}	& 20 \verde{-5}	& -		& 36 \verde{-10}\\
+		\hline
+		\mar  				& 8		& -		& -		& -		& 12 \verde{-1}	& 16 \verde{-5}	& 36 \verde{-6}\\
+		\hline
+		\daG  				& -		& 12	& -		& -		& 14 \verde{-2} & 10& 36 \verde{-2}\\
+		\hline
+		\daL  				& -		& -		& -		& 10	&20 \verde{-5}	& 6		& 36 \verde{-5}\\
+		\hline
+		\gia  				& -		& 12	& -		& 12	& -		& 12 \verde{-5}	& 36 \verde{-5}\\
+		\hline
+	\end{tabular}
+	\caption{Modifica alla suddivisione ore del periodo di Progettazione di dettaglio e codifica}
+\end{table}
+
+\begin{table}[!htpb]
+		\centering
+	\renewcommand{\arraystretch}{1.8} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{| c c c|}
+		\rowcolor{orange!50}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Modifica alla suddivisione delle ore nei vari ruoli}}\\
+		\hline
+		\textbf{Ruolo} 			& Ore 	& Costo\\
+		\hline
+		\textbf{Responsabile}	&16		&480\\
+		\hline
+		\textbf{Amministratore}	&24		&480\\
+		\hline
+		\textbf{Analista}		&0		&0\\
+		\hline
+		\textbf{Progettista}	&54	\verde{-18}	&1188 \verde{-396}\\
+		\hline
+		\textbf{Programmatore}	&108 \verde{-10}	&1620 -\verde{-150}\\
+		\hline
+		\textbf{Verificatore} 	&50	 \verde{-10}	&750 \verde{-150}\\
+		\hline
+		\textbf{Totale} 		&252	&4518 \verde{-696}\\
+		\hline 
+	\end{tabular}
+	\caption{Modifica ore e costi totali del periodo di Progettazione di dettaglio e codifica}
+\end{table}
+\clearpage
+\subsubsection{Nuovo prospetto orario}
+	La nuova distribuzione oraria totale è la seguente:
+		\begin{table}[!htpb]
+			\centering
+			\renewcommand{\arraystretch}{2} 
+			\rowcolors{2}{gray!25}{white}
+			\begin{tabular}{|l c c c c c c|c| }
+				\rowcolor{orange!50}
+				\hline
+				\multicolumn{8}{|c|}{\textbf{Nuova suddivisione delle ore nei vari ruoli}}\\
+				\hline
+				\textbf{Nominativo} & RES 	& AMM 	& ANA 	& PRO 	& PRG 	& VER 	& \textbf{Totale} \\
+				\hline
+				\mat 				& 8		& 18	& 10	& 14 \rosso{+1}	& 22 \verde{-5}	& 27	&99 \verde{-4}\\
+				\hline
+				\pie 				& 12 	& 12	& 13 \rosso{+1}	&16	\verde{-5}	&27 \rosso{+2}	&19		&99 \verde{-3}\\
+				\hline
+				\mic  				& 8		&12 \rosso{+2}		& 6		&16 \verde{-5}		&30	\verde{-2}	& 27	&99 \verde{-5}\\
+				\hline
+				\mar  				& 8		&12		& 9		&13 \rosso{+7}		&26  \verde{-1}	&31\verde{-5}	&99 \rosso{+1}\\
+				\hline
+				\daG  				&14		&12		&12 	&14	\rosso{+10}	&14 \verde{-2}	&33		&99 \rosso{+8}\\
+				\hline
+				\daL 				& 8		&15 \rosso{+3}		&11 	&10		&24	&31		&99 \rosso{+3}\\
+				\hline
+				\gia 				& 8		&18		& 6 \rosso{+2}		&19 \rosso{+2}		&11	\verde{-5}	&37 	&99 \verde{-1}\\
+				\hline
+			\end{tabular}
+			\caption{Nuova suddivisione ore totali}
+		\end{table}
+	\newpage
+
+		\begin{table}[!htpb]
+				\centering
+			\renewcommand{\arraystretch}{1.8} 
+			\rowcolors{2}{gray!25}{white}
+			\begin{tabular}{| c c c|}
+				\rowcolor{orange!50}
+				\hline
+				\multicolumn{3}{|c|}{\textbf{Nuova suddivisione delle ore nei vari ruoli}}\\
+				\hline
+				\textbf{Ruolo} 			& Ore 	& Costo\\
+				\hline
+				\textbf{Responsabile}	&66 	&1980\\
+				\hline
+				\textbf{Amministratore}	&99 \rosso{+5} 	&1980 \rosso{+100}\\
+				\hline
+				\textbf{Analista}		&67 \rosso{+3} 	&1675 \rosso{+75}\\
+				\hline
+				\textbf{Progettista}	&102 \rosso{+11}	&2244 \rosso{+121}\\
+				\hline
+				\textbf{Programmatore}	&154 \rosso{-13}	&2310 \verde{-195}\\
+				\hline
+				\textbf{Verificatore} 	&205 \verde{-5} 	&3075 \verde{-75}\\
+				\hline
+				\textbf{Totale} 		&693	&13264 \rosso{+26} \\
+				\hline 
+			\end{tabular}
+			\caption{Ore e costi totali }
+		\end{table}
+

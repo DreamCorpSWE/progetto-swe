@@ -2,7 +2,6 @@
 
 \subsection{Tracciamento Casi d'Uso e Requisiti Funzionali}
 Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tabellare, le relazioni tra requisiti funzionali e casi d'uso. Il tracciamento diretto tra casi d'uso e requisiti renderà la comprensione del sistema più facile e veloce.
-\clearpage
 
 \begin{table}[!htbp] % h! serve per posizionarla relativamente
             \centering
@@ -23,7 +22,7 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \hline
                 UC2 & RFC2\\
                 \hline
-                UC2.1 & RFCC2.1\\
+                UC2.1 & RFC2.1\\
                 \hline
                 UC2.2 & RFC2.2\\
                 \hline
@@ -39,17 +38,8 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \hline
                 UC3.2 & RFC3.2\\
                 \hline
-                UC3.2(A)& RFC3.2A\\
-                \hline
-                UC3.2(A).1 & RFC3.2A.1\\
-                \hline
-                UC3.2(A).2 & RFC3.2A.2\\
-                \hline
-                UC3.2(A).3 & RFC3.2.3\\
-                \hline
                 \end{tabular}
         \end{table}
-
         \begin{table}[!htbp] % h! serve per posizionarla relativamente
             \centering
             \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
@@ -58,6 +48,14 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \rowcolor{orange!50} %colore intestazione
         		\hline
         		\textbf{Codice Caso d'Uso} & \textbf{Codice Requisito} \\
+                \hline
+                UC3.2(A)& RFC3.2A\\
+                \hline
+                UC3.2(A).1 & RFC3.2A.1\\
+                \hline
+                UC3.2(A).2 & RFC3.2A.2\\
+                \hline
+                UC3.2(A).3 & RFC3.2.3\\
                 \hline
                 UC3.2(B) & RFC3.2B\\
                 \hline
@@ -87,6 +85,17 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \hline
                 UC6 & RFC6\\
                 \hline
+                \end{tabular}
+        \end{table}
+        \begin{table}[!htbp] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+                \begin{tabular}{|c|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice Caso d'Uso} & \textbf{Codice Requisito} \\
+                \hline
                 UC7 & RFC7\\
                 \hline
                 UC7.1 & RFC7.1\\
@@ -94,18 +103,6 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 UC7.2 & RFC7.2\\
                 \hline
                 UC7.3 & RFC7.3\\
-                \hline
-                \end{tabular}
-        \end{table}
-
-        \begin{table}[!htbp] % h! serve per posizionarla relativamente
-            \centering
-            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
-            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
-                \begin{tabular}{|c|c|} % p{dimensione desiderata}
-                \rowcolor{orange!50} %colore intestazione
-                \hline
-        		\textbf{Codice Caso d'Uso} & \textbf{Codice Requisito} \\
                 \hline
                 UC7.4 & RFC7.4\\
                 \hline
@@ -131,6 +128,21 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \hline
                 UC10 & RFC10\\
                 \hline
+                UC10.1 & RFC10.1\\
+                \hline
+            \end{tabular}
+        \end{table}
+        \begin{table}[!htbp] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+                \begin{tabular}{|c|c|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice Caso d'Uso} & \textbf{Codice Requisito} \\
+                \hline
+                UC10.2 & RFC10.2\\
+                \hline
                 UC11 & RFC11\\
                 \hline
                 UC12 & RFC12\\
@@ -139,26 +151,18 @@ Per una maggiore comprensione dei requisiti verranno rappresentate, in forma tab
                 \hline
                 UC14 & RFC14\\
                 \hline
-                \end{tabular}
-        \end{table}
-
-        \begin{table}[!htbp] % h! serve per posizionarla relativamente
-            \centering
-            \renewcommand{\arraystretch}{2} % dimensione verticale delle righe
-            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
-                \begin{tabular}{|c|c|} % p{dimensione desiderata}
-                \rowcolor{orange!50} %colore intestazione
-                \hline
-        		\textbf{Codice Caso d'Uso} & \textbf{Codice Requisito} \\
-        		\hline
                 UC15 & RFC15\\
                 \hline
                 UC16 & RFC16\\
                 \hline
                 UC17 & RFC17\\
                 \hline
+                UC18 & RFC18\\
+                \hline
+                UC19 & RFC19\\
+                \hline
         \end{tabular}
-        \caption{Tracciamento Casi d'Uso - Requisiti Funzionali} %descrizone a fine tabella
+        \caption{Tracciamento Casi d'Uso - Requisiti Funzionali} %descrizione a fine tabella
 \end{table}
 
 \subsection{Tracciamento Requisiti per Tipologia e Priorità}
@@ -168,10 +172,9 @@ Per facilitare la lettura e la visualizzazione verranno presentate delle tabelle
     \item Tracciamento Tipologia-Requisito
 \end{itemize}
 
-\newpage
 \subsubsection{Tracciamento: Priorità-Requisito}
-Di seguito viene riportata una tabella riassuntiva che descrive le priorità dei requisiti e i requisiti che vi appartenengono per rendere di più facile lettura la distribuzione per priorità.
-Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nella sezioni precedenti.   
+Di seguito viene riportata una tabella riassuntiva che descrive le priorità dei requisiti e i requisiti che vi appartengono per rendere di più facile lettura la distribuzione per priorità.
+Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nelle sezioni precedenti.   
 
 \begin{table}[!htbp] % h! serve per posizionarla relativamente
             \centering
@@ -195,18 +198,17 @@ Per brevità non viene riportata la descrizione del requisito ma semplicemente i
         		\hline
         		\textbf{Priorità Requisito} & \textbf{Codice Requisiti} \\
                 \hline
-                & RFC8, RFC8.1, RFC8.1.1, RFC8.1.2, RFC9, RFC9.1, RFC10, RFC11, RFC12, RFC13, RFC14, RFC15, RFC16, RFC17\\
+                & RFC8, RFC8.1, RFC8.1.1, RFC8.1.2, RFC9, RFC9.1, RFC10, RFC10.1, RFC10.2, RFC11, RFC12, RFC13, RFC14, RFC15, RFC16, RFC17, RFC18, RFC19\\
                 \hline
                 Optional & RFO5, RFO5.1, RFO5.2, RFO5.2.1, RFO5.2.2\\
                 \hline
         \end{tabular}
-        \caption{Tracciamento Priorità-Requisito} %descrizone a fine tabella
+        \caption{Tracciamento Priorità-Requisito} %descrizione a fine tabella
 \end{table}
-
 \newpage
 \subsubsection{Tracciamento: Tipologia-Requisito}
-Di seguito viene riportata una tabella riassuntiva che descrive le tipologie di requisiti e i requisiti che vi appartenengono per rendere di più facile lettura la distribuzione per tipologia.
-Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nella sezioni precedenti.
+Di seguito viene riportata una tabella riassuntiva che descrive le tipologie di requisiti e i requisiti che vi appartengono per rendere di più facile lettura la distribuzione per tipologia.
+Per brevità non viene riportata la descrizione del requisito ma semplicemente il suo codice univoco in quando era già stato descritto in dettaglio nelle sezioni precedenti.
 
 \begin{table}[!htbp] % h! serve per posizionarla relativamente
             \centering
@@ -230,14 +232,14 @@ Per brevità non viene riportata la descrizione del requisito ma semplicemente i
         		\hline
         		\textbf{Tipologia Requisito} & \textbf{Codice Requisiti} \\
                 \hline
-                & RFC7.4, RFC7.5, RFC7.6, RFC7.7, RFC7.8, RFC8, RFC8.1, RFC8.1.1, RFC8.1.2, RFC9, RFC9.1, RFC10, RFC11, RFC12, RFC13, RFC14, RFC15, RFC16, RFC17 \\
+                & RFC7.4, RFC7.5, RFC7.6, RFC7.7, RFC7.8, RFC8, RFC8.1, RFC8.1.1, RFC8.1.2, RFC9, RFC9.1, RFC10, RFC10.1, RFC10.2, RFC11, RFC12, RFC13, RFC14, RFC15, RFC16, RFC17, RFC18, RFC19 \\
                 \hline
                 Vincolo & RVO1, RCV2, RCV3, RCV4, RCV5\\
                 \hline
                 Qualità & RQC1, RQC2, RQO3, RQC4\\
                 \hline
         \end{tabular}
-        \caption{Tracciamento Tipologia-Requisito} %descrizone a fine tabella
+        \caption{Tracciamento Tipologia-Requisito} %descrizione a fine tabella
 \end{table}
 
 \newpage
@@ -252,12 +254,12 @@ Di seguito viene riportata una tabella riassuntiva a doppia entrata con la tipol
                 \rowcolor{orange!50} %colore intestazione
         		\hline & \textbf{Funzionali} & \textbf{Vincolo} & \textbf{Qualità} & \textbf{Prestazionali} & \textbf{Tot. Priorità}\\
                 \hline
-                \textbf{Compulsory} & 48 & 4 & 3 & 0 & 55\\
+                \textbf{Compulsory} & 52 & 4 & 3 & 0 & 59\\
                 \hline
                 \textbf{Optional} & 5 & 1 & 1 & 0 & 7\\
                 \hline
-                \textbf{Tot. Tipologia} & 53 & 5 & 4 & 0 & 62\\
+                \textbf{Tot. Tipologia} & 53 & 5 & 4 & 0 & 66\\
                 \hline
         \end{tabular}
-        \caption{Riepilogo Distribuzione Requisiti} %descrizone a fine tabella
+        \caption{Riepilogo Distribuzione Requisiti} %descrizione a fine tabella
 \end{table}

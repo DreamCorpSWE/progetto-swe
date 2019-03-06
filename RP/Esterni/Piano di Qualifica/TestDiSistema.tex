@@ -1,2 +1,281 @@
 \subsection{Test di Sistema}
-Questa sezione verrà sviluppata in seguito quando sarà richiesta la sua istanziazione.
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS01 & RFC1A & 
+			Verificare che l'utente possa inserire una definizione di una rete bayesiana sotto forma di file Json.
+			& N.I.\\
+		\hline
+		TS02 & RFC11 & 
+			Verificare che venga visualizzato l'errore di interpretazione della rete Bayesiana dopo il caricamento di un file json non corretto. 
+			& N.I.\\
+		\hline
+		TS03 & RFC1B 	& 
+			Verificare che l'utente possa inserisca la definizione della rete bayesiana sotto forma di codice json. 
+			& N.I.\\
+		\hline
+		TS04 & RFC11 	& 
+			Verificare che venga visualizzato l'errore di interpretazione della rete Bayesiana dopo il caricamento di codice json non valido. 
+			& N.I.\\
+		\hline
+		TS05 & RFC2 	& 
+			Verificare che l’utente possa modificare le impostazioni di un panel. 
+			& N.I.\\
+		\hline
+		TS06 & RFC2.1 	&
+			Verificare che l'utente possa selezionare il panel che monitora i dati del flusso di interesse.
+			\newline
+			& N.I.\\
+		\hline
+		TS07 & RFC2.2 	&
+			Verificare che l'utente possa attivare la modalità "modifica" di un panel.
+			& N.I.\\
+		\hline
+		TS08 & RFC2.3 	&
+			Verificare che l’utente possa modificare le informazioni principali di un panel. 
+			& N.I.\\
+		\hline
+		TS09 & RFC2.3.1 &
+			Verificare che l'utente possa modificare il titolo per meglio identificare il flusso dati rappresentato.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS10 & RFC2.3.2 &
+			Verificare che l'utente possa modificare la descrizione per permettere una più completa comprensione del flusso dati rappresentato.
+			& N.I.\\
+		\hline
+		TS11 & RFC2.4 	&
+			Verificare che l'utente possa uscire dalla modalità "modifica" del panel.
+			& N.I.\\
+		\hline
+		TS12 & RFC3 	&
+			Verificare che l’utente possa configurare l'associazione tra il flusso dati rappresentato dal panel selezionato e un nodo di una rete bayesiana per poterci poi applicare metodi di inferenza.
+			& N.I.\\
+		\hline
+		TS13 & RFC3.1 	&
+			Verificare che l'utente possa scegliere la rete bayesiana entro cui ricercare il nodo da associare al panel.
+			& N.I.\\
+		\hline
+		TS14 & RFC3.2 	&
+			Verificare che l'utente possa modificare l’associazione presente oppure crearne una nuova con il flusso dati rappresentato dal panel.
+			& N.I.\\
+		\hline
+		TS15 & RFC3.2A &
+			Verificare che l’utente possa associare un nodo della rete al flusso dati.
+			& N.I.\\
+		\hline
+		TS16 & RFC3.2A.1 &
+			Verificare che l'utente possa scegliere un nodo della rete che modellerà l’andamento del flusso dati. 
+			& N.I.\\
+		\hline		
+		TS17 & RFC3.2A.2 &
+			Verificare che l'utente possa associare il nodo precedentemente scelto ad un flusso dati.
+			& N.I.\\
+		\hline
+		TS18 & RFC3.2A.3 &
+			Verificare che l'utente possa associare il nodo precedentemente scelto al flusso dati.
+			& N.I.\\
+		\hline
+		TS19 & RFC3.2B &
+			Verificare che l’utente possa eliminare l'associazione precedente tra il flusso e il nodo della rete selezionata.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS20 & RFC3.2B.1 &
+			Verificare che l'utente possa selezionare la funzione dissocia. 
+			& N.I.\\
+		\hline
+		TS21 & RFC3.2B.2 &
+			Verificare che l'utente possa venire a conoscenza che la dissociazione è andata a buon fine. 
+			& N.I.\\
+		\hline
+		TS22 & RFC4 &
+			Verificare che l’utente possa salvare le modifiche fatte alla Dashboard corrente.
+			& N.I.\\
+		\hline
+		TS23 & RFC15 &
+			Verificare che l’utente possa annullare l'operazione di salvataggio dei nuovi dati inseriti nella dashboard.
+			& N.I.\\
+		\hline
+		TS24 & RFC16 &
+			Verificare che l’utente riceva un errore durante l'operazione di salvataggio dei nuovi dati inseriti nella dashboard. 
+			& N.I.\\
+		\hline
+		TS25 & RFC4.1 &
+			Verificare che l'utente possa avviare la funzione di salvataggio di una Dashboard tramite l’apposito pulsante o con comandi da tastiera.
+			& N.I.\\
+		\hline
+		TS26 & RFC4.1A &
+			Verificare che l'utente possa premere sul pulsante apposito per il lancio della funzione di salvataggio.
+			& N.I.\\
+		\hline
+		TS27 & RFC4.1B &
+			Verificare che l'utente possa premere sul pulsante apposito per il lancio della funzione di salvataggio.
+			& N.I.\\
+		\hline
+		TS28 & RFC4.2 &
+			Verificare che l'utente possa inserire delle note per identificare meglio i cambiamenti effettuati fino a questo salvataggio della Dashboard.
+			& N.I.\\
+		\hline
+		TS29 & RFC5 &
+			Verificare che l’utente possa creare un alert associato ad un flusso dati non monitorato su Grafana e nella schermata di modifica di un panel.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS30 & RFC5.1 &
+			Verificare che l'utente possa premere sul pulsante "Create Alert" per creare un nuovo alert.
+			& N.I.\\
+		\hline
+		TS31 & RFC5.2 &
+			Verificare che l’utente possa definire come ricevere e cosa scrivere nella notifica che invierà l'alert. 
+			& N.I.\\
+		\hline
+		TS32 & RFC5.2.1 &
+			Verificare che l'utente possa inserire nel form "Send to" il destinatario della notifica.
+			& N.I.\\
+		\hline
+		TS33 & RFC5.2.2 &
+			Verificare che l'utente possa inserire nel form "Message" il messaggio della notifica.
+			& N.I.\\
+		\hline
+		TS34 & RFC6 &
+			Verificare che l'utente possa premere sul panel per visualizzare l’alert.
+			& N.I.\\
+		\hline
+		TS35 & RFC7 &
+			Verificare che l’utente possa modificare i campi precompilati per la configurazione di un alert.
+			& N.I.\\
+		\hline
+		TS36 & RFC13 &
+			Verificare che il sistema avvisi l’utente che è avvenuto un errore nella configurazione dell'alert.
+			& N.I.\\
+		\hline
+		TS37 & RFC7.1 &
+			Verificare che l'utente possa modificare il nome dell’alert nell’apposito form.
+			& N.I.\\
+		\hline
+		TS38 & RFC7.2 &
+			Verificare che l'utente possa modificare il valore per definire ogni quanto tempo verranno notati possibili superamenti di soglia
+			& N.I.\\
+		\hline
+		TS39 & RFC7.3 &
+			Verificare che l'utente possa modificare il valore per definire la tolleranza temporale prima del lancio.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{white}{gray!25}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS40 & RFC7.4 &
+			Verificare che l'utente possa aggiungere una condizione sotto forma di query premendo sul pulsante "+".
+			& N.I.\\
+		\hline
+		TS41 & RFC7.5 &
+			Verificare che l'utente possa modificare la condizione su cui si baserà il lancio dell’alert.
+			& N.I.\\
+		\hline
+		TS42 & RFC7.6 &
+			Verificare che l'utente possa eliminare una condizione premendo sul pulsante con simbolo un cestino.
+			& N.I.\\
+		\hline
+		TS43 & RFC7.7 &
+			Verificare che l'utente possa modificare lo stato in cui sarà il sistema nel caso non ci siano dati o tutti i valori siano nulli.
+			& N.I.\\
+		\hline
+		TS44 & RFC8 &
+			Verificare che l’utente possa modificare un alert associato ad un flusso dati non monitorato su Grafana.
+			& N.I.\\
+		\hline
+		TS45 & RFC13 &
+			Verificare che il sistema avvisi l’utente che è avvenuto un errore nella configurazione dell'alert.
+			& N.I.\\
+		\hline
+		TS46 & RFC8.1 &
+			Verificare che l’utente possa modificare il metodo di ricevimento e il contenuto della notifica. 
+			& N.I.\\
+		\hline
+		TS47 & RFC8.1.1 &
+			Verificare che l'utente possa modificare nel form "Send to" il destinatario della notifica.
+			& N.I.\\
+		\hline
+		TS48 & RFC8.1.2 &
+			Verificare che l'utente possa modificare nel form "Message" il messaggio della notifica.
+			& N.I.\\
+		\hline
+		TS49 & RFC9 &
+			Verificare che l’utente possa eliminare un alert associato ad un flusso dati non monitorato su Grafana. 
+			& N.I.\\
+		\hline
+		TS50 & RFC17 &
+			Verificare che l’utente possa annullare la cancellazione dell'alert.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+	\begin{tabular}{|l|l|p{10cm}|l|}
+		\rowcolor{orange!50}
+		\hline
+		\textbf{Codice} & \textbf{Requisito}& \textbf{Descrizione} & \textbf{Stato}\\ 
+		\hline
+		TS51 & RFC9.1 &
+			Verificare che l’utente possa confermare l'operazione di cancellazione dell'alert oppure annullarla.
+			& N.I.\\
+		\hline
+		TS52 & RFC10 &
+			Verificare che Grafana rilevi che una delle condizioni dell'alert è stata violata e quindi "lanci" l'alert stesso.
+			& N.I.\\
+		\hline
+		TS53 & RFC12 &
+			Verificare che Grafana avvisi l’utente che è avvenuto un errore durante l’invio dell’alert.
+			& N.I.\\
+		\hline
+	\end{tabular}
+\end{table}
+\clearpage

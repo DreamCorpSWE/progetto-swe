@@ -2,12 +2,12 @@
 		\subsection{Scopo del prodotto}			
 Si devono realizzare dei sistemi che possano applicare metodi di intelligenza artificiale\pedice al flusso dei dati raccolti, al fine non solo di monitorare la situazione del sistema ma anche per consigliare gli interventi o quanto meno le zone di intervento alla linea di produzione del software.
 Il presente capitolato ha per oggetto l'affidamento della fornitura per la
-realizzazione di un plug-in per lo strumento di monitoraggio Grafana\pedice che
+realizzazione di un plugin per lo strumento di monitoraggio Grafana\pedice che
 applichi reti Bayesiane\pedice al flusso dei dati ricevuti per allarmi o segnalazioni tra gli operatori del servizio Cloud e la linea di produzione del software.
 
 
 		\subsection{Funzioni del prodotto}
-Il plug-in deve poter leggere la definizione di una rete Bayesiana da un file in formato json. Avverrà successivamente l'associazione dei flussi di monitoraggio con i nodi della rete Bayesiana inserita. I nodi della rete mapperanno gli stati dei flussi di monitoraggio e il cambio di stato avverrà nel momento in cui si rileverà una variazione di valore nel flusso dati. Questa variazione del valore verrà catturata dal sistema di Grafana, dopo la definizione di un alert opportuno per quel flusso di monitoraggio. Un alert è un messaggio che viene inviato da Grafana, riportante lo stato del nodo monitorato e il suo valore, quando quest'ultimo viola una delle condizioni poste. L'alert può essere modificato e rimosso a discrezione dell'utente.
+Il plugin deve poter leggere la definizione di una rete Bayesiana da un file in formato json. Avverrà successivamente l'associazione dei flussi di monitoraggio con i nodi della rete Bayesiana inserita. I nodi della rete mapperanno gli stati dei flussi di monitoraggio e il cambio di stato avverrà nel momento in cui si rileverà una variazione di valore nel flusso dati. Questa variazione del valore verrà catturata dal sistema di Grafana, dopo la definizione di un alert opportuno per quel flusso di monitoraggio. Un alert è un messaggio che viene inviato da Grafana, riportante lo stato del nodo monitorato e il suo valore, quando quest'ultimo viola una delle condizioni poste. L'alert può essere modificato e rimosso a discrezione dell'utente.
 Nel momento in cui un alert viene lanciato il sistema avvia il ricalcolo delle probabilità dell'intera rete grazie al supporto della libreria jsbayes. 
 I valori ricalcolati delle probabilità dei nodi della rete a cui non è stato associato un flusso di monitoraggio verranno rappresentati con dei grafici, detti "panel", grazie al supporto di Grafana.
 Su questi valori probabilistici verranno a loro volta applicati opzionalmente degli alert, i quali si attiveranno quando le stime su queste percentuali supereranno una certa soglia decisa dall'utente.
@@ -15,7 +15,7 @@ Su questi valori probabilistici verranno a loro volta applicati opzionalmente de
 
 		\subsection{Tipologia di utenti}
 
-Il prodotto è rivolto a tutti coloro che gestiscono i sistemi di raccolta e collezione di dati in modo da poterli monitorare ed intervenire qualora sia necessario, grazie a degli allarmi forniti dal plug-in.
+Il prodotto è rivolto a tutti coloro che gestiscono i sistemi di raccolta e collezione di dati in modo da poterli monitorare ed intervenire qualora sia necessario, grazie a degli allarmi forniti dal plugin.
 Gli utenti devono avere familiarità  con il tool di monitoraggio Grafana.
 
 
@@ -44,7 +44,4 @@ Gli utenti devono avere familiarità  con il tool di monitoraggio Grafana.
 				
 				
 			\subsection{Vincoli generali}			
-Essendo il prodotto un plug-in per Grafana (versione 5.4.3), occorre aver scaricato e configurato Grafana (versione 5.4.3 o superiore) in modo da poter installare il plug-in.
-
-
-\newpage
+Essendo il prodotto un plugin per Grafana (versione 5.4.3), occorre aver scaricato e configurato Grafana (versione 5.4.3 o superiore) in modo da poter installare il plugin.

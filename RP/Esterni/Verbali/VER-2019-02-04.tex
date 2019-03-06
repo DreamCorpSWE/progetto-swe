@@ -1,0 +1,78 @@
+\documentclass{article}
+\input{../../stile/stile.tex}
+
+
+\newcommand{\documento}{Verbale 04/02/2019}
+\newcommand{\red}{\mat}
+\newcommand{\verp}{\pie}
+\newcommand{\res}{\daL}
+\newcommand{\version}{Versione 1.0.0}
+\newcommand{\use}{Esterno}
+\title{\fontsize{40}{40}\selectfont Verbale esterno 04/02/2019}
+\author{Dream Corp.}
+\date{04/02/2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\hspace{5em}
+	\includegraphics[width =70mm]{../../logo.png}\newline
+	\\G\&B
+	\begin{table}[!htpb]
+		\centering
+		\begin{tabular}{r|l}
+			\multicolumn{2}{c}{Informazioni sul documento}\\
+			\hline
+			Versione & \version \\
+			Responsabile & \res\\
+			Redattori & \red \\
+			Verificatori & \verp\\
+			Uso & \use\\
+			
+			Destinatari & Dream Corp. \\
+			& Prof. Tullio Vardanega\\
+			& Prof. Riccardo Cardin\\
+			& Zucchetti SpA\\
+		\end{tabular}
+	\end{table}
+\end{center}
+\newpage
+
+~\newline
+\section{Riunione}
+    \subsection{Informazioni generali}
+    \begin{itemize}
+        \item \textbf{Motivo della riunione}: C'è stata una chiamata tramite Hangouts con il Prof. Riccardo Cardin per chiarire i dubbi riguardanti il documento \textit{Analisi dei Requisiti} sorti in seguito alla valutazione in RR.
+        \item \textbf{Luogo e Data}: Aula 2AB45 in Torre Archimede, 04/02/2019;
+        \item \textbf{Orario}: 12:30-13:00;
+        \item \textbf{Partecipanti}: Il Prof. Riccardo Cardin e tutti i membri del gruppo Dream Corp. eccetto \daG, assente poiché indisposto.
+    \end{itemize}
+    \newpage
+    
+\section{Risultati}
+    \subsection{Ordine del giorno}
+    Argomenti chiariti durante la chiamata:
+    \begin{enumerate}
+        \item \textbf{Casi d'uso}: i casi d'uso sono uno strumento per passare dal generale del capitolato d'appalto al dettaglio su ogni funzionalità; questo è risultato insufficiente nel nostro documento.
+        \item \textbf{Alert}: se gli alert non riguardano direttamente un attore che interagisce col nostro progetto non è di interesse dei casi d'uso.
+    \end{enumerate}
+    
+    \subsection{Tracciamento delle decisioni}
+    \begin{table}[!h] % h! serve per posizionarla relativamente
+            \centering
+            \renewcommand{\arraystretch}{2}
+            \rowcolors{2}{gray!25}{white} %colori alternati, grigio 25% e bianco 100%
+            \begin{tabular}{|c|c|p{6cm}|l|l|} % p{dimensione desiderata}
+                \rowcolor{orange!50} %colore intestazione
+        		\hline
+        		\textbf{Codice} & \textbf{Decisione}\\
+                \hline
+                VER-2019-02-04.1 & Correzione dell'Analisi dei Requisiti anadando più nel dettaglio nei casi d'uso\\
+                \hline
+
+        \end{tabular}
+        \caption{Tracciamento delle modifiche} %descrizone a fine tabella
+        \label{tab:Tracciamento delle modifiche}
+        \end{table}
+    
+\end{document}
