@@ -34,8 +34,8 @@ I documenti prodotti dovranno essere standardizzati, leggibili, sintatticamente 
 			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
 			Gulpease index    &   50-100   &    65-100       \\ \hline
 			Errori sintattici     &  0    &   0      \\ \hline
-			Gunning Fog index    &     \textless= 13      &   \textless= 10   \\ \hline
-			SMOG                  &              \textless= 13                                &                         \textless= 10                   \\ \hline
+			Gunning Fog index    &     $\leq$ 15      &   $\leq$ 12   \\ \hline
+			SMOG                  &               $\leq$ 13                                &                          $\leq$ 10                   \\ \hline
 		\end{tabular}
 	\caption{Metriche utilizzate Qualità dei documenti}
 \end{table}
@@ -105,9 +105,22 @@ Rappresenta la capacità del prodotto di essere facilmente comprensibile ed attr
 \subparagraph{Metriche utilizzate:}
 \begin{itemize}
     \item \textbf{Comprensibilità delle funzioni offerte};
-    \item \textbf{Facilità di apprendimento delle funzionalità};
+    \item \textbf{Facilità di apprendimento delle funzionalità}.
 \end{itemize}
-
+\begin{table}[!htpb]
+	\centering
+	\renewcommand{\arraystretch}{2} 
+	\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{|l|l|l|}
+			\rowcolor{orange!50}
+			\hline
+			\textbf{Nome} & \textbf{Accettazione} & \textbf{Ottimalità} \\ \hline
+			Comprensibilità delle funzioni offerte        &           $<$ 80\%            &      90\%         \\
+			\hline
+			Facilità di apprendimento delle funzionalità        &           $<$20 min            &      10 min         \\   \hline                       
+		\end{tabular}
+	\caption{Metriche utilizzate Usabilità}
+\end{table}
 \myparagraph{I1: Efficienza}
 Rappresenta la capacità di eseguire le proprie funzionalità con un buon rapporto tra tempo d'esecuzione e utilizzo delle risorse.\\\\
 \textbf{Obiettivi:}
@@ -120,6 +133,7 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 \begin{itemize}
 	\item \textbf{Tempo di risposta.}
 \end{itemize}
+
 \begin{table}[!htpb]
 	\centering
 	\renewcommand{\arraystretch}{2} 
@@ -132,7 +146,7 @@ Rappresenta la capacità di eseguire le proprie funzionalità con un buon rappor
 		\end{tabular}
 	\caption{Metriche utilizzate Efficienza}
 \end{table}
-
+\newpage
 \myparagraph{I2: Manutenibilità}
 Riguarda la facilità di apportare modifiche al sistema realizzato.\\\\
 \textbf{Obiettivi:}

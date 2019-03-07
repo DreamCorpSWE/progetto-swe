@@ -171,7 +171,7 @@ Indica la percentuale totale delle build Travis superate per le due repository G
 		PPT=(\frac{PT}{ET}) \times 100
 	\]	
 	Dove $PT$ indica il numero di test passati e $ET$ il numero di test eseguiti.
-    \item \textbf{Percentuale di test case falliti:} complementare della misu-razione precedente.  La sua formula di misurazione `e la seguente:\newline
+    \item \textbf{Percentuale di test case falliti:} complementare della misurazione precedente.  La sua formula di misurazione `e la seguente:\newline
     \[
 		PFT=(\frac{FT}{ET}) \times 100
 	\]	
@@ -264,8 +264,7 @@ indice di leggibilità più semplice.
 		MTBF=\frac{\sum(inizio ~del ~Downtime - ~inizio ~dell'Uptime)}{numero ~di ~failures}
 		\]\newline
 		$MTBF$ è un indice molto utile per quantificare l'affidabilità di un sistema.
-		\subsubsection{Blocco operazioni non corrette} Indica la percentuale di funzionalità in grado di gestire correttamente i fault che
-potrebbero verificarsi. La sua formula di misurazione è la seguente:
+		\subsubsection{Blocco operazioni non corrette} Indica la percentuale di funzionalità in grado di gestire correttamente i fault che potrebbero verificarsi. La sua formula di misurazione è la seguente:
 \newline
 		\[
 		BNC=(\frac{N_{FE}}{N_{ON}}) \times 100
@@ -273,6 +272,15 @@ potrebbero verificarsi. La sua formula di misurazione è la seguente:
 		Dove $N_{FE}$ è il numero di failure evitati durante i test effettuati e $N_{ON}$ è il numero
 di test-case eseguiti che prevedono l’esecuzione di operazioni non corrette, causa
 		di possibili failure.
+		\subsubsection{Comprensibilità delle funzioni offerte}
+		Indica la percentuale di operazioni comprese in modo immediato dall'utente, senza la consultazione del manuale. La sua formula di misurazione è la seguente:
+		\newline
+		\[
+		CFC=(\frac{N_{FC}}{N_{FO}}) \times 100
+		\]	
+		Dove $N_{FC}$ è il numero di funzionalità comprese in modo immediato dall'utente durante l’attività di testing del prodotto e $N_{FO}$ è il numero di funzionalità offerte dal sistema.
+		\subsubsection{Facilità di apprendimento delle funzionalità}
+		Indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità. Si misura tramite un indicatore numerico che indica i minuti impiegati da un utente per apprendere il funzionamento di una certa funzionalità.
 		\subsubsection{Test conclusi in failure} Indica la percentuale di testing che si sono concluse in failure. La sua formula di
 misurazione è la seguente:
  \newline
